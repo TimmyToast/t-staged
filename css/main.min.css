@@ -120,45 +120,6 @@
 .lkpgFonts p{font-size: 16px}
 .underline {text-decoration: underline}
 
-/*.layerings and wrappings
-.wnltile1 {text-align: center; max-height: 600px}
-.wnltile1 p { font-size: 28px; position: relative; margin-top: 40%}
-.wnltile1 h1 { font-size: 40px; position: relative; margin-top: 10%}
-.breaker { padding-top: 40px}
-.wnltile2 { text-align: center; font-weight: 600}
-.wnlh2 { font-size: 20px}
-.para { font-size: 16px}
-.wnltile3 col-xs-10 {margin-top: 8%}
-.wnltile3 h2 {padding-top: 20px}
-.wnltile3 p {font-size: 16px; margin-bottom: 77px}
-.wnltile4 > .col-xs-10{  margin-top: 92px;  margin-bottom: 30px}
-.wnlh2 {font-size: 20px}
-.wnltile6 h2 {padding-top: 50px}
-.wnltile7 { text-align: center}
-.wnltile7b {margin-top: 40px; margin-bottom: 10px}
-.wnltile8 {text-align: center}
-.wnltile9 {margin-top: 20px}
-.wnltile9 h2 {font-size: 20px; margin-top: 60%; position: relative}
-.wnltile9 p {top: 30%; position: relative; font-size: 16px}
-.wnltile10 {margin-top: 40px}
-.wnltile12 {padding-left: 0px}
-.wnltile13 {margin-bottom: 40px}
-.wnltile13 h2 {margin-top: 50px; font-size: 20px}
-.wnltile14{text-align: center}
-.wnlShopBTN{letter-spacing: 1px;text-decoration: underline;font-size: 22px;letter-spacing: 2px;text-align: center;margin-top: 60px;margin-bottom:60px}*/
-
-/*Early Autumn look page 
-.centerTextRow{text-align: center; font-size: 16px;letter-spacing: 1px}
-.scLPtile1{background-size: 100%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1553/TOAST_SoftColours_6a.jpg'); padding-top:62.97445%}
-.scLPtile1 h1{color: white; font-size: 28px; font-weight: 600}
-.scLPtile1 h2{color: white; font-size: 40px; font-weight:600}
-.soloSection {margin-top:7%; margin-bottom: 7%}
-.eaTile1{margin-bottom:50px}
-.eaSpacer{margin-top: 50px}
-.eaRow4{margin-top:20px}
-.eaTile4{margin-top:30%}
-.m20{margin-bottom: 60px}*/
-
 /*making of landing page*/
 .molpTileTitle{left: 10%; right:10%; width: 80%}
 .molpSubTitle{font-size: 16px; letter-spacing: 2px;text-transform:none}
@@ -277,26 +238,6 @@
 .footerColHolder { padding-top: 20px}
 
 .marketingMessage {background-color: #dfdfdf; color: #000; width: 100%; padding:8px; text-transform: uppercase; font-family: 'HelveticaNeueLT-LightCond','pragmatica-web-condensed',arial,sans-serif; letter-spacing: 1px; text-align: center}
-
-/* Holy Variety Landing - TP 
-.hvTopRow { width: 100%;display: block; clear:both; padding-top: 62.96296%; background-size: 100% 100%;  position: relative; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_HolyVariety_3_New.jpg'); background-size: 100% 100%}
-.hvTopRowText {position: absolute; top: 45%; width: 100%; text-align: center; color: #ffffff}
-.hvTopRowText h2 {font-size: 36px; font-weight: normal; letter-spacing: 3px}
-.hvRow2 {margin: 70px 0 105px 0; text-align: center; font-size: 16px; line-height: 23px}
-.hvCol {text-align: center}
-.hvCol h3 {margin: 70px 0 130px 0;; font-size: 20px; font-weight: normal; letter-spacing: 2px}*/
-
-/* asian stlying 
-.asTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/750/TOAST_AsianStyling_1_New.jpg');background-size: 100% 100%; background-repeat: no-repeat;padding-top: 62.962962%;position: relative}
-.asTile1 span{font-size: 22px; line-height: 60px; letter-spacing: 1px}
-.asTile1 .tileTitle{position: absolute; font-size: 28px; top: 45%; letter-spacing: 2px; font-weight: 300}
-.asTile1 .hvTopRowText{color: black;top: 38%}
-.asMainText{padding-top: 5%; font-size: 16px; padding-bottom:60px;text-align: center;letter-spacing: 1px}
-.asTextTile{font-size: 16px; text-align: left; padding-top: 50%;  letter-spacing: 1px}
-.asTextTile h2 {font-size: 20px; font-weight: 600}
-.asBottomTextTile{padding-bottom: 0px}
-.asBottomTile{padding-top: 20px}
-.asTile{margin-top: 80px}*/
 
 .saleTitleLrg {text-transform: uppercase;top:39%;font-size: 24px;letter-spacing: 2px}
 
@@ -495,40 +436,6 @@ label[for="chkReceiveThirdPartyCatalogs"]{ display: none }
 .cggTileText{font-family: "freight-text-pro", serif;font-weight: 400;font-size: 16px;letter-spacing: 1px;padding-top: 30px}
 .cggTileHeader{letter-spacing: 1px; font-weight: 600}
 
-/*Advent page
-.adventDescA{text-align: center; margin-top: 11%}
-.adventDescB{text-align: center; margin-top: 14%}
-.adventDescA h1, .adventDescB h1{font-size: 20px; font-family: "Freight-text-pro", serif}
-.ac_boxHolder{position: relative;background-image:url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_1A.jpg');background-size: 100%;padding-top: 63%;display: none}
-.doorContainer{position: absolute;top: 15%;width: 90%; margin-left: 9%}
-.ac_dayBox{letter-spacing: 2px;font-size:18px;position: relative;float: left;width: 20%; margin: 1.25%;background-color: rgba(255,255,255,0.2)}
-.day1{position: relative;padding-top: 70%;background-image:url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_1_A.jpg');background-size: 100%; }
-.day2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_2_A.jpg');background-size: 100%}
-.day3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_3_A.jpg');background-size: 100%}
-.day4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_4_A.jpg');background-size: 100%}
-.day5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_5_A.jpg');background-size: 100%}
-.day6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_6_A.jpg');background-size: 100%}
-.day7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_7_A.jpg');background-size: 100%}
-.day8{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_8_A.jpg');background-size: 100%}
-.day9{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_9_A.jpg');background-size: 100%}
-.day10{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_10_A_New.jpg');background-size: 100%}
-.day11{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_11_A.jpg');background-size: 100%}
-.day12{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_AdventCompetition_12_A.jpg');background-size: 100%}
-.day2,.day3,.day4,.day5,.day6,.day7,.day8,.day9,.day10,.day11,.day12{padding-top: 70%}
-.enabled{opacity: 1}
-.disabled div {color: rgb(180,180,180)}
-.blank{background-image: none!important;color: white}
-.d1, .d3, .d4, .d5, .d7, .d9, .d10 {position: absolute;width: 100%; text-align: center;top: 0%;color: white;padding: 28% 0 28% 0}
-.d2, .d6, .d8, .d11, .d12{position: absolute;width: 100%; text-align: center;top: 0%;color: black;padding: 28% 0 28% 0}
-.blank .d1, .blank .d2, .blank .d3, .blank .d4, .blank .d5, .blank .d6, .blank .d7, .blank .d8,.blank .d9, .blank .d10, .blank .d11, .blank .d12{color: white}
-.descBox{margin: 50px 0px; display: none} 
-.shadow{background-color: rgba(0, 0, 0, 0.5);height: 100%;width: 100%;position: absolute;top: 0px}
-.adventProductDescription {text-align: center}
-.loader p{font-size: 16px;margin: 40% 0%;text-align: center}
-.adventThanks p {font-size: 18px}
-.dateHolder p{font-weight: 600}*/
-
-
 /*Competition social channel buttons */
 .competition_facebook, .competition_twitter, .competition_pintrest {width: 33%; float: left; text-align: center}
 .competition_pintrest {margin-top: 5px}
@@ -631,37 +538,11 @@ span.shopTxt.gwsBtn {margin-top: 40px}
 	.pb_videoTextPlacer {margin-top: 22%}
     .pb_smallTile { width: 50%; float:left}
 
-	/* asian stlying
-    .asTile1 .tileTitle{font-size: 20px; top: 35%}
-    .asMainText{padding-bottom: 0px}
-    .asBottomTextTile{padding-bottom: 30px; padding-top: 30px}
-    .asRightCol{padding-top: 0px} */
-
     /*Homepage*/
     .hlTile1 .shopTxt{font-size: 14px}	
 	.category-product-items .product {height: 470px}  
 	.primaryLandingTile h1 {font: 24px}
 	.primaryLandingTile p {font: 12px} 
-	 
-	 /*.layerings and wrappings
-	.textBlock {height: 450px}
-	.wnltile1 {min-height: 250px; padding-bottom: 80px}
-	.look {text-align:center}
-	.wnltile1 p {margin-top: 50px;margin-bottom: 10px}
-	.wnltile1 h1 {font-weight: 600; margin-top: 0}
-	.wnltile4 {padding-top: 50px;min-height: 650px;text-align: center}
-	.wnltile4 {padding-top: 0px}
-	.wnltile4 p {margin-bottom: 0px}
-	.wnltile4 .col-xs-10 {margin-top: 50px}
-	.wnltile6 {text-align: center}
-	.wnltile7 {margin-top: 40px}
-	.wnltile7b {margin-top: 40px;text-align: center;margin-bottom: 40px}
-	.wnltile9 {text-align: center}
-	.wnltile9 h2 {margin-top: 0px}
-	.wnltile10 {margin-top: 40px}
-	.wnltile13 {text-align: center;margin-bottom: 40px}
-	.khadiContentPad {margin: 20px}
-	.landscapeTile {float: left; padding-top:57.7%}*/
 
 	/* accesories landing page */
 	.look{text-align:center}
@@ -691,15 +572,7 @@ span.shopTxt.gwsBtn {margin-top: 40px}
     .mbMob20 {margin-bottom: 20px}
     .lkpgLtdesc{text-align: center}
 
-	/* calm space
-	.calmSpaceRow4 {margin-top: 0%}
-	.calmSpaceRow3 {margin: 0 0 20px 0}*/
 	.m20{margin-bottom: 20px} 
-
-	/* Holy Variety Landing - TP 
-	.hvRow2 {margin: 35px 0 52px 0; }
-	.hvCol h3 {margin: 30px 0 65px 0}
-	*/
     
     /* Womens landing holy variety tile */
     .wl_7 .mainTitle{font-size: 18px}
@@ -774,26 +647,6 @@ span.shopTxt.gwsBtn {margin-top: 40px}
 
 	/* press book */
 	.pb_sub, .pb_subRight {text-align: center;margin: 20px 0; }
-
-	/* asian styling 
-	.asTile{margin-top: 0px}
-	.asTextTile {padding-top: 20px}
-    .asTile h2{font-size: 22px}
-    .asTile1 span{line-height: 50px; font-size: 18px}   
-	.category-product-items .product {height: 400px}  
-	.topBanner h1 {bottom: 65px} 
-	.topBanner p {bottom: -15px}
-	.primaryLandingTile p {font-size: 16px} */
-
-	/*. layerings and wrappings
-	.wnltile4 .col-xs-10 {margin-bottom: 40px; margin-top: 40px}
-    .wnltile7b {margin-bottom: 10px}
-    .wnltile7b .para{margin-bottom: 40px}
-    .wnltile10 {margin-top: 30px}
-    .wnltile12 {padding-bottom: 40px}
-    .wnltile13 p {padding-bottom: 20px}
-    .wnltile13 h2{margin-top: 20px}
-    .wnlShopBTN {margin-top: 0px}
         
     /*making of landing page*/
     .molpTileTitle{top:70%}
@@ -810,12 +663,6 @@ span.shopTxt.gwsBtn {margin-top: 40px}
     .lkpgLthead {margin-top: 20px}
 
     .hhlTile1 .tileTitle .mainTitle:first-child{font-size:20px;margin-bottom: 5px}
-    
-	/* womens landing page holy variety tile 
-    .wl_7 .tileTitle .mainTitle{font-size: 15px} */
-    
-    /*Holy variety landing page main tile text
-    .hvTopRowText h2 {font-size: 26px; font-weight: normal; letter-spacing: 3px}*/
     
      /*Homepage*/
     .saleTitle{top: 40%}
@@ -859,12 +706,6 @@ span.shopTxt.gwsBtn {margin-top: 40px}
     /*christmas landing page*/
     .giftTile{margin-bottom: 20px}
     .giftLink{margin-top: 20px}
-    
-    /*advent page
-    .adventDescA, .adventDescB{text-align: center; margin-top: 40px}
-    .ac_boxHolder{padding-top: 194%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/800/TOAST_AdventCompetition_1C.jpg')}
-    .ac_dayBox{width: 45%}
-    .doorContainer{top: 3%;margin-left: 7%}*/
       
     /*Little Winter Sale - Homepage*/
     .littleWinterShopTile{margin-top: 0%}
@@ -931,10 +772,6 @@ span.shopTxt.gwsBtn {margin-top: 40px}
     /*Swatches Tom Dev*/
     .category-product-items .product{margin-bottom: 20%;}
  	.category-product-items .product {height: 350px}   
- 	/*.landscapeTile { padding-top:78%}*/
-
-    /*Holy variety landing page main tile text
-    .hvTopRowText h2 {font-size: 20px; font-weight: normal; letter-spacing: 3px}*/
 
     /*Asian Styling*/
     .asTile1 h2{font-size: 22px}
@@ -974,7 +811,6 @@ span.shopTxt.gwsBtn {margin-top: 40px}
     .littleWinterMidTitle{font-size: 20px; padding-bottom: 85px;padding-bottom: 55px}
     .littleWinterShopTxt{line-height: 24px; font-size: 14px}
 
-    /*Grand Winter Sale*/
     /*GWS Homepage*/
     .tileTitleMid.oasTopTile.gwsTile{top: 12%}
     span.shopTxt.gwsBtn{margin-top: 10px;font-size: 14px}
@@ -993,13 +829,6 @@ span.shopTxt.gwsBtn {margin-top: 40px}
 
     .hhlTile1 .tileTitle {top:45%}/*original 16%*/
  	.category-product-items .product {height: 300px}
-
-    /*Holy variety landing page main tile text
-    .hvTopRowText h2 {font-size: 16px; font-weight: normal; letter-spacing: 3px}*/
-    
-    /*Asian Styling
-    .asTile1 h2{font-size: 22px}
-    .asTile1 span{line-height: 38px; font-size: 18px}*/
 
     /*homepage */
     .hlTopTile .tileTitle {top: 5%}
@@ -1053,6 +882,8 @@ span.shopTxt.gwsBtn {margin-top: 40px}
     .archiveSub{top: 38%}    
     .longDescTop{top: 36%}
     div.tileTitleMid.oasTopTile.otherGWS.littleWinterSaleBannerTile{top: 31%;line-height:34px;}
+    div.tileTitleMid.oasTopTile.otherGWS.littleWinterSaleBannerTile{top: 0%;line-height:34px;}
+
 }
 @media only screen and (max-width: 320px) 
 
@@ -1061,5 +892,5 @@ span.shopTxt.gwsBtn {margin-top: 40px}
     
     /*Swatches Tom Dev*/
     .category-product-items .product{margin-bottom: 40%}
+
 }
-0
