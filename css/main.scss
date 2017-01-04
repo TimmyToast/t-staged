@@ -633,7 +633,7 @@ span.shopTxt.gwsBtn {margin-top: 40px}
 span.shopTxt.pcBtn {margin-top: 40px}
 .pcTile{padding-bottom: 30px;}
 .pcHpTile2{padding-top: 38.828%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/GrandWinterSale_phase2_SaleBanner.jpg');margin-bottom: 20px;}
-.pcHpTile2 .tileTitleMid{top:36%;}
+.pcHpTile2 .tileTitleMid{top:27%;}
 .pcHpTile2 h1{margin-bottom: 20px;}
 .pcWLtile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_1.jpg');}
 .pcWLtile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_2.jpg');}
@@ -644,7 +644,8 @@ span.shopTxt.pcBtn {margin-top: 40px}
 .pcHHtile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_3.jpg');}
 .pcHHtile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_4.jpg');}
 .pcHHtile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_5.jpg');}
-
+.pcHpTile2 .tileTitleMid p{margin-bottom: 0px;}
+.pcHpTile2 .tileTitleMid span{top: -20px; position: relative; font-size: 18px;}
 
 @media only screen and (max-width: 1024px) 
 {
@@ -923,8 +924,10 @@ span.shopTxt.pcBtn {margin-top: 40px}
     .pcHpTile1 a span{font-size: 14px;}
     .pcHpTile1 h1{font-size:22px;}
     .pcHpTile1 .tileTitleTop{top:57%;}
-    .pcHpTile2 .tileTitleMid{top:30%;}
-    .pcHpTile2 h1{margin-bottom:10px;}
+    .pcHpTile2 .tileTitleMid{top:20%;}
+    .pcHpTile2 h1{margin-bottom:0px;font-size: 26px;}
+    .pcHpTile2 .tileTitleMid p{margin-top: 0px; font-size: 22px;}
+    .pcHpTile2 .tileTitleMid span{top: -40px; font-size: 16px;}
 }
 @media only screen and (max-width: 767px) 
 {
@@ -1013,7 +1016,7 @@ span.shopTxt.pcBtn {margin-top: 40px}
     div.tileTitleMid.oasTopTile.otherGWS.littleWinterSaleBannerTile{top: 25%;}
     
     /*Pre Collection*/
-    .pcHpTile2 .tileTitleMid{top: 23%;}
+    .pcHpTile2 .tileTitleMid{top: 10%;margin-top: 0px;}
 }
 
 
@@ -1088,6 +1091,9 @@ span.shopTxt.pcBtn {margin-top: 40px}
     .pcHpTile2 span{font-size: 18px;}
     .pcHpTile2 h1{margin-bottom: 0px;}
     .pcHpTile1 .tileTitleTop{top: 46%;}
+    .pcHpTile2 .tileTitleMid h1{line-height: 36px; font-size: 18px;}
+    .pcHpTile2 .tileTitleMid p{padding-bottom: 0px;margin-top: 0px;font-size: 16px;line-height: 20px;margin-bottom: 0px;}
+    .pcHpTile2 .tileTitleMid span{top: -56px;font-size: 16px;}
 }  
 
 @media only screen and (max-width: 395px){
