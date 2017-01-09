@@ -18,6 +18,7 @@
 .productSwatch {width: 22px;height: 22px;display: inline-block; margin: 6px 3px 0px 3px; padding: 2px; border: 1px solid #cccccc; cursor: pointer}
 .productSelected {border-color: #858585}
 .product-swatches img{cursor:pointer;padding-bottom:22px;max-width:30px; padding-right:2px}
+.product-swatches .swatch {float:left;}
 .swatch{min-width:36px}
 .swatch-selected,.selected-swatch{background-image:url(//d1kh76s6bjh8ww.cloudfront.net/img/icon-arrow-accordion-up-retina.png);background-size:30px 30px;background-repeat:no-repeat;background-position:bottom center;}
 .outOfStock {padding-top: 10px}
