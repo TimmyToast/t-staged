@@ -72,16 +72,16 @@
 .products-in-range .range-product {	float: none; display: inline-block; }
 
 /* Womens landing tiles */
-.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/950/TOAST_OAS_Women_6.jpg')}
+.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_3.jpg')}
 .wl_1 .sansBook{font-size:16px;padding-top: 12px;letter-spacing: 2px}
-.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_ChristmasRefresh_Women_1.jpg')}
-.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_ChristmasRefresh_Women_3.jpg')}
-.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_ChristmasRefresh_Women_2.jpg')}
-.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_ChristmasRefresh_Women_4.jpg')}
-.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_MidWinterSale_Landing_Women_New.jpg')}
+.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/GrandWinterSale_phase3_Landing.jpg')}
+.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_1.jpg')}
+.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_2.jpg')}
+.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_1.jpg')}
+.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_4.jpg')}
 .wl_7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_ChristmasRefresh_Women_6.jpg')}
 .wl_7 .mainTitle{font-size: 20px} 
-.wl_5 .saleLink{line-height:60px;}
+.wl_5 .saleLink{line-height:60px;font-size: 16px;letter-spacing: 1px;}
 .wl_6 .shopTxt{text-transform: uppercase;font-size: 18px;line-height: 60px;letter-spacing: 2px}
 .wl_6 .tileTitle{top: 70%;}
 .wl_6 saleSpan{font-size: 18px;line-height: 60px;letter-spacing: 2px;display: block;padding-bottom: 16px;}
@@ -157,7 +157,7 @@
 /*homepage*/
 .tileTitleMid {color: white;position: absolute;top: 31%;width: 100%;text-align: center;font-size: 28px;line-height: 45px; letter-spacing: 2px}
 .hlTopTile {width: 100%; display: block; width: 100%; padding-top: 62.947%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
-.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/GrandWinterSale_phase3_Homepage.jpg');padding-top: 62.916%}
+.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_Wilder_Homepage_1New.jpg');padding-top:114.488%}
 .hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_ChristmasRefresh_Homepage_2.jpg');padding-top: 121.120%}
 .hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_1.jpg');padding-top: 121.120%}
 .hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/768/TOAST_Web_WinterRefresh_Homepage_4.jpg');padding-top: 121.120%}
@@ -789,6 +789,9 @@ span.shopTxt.pcBtn {margin-top: 40px}
     .hlTile1 .shopTxt{margin: 0px;}
     /*MUST KEEP - Making of styles*/
     .wnlShopBTN {margin-top: 0px}
+    
+    /*2017 updates*/
+    .wl_5 .saleLink{font-size: 14px;}
 }
 
 @media only screen and (max-width: 767px) 
