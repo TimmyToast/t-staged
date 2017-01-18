@@ -413,12 +413,12 @@ var productModule = function() {
                 $(".product-label-colour").text(pushSelectedColourText);
                 var swatchNewUrl = swatchImageClicked.attr("src").replace("/250/", "/" + workOutImageSize($(".cut-out")) + "/").replace("/global/", "/product/");
                 swatchNewUrl = swatchNewUrl.replace('_sw/','/');
-                console.log(swatchNewUrl);
                 $(".cut-out").attr("src", swatchNewUrl);
                 $(".mobile-prod-image .cut-out").attr("src", swatchNewUrl.replace("/product/", "/global/"));
                 $(".mobile-main-image").attr("href", swatchNewUrl.replace("/" + workOutImageSize($(".mobile-main-image")) + "/", "/1200/"));
                 manageSizeStockMessages($(".size-selected"));
-                $($(".product-mobile-carousel .slides li a")[0]).attr("href", swatchImageClicked.attr("src").replace("/250/", "/1553/").replace("/global/", "/product/"));
+                 $($(".product-mobile-carousel .slides li a")[0]).attr("href", swatchImageClicked.attr("src").replace("/250/", "/1553/").replace("/global/", "/product/").replace('_sw/','/'));
+             
                 MagicZoomPlus.refresh();
                 checkToDisableAddToBag()
             },
@@ -629,3 +629,4 @@ var productModule = function() {
         getProductData: getProductData
     }
 }();
+0
