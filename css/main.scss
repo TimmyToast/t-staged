@@ -72,9 +72,9 @@
 .products-in-range .range-product {	float: none; display: inline-block; }
 
 /* Womens landing tiles */
-.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_3.jpg')}
+.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_LandingWomen_3.jpg')}
 .wl_1 .sansBook{font-size:16px;padding-top: 12px;letter-spacing: 2px}
-.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/GrandWinterSale_phase4_Landing.jpg')}
+.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_2.jpg')}
 .wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_1.jpg')}
 .wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_2.jpg')}
 .wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_1.jpg')}
@@ -170,7 +170,7 @@
 .hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_Homepage_3.jpg');padding-top: 121%}
 
 /*.hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_WorksoftheHeart_a.jpg');padding-top: 121%}*/
-
+.hlTile7 .tileTitle .mainTitle{letter-spacing: 2px;}
 
 .hlTile6{background-color: #e9e9e9;color:black}
 .hlTopTile .tileTitle {top: 45%}
@@ -495,7 +495,7 @@ div.adventTile.tileTitle .mainTitle{letter-spacing: 2px}
 
 /*Little Winter build - Sale*/
 .lwsStile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/768/TOAST_ChristmasLanding_1.jpg')}
-div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/GrandWinterSale_phase4_SaleBanner.jpg');}
+div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_1.jpg');}
 .littleWinterSaleBanner h1.mainTitle{font-size: 32px}
 .lwsStile1 .oasTopTile.littleWinterSaleBannerTile{margin-top: 0px}
 .saleTile{text-align: center;margin-bottom: 40px}
@@ -548,22 +548,22 @@ span.shopTxt.gwsBtn {margin-top: 40px}
 .pcBtn {color: white; border-bottom: 1px solid white;text-transform: uppercase;padding-bottom: 5px;margin: 40px 20px 0px 20px}
 span.shopTxt.pcBtn {margin-top: 40px}
 .pcTile{padding-bottom: 30px;}
-.pcHpTile2{padding-top: 38.828%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/GrandWinterSale_phase4_SaleBanner.jpg');margin-bottom: 20px;}
-.stdSaleTile{padding-top: 38.828%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/GrandWinterSale_phase4_SaleBanner.jpg');margin-bottom: 20px;}
+.pcHpTile2{padding-top: 38.828%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_1.jpg');margin-bottom: 20px;}
+.stdSaleTile{padding-top: 38.828%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_1.jpg');margin-bottom: 20px;}
 .pcHpTile2 .tileTitleMid{top:27%;}
 .stdSaleTile .tileTitleMid{top:27%;}
-.pcHpTile2 h1{margin-bottom: 20px;}
+.pcHpTile2 h1{margin-bottom: 20px; font-size: 32px;}
 .stdSaleTile h1{margin-bottom: 20px;}
 .pcWLtile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_1.jpg');}
 .pcWLtile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_2.jpg');}
 .pcWLtile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_3.jpg');}
 .pcWLtile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingWomen_4.jpg');}
 .pcHHtile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_1.jpg');}
-.pcHHtile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/GrandWinterSale_phase4_Landing.jpg');}
+.pcHHtile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_2.jpg');}
 .pcHHtile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_3.jpg');}
 .pcHHtile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_4.jpg');}
 .pcHHtile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_PreCollection_LandingHH_1.jpg');}
-.pcHpTile2 .tileTitleMid p{margin-bottom: 0px;}
+.pcHpTile2 .tileTitleMid p{margin-bottom: 0px; font-size: 22px;}
 .stdSaleTile .tileTitleMid p{margin-bottom: 0px;}
 .pcHpTile2 .tileTitleMid span{top: -20px; position: relative; font-size: 18px;}
 .stdSaleTile .tileTitleMid span{top: -20px; position: relative; font-size: 18px;}
@@ -776,9 +776,9 @@ span.shopTxt.pcBtn {margin-top: 40px}
     .pcHpTile1 a span{font-size: 14px;}
     .pcHpTile1 h1{font-size:22px;}
     .pcHpTile1 .tileTitleTop{top:57%;}
-    .pcHpTile2 .tileTitleMid{top:20%;}
+    .pcHpTile2 .tileTitleMid{top:20%;font-size: 22px;}
     .pcHpTile2 h1{margin-bottom:0px;font-size: 26px;}
-    .pcHpTile2 .tileTitleMid p{margin-top: 0px; font-size: 22px;}
+    .pcHpTile2 .tileTitleMid p{margin-top: 0px; font-size:18px;}
     .pcHpTile2 .tileTitleMid span{top: -40px; font-size: 16px;}
     .stdSaleTile .tileTitleMid{top:20%;}
     .stdSaleTile h1{margin-bottom:0px;font-size: 26px;}
