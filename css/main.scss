@@ -207,6 +207,9 @@
 /*Misc*/
 .tileTitle .landingTileTxt {font-size:24px; letter-spacing: 2px}
 #review-section.expanded{padding-bottom: 10px;}
+/*Third party catalogs checkbox and text*/
+label[for="chkReceiveThirdPartyCatalogs"]{display:none;}
+input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none;}
 /* Footer style */
 .footerMessage {padding-top: 10px;float: left;width: 100%; text-align: center}
 .footerColHolder { padding-top: 20px}
