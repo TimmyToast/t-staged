@@ -59,13 +59,13 @@ var productModule = function() {
             $target = $("ul.product-sizes .size").eq(0)
         }
         if ($target.hasClass("out-of-stock")) {
-            $(".stock-message").html('<span class="stock-message-text">Your selected size is currently out of stock</span>').show()
+            $(".stock-message").html('<span class="stock-message-text">Your selected item is currently out of stock</span>').show()
         } else if ($target.hasClass("low-stock")) {
             var stlev = $target.attr("stlev");
             $(".stock-message").show().html('<span class="stock-message-text">We have a limited number of this item left in your selected size.</span>');
             $('<div class="stock-message-low">Only ' + stlev + " left in stock in selected size</div>").appendTo(".product-swatches")
         } else if ($target.hasClass("pre-order")) {
-            $(".stock-message").show().html('<span class="stock-message-text">Your selected size is expected in our warehouse on ' + $target.attr("data-pre-order") + ". You can still order &amp; we will send your item out to you as soon as it arrives.</span>")
+            $(".stock-message").show().html('<span class="stock-message-text">Your selected item is expected in our warehouse on ' + $target.attr("data-pre-order") + ". You can still order &amp; we will send your item out to you as soon as it arrives.</span>")
         }
         $(".desc-prod-code").text("Style Code: " + $(".size-selected").attr("data-sku").slice(0, 5))
     };
@@ -629,4 +629,5 @@ var productModule = function() {
         getProductData: getProductData
     }
 }();
+0
 0
