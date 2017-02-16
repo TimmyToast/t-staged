@@ -59,13 +59,13 @@
 .tileTitleMid {color: white;position: absolute;top: 31%;width: 100%;text-align: center;font-size: 28px;line-height: 45px; letter-spacing: 2px}
 .hlTopTile {width: 100%; display: block; width: 100%; padding-top: 62.947%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .hlTopTile .tileTitle {top: 45%}
-.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_Homepage_1.jpg');padding-top:74.050%}
-.hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_Homepage_2.jpg');padding-top: 121.120%}
-.hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_Homepage_3.jpg');padding-top: 121.120%}
-.hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/768/TOAST_EarlySpring_Homepage_4.jpg');padding-top: 121.120%}
-.hlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_MidWinterSale_Homepage_New.jpg');padding-top: 121%}
+.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Homepage_1.jpg');padding-top:74.050%}
+.hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Homepage_2.jpg');padding-top: 121.120%}
+.hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Homepage_3.jpg');padding-top: 121.120%}
+.hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/768/TOAST_OAS_Homepage_4.jpg');padding-top: 121.120%}
+.hlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Homepage_5.jpg');padding-top: 121%}
 .hlTile6{background-color: #e9e9e9;color:black}
-.hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_Homepage_5_WorksofHeart.jpg');padding-top: 58.46748%}
+.hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Homepage_5.jpg');padding-top: 58.46748%}
 .hlTile7 .tileTitle .mainTitle{letter-spacing: 2px;}
 .hlTile1 .tileTitleMid{top: 45%;}
 .hlTile1 h1{margin-bottom: 0px; font-size: 34px;}
@@ -77,13 +77,13 @@
 /*Women's Landing Page*/
 .wl_1 .tileTitle h2{padding-bottom: 25px;}
 .wl_1 .tileTitle span{font-size: 16px; letter-spacing: 2px;border-bottom: 1px solid white;padding-bottom:0px;}
-.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_WomenLanding_1.jpg')}
+.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Landing_Women_1.jpg')}
 .wl_1 .sansBook{font-size:16px;padding-top: 12px;letter-spacing: 2px}
-.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_WomenLanding_2.jpg')}
-.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_WomenLanding_3.jpg')}
-.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_WomenLanding_4.jpg')}
-.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_WomenLanding_5.jpg')}
-.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_WomenLanding_6.jpg')}
+.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Landing_Women_2.jpg')}
+.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Landing_Women_3.jpg')}
+.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Landing_Women_4.jpg')}
+.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Landing_Women_5.jpg')}
+.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Landing_Women_6.jpg')}
 .wl_7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_ChristmasRefresh_Women_6.jpg')}
 .wl_7 .mainTitle{font-size: 20px} 
 .wl_5 .saleLink{line-height:60px;font-size: 16px;letter-spacing: 1px;}
@@ -205,10 +205,13 @@
 
 
 /*Misc*/
+.us .hidden-us{display:none;}
+.eu .hidden-eu{display:none;}
+.uk .hidden-uk{display:none;}
 .tileTitle .landingTileTxt {font-size:24px; letter-spacing: 2px}
 #review-section.expanded{padding-bottom: 10px;}
-/*Third party catalogs checkbox and text*/
-label[for="chkReceiveThirdPartyCatalogs"]{display:none;}
+/*Third party catalogs checkbox and text*/		
+label[for="chkReceiveThirdPartyCatalogs"]{display:none;}		
 input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none;}
 /* Footer style */
 .footerMessage {padding-top: 10px;float: left;width: 100%; text-align: center}
@@ -412,8 +415,10 @@ li.main-link.sale a {color:#db2424}
 {
 	.category-product-items .product {height: 440px; margin-bottom: 0} 
     /*Homepage*/
-    .hlTile1 h1{font-size: 28px;}
-    .hlTile1 .shopTxt{font-size: 16px;margin: 20px 20px;}
+    .hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Landing_Women_5.jpg');padding-top: 128%;}
+    .hlTile1 h1{font-size: 28px;margin-bottom: 20px;}
+    .hlTile1 a{display: block;}
+    .hlTile1 .shopTxt{font-size: 16px;margin: 10px;}
     .hlTile7 .tileTitle{top: 65%;}
     /*House and Home*/
     .hhlTile1 .tileTitle .mainTitle {font-size: 28px;margin-bottom: 15px;}
