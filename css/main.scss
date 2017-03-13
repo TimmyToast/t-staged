@@ -5,7 +5,6 @@
 .textBook {font-family: "freight-text-pro", serif; font-weight:400}
 .textSemibold {font-family: "freight-text-pro", serif; font-weight:400}
 .textBold {font-family: "freight-text-pro", serif; font-weight:700}
-
 /* Swatches */
 .productHolder {width: 99.9%; background-color: #ffffff}
 .productImage {position: relative; width: 100%; float: left; padding-top: 124.933333333333%; overflow: hidden; cursor: pointer; border: none;background-color: #ffffff}
@@ -15,7 +14,7 @@
 .productPrice {font-size: 14px;margin: 0 0 5px 0;text-transform: uppercase; font-family: 'HelveticaNeueLT-LightCond','pragmatica-web-condensed',arial,sans-serif}
 .productReviewStars {font-size: 14px}
 .productSwatches {text-align: center; margin-top: 18px}
-.productSwatch {width: 22px;height: 22px;display: inline-block; margin: 6px 3px 0px 3px; padding: 2px; border: 1px solid #cccccc; cursor: pointer}
+.productSwatch {width: 27px;height: 27px;display: inline-block; margin: 6px 3px 0px 3px; padding: 2px; border: 1px solid #ffffff; cursor: pointer}
 .product-swatches .swatch {float:left}
 .productSelected {border-color: #858585}
 .product-swatches img{cursor:pointer;padding-bottom:22px;max-width:30px; padding-right:2px}
@@ -23,24 +22,20 @@
 .swatch-selected,.selected-swatch{background-image:url(//d1kh76s6bjh8ww.cloudfront.net/img/icon-arrow-accordion-up-retina.png);background-size:30px 30px;background-repeat:no-repeat;background-position:bottom center;}
 .outOfStock {padding-top: 10px}
 .topNavSale {color:#db2424}
-
 /*Swatches Tom Dev */
 .category-product-items .product{margin-bottom: 188px; height: 390px}
 .textRight {text-align: right}
 .helvMedium {font-family: 'HelveticaNeueLT-MediumCond', 'pragmatica-web-condensed', arial, sans-serif}
 .helvLight {font-family: 'HelveticaNeueLT-LightCond', 'pragmatica-web-condensed', arial, sans-serif}
 .textCenter {text-align: center}
-
 /*Framework*/
 .landscapeTile{display: block;width: 100%;padding-top: 58.46748%;margin-bottom: 10px;background-size: 100% 100%;position: relative}
 .portraitTile {width: 100%; display: block; width: 100%;padding-top: 128%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .tileTitle {position: absolute; top:77%; width: 100%; text-align: center; color: #ffffff}
-
 /*Sale Banners*/
 .saleBannerTitle {font-size: 44px; text-transform: uppercase; width: 100%; padding-top:9%; color: #ffffff !important; letter-spacing: 3px}
 .saleBannerSubTitle {font-size: 32px;  color: #ffffff !important; padding-top:3%; letter-spacing: 3px}           
 .saleBanner { width:100%; background: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1080/AW16_PreCollection_Homepage_2_60pc.jpg'); background-size:100% 100%; height: 210px; display: block; margin: 10px 0;text-align: center;}
-
 /*Category Headers*/
 .landingBSIntro{text-align: center;margin: 30px 0}
 .landingBSIntro h1 {font-size: 26px;font-family: "freight-text-pro", serif;font-weight: 600}
@@ -49,12 +44,10 @@
 .landingBS p {font-size: 16px; font-family: "freight-text-pro", serif; letter-spacing: 1px}
 .landingBSIntro p.newProductDescription{font-size: 16px; line-height: 24px}
 .landingBSIntro a.newProductLBLink{text-align: center;position: relative; top: 15px;font-size: 14px;letter-spacing: 1px;border-bottom: 1px solid #000000;padding-bottom: 5px;text-transform: uppercase}
-
 /* Range page */
 .products-in-range {text-align: center;} 
 .products-in-range .range-product {float: none; display: inline-block;}
 .t_Tooltip {display: none}
-
 /*Homepage*/
 .tileTitleMid {color: white;position: absolute;top: 31%;width: 100%;text-align: center;font-size: 28px;line-height: 45px; letter-spacing: 2px}
 .hlTopTile {width: 100%; display: block; width: 100%; padding-top: 62.947%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
@@ -73,7 +66,6 @@
 .signuptile {text-align: center}
 .signuptile p {color: black;width: 100%;top: 0px}
 .signuptile button {margin-top: 8%;border-width: 0px;font-size: 16px;color: black;letter-spacing:1px;font-family: 'freight-sans-pro', sans-serif;background: transparent}
-
 /*Women's Landing Page*/
 .wl_1 .tileTitle h2{padding-bottom: 25px;}
 .wl_1 .tileTitle span{font-size: 16px; letter-spacing: 2px;border-bottom: 1px solid white;padding-bottom:0px;}
@@ -90,7 +82,6 @@
 .wl_6 .shopTxt{text-transform: uppercase;font-size: 18px;line-height: 60px;letter-spacing: 2px}
 .wl_6 .tileTitle{top: 77%;}
 .wl_5 .shopTxt .pcBtn{line-height: 70px;}
-
 /*house and home landing page*/
 .hhlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_WEB_Spring_LandingHH_1.jpg');padding-top: 100%; margin-bottom: 20px}
 .hhlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_WEB_Spring_LandingHH_2.jpg'); margin-bottom: 20px}
@@ -117,7 +108,6 @@
 .LBtileTitle {position: absolute; top:72%; width: 100%; text-align: center; color: #ffffff }
 .LBtileTitle .mainTitle {width: 100%;  font-size: 22px; float: left; letter-spacing: 3px}
 .LBtileTitle .subTitle {width: 100%;  text-transform: uppercase; padding-top: 12px; float: left; font-size: 16px; letter-spacing: 2px}
-
 /*Making of Landing*/
 .molpSubTitle{font-size: 16px; letter-spacing: 2px;text-transform:none;float: left;margin-top: 16px;width: 100%}
 .molpTileTitle{left: 10%; right:10%; width: 80%}
@@ -127,7 +117,6 @@
 .molp_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_MakingOF_Landing_5.jpg')}
 .molp_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_MakingOF_Landing_2b.jpg')}
 .molp_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_MakingOF_Landing_4.jpg')}
-
 /*Making of*/
 .wnlShopBTN{letter-spacing: 1px;text-decoration: underline;font-size: 22px;letter-spacing: 2px;text-align: center;margin-top: 60px;margin-bottom:60px}
 .khadiCTA {text-align: center; text-transform: uppercase; margin-bottom: 20px}
@@ -149,7 +138,6 @@
 .centerTileTitle input{padding: 0px;text-align:center;border-width: 0px}
 .centerTileTitle h2{padding-top: 8%;font-size:16px;letter-spacing: 1px;font-family: 'freight-sans-pro', sans-serif}
 .shopCS{ width: 100%; background-image:url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/780/WEB_MakingOf_Cheaney_Shop.jpg'); padding-top: 121.484375%; position: relative; color: #ffffff ; background-size: 100% 100%; display: block; margin-bottom: 10px;}
-
 /*About Us Page*/
 .aboutUsBanner{width: 100%; margin-top:10px; padding-top: 38.82807469414%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/AW16/1200/TOAST_WEB_AboutUs_1.jpg'); background-size: 100% 100%; position: relative}
 .aboutUsBanner .tileTitleMid {line-height: 54px; letter-spacing: 2px;top: 35%; font-size: 36px}
@@ -166,7 +154,6 @@
 .tileTitle .mainTitle {width: 100%;  font-size: 24px; float: left; letter-spacing: 2px}
 .tileTitle .subTitle {width: 100%;  text-transform: uppercase; padding-top: 12px; float: left; font-size: 16px; letter-spacing: 2px}
 .cText .aboutUsLinks{    border-bottom: 1px solid #000000;padding-bottom: 5px}
-
 /*Work with us*/
 .cText{text-align: center; font-size: 17px;line-height: 26px;margin-top: 10px}
 .workWithUs{position:relative;background-size: 100%;background-repeat:no-repeat;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/768/TOAST_WorkWithUs_1.jpg'); padding-top:38.892561%;margin-top: 10px}
@@ -185,7 +172,6 @@
 .office{font-size:18px;text-transform: uppercase; margin: 20px;margin-top: 30px;display: inline-block}
 .wwuTile{border-bottom: 2px solid black;letter-spacing: 2px;text-align: center;font-weight: 600;margin-bottom: 60px}
 .wwuImageTile{margin-top: 20px;margin-bottom: 10px}
-
 /*Store Events WOTH*/
 .storeEventsContainer{margin-bottom: 100px;}
 .wothHeadText{text-align: center; margin-top:40px;}
@@ -196,7 +182,6 @@
 .wothLinks{text-align: center; margin-top: 20px;}
 .wothLinks a{border-bottom: 1px solid black;padding-bottom: 3px;}
 .wothContent p.wothTerm{font-size: 12px; font-weight: 400;}
-
 /*Misc*/
 .row .hidden-row{display:none;}
 .us .hidden-us{display:none;}
@@ -217,12 +202,10 @@ input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none;}
 .footerSocialIcons ul {margin:0 0 20px -10px}
 .marketingMessage {background-color: #dfdfdf; color: #000; width: 100%; padding:8px; text-transform: uppercase; font-family: 'HelveticaNeueLT-LightCond','pragmatica-web-condensed',arial,sans-serif; letter-spacing: 1px; text-align: center}
 .saleTitleLrg {text-transform: uppercase;top:39%;font-size: 24px;letter-spacing: 2px}
-
 /*Sale*/
 .saleTile{text-align: center;margin-bottom: 40px}
 .saleTile span{text-transform: uppercase;letter-spacing: 1px; font-size: 14px;font-weight: 500; text-align: center; border-bottom: 1px solid black; padding-bottom: 2px}
 .saleTile img{margin-bottom: 30px}
-
 /*Sitemap*/
 .sitemapTitle {letter-spacing: 1px; text-transform: uppercase;border-bottom: 3px solid #909090;font-size: 26px;padding-top: 30px;margin-bottom: 30px} 
 .smTileTitle {font-size: 22px;font-weight: 300}
@@ -232,9 +215,6 @@ input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none;}
 .sitemapClear {margin-top: 30px}
 .smRow ul li a {line-height: 24px;font-size: 16px;}
 .smhalfCol{padding-left: 0px!important;}
-
-/*To remove after sale finished*/
-
 /* Little Winter build - Homepage */
 .littleWinterTopTile{margin-top: 16%}
 .lwsTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_ChristmasRefresh_Women_1.jpg');padding-top: 121.120%}
@@ -246,18 +226,15 @@ input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none;}
 .littleWinterTile.tileTitle {top: 62%;font-size: 24px;letter-spacing: 2px;margin-bottom: 20px}
 .littleWinterTile.tileTitle h2{margin-bottom: 20px}
 .littleWinterTile.tileTitle span{font-size: 16px}
-
 /*Little Winter build - Womens*/
 .lwsWtile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/768/TOAST_ChristmasLanding_1.jpg'); padding-top: 128%}
 .lwsWtile1 h2{padding-bottom: 20px}
 .lwsWtile1 span{font-size: 16px; letter-spacing: 2px}
-
 /*Little Winter build - House and Home*/
 .lwsHHtile1 div.tileTitle, .lwsHHtile2 div.tileTitle{top: 62%}
 .lwsHHtile1 div.tileTitle h2, .lwsHHtile2 div.tileTitle h2{padding-bottom: 20px}
 .lwsHHtile1 div.tileTitle span{font-size: 16px; letter-spacing: 2px;border-bottom: 1px solid white;padding-bottom:3px;font-family: 'Freight-sans-pro'}
 .lwsHHtile2 div.tileTitle span{font-size: 16px; letter-spacing: 2px; padding-bottom: 3px;}
-
 /*Little Winter build - Sale*/
 .lwsStile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/768/TOAST_ChristmasLanding_1.jpg')}
 div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_1.jpg');}
@@ -268,7 +245,6 @@ div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url
 .saleTile img{margin-bottom: 30px}
 .littleWinterSaleSub{letter-spacing: 2px;font-size: 22px;padding-top: 0px;margin-bottom: 40px}
 .shopTxt.littleWinterBannerTxt{margin-top: 34px;color:white;border-bottom:1px solid white;padding-bottom: 2px;text-transform: uppercase;margin-left:20px;margin-right: 20px;font-size: 16px;}
-
 /*Pre Collection*/
 .pcHpTile1{padding-top: 114.488%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_Wilder_Homepage_1New.jpg');}
 .tileTitleTop {color: white;position: absolute;top: 37.6%;width: 100%;text-align: center;font-size: 28px;line-height: 45px; letter-spacing: 2px}
@@ -294,7 +270,6 @@ span.shopTxt.pcBtn {margin-top: 40px}
 .stdSaleTile .tileTitleMid p{margin-bottom: 0px;}
 .pcHpTile2 .tileTitleMid span{top: -20px; position: relative; font-size: 18px;}
 .stdSaleTile .tileTitleMid span{top: -20px; position: relative; font-size: 18px;}
-
 /* Press book */
 .unslider {overflow:auto;margin:0;padding:0}
 .unslider-wrap{position:relative}
@@ -372,7 +347,6 @@ span.shopTxt.pcBtn {margin-top: 40px}
 .pb_downloadRow {margin:30px 0 0 0}
 .littleWinterSaleBanner .littleWinterSaleBannerTile a{font-size: 22px;color: white;text-transform: uppercase;}
 .littleWinterSaleBanner .littleWinterSaleBannerTile span{border-bottom: 1px solid white;padding-bottom: 5px;}
-
 /*Little Winter build - Sale*/
 .lwsStile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/768/TOAST_ChristmasLanding_1.jpg')}
 div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_1.jpg');}
@@ -383,10 +357,8 @@ div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url
 .saleTile img{margin-bottom: 30px}
 .littleWinterSaleSub{letter-spacing: 2px;font-size: 22px;padding-top: 0px;margin-bottom: 40px}
 .shopTxt.littleWinterBannerTxt{margin-top: 34px;color:white;border-bottom:1px solid white;padding-bottom: 2px;text-transform: uppercase;margin-left:20px;margin-right: 20px}
-
 /* Sale price */
 li.main-link.sale a {color:#db2424}
-
 /*Curates page*/
 .landingBSIntro h1.storeEventsHeading{letter-spacing: 1px;}
 .closeUpDesc{text-align: center;margin-top: 40px;}
@@ -395,9 +367,7 @@ li.main-link.sale a {color:#db2424}
 .closeUpDesc a{font-size: 18px;text-decoration: none;color: #000;border-bottom: 1px solid black;text-transform: uppercase;}
 .eventSubText{font-size: 16px;margin-top: 30px;letter-spacing: 1px;}
 .formFrame{margin-top: 50px;}
-
 /* New help section */
-
 .helpSection .subnav {display: none}
 .helpSection .visible {display: block;}
 .helpSection .margintop {margin-top: 30px;}
@@ -425,11 +395,9 @@ li.main-link.sale a {color:#db2424}
 .helpSection .errorText {font-size:15px}
 .helpSection .helpTitleItem {margin:20px 0 10px 0; font-size: 16px}
 .helpSection .parent {background: url(https://d2xfispw8k8nwr.cloudfront.net/images/arrow.gif) no-repeat 216px 5px; background-size: 8px 8px}
-
 @media only screen and (max-width: 1024px) 
 {
-
-	.category-product-items .product {height: 490px; margin: 0}  
+	.category-product-items .product {height: 520px; margin: 0}  
     /*Making of*/
     .davdaTop30 {margin-top: 0px}
     /*About us*/
@@ -443,15 +411,12 @@ li.main-link.sale a {color:#db2424}
     .littleWinterSaleSub{margin-bottom: 16px;font-size: 18px;}
     .lwsStile1 .littleWinterSaleBanner .tileTitleMid{top: 22%;}
 }
-
 @media only screen and (max-width: 960px){
-    .hhlTile3 .tileTitle span{
-        padding-top: 5px;
-    }
+    .hhlTile3 .tileTitle span{padding-top: 5px}
 }
-
 @media only screen and (max-width: 768px) 
 {
+	.productSwatch { margin: 3px 2px 0px 2px; }
 	.category-product-items .product {height: 440px; margin-bottom: 0} 
     /*Homepage*/
     .hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/950/TOAST_WEB_Spring_Lookbook_1_New.jpg');padding-top: 128%;}
@@ -491,24 +456,19 @@ li.main-link.sale a {color:#db2424}
     .shopTxt.littleWinterBannerTxt{font-size: 14px;}
     .littleWinterSaleSub{margin: 0px; padding: 0px;font-size: 14px;letter-spacing: 1px;}
     .hhsLandingS .tileTitleMid{top: 32%;}
-
     /* New help section */
     .helpSection .parent {background-position:  right 4px;}
     .helpSection .navItems {font-size:14px; letter-spacing:1px}
     .helpSection .navItems li {margin: 10px 0; width: 100%; }
 }
-
 @media only screen and (max-width: 767px) 
 {
 	.category-product-items .product {height: 530px; margin-bottom: 0} 
     .hhlTile3 .tileTitle span{padding-top: 15px;}
-
     /* New help section */
-
     .helpSection li.parent.delivery {background-position: right 4px; float:left}
   	.helpSection .navItems li, .helpContentArea {float:left}
 }
-
 @media only screen and (max-width: 700px) 
 {
 	.category-product-items .product{height: 490px; margin-bottom: 0}
@@ -521,9 +481,7 @@ li.main-link.sale a {color:#db2424}
     .tileTitle .subTitle {font-size: 14px;padding-top: 6px;}
     /*Making Of*/
     .molp_1 .mainTitle,.molp_2 .mainTitle,.molp_3 .mainTitle,.molp_4 .mainTitle,.molp_5 .mainTitle{font-size: 24px;}
-
 }
-
 @media only screen and (max-width: 530px) 
 {
 	.category-product-items .product {height: 410px; margin-bottom: 0}  
@@ -534,7 +492,6 @@ li.main-link.sale a {color:#db2424}
     .aboutUsBanner .tileTitleMid {font-size: 24px;}
     .aboutUsBannerText p {display: none;}
 }
-
 @media only screen and (max-width: 430px) 
 {
 	.category-product-items .product {height: 370px; margin-bottom:0}
@@ -550,7 +507,6 @@ li.main-link.sale a {color:#db2424}
     .littleWinterSaleSub{display: none}
     .littleWinterSaleBanner .tileTitleMid{line-height: 33px;}
     .hhsLandingS .tileTitleMid{top: 25%;}
-
     /* New help section */
     .helpSection .helpContentArea td {height: 30px;  font-size: 12px; text-align: center;}
   	.helpSection .helpContentArea {min-height: 600px; margin-top: 50px}
@@ -558,7 +514,6 @@ li.main-link.sale a {color:#db2424}
   	.helpSection .navItems li {margin: 8px 0; width: 92%; }
   	.helpSection .helpContentArea p {font-size: 18px; margin: 20px 0 0 0}
 }
-
 @media only screen and (max-width: 395px) 
 {
 	.category-product-items .product{height: 390px; margin-bottom: 0}
@@ -569,6 +524,7 @@ li.main-link.sale a {color:#db2424}
 
 @media only screen and (max-width: 320px) 
 {
+    .productSwatch {margin: 0px;}
 	.category-product-items .product{height: 350px; margin-bottom: 0}
     .longDescTop {top: 36%}
     .littleWinterSaleBanner .tileTitleMid{top: 5%;}
