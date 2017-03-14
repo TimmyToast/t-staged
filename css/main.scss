@@ -395,6 +395,27 @@ li.main-link.sale a {color:#db2424}
 .helpSection .errorText {font-size:15px}
 .helpSection .helpTitleItem {margin:20px 0 10px 0; font-size: 16px}
 .helpSection .parent {background: url(https://d2xfispw8k8nwr.cloudfront.net/images/arrow.gif) no-repeat 216px 5px; background-size: 8px 8px}
+/* In the detail */
+.customProductHolder{margin-top: 50px;text-align: center;font-size: 14px;line-height: 16px;}
+.customProductHolder img{margin: 0 auto;}
+.customProductHolder span{line-height: 30px;}
+.productSnippet{font-size: 16px;letter-spacing: 1px;margin-top: 30px;  }
+.productSnippetRight{text-align: right;font-size: 16px;letter-spacing: 1px;margin-top: 30px;}
+.productSnippetHead{margin: 0;}
+.productSnippetPushed{margin-top: 100px;}
+.pSnippetCustom{margin-top: 0;margin-bottom: 30px;  font-size: 16px;letter-spacing: 1px;}
+.productSnippetPushCustom{margin-top: 122px;}
+.productSnippetPushedClear{clear: both;}
+.pSnippet{font-size: 16px;letter-spacing: 1px;margin-top: 0;margin-bottom: 0;    }
+.productPara{font-size: 18px;letter-spacing: 1px;margin-top: 50px;margin-bottom: 0;}
+.productParaRight{font-size: 18px;letter-spacing: 1px;margin-top: 50px;text-align: right;}
+.customTxtPush{margin-top: 50px;}
+.customImgPush{clear:both;margin-top: 100px;}
+.customImgPushInline{margin-top: 100px;}
+.inDetailShopLink{text-align: center;margin-top: 50px;margin-bottom: 100px;}
+.inDetailShopLink a{font-size: 18px;letter-spacing: 1px;padding-bottom:3px; font-weight: 400;border-bottom: 1px solid black;}
+.productSnippetClear{clear: both;}
+.landingBSIntro .inDetailHeadText{font-size: 16px;}
 @media only screen and (max-width: 1024px) 
 {
 	.category-product-items .product {height: 520px; margin: 0}  
@@ -460,6 +481,15 @@ li.main-link.sale a {color:#db2424}
     .helpSection .parent {background-position:  right 4px;}
     .helpSection .navItems {font-size:14px; letter-spacing:1px}
     .helpSection .navItems li {margin: 10px 0; width: 100%; }
+    /* In the detail */
+    .productSnippetPushCustom{margin-top: 50px;}
+    .productSnippetPushed{margin-top: 80px;}
+    .productSnippet, .productPara, .productSnippetRight, .productParaRight{text-align: center;}
+    .customImgPush{margin-top: 80px;}
+    .customImgPushInline{margin-top: 80px;}
+    .customProductHolder{margin-top: 0;margin-bottom: 80px;}
+    .inDesignShopLink{margin-top: 0;}
+    .productSnippetHead{text-align: center;}
 }
 @media only screen and (max-width: 767px) 
 {
