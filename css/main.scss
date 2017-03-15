@@ -416,6 +416,9 @@ li.main-link.sale a {color:#db2424}
 .inDetailShopLink a{font-size: 18px;letter-spacing: 1px;padding-bottom:3px; font-weight: 400;border-bottom: 1px solid black;}
 .productSnippetClear{clear: both;}
 .landingBSIntro .inDetailHeadText{font-size: 16px;}
+.customProductHolder.cphClear{clear:none;}
+.cRow{margin-left: 0px; margin-right: 0px;}
+.productCustomMargin{margin-top:80px;}
 @media only screen and (max-width: 1024px) 
 {
 	.category-product-items .product {height: 520px; margin: 0}  
@@ -498,6 +501,9 @@ li.main-link.sale a {color:#db2424}
     /* New help section */
     .helpSection li.parent.delivery {background-position: right 4px; float:left}
   	.helpSection .navItems li, .helpContentArea {float:left}
+    /* In the detail */
+    .customProductHolder.cphClear{clear:both;}
+    .productCustomMargin{margin-top:20px;}
 }
 @media only screen and (max-width: 700px) 
 {
