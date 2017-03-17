@@ -421,8 +421,9 @@ li.main-link.sale a {color:#db2424}
 .productCustomMargin{margin-top:80px}
 /*Email pop-up*/
 .elb_Lightbox {background-color:rgba(0, 0, 0, 0.6); position: absolute; top:0; left:0; height: 500px; width: 100%; z-index: 10; display: none}
-.elb_emailBoxText h2,  .elb_emailBoxText h3{font-size: 24px; letter-spacing: 1px}
-.elb_emailWhiteBox {margin: 0 auto; max-width: 500px; width: 94%; height: 315px; background-color: #ffffff ; padding: 10px 10px 50px 10px; text-align: center;}
+.elb_emailBoxText h2{font-size: 22px; letter-spacing: 1px}
+.elb_emailBoxText h3{font-size: 24px; letter-spacing: 1px}
+.elb_emailWhiteBox {margin: 0 auto; max-width: 500px; width: 94%; height: 296px; background-color: #ffffff ; padding: 10px 10px 50px 10px; text-align: center;}
 .elb_hiddenHTML {display: none}
 .elb_emailBoxText {width: 100%; margin: 0 0 20px 0; font-size: 16px}
 .elb_emailBox input {width: 60%; padding: 8px}
