@@ -248,13 +248,15 @@ input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
 .lwsHHtile2 div.tileTitle span{font-size: 16px; letter-spacing: 2px; padding-bottom: 3px}
 /*Little Winter build - Sale*/
 .lwsStile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/768/TOAST_ChristmasLanding_1.jpg')}
-div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_1.jpg')}
-.littleWinterSaleBanner h1.mainTitle{font-size: 32px}
+div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/Sale_Ends.jpg')}
+.littleWinterSaleBanner h1.mainTitle{font-size: 28px}
+.littleWinterSaleBanner .tileTitleMid{top: 37%;}
 .lwsStile1 .oasTopTile.littleWinterSaleBannerTile{margin-top: 0px}
 .saleTile{text-align: center;margin-bottom: 40px}
 .saleTile span{text-transform: uppercase;letter-spacing: 1px; font-size: 14px;font-weight: 500; text-align: center; border-bottom: 1px solid black; padding-bottom: 2px}
 .saleTile img{margin-bottom: 30px}
-.littleWinterSaleSub{letter-spacing: 2px;font-size: 22px;padding-top: 0px;margin-bottom: 40px}
+.littleWinterSaleSub{letter-spacing: 2px;font-size: 22px;padding-top: 0px;margin-bottom: 40px;}
+.littleWinterSaleSub a {border-bottom: 1px solid white;color:white;}
 .shopTxt.littleWinterBannerTxt{margin-top: 34px;color:white;border-bottom:1px solid white;padding-bottom: 2px;text-transform: uppercase;margin-left:20px;margin-right: 20px;font-size: 16px}
 /*Pre Collection*/
 .pcHpTile1{padding-top: 114.488%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/1200/TOAST_Wilder_Homepage_1New.jpg')}
@@ -356,17 +358,15 @@ span.shopTxt.pcBtn {margin-top: 40px}
 .pb_downloadButtonWide {color: #969696; border: none; border: none; padding: 0 0 5px 0; width: 100%; font-size: 16px }
 .pb_downloadButtonWide:hover {color: #000000; border-bottom: 1px solid #000000}
 .pb_downloadRow {margin:30px 0 0 0}
-.littleWinterSaleBanner .littleWinterSaleBannerTile a{font-size: 22px;color: white;text-transform: uppercase}
 .littleWinterSaleBanner .littleWinterSaleBannerTile span{border-bottom: 1px solid white;padding-bottom: 5px}
 /*Little Winter build - Sale*/
 .lwsStile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw16/768/TOAST_ChristmasLanding_1.jpg')}
-div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_PreCollection_Web_Sale_1.jpg')}
-.littleWinterSaleBanner h1.mainTitle{font-size: 32px}
+div.lwsStile1.littleWinterSaleBanner{padding-top: 38.828%; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/Sale_Ends.jpg')}
 .lwsStile1 .oasTopTile.littleWinterSaleBannerTile{margin-top: 0px}
 .saleTile{text-align: center;margin-bottom: 40px}
 .saleTile span{text-transform: uppercase;letter-spacing: 1px; font-size: 14px;font-weight: 500; text-align: center; border-bottom: 1px solid black; padding-bottom: 2px}
 .saleTile img{margin-bottom: 30px}
-.littleWinterSaleSub{letter-spacing: 2px;font-size: 22px;padding-top: 0px;margin-bottom: 40px}
+.littleWinterSaleSub{letter-spacing: 2px;font-size: 22px;padding-top: 0px;margin-bottom: 40px;color: white;}
 .shopTxt.littleWinterBannerTxt{margin-top: 34px;color:white;border-bottom:1px solid white;padding-bottom: 2px;text-transform: uppercase;margin-left:20px;margin-right: 20px}
 /* Sale price */
 li.main-link.sale a {color:#db2424}
@@ -470,6 +470,9 @@ li.main-link.sale a {color:#db2424}
     .hhlTile3 .tileTitle .mainTitle{font-size: 22px;}
     .hhlTile3 .saleLink{font-size: 18px;}
     .hhlTile4 .tileTitle{top:73%;}
+    /*little winter sale*/
+    .littleWinterSaleBanner h1.mainTitle{font-size: 22px;}
+    .littleWinterSaleSub{font-size: 18px;}
 }
 @media only screen and (max-width: 768px) 
 {
@@ -520,9 +523,8 @@ li.main-link.sale a {color:#db2424}
     .aboutUsLink{margin-bottom: 30px}
 	/*Little Winter Sale - Sale */
     .littleWinterSaleBanner .tileTitleMid{top: 10%}
-    .littleWinterSaleBanner h1.mainTitle{font-size: 20px}
     .shopTxt.littleWinterBannerTxt{font-size: 14px}
-    .littleWinterSaleSub{margin: 0px; padding: 0px;font-size: 14px;letter-spacing: 1px}
+    .littleWinterSaleSub{margin: 0px; padding: 0px;letter-spacing: 1px;font-size: 18px;}
     .hhsLandingS .tileTitleMid{top: 32%}
     /* New help section */
     .helpSection .parent {background-position:  right 4px}
@@ -586,8 +588,7 @@ li.main-link.sale a {color:#db2424}
     .wnlShopBTN{font-size: 18px}
     /*Little winter sale*/
     .littleWinterSaleBanner .tileTitleMid{top: 17%}
-    .littleWinterSaleBannerTile a{display: block;padding-top: 0px;padding-bottom: 0px}
-    .littleWinterSaleSub{display: none}
+    .littleWinterSaleBannerTile a{padding-top: 0px;padding-bottom: 0px}
     .littleWinterSaleBanner .tileTitleMid{line-height: 33px}
     .hhsLandingS .tileTitleMid{top: 25%}
     /* New help section */
