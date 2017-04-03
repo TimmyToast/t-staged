@@ -67,7 +67,7 @@ $serifFont: "freight-text-pro", serif;
 .hlTile1 h1{margin-bottom: 0px; font-size: 34px}
 .hlTile1 .shopTxt {text-transform: uppercase; color: white; text-decoration: none; margin: 50px 20px; line-height: 27px; display: inline-block}
 .hlTile2 .tileTitle, .hlTile4 .tileTitle{top: 77%;}
-.hlTile3 .tileTitle .mainTitle{margin-bottom: 10px;font-size: 28px;letter-spacing: 2px;}
+.hlTile3 .tileTitle .mainTitle{margin-bottom: 10px;font-size: 24px;letter-spacing: 2px;}
 .hlTile3 .tileTitle{top: 66%;}
 .hlTile3 .saleLink{font-size: 22px;letter-spacing: 1px;}
 .signuptile {text-align: center}
@@ -84,8 +84,9 @@ $serifFont: "freight-text-pro", serif;
 .wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_SpringRefresh_Landing_5.jpg')}
 .wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_EarlySpring_WomenLanding_5.jpg')}
 .wl_7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_ChristmasRefresh_Women_6.jpg')}
-.wl_2 .tileTitle{top: 72%;}
-.wl_2 .tileTitle .mainTitle{margin-bottom: 17px;font-size: 28px;letter-spacing: 2px;}
+.wl_2 .tileTitle{top: 72.5%;}
+.wl_2 .tileTitle{top: 72.5%;}
+.wl_2 .tileTitle .mainTitle{margin-bottom: 17px;font-size: 24px;letter-spacing: 2px;}
 .wl_2 .tileTitle .midSpan{font-size: 22px;display: block;margin-bottom: 30px;letter-spacing: 2px;}
 .wl_2 .tileTitle .lowSpan{font-size: 22px;display: block;letter-spacing: 1px;}
 .wl_7 .mainTitle{font-size: 20px} 
@@ -109,8 +110,8 @@ $serifFont: "freight-text-pro", serif;
 .hhlTile2 .tileTitle{top: 77%;}
 .hhShop {margin-bottom: 5%}
 .hhlTile4 .tileTitle{top:77%}
-.hhlTile3 .tileTitle .mainTitle{margin-bottom: 10px;font-size: 28px;letter-spacing: 2px;}
-.hhlTile3 .tileTitle{top: 66%;}
+.hhlTile3 .tileTitle .mainTitle{margin-bottom: 10px;font-size: 24px;letter-spacing: 2px;}
+.hhlTile3 .tileTitle{top: 70%;}
 .hhlTile3 .saleLink{font-size: 22px;letter-spacing: 1px;}
 /* Lookbook landing tiles */
 .lb_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/400/TOAST_PreCollection_Lookbook_4.jpg')}
@@ -515,7 +516,7 @@ li.main-link.sale a {color:#db2424}
     .hhlTile3 .tileTitle{top: 66%;}
     /*Womens landing*/
     .wl_1 .tileTitle{top: 55%}
-    .wl_2 .tileTitle{top: 72%;}
+    .wl_2 .tileTitle{top: 72.5%;}
     .wl_2 .tileTitle .mainTitle{font-size: 24px;}
     .wl_2 .tileTitle .midSpan{font-size: 18px;margin-bottom: 24px;}
     .wl_2 .tileTitle .lowSpan{font-size: 18px;}
