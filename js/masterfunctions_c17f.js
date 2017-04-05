@@ -12518,7 +12518,7 @@ var helpModule = function () {
                                     for (var m = 0; m < e.Results[h].SecondaryRatingsOrder.length; m++) null !== e.Results[h].SecondaryRatings[e.Results[h].SecondaryRatingsOrder[m]].ValueLabel && a(e.Results[h].SecondaryRatings[e.Results[h].SecondaryRatingsOrder[m]], $newReview);
                                     a(e.Results[h].IsRecommended, $newReview)
                                 }
-                                e.TotalResults > i && ($("#reviewContainer").append('<a href="#" class="read-more-reviews"><span>Read more reviews</span></a>'), $(".read-more-reviews").click(function (e) {
+                                e.TotalResults > i && ($("#reviewContainer").append('<a href="#" class="read-more-reviews"><span>Read more reviews</span></a><br><br><br>'), $(".read-more-reviews").click(function (e) {
                                     e.preventDefault(), $(".product-reviews-bottom").removeClass("visuallyHidden"), $("html, body").animate({
                                         scrollTop: $(".product-reviews-bottom").offset().top - $(".main-header").height()
                                     }, 500);
@@ -12530,12 +12530,11 @@ var helpModule = function () {
                            
 
                         }
-                        console.log(e.Results)
                       
                              $.each(e.Results, function(i, item) {
                                 if (item.ClientResponses.length > 0){
-                                    $("#reviewId-"+item.Id).html("<div style='background-color:#e9e9e9; padding:16px'>"+item.ClientResponses[0].Response+"</div>")
-                                    //console.log("Item" + item.Id + " Client responses: " + item.ClientResponses[0].Response);
+                                    $("#reviewId-"+item.Id).html("<img src='//d2xfispw8k8nwr.cloudfront.net/images/review_pointer.gif' alt='Review response' style='vertical-align:bottom'/><div style='background-color:#e9e9e9; padding:16px; margin-bottom:16px'>"+item.ClientResponses[0].Response+"</div>")
+                                  
                                 }
                             });
 
