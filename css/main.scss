@@ -25,6 +25,7 @@ $serifFont: "freight-text-pro", serif;
 .swatch-selected,.selected-swatch{background-image:url(//d1kh76s6bjh8ww.cloudfront.net/img/icon-arrow-accordion-up-retina.png);background-size:30px 30px;background-repeat:no-repeat;background-position:bottom center}
 .outOfStock {padding-top: 10px}
 .topNavSale {color:#db2424}
+.category-product-items .product {padding: 0}
 /*Swatches Tom Dev */
 .category-product-items .product{margin-bottom: 188px; height: 390px}
 .textRight {text-align: right}
@@ -657,6 +658,7 @@ li.main-link.sale a {color:#db2424}
 {
 	.category-product-items .product{height: 390px; margin-bottom: 0}
 	.category-product-items .rangeproduct  {height: 390px; margin-bottom: 0}
+	.rangeproduct p { margin-top: 25px; }
     .longDescTop {top: 36%}
     .littleWinterSaleBanner .tileTitleMid{top: 5%}
     .hhsLandingS .tileTitleMid{top: 25%}
