@@ -210,6 +210,7 @@ $serifFont: "freight-text-pro", serif;
 .uk .hidden-uk{display:none}
 .tileTitle .landingTileTxt {font-size:24px; letter-spacing: 2px}
 #review-section.expanded{padding-bottom: 10px}
+.underlineLink {border-bottom: 1px solid #000000 ;}
 /*Third party catalogs checkbox and text*/		
 label[for="chkReceiveThirdPartyCatalogs"]{display:none}		
 input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
@@ -483,8 +484,6 @@ li.main-link.sale a {color:#db2424}
 .eventContent a {font-weight: 600}
 .eventTitle{font-weight: 600;margin-bottom: 0px;}
 .eventTitleTopPara{margin-top: 0px;margin-bottom: 50px;}
-
-
 
 @media only screen and (max-width: 1116px){
     .itdPane1, .itdPane2{margin-top: 50px;}
