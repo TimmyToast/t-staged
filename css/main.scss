@@ -115,13 +115,20 @@ $serifFont: "freight-text-pro", serif;
 /* Lookbook landing tiles */
 .lb_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/400/TOAST_PreCollection_Lookbook_4.jpg')}
 .lb_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/400/TOAST_EarlySpring_WomenLanding_1.jpg')}
-.lb_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_WEB_Spring_Homepage_1_New.jpg');padding-top: 74.050%}
+.lb_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/700/TOAST_WEB_Spring_Lookbook_1_New.jpg');}
+.lb_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/700/TOAST_SS17Summer_ShopLookbook_1.jpg');}
 .lb_9{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/400/TOAST_PreCollection_Lookbook_4.jpg')}
 .lb_10{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/400/TOAST_EarlySpring_WomenLanding_1.jpg')}
 .lb_1 .mainTitle, .lb_2 .mainTitle, .lb_3 .mainTitle, .lb_4 .mainTitle ,.lb_5 .mainTitle,.lb_6 .mainTitle,.lb_7 .mainTitle,.lb_8 .mainTitle,.lb_9 .mainTitle {font-size: 22px}
 .LBtileTitle {position: absolute; top:72%; width: 100%; text-align: center; color: #ffffff }
 .LBtileTitle .mainTitle {width: 100%;  font-size: 22px; float: left; letter-spacing: 3px}
 .LBtileTitle .subTitle {width: 100%;  text-transform: uppercase; padding-top: 12px; float: left; font-size: 16px; letter-spacing: 2px}
+/*New Lookbook Styles*/
+.lookbookDivider{margin-top:100px;}
+.lookBookHead{margin-top: 50px;}
+.lookbookDividerSml{margin-top:20px;}
+.lookbookContentDividerTop{margin-top: 25px;}
+.lookbookContentDividerBottom{margin-bottom: 100px;}
 /*Making of Landing*/
 .molpSubTitle{font-size: 16px; letter-spacing: 2px;text-transform:none;float: left;margin-top: 16px;width: 100%}
 .molpTileTitle{left: 10%; right:10%; width: 80%}
