@@ -57,7 +57,7 @@ $serifFont: "freight-text-pro", serif;
 .hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_Summer_Homepage_3.jpg');padding-top: 121%}
 .hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/768/TOAST_Summer_Homepage_4.jpg');padding-top: 121%}
 .hlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_OAS_Homepage_5_New.jpg');padding-top: 121%}
-.hlTile6{background-color: #e9e9e9;color:black}
+.hlTile6{background-color: #e9e9e9; color:black}
 .hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_Summer_Homepage_5.jpg');padding-top: 58.46748%}
 .hlTile7 .tileTitle .mainTitle{letter-spacing: 2px}
 .hlTile1 .tileTitleMid{top: 45%}
@@ -398,7 +398,7 @@ li.main-link.sale a {color:#db2424}
 .storeSub{font-size: 16px;margin-top: 13px;margin-bottom: 0;font-weight: 600;}
 /*Search results */
 .rangeproduct { text-align: center;}
-.rangeproduct h3 {font-size: 13px;font-weight: 400; height: 32px; letter-spacing: 1px; text-transform: uppercase;}
+.rangeproduct h3,  #searchpage_popularproducts h3 {font-size: 13px;font-weight: 400; height: 32px; letter-spacing: 1px; text-transform: uppercase; font-family: HelveticaNeueLT-LightCond,pragmatica-web-condensed,arial,sans-serif}
 .category-product-items .rangeproduct  span.sale, .product-info span.sale,  .you-may-also-like  span.sale{    text-decoration: line-through; color: #ff0000; margin-right: 5px;}
 .rangeproduct p {font-family: HelveticaNeueLT-LightCond,pragmatica-web-condensed,arial,sans-serif; font-size: 14px; margin-top: 5px; }
 .rangeproduct img {margin-bottom: 25px;}
@@ -409,6 +409,10 @@ li.main-link.sale a {color:#db2424}
 .eventContent a {font-weight: 600}
 .eventTitle{font-weight: 600;margin-bottom: 0px;}
 .eventTitleTopPara{margin-top: 0px;margin-bottom: 50px;}
+/*No JS */
+.jsError {width: 60%;text-align: center;margin-left: 20%}
+.jsError a {text-decoration: underline}
+.logo {margin: 20px 0;width: 100%;text-align: center}
 
 @media only screen and (max-width: 1116px){
     .itdPane1, .itdPane2{margin-top: 50px;}
@@ -521,6 +525,8 @@ li.main-link.sale a {color:#db2424}
     .tileTitle .subTitle {font-size: 14px;padding-top: 6px}
     /*Making Of*/
     .molp_1 .mainTitle,.molp_2 .mainTitle,.molp_3 .mainTitle,.molp_4 .mainTitle,.molp_5 .mainTitle{font-size: 24px}
+	/*No JS*/
+    .jsError {width: 80%;text-align: center;margin-left: 10%}
 }
 @media only screen and (max-width: 530px) 
 {
