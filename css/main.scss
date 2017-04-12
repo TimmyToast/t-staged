@@ -205,6 +205,7 @@ $serifFont: "freight-text-pro", serif;
 #review-section.expanded{padding-bottom: 10px}
 .underlineLink {border-bottom: 1px solid #000000;}
 .topNavSpacer {margin-bottom:20px; float:left;width:100%;}
+.us #Outdoor.nav-option, .eu #Outdoor.nav-option, .row #Outdoor.nav-option{display:none;}
 /*Third party catalogs checkbox and text*/		
 label[for="chkReceiveThirdPartyCatalogs"]{display:none}		
 input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
