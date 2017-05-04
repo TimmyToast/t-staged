@@ -204,6 +204,8 @@ $serifFont: "freight-text-pro", serif;
 .us .hidden-us{display:none}
 .eu .hidden-eu{display:none}
 .uk .hidden-uk{display:none}
+.empty-wishlist-text{font-family: $sansFont;font-weight: 500;}
+.wishlistHeader{font-weight: 500;}
 .tileTitle .landingTileTxt {font-size:24px; letter-spacing: 2px}
 #review-section.expanded{padding-bottom: 10px}
 .underlineLink {border-bottom: 1px solid #000000;}
