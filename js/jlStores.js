@@ -1,13 +1,29 @@
-var image = '//s3.eu-west-2.amazonaws.com/toast-stores-files/images/TOAST_Pin_Basic_2.png'
+var gmarkers = []
+var map = null
+var markerclusterer = null
+var image = '//s3.eu-west-2.amazonaws.com/toast-stores-files/images/JL_Pin_Basic.png'
+var markers = [
+  ['<b>Cardiff</b><br>The Hayes, Cardiff, CF10 1EG', 51.477831, -3.174090], 
+  ['<b>Cribbs Causeway</b><br>The Mall at Cribbs Causeway, Bristol, BS34 5QU', 51.525289, -2.595477], 
+  ['<b>Oxford Street</b><br>300 Oxford Street, London, W1A 1EX', 51.515216, -0.145123],
+  ['<b>Peter Jones</b><br>Sloane Square, London, SW1W 8EL', 51.492270, -0.158959],
+  ['<b>Kingston</b><br>Wood Street, Kingston upon Thames, Surrey, KT1 1TE', 51.411378, -0.306223],
+  ['<b>Victoria Centre</b><br>Victoria Centre - Nottingham, NG1 3QA', 52.955954, -1.147591],
+  ['<b>Glasgow</b><br>Buchanan Galleries, Buchanan St, Glasgow G1 2GF', 55.862977, -4.252460],
+  ['<b>High Wycombe</b><br>Cressex Centre, High Wycombe, HP12 4NW', 51.610873, -0.782570],
+  ['<b>Milton Keynes</b><br>the centre:mk, Milton Keynes, MK9 3EP', 52.044848, -0.752437],
+  ['<b>Cambridge</b><br>Grand Arcade, Cambridge, CB2 3DS', 52.203785, 0.122585],
+  ['<b>Exeter</b><br>1 Sidwell Street, Exeter, EX4 6NN', 50.725939, -3.526827],
+]
 
 function showAllStores(){
-  myLatlng = {lat: 52.627853, lng: -1.845703};
+  myLatlng = {lat: 52.440734, lng: -1.845703};
   map.setCenter(myLatlng)
   map.setZoom(7)
-  $(".resetZoomButton").hide()
+  $(".resetZoomButton").fadeOut()
 }
 
-function createMarker(latlng, name, html, URL) {
+function createMarker(latlng, name, html) {
   var contentString = html;
   var marker = new google.maps.Marker({
     position: latlng,
@@ -16,15 +32,18 @@ function createMarker(latlng, name, html, URL) {
   })
 
   google.maps.event.addListener(marker, 'click', function() {
-    window.location.href = "/shops/"+URL.toLowerCase()+".htm"
-  })
+    infowindow.setContent(contentString)
+    infowindow.open(map,marker)
+        //window.location.href = "/shops/"+contentString.toLowerCase()+".htm"
+      })
 
   map.addListener('zoom_changed', function() {
     $(".resetZoomButton").fadeIn()
   })
-  
+
   marker.addListener('mouseover', function() {
-    infowindow.setContent("<strong>"+contentString + "</strong><br>Click for more information")
+    infowindow.setContent(contentString)
+    infowindow.open(map,marker)
     infowindow.open(map, this)
   })
 
@@ -39,40 +58,28 @@ function myclick(i) {
   google.maps.event.trigger(gmarkers[i], "click")
 }
 
-$('.showMap').click(function(){
-  $('.mapHolder').html("")
-  $('.mapHolder').html('<div id="map_canvas"></div>');
-  initialize();
-  $('.closeMap').removeClass('hiddenBtn');
-  $(this).addClass('hiddenBtn');
-})
-
-$('.closeMap').click(function(){
-  $('.mapHolder').html("")
-  $('.showMap').removeClass('hiddenBtn');
-  $(this).addClass('hiddenBtn');
-})
-
 function initialize() {
 
-  gmarkers = []
-  map = null
-  markerclusterer = null
-
-  if (window.innerWidth < 769) {
-    zoomLevel = 6
-    minZoomLevel = 6
+  if (window.innerWidth < 769) { 
+    zoomLevel = 7
+    minZoomLevel = 7
   } else {
     zoomLevel = 7
     minZoomLevel =  7
   }
 
+  $(window).resize(function(){
+    if(window.innerWidth < 769){
+      zoomLevel = 7
+    }
+  });
+
   var myOptions = {
     zoom: zoomLevel,
     minZoom: minZoomLevel, 
     maxZoom: 16, 
-    center: new google.maps.LatLng(52.373713, -1.917114),
-    mapTypeControl: false,
+    center: new google.maps.LatLng(52.440734,-1.845703),
+    mapTypeControl: true,
     mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
     navigationControl: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -84,59 +91,53 @@ function initialize() {
     infowindow.close()
   })
 
-  var markers = [
-    ['Bath', 51.385655, -2.361707, 'bath'],
-    ['Brighton', 50.822316, -0.142128, 'brighton'],
-    ["London, Chelsea", 51.487054, -0.169798, 'chelsea'],
-    ["Harrogate", 53.992978, -1.544687, 'harrogate'],
-    ["Cambridge", 52.206934, 0.117964, 'cambridge'],
-    ["Cheltenham", 51.898939, -2.077045, 'cheltenham'],
-    ["London, Islington", 51.539154, -0.102360, 'islington'],
-    ["Shepton Mallet, Kilver Court", 51.190792, -2.536376, 'kilver'],
-    ["Llandeilo", 51.882577, -3.994105, 'llandeilo'],
-    ["London, Marylebone", 51.521358, -0.151707, 'Marylebone'],
-    ["London, Notting Hill", 51.514515, -0.198427, 'nottinghill'],
-    ["Oxford", 51.752331, -1.254184, 'oxford']
-  ]
-
   for (var i = 0; i < markers.length; i++) {
     var sites = markers[i]
     var lat = sites[1]
     var lng = sites[2]
-    var URL = sites[3]
     var point = new google.maps.LatLng(lat,lng)
     var id = sites[0]
+    //var country = "Some stuff"
     var html= id
-    var marker = createMarker(point,id,html,URL)
+    var marker = createMarker(point,id,html)
   }
+
 
   var mcOptions = {
     gridSize:20,
     averageCenter: true,
     styles:[{
-      url: "//s3.eu-west-2.amazonaws.com/toast-stores-files/images/TOAST_PinCluster-T-2.png",
+      url: "https://s3.eu-west-2.amazonaws.com/toast-stores-files/images/JL_PinCluster.png",
       width: 53,
       height: 53,
       fontFamily:"arial",
       textSize:15,
       textColor:"black"
+      //color: #00FF00,
     }]
   }
 
   markerCluster = new MarkerClusterer(map, gmarkers, mcOptions)  
+
 }
 
 var infowindow = new google.maps.InfoWindow(
-{
+{ 
   size: new google.maps.Size(150,50)
 })
 
 $( document ).ready(function() {
   $(".resetZoomButton").hide()
   if (window.innerWidth > 767) {
+    initialize()
     $(".storesIntro").show()
     $(".mobileIntro").hide()
   } else{
-    $(".mobileIntro").html("<div class='col-md-12'>"+$(".storesIntro").html()+"<p>Please select a store below:</p></div>")
-  }
-})
+    $('#map_canvas').css('height','0px');
+    $.each(markers, function(index, value){
+     $('.helpContentArea').css('margin-top','20px');
+     $('.helpContentArea').append('<p>' + value[0] + '</p>');
+   });
+
+  };
+});
