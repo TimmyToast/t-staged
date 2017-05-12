@@ -401,6 +401,27 @@ li.main-link.sale a {color:#db2424}
 .helpSection .helpContentArea .readMore{text-decoration: none;border-bottom: 1px solid black;padding-bottom: 2px;font-size: 16px;margin-top: 10px;font-weight:600;}
 .hiddenMap{height:0;}
 .storeSub{font-size: 16px;margin-top: 13px;margin-bottom: 0;font-weight: 600;}
+.showMap{margin: 20px 0 10px;text-align: center;text-transform: uppercase;font-size: 14px;letter-spacing: 1px;margin-bottom: 20px;border-bottom: 1px solid black;}
+.closeMap{display: block;margin: 20px 0 10px;width: 120px;padding: 8px;text-align: center;text-transform: uppercase;text-decoration: none;background: #fff;color: #000;font-size: 14px;letter-spacing: 1px;}
+.hiddenBtn{display:none;}
+.shopSection .navItems {font-size:15px; letter-spacing:1px; line-height: 14px;margin:0 0 35px 0}
+.shopSection .navItems li {margin: 8px 0;font-weight:600; }
+.shopSection .navItems a {display:block}
+.shopSection .navItems li li {font-weight:500}
+.shopSection .navItems li ul {margin: 10px}
+.shopSection .navItems ul ul {margin-bottom: 25px}
+.shopSection .subnav{display: block;}
+.shopSection .parent{background-image: none;}
+.shopSection .shopMenuOpener{background: url(https://d2xfispw8k8nwr.cloudfront.net/images/arrow.gif) no-repeat 216px 5px;    background-size: 8px 8px;}
+#map_canvas {height: 400px; width: 100%}
+#map_canvas_shop  {height: 400px; width: 100%}
+.shopSection .navItems .shopMenuOpener{display:none;}
+.shopSection .shopStoreNav{font-family: 'freight-sans-pro', sans-serif;}
+.shopSection .shopMenuOpener.activated{background-image: url("//d2xfispw8k8nwr.cloudfront.net/images/down_arrow.gif") !important;}
+.shopEventLinkA{padding-top: 20px;text-decoration: none;}
+.shopTitle{margin-top:20px; margin-bottom: 0;}
+.storeSub{margin-top: 46px;}
+.address{margin-top: 5px;}
 /*Search results */
 .rangeproduct { text-align: center;}
 .rangeproduct h3,  #searchpage_popularproducts h3 {font-size: 13px;font-weight: 400; height: 32px; letter-spacing: 1px; text-transform: uppercase; font-family: HelveticaNeueLT-LightCond,pragmatica-web-condensed,arial,sans-serif}
@@ -512,12 +533,15 @@ li.main-link.sale a {color:#db2424}
     #map_canvas {height: 600px; width: 100%}
     #map_canvas_shop  {height: 400px; width: 100%;margin-top:20px;}
     .helpSection .helpContentArea .storePage{padding:0px;}
+    .shopSection .shopStoreNav{font-family: 'freight-text-pro', serif;}
+    .shopSection .navItems .shopMenuOpener{display:block;}
+    .shopSection .navItems li li {font-weight:100}
 }
 @media only screen and (max-width: 767px) 
 {
 	.category-product-items .product, .category-product-items .rangeproduct  {height: 530px; margin-bottom: 0}
     /* New help section */
-    .helpSection .helpContentArea {min-height: 600px; margin-top: 50px}
+    .helpSection .helpContentArea {min-height: 600px; margin-top: 0}
     .helpSection li.parent.delivery {background-position: right 4px; float:left}
   	.helpSection .navItems li, .helpContentArea {float:left}
     /* In the detail */
