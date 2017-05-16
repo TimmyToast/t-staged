@@ -17,9 +17,9 @@ var markers = [
 ]
 
 function showAllStores(){
-  myLatlng = {lat: 52.440734, lng: -1.845703};
+  myLatlng = {lat: 53.520226, lng: -1.867676};
   map.setCenter(myLatlng)
-  map.setZoom(7)
+  map.setZoom(6)
   $(".resetZoomButton").fadeOut()
 }
 
@@ -61,16 +61,16 @@ function myclick(i) {
 function initialize() {
 
   if (window.innerWidth < 769) { 
-    zoomLevel = 7
-    minZoomLevel = 7
+    zoomLevel = 6
+    minZoomLevel = 6
   } else {
-    zoomLevel = 7
-    minZoomLevel =  7
+    zoomLevel = 6
+    minZoomLevel =  6
   }
 
   $(window).resize(function(){
     if(window.innerWidth < 769){
-      zoomLevel = 7
+      zoomLevel = 6
     }
   });
 
@@ -78,14 +78,14 @@ function initialize() {
     zoom: zoomLevel,
     minZoom: minZoomLevel, 
     maxZoom: 16, 
-    center: new google.maps.LatLng(52.440734,-1.845703),
+    center: new google.maps.LatLng(53.520226,-1.867676),
     mapTypeControl: true,
     mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
     navigationControl: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     styles: [{"featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{"color": "#444444"}]},{"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"}]},{"featureType": "poi", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "poi.government", "elementType": "all", "stylers": [{"visibility": "off"},{"color": "#ff0000"}]},{"featureType": "poi.park", "elementType": "all", "stylers": [{"visibility": "on"},{"color": "#ececec"}]},{"featureType": "road", "elementType": "all", "stylers": [{"saturation": -100},{"lightness": 45},{"visibility": "on"},{"color": "#dddddd"}]},{"featureType": "road", "elementType": "geometry", "stylers": [{"visibility": "off"}]},{"featureType": "road", "elementType": "geometry.stroke", "stylers": [{"weight": "0.38"}]},{"featureType": "road", "elementType": "labels", "stylers": [{"visibility": "off"}]},{"featureType": "road.highway", "elementType": "all", "stylers": [{"visibility": "off"},{"color": "#e4e4e4"}]},{"featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{"weight": "0.27"},{"visibility": "on"},{"color": "#e5e5e5"}]},{"featureType": "road.highway", "elementType": "labels", "stylers": [{"visibility": "off"}]},{"featureType": "road.highway.controlled_access", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "road.highway.controlled_access", "elementType": "labels", "stylers": [{"visibility": "off"},{"color": "#ffffff"}]},{"featureType": "road.arterial", "elementType": "all", "stylers": [{"visibility": "on"}]},{"featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{"visibility": "off"}]},{"featureType": "road.arterial", "elementType": "labels.text", "stylers": [{"visibility": "off"}]},{"featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{"visibility": "off"},{"color": "#ffffff"}]},{"featureType": "road.local", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "road.local", "elementType": "labels", "stylers": [{"visibility": "off"},{"color": "#ff0000"}]},{"featureType": "transit", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "transit", "elementType": "labels", "stylers": [{"visibility": "off"}]},{"featureType": "transit.line", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "transit.station", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "water", "elementType": "all", "stylers": [{"color": "#ffffff"},{"visibility": "on"}]}]
   }
-  map = new google.maps.Map(document.getElementById("map_canvas"), myOptions)
+  map = new google.maps.Map(document.getElementById("map_canvas_jl"), myOptions)
 
   google.maps.event.addListener(map, 'click', function() {
     infowindow.close()
@@ -111,7 +111,7 @@ function initialize() {
       width: 53,
       height: 53,
       fontFamily:"arial",
-      textSize:15,
+      textSize:1,
       textColor:"black"
       //color: #00FF00,
     }]
@@ -133,11 +133,35 @@ $( document ).ready(function() {
     $(".storesIntro").show()
     $(".mobileIntro").hide()
   } else{
-    $('#map_canvas').css('height','0px');
+    $('#map_canvas_jl').css('height','0px');
     $.each(markers, function(index, value){
      $('.helpContentArea').css('margin-top','20px');
      $('.helpContentArea').append('<p>' + value[0] + '</p>');
    });
-
   };
+        function mobileNavCtrl() {
+        $('.shopMenuOpener').parent().removeClass('parent');
+        $('.shopMenuOpener+ul').hide();
+        $('.shopMenuOpener ul li').each(function () {
+            $(this).removeClass('sansMedium').addClass('textBook');
+        })
+    }
+    $('.shopMenuOpener').click(function () {
+        $('.shopSection .shopMenuOpener').toggleClass('activated');
+        $('.shopSection .subnav').toggle();
+    });
+
+
+    if (window.innerWidth < 768) {
+        mobileNavCtrl()
+    } else if (window.innerWidth >= 768) {
+        $('.shopMenuOpener+ul').show();
+    }
+    $(window).resize(function () {
+        if (window.innerWidth < 768) {
+            mobileNavCtrl()
+        } else if (window.innerWidth >= 768) {
+            $('.shopMenuOpener+ul').show();
+        }
+    });
 });
