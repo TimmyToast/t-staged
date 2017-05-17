@@ -418,11 +418,10 @@ li.main-link.sale a {color:#db2424}
 .shopSection .shopMenuOpener{background: url("//d2xfispw8k8nwr.cloudfront.net/images/down_arrow.gif") no-repeat right !important; background-size: 8px 8px;}
 #map_canvas {height: 400px; width: 100%;margin-bottom: 30px;}
 #map_canvas_shop  {height: 600px; width: 100%}
-#map_canvas_jl{height: 500px;}
+#map_canvas_jl{height: 500px;margin-bottom: 50px;}
 .hiddenBtn{display:none;}
 img[src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"]{display: none;}
 div[title="Change map style"] {display: none;}
-img[src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {display: none;}
 .shopSection .navItems .shopMenuOpener{font-weight:600;display:none;}
 .shopSection .shopStoreNav{font-family: 'freight-sans-pro', sans-serif;}
 .shopSection .shopMenuOpener.activated{background-image: url(https://d2xfispw8k8nwr.cloudfront.net/images/arrow.gif) !important;}
