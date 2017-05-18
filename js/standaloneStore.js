@@ -1,9 +1,10 @@
 image = '//s3.eu-west-2.amazonaws.com/toast-stores-files/images/TOAST_Pin_Basic_2.png'
 
-$('.showMap').click(function(){
-  $('.mapHolder').html("")
-  $('.mapHolder').html('<div id="map_canvas"></div>')
-  initialize();
+$('.showMap').click(function(e){
+    e.preventDefault;
+    $('.mapHolder').html("")
+    $('.mapHolder').html('<div id="map_canvas"></div>')
+    initialize();
   $('.closeMap').removeClass('hiddenBtn')
   $(this).addClass('hiddenBtn')
 })
@@ -13,7 +14,12 @@ $('.closeMap').click(function(){
   $('.showMap').removeClass('hiddenBtn')
   $(this).addClass('hiddenBtn')
 });
-
+      var mobileNavCtrl = function(){
+    $('.shopMenuOpener').parent().removeClass('parent');
+    $('.shopMenuOpener+ul').hide();
+    $('.shopMenuOpener ul li').each(function(){
+    $(this).removeClass('sansMedium').addClass('textBook');
+    })}
 function initialize() {
 
   gmarkers = []
@@ -49,6 +55,8 @@ function initialize() {
     });
   }
 
+
+
   $( document ).ready(function() {
     $(".resetZoomButton").hide()
     if (window.innerWidth > 767) {
@@ -57,4 +65,22 @@ function initialize() {
     } else{
       $(".mobileIntro").html("<div class='col-md-12'>"+$(".storesIntro").html()+"<p>Please select a store below:</p></div>")
     }
+      $('.shopMenuOpener').click(function(){
+  $('.shopSection .shopMenuOpener').toggleClass('activated');
+$('.shopSection .subnav').toggle();
+});
+  
+if(window.innerWidth < 768){
+    mobileNavCtrl()
+}else if(window.innerWidth >= 768){
+        $('.shopMenuOpener+ul').show();
+    }
+     $(window).resize(function(){
+         if(window.innerWidth < 768){
+       mobileNavCtrl()
+    }else if(window.innerWidth >= 768){
+        $('.shopMenuOpener+ul').show();
+    }});
   })
+
+

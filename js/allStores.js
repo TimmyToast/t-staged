@@ -3,7 +3,7 @@ var image = '//s3.eu-west-2.amazonaws.com/toast-stores-files/images/TOAST_Pin_Ba
 function showAllStores(){
   myLatlng = {lat: 52.627853, lng: -1.845703};
   map.setCenter(myLatlng)
-  map.setZoom(7)
+  map.setZoom(winZoomLev)
   $(".resetZoomButton").hide()
 }
 
@@ -41,7 +41,7 @@ function myclick(i) {
 
 $('.showMap').click(function(){
   $('.mapHolder').html("")
-  $('.mapHolder').html('<div id="map_canvas"></div>');
+  $('.mapHolder').html('<div id="map_canvas_shop"></div>');
   initialize();
   $('.closeMap').removeClass('hiddenBtn');
   $(this).addClass('hiddenBtn');
@@ -60,9 +60,11 @@ function initialize() {
   markerclusterer = null
 
   if (window.innerWidth < 769) {
+    winZoomLev = 6
     zoomLevel = 6
     minZoomLevel = 6
   } else {
+    winZoomLev = 7
     zoomLevel = 7
     minZoomLevel =  7
   }
@@ -78,7 +80,7 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     styles: [{"featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{"color": "#444444"}]},{"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"}]},{"featureType": "poi", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "poi.government", "elementType": "all", "stylers": [{"visibility": "off"},{"color": "#ff0000"}]},{"featureType": "poi.park", "elementType": "all", "stylers": [{"visibility": "on"},{"color": "#ececec"}]},{"featureType": "road", "elementType": "all", "stylers": [{"saturation": -100},{"lightness": 45},{"visibility": "on"},{"color": "#dddddd"}]},{"featureType": "road", "elementType": "geometry", "stylers": [{"visibility": "off"}]},{"featureType": "road", "elementType": "geometry.stroke", "stylers": [{"weight": "0.38"}]},{"featureType": "road", "elementType": "labels", "stylers": [{"visibility": "off"}]},{"featureType": "road.highway", "elementType": "all", "stylers": [{"visibility": "off"},{"color": "#e4e4e4"}]},{"featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{"weight": "0.27"},{"visibility": "on"},{"color": "#e5e5e5"}]},{"featureType": "road.highway", "elementType": "labels", "stylers": [{"visibility": "off"}]},{"featureType": "road.highway.controlled_access", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "road.highway.controlled_access", "elementType": "labels", "stylers": [{"visibility": "off"},{"color": "#ffffff"}]},{"featureType": "road.arterial", "elementType": "all", "stylers": [{"visibility": "on"}]},{"featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{"visibility": "off"}]},{"featureType": "road.arterial", "elementType": "labels.text", "stylers": [{"visibility": "off"}]},{"featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{"visibility": "off"},{"color": "#ffffff"}]},{"featureType": "road.local", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "road.local", "elementType": "labels", "stylers": [{"visibility": "off"},{"color": "#ff0000"}]},{"featureType": "transit", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "transit", "elementType": "labels", "stylers": [{"visibility": "off"}]},{"featureType": "transit.line", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "transit.station", "elementType": "all", "stylers": [{"visibility": "off"}]},{"featureType": "water", "elementType": "all", "stylers": [{"color": "#ffffff"},{"visibility": "on"}]}]
   }
-  map = new google.maps.Map(document.getElementById("map_canvas"), myOptions)
+  map = new google.maps.Map(document.getElementById("map_canvas_shop"), myOptions)
 
   google.maps.event.addListener(map, 'click', function() {
     infowindow.close()
@@ -131,12 +133,38 @@ var infowindow = new google.maps.InfoWindow(
   size: new google.maps.Size(150,50)
 })
 
-$( document ).ready(function() {
-  $(".resetZoomButton").hide()
-  if (window.innerWidth > 767) {
-    $(".storesIntro").show()
-    $(".mobileIntro").hide()
-  } else{
-    $(".mobileIntro").html("<div class='col-md-12'>"+$(".storesIntro").html()+"<p>Please select a store below:</p></div>")
-  }
-})
+$(document).ready(function () {
+    $(".resetZoomButton").hide()
+    if (window.innerWidth > 767) {
+        $(".storesIntro").show()
+        $(".mobileIntro").hide()
+    } else {
+        $(".mobileIntro").html("<div class='col-md-12'>" + $(".storesIntro").html() + "<p>Please select a store below:</p></div>")
+    }
+
+    function mobileNavCtrl() {
+        $('.shopMenuOpener').parent().removeClass('parent');
+        $('.shopMenuOpener+ul').hide();
+        $('.shopMenuOpener ul li').each(function () {
+            $(this).removeClass('sansMedium').addClass('textBook');
+        })
+    }
+    $('.shopMenuOpener').click(function () {
+        $('.shopSection .shopMenuOpener').toggleClass('activated');
+        $('.shopSection .subnav').toggle();
+    });
+
+
+    if (window.innerWidth < 768) {
+        mobileNavCtrl()
+    } else if (window.innerWidth >= 768) {
+        $('.shopMenuOpener+ul').show();
+    }
+    $(window).resize(function () {
+        if (window.innerWidth < 768) {
+            mobileNavCtrl()
+        } else if (window.innerWidth >= 768) {
+            $('.shopMenuOpener+ul').show();
+        }
+    });
+});
