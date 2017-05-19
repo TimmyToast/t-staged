@@ -60,7 +60,7 @@ $serifFont: "freight-text-pro", serif;
 .hlTile7{background-image: url('https://d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_HighSummer_Homepage_5.jpg');padding-top: 58.46748%}
 .hlTile7 .tileTitle .mainTitle{letter-spacing: 2px}
 .hlTile7 .tileTitle{top: 70%;}
-.hlTile1 .tileTitleMid{top: 45%}
+.hlTile1 .tileTitleMid{top: 70%}
 .hlTile1 h1{margin-bottom: 0px; font-size: 34px}
 .hlTile1 .shopTxt {text-transform: uppercase; color: white; text-decoration: none; margin: 50px 20px; line-height: 27px; display: inline-block}
 .hlTile2 .tileTitle, .hlTile4 .tileTitle, .hlTile3 .tileTitle {top: 77%;}
@@ -377,6 +377,8 @@ li.main-link.sale a {color:#db2424}
     .workWithUs{padding-top: 25%; margin-top: 10px}
     .jdTwoLine h2{margin-top: 8%}
     .jdThreeLine h2{margin-top: 5%}
+    /*Sitemap*/
+    .smSectionTabClear{margin-bottom: 30px;}
 }
 @media only screen and (max-width: 960px){
     .hlTile3 .tileTitle .mainTitle{font-size: 22px;}
@@ -460,6 +462,8 @@ li.main-link.sale a {color:#db2424}
     .customProductHolder.cphClear{clear:both}
     .productCustomMargin{margin-top:20px}
     .itdPane1Img{margin-bottom: 50px;}
+    /*Lookbook*/
+    .lookbookDivider{margin-top:50px;}
     /*Sale landing*/
 	.saleLandingPage {padding-top: 128.29787%;background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1600/TOAST_Offer_Landing.jpg); margin-bottom: 20px; background-size: 100% 100%; }
 	.saleLandingPage .tileTitleMid {font-size: 22px}
