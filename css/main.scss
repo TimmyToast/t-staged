@@ -254,6 +254,12 @@ li.main-link.sale a {color:#db2424}
 .closeUpDesc a{font-size: 18px;text-decoration: none;color: #000;border-bottom: 1px solid black;text-transform: uppercase}
 .eventSubText{font-size: 16px;margin-top: 30px;letter-spacing: 1px}
 .formFrame{margin-top: 50px}
+.pb_openingTile {background: url(https://d117fiyhpld8f9.cloudfront.net/content-images/ss17/768/Pressbook_Cover_17.jpg); display: block; width: 100%; padding-top: 128%; margin-bottom: 20px; background-size: 100% 100%; position: relative; color:#ffffff}
+.pb_openingTileText {position: absolute; width: 100%; text-align: center; top:40%; font-size: 26px; letter-spacing: 2px; margin-bottom: 20px}
+.pb_openingTile h1 {font-size: 26px; letter-spacing: 3px; margin-bottom: 10px; color: #000000}
+.pb_openingTileLink {font-size: 16px; letter-spacing: 1px; padding-bottom: 3px; border-bottom: 1px solid #000000; color:#000000; text-transform: uppercase; }
+.pb_openingTilePara {font-size: 16px; letter-spacing: 1px; padding-bottom: 3px; color:#000000; text-transform: uppercase; width: 100%; float: left;  }
+.pb_openingText {text-align: center; width: 100%; font-size: 16px; margin: 20px 0; line-height: 24px}
 /*Sale landing*/
 .saleLandingPage {padding-top: 39.181%;background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_Web_SpringTreatSaleEnds.jpg); margin-bottom: 20px; background-size: 100% 100%}
 .saleLandingPageSub a {text-transform: uppercase; font-size: 16px; text-decoration: underline; color: white }
