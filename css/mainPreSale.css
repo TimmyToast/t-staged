@@ -2200,5 +2200,7 @@ li.main-link.sale a {
 
   #map_canvas {
     height: 360px; } }
+.disabled {
+  background-color: #dedede !important; }
 
 /*# sourceMappingURL=mainPreSale.css.map */
