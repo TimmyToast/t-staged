@@ -5,7 +5,7 @@ function triggerEmailPopup() {
     time += 3600 * 1000;
     now.setTime(time);
 
-    showQualifyer = thisHref.indexOf("Master+Group") == -1 && thisHref.indexOf("utm_medium=paidsocial&utm_campaign=highsummer") != -1 && !$.cookie("emailClickUserSummer") // ??????
+    showQualifyer = thisHref.indexOf("Master+Group") == -1 && thisHref.indexOf("utm_medium=paidsocial") != -1 && !$.cookie("emailClickUserSummer") // ??????
 
     if (showQualifyer) {
       document.cookie = "emailClickUserSummer=true; expires=" + now.toUTCString() + "; path=/";
@@ -37,7 +37,7 @@ function isEmail(email) {
 }
 
 function sendGAevent(){
- _gaq.push(["_trackEvent","New collection page email submit","Click","Sale page email submit"])
+ _gaq.push(["_trackEvent","Sale email submit","Click","Sale email submit"])
 }
 
 function submitEmail() {
@@ -45,7 +45,7 @@ function submitEmail() {
     if (isEmail(submitedEmailAddress)) {
         $.ajax({
             type: "GET",
-            url: "https://post.toast.co.uk/automated/action.jsp?action=updateRecipientNoMsg&errorPage=/automated/action.jsp&gid=750148124&uemail=apitoast@api.com&psw=Api321$123&pemail=" + submitedEmailAddress + "&self=true&namedattr_NewsletterOptin=TRUE&namedattr_SignupSource=New_Collection_Overlay",
+            url: "https://post.toast.co.uk/automated/action.jsp?action=updateRecipientNoMsg&errorPage=/automated/action.jsp&gid=750148124&uemail=apitoast@api.com&psw=Api321$123&pemail=" + submitedEmailAddress + "&self=true&namedattr_NewsletterOptin=TRUE&namedattr_SignupSource=Sale_Overlay",
             dataType: "jsonp",
             error: function(xhr, ajaxOptions, thrownError) {
                 $(".emailSender").html("<p>Thanks, we have received your email address.</p>")
@@ -58,12 +58,9 @@ function submitEmail() {
 }
 
 $(document).ready(function() {
-    $('body').prepend('<div class="elb_Lightbox"></div>')
-    setTimeout(triggerEmailPopup, 15000);
-
+    //$('body').prepend('<div class="elb_Lightbox"></div>')
+    //setTimeout(triggerEmailPopup, 15000);
 });
-
- 
   
 var _gaq = _gaq || [];
 var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
@@ -97,7 +94,20 @@ var _prum = [['id', '58a5aa15f4bab53b1f7b23c6'],
     p.src = '//rum-static.pingdom.net/prum.min.js';
     s.parentNode.insertBefore(p, s);
 })()
-                                                              
+        
+
+if (window.location.href.indexOf("shops/bath.htm") > -1) {
+    $('.shopAddress').prepend('<p style="font-weight:600">Our Bath shop will be closing at 5pm on Thursday 25th May 2017 for training, we will be reopening on Friday 26th May at 11.30am. We apologise for any inconvenience this may cause.</p>')
+}      
+
+if (window.location.href.indexOf("shops/llandeilo.htm") > -1){
+  $('.shopAddress').prepend('<p style="font-weight: 600">Our Llandeilo shop will be open 11am - 4pm  on Bank Holiday Sunday and Bank Holiday Monday 11am - 4pm. We apologise for any inconvenience this may cause.</p>')
+}
+
+$('.menu__title').on('click', function () {
+  var dropDown = $(this).parents('.menu--dropdown');
+  dropDown.toggleClass('active', !dropDown.hasClass('active'));
+});                                                     
 
 
   
