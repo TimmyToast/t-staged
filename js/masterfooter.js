@@ -97,7 +97,7 @@ var _prum = [['id', '58a5aa15f4bab53b1f7b23c6'],
         
 
 if (window.location.href.indexOf("shops/bath.htm") > -1) {
-    $('.shopAddress').prepend('<p style="font-weight:600">Our Bath shop will be closing at 5pm on Thursday 25th May 2017 for training, we will be reopening on Friday 26th May at 11.30am. We apologise for any inconvenience this may cause.</p>')
+    $('.shopAddress').prepend('<p style="font-weight:600">Our Bath shop will be closing at 5pm on Tuesday 30th May 2017 for training, we will be reopening on Wednesday 31st May at 11.30am. We apologise for any inconvenience this may cause.</p>')
 }      
 
 if (window.location.href.indexOf("shops/llandeilo.htm") > -1){
