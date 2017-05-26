@@ -58,8 +58,8 @@ function submitEmail() {
 }
 
 $(document).ready(function() {
-    //$('body').prepend('<div class="elb_Lightbox"></div>')
-    //setTimeout(triggerEmailPopup, 15000);
+    $('body').prepend('<div class="elb_Lightbox"></div>')
+    setTimeout(triggerEmailPopup, 15000);
 });
   
 var _gaq = _gaq || [];
