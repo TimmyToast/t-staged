@@ -27,17 +27,17 @@ function initialize() {
   markerclusterer = null
 
   if (window.innerWidth < 769) {
-    zoomLevel = 16
+    zoomLevel = 18
     minZoomLevel = 3
   } else {
-    zoomLevel = 16
+    zoomLevel = 18
     minZoomLevel =  3
   }
 
   var myOptions = {
     zoom: zoomLevel,
     minZoom: minZoomLevel, 
-    maxZoom: 16, 
+    maxZoom: 18, 
     center: new google.maps.LatLng(markers[1], markers[2]),
     mapTypeControl: false,
     mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -82,5 +82,4 @@ if(window.innerWidth < 768){
         $('.shopMenuOpener+ul').show();
     }});
   })
-
 

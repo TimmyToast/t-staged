@@ -3,17 +3,17 @@ var map = null
 var markerclusterer = null
 var image = '//s3.eu-west-2.amazonaws.com/toast-stores-files/images/JL_Pin_Basic.png'
 var markers = [
+  ['<b>Cambridge</b><br>Grand Arcade, Cambridge, CB2 3DS', 52.203785, 0.122585],
   ['<b>Cardiff</b><br>The Hayes, Cardiff, CF10 1EG', 51.477831, -3.174090], 
-  ['<b>Cribbs Causeway</b><br>The Mall at Cribbs Causeway, Bristol, BS34 5QU', 51.525289, -2.595477], 
-  ['<b>Oxford Street</b><br>300 Oxford Street, London, W1A 1EX', 51.515216, -0.145123],
-  ['<b>Peter Jones</b><br>Sloane Square, London, SW1W 8EL', 51.492270, -0.158959],
-  ['<b>Kingston</b><br>Wood Street, Kingston upon Thames, Surrey, KT1 1TE', 51.411378, -0.306223],
-  ['<b>Victoria Centre</b><br>Victoria Centre - Nottingham, NG1 3QA', 52.955954, -1.147591],
+  ['<b>Cribbs Causeway</b><br>The Mall at Cribbs Causeway, Bristol, BS34 5QU', 51.525289, -2.595477],
+  ['<b>Exeter</b><br>1 Sidwell Street, Exeter, EX4 6NN', 50.725939, -3.526827], 
   ['<b>Glasgow</b><br>Buchanan Galleries, Buchanan St, Glasgow G1 2GF', 55.862977, -4.252460],
   ['<b>High Wycombe</b><br>Cressex Centre, High Wycombe, HP12 4NW', 51.610873, -0.782570],
+  ['<b>Kingston</b><br>Wood Street, Kingston upon Thames, Surrey, KT1 1TE', 51.411378, -0.306223],
   ['<b>Milton Keynes</b><br>the centre:mk, Milton Keynes, MK9 3EP', 52.044848, -0.752437],
-  ['<b>Cambridge</b><br>Grand Arcade, Cambridge, CB2 3DS', 52.203785, 0.122585],
-  ['<b>Exeter</b><br>1 Sidwell Street, Exeter, EX4 6NN', 50.725939, -3.526827],
+  ['<b>Oxford Street</b><br>300 Oxford Street, London, W1A 1EX', 51.515216, -0.145123],
+  ['<b>Peter Jones</b><br>Sloane Square, London, SW1W 8EL', 51.492270, -0.158959],
+  ['<b>Victoria Centre</b><br>Victoria Centre - Nottingham, NG1 3QA', 52.955954, -1.147591],
 ]
 
 function showAllStores(){
@@ -138,30 +138,6 @@ $( document ).ready(function() {
      $('.helpContentArea').css('margin-top','20px');
      $('.helpContentArea').append('<p>' + value[0] + '</p>');
    });
+
   };
-        function mobileNavCtrl() {
-        $('.shopMenuOpener').parent().removeClass('parent');
-        $('.shopMenuOpener+ul').hide();
-        $('.shopMenuOpener ul li').each(function () {
-            $(this).removeClass('sansMedium').addClass('textBook');
-        })
-    }
-    $('.shopMenuOpener').click(function () {
-        $('.shopSection .shopMenuOpener').toggleClass('activated');
-        $('.shopSection .subnav').toggle();
-    });
-
-
-    if (window.innerWidth < 768) {
-        mobileNavCtrl()
-    } else if (window.innerWidth >= 768) {
-        $('.shopMenuOpener+ul').show();
-    }
-    $(window).resize(function () {
-        if (window.innerWidth < 768) {
-            mobileNavCtrl()
-        } else if (window.innerWidth >= 768) {
-            $('.shopMenuOpener+ul').show();
-        }
-    });
 });
