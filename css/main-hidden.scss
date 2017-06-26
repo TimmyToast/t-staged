@@ -196,6 +196,13 @@ $serifFont: "freight-text-pro", serif;
 .wothLinks{text-align: center; margin-top: 20px}
 .wothLinks a{border-bottom: 1px solid black;padding-bottom: 3px}
 .wothContent p.wothTerm{font-size: 12px; font-weight: 400}
+/*Further Markdowns*/
+.hlTile1 .fmMsgTop{font-size:22px; margin-bottom:0;  margin-top:30px; line-height: 0.5;}
+.hlTile1 .fmMsgBtm{font-size:22px; margin-top:0;}
+.swl_2 .fmMsgTopP, .shhl_2 .fmMsgTopP{font-size:22px; margin-bottom:0;  margin-top:30px; line-height: 1;letter-spacing: 1px;}
+.swl_2 .fmMsgBtmP, .shhl_2 .fmMsgBtmP{font-size:22px; margin-top:0;letter-spacing: 1px;}
+.lwsStile1 .fmMsgTopB{font-size:22px; margin-bottom:0;  margin-top:30px; line-height: 1.5;}
+.lwsStile1 .fmMsgBtmB{font-size:22px; margin-top:0;}
 /*Misc*/
 .row .hidden-row{display:none}
 .us .hidden-us{display:none}
@@ -209,6 +216,7 @@ $serifFont: "freight-text-pro", serif;
 .topNavSpacer {margin-bottom:20px; float:left;width:100%;}
 .us #Outdoor.nav-option, .eu #Outdoor.nav-option, .row #Outdoor.nav-option{display:none;}
 .basket-recommendation-price .sale, .basket-recommendation-price .saletext {font-size: 12px}
+span.basket-recommendation-title, span.basket-recommendation-price {font-size: 12px;}
 /*Third party catalogs checkbox and text*/		
 label[for="chkReceiveThirdPartyCatalogs"]{display:none}		
 input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
