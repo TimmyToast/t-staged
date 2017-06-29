@@ -52,67 +52,63 @@ $serifFont: "freight-text-pro", serif;
 .tileTitleMid {color: white;position: absolute;top: 31%;width: 100%;text-align: center;font-size: 28px;line-height: 45px; letter-spacing: 2px; left:0}
 .hlTopTile {width: 100%; display: block; width: 100%; padding-top: 62.947%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .hlTopTile .tileTitle {top: 45%}
-.hlTile1{background-image: url('https://d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_HighSummer_Homepage_Refresh_r1.jpg');padding-top:74.050%}
-.hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_HighSummer_Homepage_2_r1.jpg');padding-top: 121%}
-.hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_SummerPreSale_Landing.jpg');padding-top: 121%}
-.hlTile4{background-image: url('https://d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_HighSummer_Homepage_4.jpg');padding-top: 121%}
+.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_Homepage_1.jpg');padding-top: 100%}
+.hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_Homepage_2.jpg');padding-top: 38.828%}
+.hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PostSaleRefresh_Homepage_New.jpg');padding-top: 121%}
+.hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_SummerSeasonSale_Homepage_3a.jpg');padding-top: 121%}
 .hlTile6{background-color: #e9e9e9; color:black}
-.hlTile7{background-image: url('https://d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_HighSummer_Homepage_5.jpg');padding-top: 58.46748%}
+.hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_HighSummer_Homepage_5.jpg');padding-top: 58.46748%; float:left;}
 .hlTile7 .tileTitle .mainTitle{letter-spacing: 2px}
 .hlTile7 .tileTitle{top: 70%;}
-.hlTile1 .tileTitleMid{top: 70%}
-.hlTile1 h1{margin-bottom: 0px; font-size: 34px}
-.hlTile1 .shopTxt {text-transform: uppercase; color: white; text-decoration: none; margin: 50px 20px; line-height: 27px; display: inline-block}
-.hlTile2 .tileTitle, .hlTile4 .tileTitle {top: 77%;}
-.hlTile3 .tileTitle{top: 39%}
-.hlTile3 .tileTitle .mainTitle{margin-bottom: 10px;font-size: 34px;letter-spacing: 2px;color:#d14d18;}
-.hlTile3 .tileTitle p{color: black;font-size: 20px;font-weight: 500;letter-spacing: 1px;}
-.hlTile3 span{color: black;font-size: 16px;letter-spacing: 2px;border-bottom: 1px solid black;font-weight: 500;}
+.hlTile1 .tileTitleMid{top: 48%;color: #d14d18}
+.hlTile1 .tileTitleMid h1{margin-bottom: 75px;}
+.hlTile1 .tileTitleMid a{font-weight: 300;}
+.hlTile1 h1{margin-bottom: 0px; font-size: 32px; color: white;}
+.hlTile1 p{color: #d14d18; font-size: 24px;margin-top: 5px; letter-spacing: 1px}
+.hlTile1 .shopTxt {text-transform: uppercase; color: white; text-decoration: none; margin: 10px 20px;font-weight:300; line-height: 27px; display: inline-block; border-bottom: 1px solid white;text-align: center;font-size: 18px;letter-spacing: 1px;}
+.hlTile2 .tileTitle, .hlTile3 .tileTitle, .hlTile4 .tileTitle {top: 77%;}
+.hlTile2 .tileTitleMid h2{font-size: 32px;color: #d14d18;}
+.hlTile2 .tileTitleMid p{line-height: 10px;margin-bottom: 50px;font-size: 22px;color: black;font-weight: 500;}
+.hlTile2 .tileTitleMid span{font-size: 18px; border-bottom: 1px solid black;padding-bottom: 2px;color:black;font-weight: 500}
+.hlTile2 .tileTitleMid .saleTopP{margin-bottom: 5px;letter-spacing: 1px;}
 .lowerTileTitle{position: absolute;bottom: 15.5%;text-align: center;width: 100%;}
 .lowerTileTitle span{display: inline-block;}
 .signuptile {text-align: center}
 .signuptile p {color: black;width: 100%;top: 0px}
 .signuptile button {margin-top: 8%;border-width: 0px;font-size: 16px;color: black;letter-spacing:1px;font-family: 'freight-sans-pro', sans-serif;background: transparent}
 /*Women's Landing Page*/
-.wl_1 .tileTitle h2{padding-bottom: 25px}
-.wl_1 .tileTitle span{font-size: 16px; letter-spacing: 2px;border-bottom: 1px solid white;padding-bottom:0px}
-.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_HighSummer_Landing_1_Refresh.jpg')}
+.wl_1 .tileTitle h2{padding-bottom: 25px;font-size: 22px;}
+.wl_1 .tileTitle span{font-size: 18px;font-weight: 300; letter-spacing: 2px;border-bottom: 1px solid white;padding-bottom:0px}
+.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_PreCollection_LandingWomen_New.jpg')}
 .wl_1 .sansBook{font-size:16px;padding-top: 12px;letter-spacing: 2px}
-.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_SummerPreSale_Landing.jpg');}
-.wl_3{background-image: url("//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_HighSummer_Landing_3.jpg");}
-.wl_4{background-image: url("//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_HighSummer_Landing_4.jpg")}
-.wl_5{background-image: url("//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_HighSummer_Landing_5.jpg")}
-.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/701/TOAST_HighSummer_Landing_6_New.jpg')}
-.wl_2 .tileTitle{top: 60%}
-.wl_2 .tileTitle .mainTitle{margin-bottom: 17px;font-size: 34px;letter-spacing: 2px;color: #d14d18;}
-.wl_2 p{font-size: 22px;color: black;font-weight: 500;margin-bottom: 80px}
-.wl_2 span{color: black; font-weight: 500; border-bottom: 1px solid black;line-height:20px;font-size: 16px;display: inline-block;letter-spacing: 2px;}
+.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PostSaleRefresh_Women_1.jpg');}
+.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingWomen_4.jpg');}
+.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingWomen_1.jpg')}
+.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingWomen_3.jpg')}
+.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingWomen_2.jpg')}
 .wl_6 .shopTxt{text-transform: uppercase;font-size: 18px;line-height: 60px;letter-spacing: 2px}
 .wl_6 .tileTitle{top: 77%}
 .wl_5 .shopTxt .pcBtn{line-height: 70px}
 /*house and home landing page*/
-.hhlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_HighSummer_HouseandHome_1.jpg');padding-top: 100%; margin-bottom: 20px}
-.hhlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_HighSummer_HouseandHome_2_Refresh.jpg'); margin-bottom: 20px;padding-top:121%}
+.hhlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_SummerPreSale_HH_refresh_1.jpg');padding-top: 100%; margin-bottom: 20px}
+.hhlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingHouseHome_4.jpg'); margin-bottom: 20px;padding-top:121%}
+.hhlTile2 .shopLink {display: inline-block;border-bottom: 1px solid white;}
 .hhlTile2 .sansBook{font-size:16px;padding-top: 16px;letter-spacing: 2px}
 .hhlTile2 .tileTitle span{display: inline-block;border-bottom: 1px solid white;}
-.hhlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_SummerPreSale_Landing.jpg'); margin-bottom: 20px;padding-top:121%}
+.hhlTile3{background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_PreCollection_LandingHouseHome_New1.jpg); margin-bottom: 20px;padding-top:121%}
 .hhlTile3 .sansBook{font-size:16px;padding-top: 16px;letter-spacing: 2px}
-.hhlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_HighSummer_HouseandHome_4.jpg'); margin-bottom: 20px;padding-top:121%}
+.hhlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_HighSummer_HouseandHome_4d.jpg'); margin-bottom: 20px;padding-top:121%}
 .hhTopTile {width: 100%; display: block; width: 100%; padding-top: 62.966%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .hhlTile1 .tileTitle {top: 45%;line-height: 45px}
 .hhlTile1 .tileTitle .landingTileTxt{font-size: 28px; margin-bottom: 25px}
 .hhlTile1 .tileTitle .mainTitle{font-size: 34px; margin-bottom: 40px}
-.hhlTile1 .shopTxt, .hlTile1 .shopTxt {text-align: center;font-size: 18px;letter-spacing: 1px; border-bottom: 1px solid #ffffff}
+.hhlTile1 .shopTxt {text-align: center;font-size: 18px;letter-spacing: 1px; border-bottom: 1px solid #d14d18}
 .hhlTile1 .shopTxt{text-transform: uppercase}
 .hhlTile2 .tileTitle{top: 77%;}
 .hhShop {margin-bottom: 5%}
 .hhlTile4 .tileTitle{top:77%}
-.hhlTile3 .tileTitle{top: 39%}
-.hhlTile3 .tileTitle .mainTitle{margin-bottom: 10px;font-size: 34px;letter-spacing: 2px;color:#d14d18;}
-.hhlTile3 .tileTitle p{color: black;font-size: 20px;font-weight: 500;letter-spacing: 1px;}
-.hhlTile3 span{color: black;font-size: 16px;letter-spacing: 2px;border-bottom: 1px solid black;font-weight: 500;display: inline-block;margin-top: 45px;}
 /* Lookbook landing tiles */
-.lb_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/400/TOAST_PreCollection_Lookbook_4.jpg')}
+.lb_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_PreCollection_LookbookLandingPageTile.jpg');padding-top: 74.050%}
 .lb_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/400/TOAST_EarlySpring_WomenLanding_1.jpg')}
 .lb_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/700/TOAST_WEB_Spring_Lookbook_1_New.jpg');}
 .lb_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/lookbook/700/TOAST_SS17Summer_ShopLookbook_1.jpg');}
@@ -175,7 +171,7 @@ $serifFont: "freight-text-pro", serif;
 .aboutUsDeliveryText {font-size: 16px; text-align: center; margin-top: 40px; background-color: #e9e9e9; padding: 20px 20px 0 20px; width: 94%; margin: 0 3%; display: block; line-height: 12px; float: left}
 .aboutUsFooterText {margin-top: 30px; margin-bottom: 60px; font-size: 17px; text-align: center; float: left; line-height: 26px}
 .aboutUsText {font-size: 17px; text-align: center; margin-top: 60px; float: left; line-height: 26px}
-.tileTitle .mainTitle {width: 100%;  font-size: 24px; float: left; letter-spacing: 2px}
+.tileTitle .mainTitle {width: 100%;  font-size: 22px; float: left; letter-spacing: 2px}
 .tileTitle .subTitle {width: 100%;  text-transform: uppercase; padding-top: 12px; float: left; font-size: 16px; letter-spacing: 2px}
 .cText .aboutUsLinks{    border-bottom: 1px solid #000000;padding-bottom: 5px}
 /*Work with us*/
@@ -193,7 +189,7 @@ $serifFont: "freight-text-pro", serif;
 .jdThreeLine h2{ margin-top: 7%}
 .jdTwoLine h2{margin-top: 11%}
 .jobTile{text-align: center;background-color: #e9e9e9;min-height: 200px !important}
-.office{font-size:18px;text-transform: uppercase; margin: 20px;margin-top: 30px;display: inline-block}
+.office{font-size:22px;letter-spacing: 1px;margin: 20px;margin-top: 30px;display: inline-block}
 .wwuTile{border-bottom: 2px solid black;letter-spacing: 2px;text-align: center;font-weight: 600;margin-bottom: 60px}
 .wwuImageTile{margin-top: 20px;margin-bottom: 10px}
 /*Store Events WOTH*/
@@ -206,6 +202,21 @@ $serifFont: "freight-text-pro", serif;
 .wothLinks{text-align: center; margin-top: 20px}
 .wothLinks a{border-bottom: 1px solid black;padding-bottom: 3px}
 .wothContent p.wothTerm{font-size: 12px; font-weight: 400}
+/*Further Markdowns*/
+.hlTile1 .fmMsgTop{font-size:22px; margin-bottom:0;  margin-top:30px; line-height: 0.5;}
+.hlTile1 .fmMsgBtm{font-size:22px; margin-top:0;}
+.swl_2 .fmMsgTopP, .shhl_2 .fmMsgTopP{font-size:22px; margin-bottom:0;  margin-top:30px; line-height: 1;letter-spacing: 1px;}
+.swl_2 .fmMsgBtmP, .shhl_2 .fmMsgBtmP{font-size:22px; margin-top:0;letter-spacing: 1px;}
+.swl_2 .fmMsgTopP, .swl_2 .fmMsgBtmP, .shhl_2 .fmMsgTopP, .shhl_2 .fmMsgBtmP{color: black;}
+.swl_2 .fmMsgTopP{font-weight: 500;}
+.swl_2 .fmMsgBtmP{font-weight: 500;}
+.swl_2 .tileTitle h2{font-size: 32px;letter-spacing: 1px;}
+.shhl_2 .fmMsgTopP{font-weight: 500;}
+.shhl_2 .fmMsgBtmP{font-weight: 500;}
+.lwsStile1 .fmMsgTopB{font-size:22px; margin-bottom:0;  margin-top:30px; line-height: 1.5;}
+.lwsStile1 .fmMsgBtmB{font-size:22px; margin-top:0;}
+.lwsStile1.saleTileMain .fmMsgTopB.saleTileCustText{margin-top: 20px;}
+.lwsStile1.saleTileMain .tileTitleMid{top: 27%;}
 /*Misc*/
 .row .hidden-row{display:none}
 .us .hidden-us{display:none}
@@ -213,11 +224,16 @@ $serifFont: "freight-text-pro", serif;
 .uk .hidden-uk{display:none}
 .empty-wishlist-text{font-family: $sansFont;font-weight: 500;}
 .wishlistHeader{font-weight: 500;}
-.tileTitle .landingTileTxt {font-size:24px; letter-spacing: 2px}
+.tileTitle .landingTileTxt {font-size:22px; letter-spacing: 2px}
 #review-section.expanded{padding-bottom: 10px}
 .underlineLink {border-bottom: 1px solid #000000;}
 .topNavSpacer {margin-bottom:20px; float:left;width:100%;}
 .us #Outdoor.nav-option, .eu #Outdoor.nav-option, .row #Outdoor.nav-option{display:none;}
+.basket-recommendation-price .sale, .basket-recommendation-price .saletext {font-size: 12px}
+span.basket-recommendation-title, span.basket-recommendation-price {font-size: 12px;}
+/*Lookbook*/
+.relcol{position: relative; display: block;padding-top: 70.60%;left: 54%;}
+.customImgPlc{position: absolute; bottom: 0;}
 /*Third party catalogs checkbox and text*/		
 label[for="chkReceiveThirdPartyCatalogs"]{display:none}		
 input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
@@ -251,8 +267,8 @@ li.main-link.sale a {color:#db2424}
 .unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}
 .unslider-fade .unslider-wrap li.unslider-active{z-index:10}
 .unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}
-.unslider-arrow{position:absolute; left: 20px;top: 40% ; z-index:2;cursor:pointer; background: url(https://d117fiyhpld8f9.cloudfront.net/content-images/pressbook/1000/TOAST_Arrows.png);width: 17px; height: 25px; display: block; background-size:  35px 25px}
-.unslider-arrow.next {position: absolute; top: 40%; left: 100% ; z-index: 10; background: url(https://d117fiyhpld8f9.cloudfront.net/content-images/pressbook/1000/TOAST_Arrows.png); width: 17px; height: 25px; display: block; background-size:  35px 25px; background-position: 17px 0; margin-left: -40px}
+.unslider-arrow{position:absolute; left: 20px;top: 40% ; z-index:2;cursor:pointer; background: url(//d117fiyhpld8f9.cloudfront.net/content-images/pressbook/1000/TOAST_Arrows.png);width: 17px; height: 25px; display: block; background-size:  35px 25px}
+.unslider-arrow.next {position: absolute; top: 40%; left: 100% ; z-index: 10; background: url(//d117fiyhpld8f9.cloudfront.net/content-images/pressbook/1000/TOAST_Arrows.png); width: 17px; height: 25px; display: block; background-size:  35px 25px; background-position: 17px 0; margin-left: -40px}
 .unslider-nav {display: none}
 .landingBSIntro h1.storeEventsHeading{letter-spacing: 1px}
 .closeUpDesc{text-align: center;margin-top: 40px}
@@ -261,7 +277,7 @@ li.main-link.sale a {color:#db2424}
 .closeUpDesc a{font-size: 18px;text-decoration: none;color: #000;border-bottom: 1px solid black;text-transform: uppercase}
 .eventSubText{font-size: 16px;margin-top: 30px;letter-spacing: 1px}
 .formFrame{margin-top: 50px}
-.pb_openingTile {background: url(https://d117fiyhpld8f9.cloudfront.net/content-images/ss17/768/Pressbook_Cover_17.jpg); display: block; width: 100%; padding-top: 128%; margin-bottom: 20px; background-size: 100% 100%; position: relative; color:#ffffff}
+.pb_openingTile {background: url(//d117fiyhpld8f9.cloudfront.net/content-images/ss17/768/Pressbook_Cover_17.jpg); display: block; width: 100%; padding-top: 128%; margin-bottom: 20px; background-size: 100% 100%; position: relative; color:#ffffff}
 .pb_openingTileText {position: absolute; width: 100%; text-align: center; top:40%; font-size: 26px; letter-spacing: 2px; margin-bottom: 20px}
 .pb_openingTile h1 {font-size: 26px; letter-spacing: 3px; margin-bottom: 10px; color: #000000}
 .pb_openingTileLink {font-size: 16px; letter-spacing: 1px; padding-bottom: 3px; border-bottom: 1px solid #000000; color:#000000; text-transform: uppercase; }
@@ -274,14 +290,38 @@ li.main-link.sale a {color:#db2424}
 .saleHoldingBanner p{font-size: 22px;color: black;margin-top: 5px;font-weight: 500;}
 .saleHoldingBanner span{font-size: 18px;font-weight: 500;border-bottom: 1px solid black;margin-top: 50px;display: inline-block;line-height: 28px;}
 .saleLandingPage {padding-top: 39.181%;background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_Web_SpringTreatSaleEnds.jpg); margin-bottom: 20px; background-size: 100% 100%}
-.saleLandingPageSub a {text-transform: uppercase; font-size: 16px; text-decoration: underline; color: white }
+.saleLandingPageSub a {text-transform: uppercase; font-size: 16px; text-decoration: underline; color: white}
+/* Sale landing pages */
+.swl_2{background-image: url('http://d117fiyhpld8f9.cloudfront.net/content-images/ss17/701/TOAST_SummerSeasonSale_WomenLanding.jpg');}
+.swl_2 .tileTitle{top: 36%; color: #d14d18}
+.swl_2 .mainTitle{font-size: 32px; margin-bottom: 10px;}
+.swl_2 p{font-size: 24px;}
+.swl_2 .shopTxt{font-size: 18px;border-bottom: 1px solid black;display: inline-block;margin-top: 39px; letter-spacing: 1px;color: black;font-weight: 500;}
+.shhl_1{background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_PreCollection_LandingHouseHome_1.jpg); padding-top: 128%; margin-bottom: 20px}
+.shhl_1 .tileTitle{top: 40%;line-height: 45px}
+.shhl_1 .tileTitle .mainTitle{margin-bottom: 9px;font-size: 32px;}
+.shhl_1 .tileTitle .landingTileTxt{font-size: 28px; margin-bottom: 25px}
+.shhl_1 .tileTitle p{font-size: 22px;line-height: 33.6px;letter-spacing: 2px;margin-bottom: 47px;}
+.shhl_1 .shopTxt {text-align: center;font-size: 18px;letter-spacing: 1px; border-bottom: 1px solid #ffffff;text-transform: uppercase;font-weight: 300;}
+.shhl_2{background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_PreCollection_LandingHouseHome_2.jpg)}
+.shhl_2 .tileTitle{top: 38%; color: #d14d18}
+.shhl_2 .mainTitle{font-size: 32px; margin-bottom: 10px;}
+.shhl_2 p{font-size: 24px;}
+.shhl_2 .shopTxt{font-size: 18px;border-bottom: 1px solid black;display: inline-block;margin-top: 30px; letter-spacing: 1px;color: black;font-weight: 500;}
+.bannerTile{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_SummerSeasonSale_SaleLanding.jpg');padding-top: 38.33%;}
+.bannerTile h1{color: #d14d18;font-size: 34px; line-height: 44px}
+.bannerTile p{font-size: 24px;line-height: 24px;color: #d14d18; letter-spacing: 1px}
+.bannerTile a{color: #d14d18;font-size: 18px;margin: 40px 10px 10px 10px;display: inline-block;border-bottom: 1px solid #d14d18;padding-bottom: 1px;}
+.bannerTile .tileTitleMid{line-height: 32px;}
+.saleTile{text-align: center;margin-bottom:20px; float:left;}
+.saleTile p{font-size: 16px;margin-top: 20px;letter-spacing: 1px; border-bottom: 1px solid black;display: inline-block;font-weight: 400; text-transform: uppercase;} 
 /* New help section */
 .helpSection .subnav {display: none}
 .helpSection .visible {display: block}
 .helpSection .margintop {margin-top: 30px}
 .helpSection .navItems {font-size:15px; letter-spacing:1px; line-height: 14px;margin:0 0 35px 0}
 .helpSection .navItems>ul{padding-bottom:20px;}
-.helpSection .navItems li {margin: 8px 0;font-weight:600; }
+.helpSection .navItems li {margin: 8px 0;font-weight:500;}
 .helpSection .navItems a {display:block}
 .helpSection .navItems li li {font-weight:100}
 .helpSection .navItems li ul {margin: 10px}
@@ -290,7 +330,7 @@ li.main-link.sale a {color:#db2424}
 .helpSection .helpContentArea h1, .mobileIntro h1 {text-transform: uppercase; font-family: $sansFont; font-weight:600; font-size: 16px; letter-spacing: 1px; }
 .helpSection .helpContentArea h2 {width: 100%; border-bottom: 1px solid #b4b4b4; text-transform: uppercase; margin: 30px 0 0 0; font-family: $sansFont; font-weight:400; font-size: 16px; letter-spacing: 1px}
 .helpSection .helpContentArea h3{font-size: 16px;font-weight: 600;}
-.helpSection .helpContentArea p, .helpContentArea li, .mobileIntro p {font-size: 16px}
+.helpSection .helpContentArea p, .helpContentArea li, .mobileIntro p {font-size: 16px; letter-spacing: 0}
 .helpSection .helpContentArea ul {margin: 0 0 0 20px}
 .helpSection .helpContentArea li {list-style: disc}
 .helpSection .helpContentArea table {margin: 20px 0}
@@ -305,7 +345,7 @@ li.main-link.sale a {color:#db2424}
 .helpSection .active {color: #aaaaaa}
 .helpSection .errorText {font-size:15px}
 .helpSection .helpTitleItem {margin:20px 0 10px 0; font-size: 16px}
-.helpSection .parent {background: url(https://d2xfispw8k8nwr.cloudfront.net/images/arrow.gif) no-repeat 216px 5px; background-size: 8px 8px}
+.helpSection .parent {background: url(//d2xfispw8k8nwr.cloudfront.net/images/arrow.gif) no-repeat 216px 5px; background-size: 8px 8px}
 /* In the detail */
 .customProductHolder{margin-top: 50px;text-align: center;font-size: 14px;line-height: 16px}
 .customProductHolder img{margin: 0 auto}
@@ -345,6 +385,62 @@ li.main-link.sale a {color:#db2424}
 .elb_Lightbox input[type=submit] {color: #fff;font-size: 12px;padding: 10px; margin: 10px auto; background-color: #323236;   text-transform: uppercase;border: none; width:120px; position: relative; top:1px; }
 .hiddenContent{display:none;}
 .submitErrors p, .emailSender label {font-size: 16px; margin:0; padding:0;}
+/*New store pages*/
+#map_canvas {height: 600px; width: 100%}
+#map_canvas_shop  {height: 400px; width: 100%}
+.storePageContent{margin-top:16px;margin-bottom: 50px;padding:0;float:left}
+.helpSection .storePageContent .shopTitle{font-family:$serifFont; font-weight:600;text-transform: none;}
+.helpSection .storePageContent .openingHours h3{text-transform: uppercase;}
+.storeContentMain{margin-bottom: 50px;}
+.storesIntro p{margin-bottom: 30px;}
+.textNoTop{margin-top: 0;}
+.textNoBottom{margin-bottom: 0;}
+.helpSection .helpContentArea .storePageContent a{text-decoration: none;}
+.storePageContent .openingHours p{margin-top: 0; letter-spacing: 0}
+.helpSection .helpContentArea .storePageContent .storeSub{font-weight: 400;}
+.helpSection .mapLink.resetZoomButton{text-decoration: none;display: block;width: 120px;padding: 8px;text-align: center;text-transform: uppercase;font-size: 14px;letter-spacing: 1px;}
+.moreStoreInfo{clear: both;margin-top: 30px;}
+.shopEventLink{margin-top: 30px;}
+.helpSection .helpContentArea .readMore{ margin: 20px 0 10px;text-align: center; text-transform: uppercase;font-size: 16px;letter-spacing: 1px; margin-bottom: 20px; border-bottom: 1px solid black;}
+.hiddenMap{height:0;}
+.storeSub{font-size: 16px;margin-top: 13px;margin-bottom: 0;font-weight: 600;}
+.showMap{margin: 20px 0 10px;text-align: center;text-transform: uppercase;font-size: 16px;letter-spacing: 1px;margin-bottom: 20px;border-bottom: 1px solid black;}
+.closeMap{display: inline-block;width: 120px;padding-bottom: 8px;text-align: left;text-transform: uppercase;text-decoration: none;background: #fff;color: #000;font-size: 16px;letter-spacing: 1px;}
+.hiddenBtn{display:none;}
+.storePageContent .shopEventpgTop{margin-top: 0}
+.helpSection .shopSection{margin-top: 26px}
+.shopSection .navItems {font-size:15px; letter-spacing:1px; line-height: 14px;margin:0 0 35px 0}
+.shopSection .navItems li {margin: 8px 0;font-weight:600; }
+.shopSection .navItems a {display:block}
+.shopSection .navItems li li {font-weight:500}
+.shopSection .navItems li ul {margin: 10px; margin-left: 0px;}
+.shopSection .navItems ul ul {margin-bottom: 25px}
+.shopSection .subnav{display: block;}
+.shopSection .parent{background-image: none;}
+.shopSection .shopMenuOpener{background: url("//d2xfispw8k8nwr.cloudfront.net/images/arrow.gif") no-repeat right; background-size: 8px 8px;}
+#map_canvas {height: 400px; width: 100%;margin-bottom: 30px;}
+#map_canvas_shop  {height: 600px; width: 100%}
+#map_canvas_jl{height: 500px;margin-bottom: 50px;}
+.hiddenBtn{display:none;}
+img[src="//maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"]{display: none;}
+div[title="Change map style"] {display: none;}
+.shopSection .navItems .shopMenuOpener{font-weight:600;display:none;}
+.shopSection .shopStoreNav{font-family: 'freight-sans-pro', sans-serif;}
+.shopSection .shopMenuOpener.activated{background-image: url('//d2xfispw8k8nwr.cloudfront.net/images/down_arrow.gif')}
+.shopEventLinkA{padding-top: 20px;text-decoration: none;}
+.shopTitle{margin-top:20px; margin-bottom: 0;}
+.storeSub{margin-top: 16px;}
+.address{margin-top: 0;font-weight: 600;}
+.storeMapBtnHolder{padding-left: 0; padding-right: 0;}
+.resetZoomButton{display:inline-block;}
+.helpSection .helpContentArea .closeMap, .helpSection .helpContentArea .showMap{text-decoration: none;}
+.shopHeaderImg{padding-left: 0;padding-right: 0;margin-top: 20px;margin-bottom: 50px;}
+.shopTitle.kilverTitle{margin-top: 0;}
+.shopsPage .helpSection #breadcrumb{margin-top: 7px;}
+.helpSection .shopSection .helpContentArea .storeAbout h2{border-bottom: 0;}
+.helpSection .shopSection .helpContentArea 
+.shopEventsSect h2{border-bottom: 0;}
+.moreInfoContent, .shopEventsSectContent{margin-top:0; letter-spacing: 0}
 /*Search results */
 .rangeproduct { text-align: center;}
 .rangeproduct h3,  #searchpage_popularproducts h3 {font-size: 13px;font-weight: 400; height: 32px; letter-spacing: 1px; text-transform: uppercase; font-family: HelveticaNeueLT-LightCond,pragmatica-web-condensed,arial,sans-serif}
@@ -374,7 +470,8 @@ li.main-link.sale a {color:#db2424}
 .competition_twitter{display:inline;top:4px;position:relative;}
 .hayThanks{margin-bottom:30px;}
 .hayTag{margin-top: 40px;}
-
+/*Lookbook Container*/
+.lookBookContainer{padding-left: 40px;padding-right: 40px;}
 @media only screen and (max-width: 1116px){
     .itdPane1, .itdPane2{margin-top: 50px;}
 }
@@ -393,34 +490,29 @@ li.main-link.sale a {color:#db2424}
     .smSectionTabClear{margin-bottom: 30px;}
 }
 @media only screen and (max-width: 960px){
-    .hlTile3 .tileTitle .mainTitle{font-size: 22px;}
     .hhlTile2 .tileTitle{top:73%;}
     .hhlTile3 .tileTitle .mainTitle{font-size: 22px;}
     .hhlTile4 .tileTitle{top:73%;}
 
 }
-@media only screen and (max-width: 920px){
-    .hlTile3 .tileTitle .mainTitle{font-size: 28px;}
-    .hlTile3 p{font-size: 18px;}
-    .hlTile3 .tileTitle{top: 33%}
-    .hlTile3 span{margin-top: 40px;}
-    .wl_2 .tileTitle{top: 52%}
-    .hhlTile3 .tileTitle .mainTitle{font-size: 28px;}
-    .hhlTile3 p{font-size: 18px;}
-    .hhlTile3 .tileTitle{top: 33%}
-    .hhlTile3 span{margin-top: 40px;}
-}
+ @media only screen and (max-width: 880px){
+  .hlTile2 .tileTitleMid{top: 36%}
+  .lwsStile1.saleTileMain .tileTitleMid{top: 14%;}
+  }
+
 @media only screen and (max-width: 768px) 
 {
+
 	.productSwatch { margin: 3px 2px 0px 2px; }
 	.category-product-items .product, .category-product-items .rangeproduct  {height: 440px; margin-bottom: 0}
     /*Homepage*/
-    .hlTile1{background-image: url('https://d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_HighSummer_Homepage_Refresh_Tablet_r1.jpg');padding-top: 109.5%}
+    .hlTile1 .tileTitleMid{top: 40%;}
+    .hlTile1 .tileTitleMid h1{margin-bottom: 20px;}
     .hlTile1 h1{font-size: 28px;margin-bottom: 20px}
     .hlTile1 a{display: block}
     .hlTile1 .shopTxt{font-size: 16px;margin: 10px}
-    .hlTile1 .tileTitleMid{top: 70%;}
-    .hlTile3 .mainTitle{font-size: 24px;}
+    .hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/700/TOAST_PreCollection_LandingHouseHome_2.jpg');padding-top:128%;}
+    .hlTile2 .tileTitleMid h2{font-size: 28px;}
     .lowerTileTitle{bottom: 40%;top: 58%}
     .hhlTile3 .tileTitle .mainTitle{font-size: 22px;}
     .hlTile7 .tileTitle{top: 65%}
@@ -429,10 +521,6 @@ li.main-link.sale a {color:#db2424}
     .hhlTile1 .shopTxt{font-size: 16px}
     /*Womens landing*/
     .wl_1 .tileTitle{top: 55%}
-    .wl_2 .tileTitle{top: 42%}
-    .wl_2 .tileTitle .mainTitle{font-size: 28px;}
-    .wl_2 p{font-size: 20px;}
-    .wl_2 span{font-size: 16px;}
     /*Making of Landing*/
     .molpTileTitle {top: 70%}
     .molp_2 {margin-bottom: 20px}
@@ -471,15 +559,17 @@ li.main-link.sale a {color:#db2424}
     #map_canvas_shop  {height: 400px; width: 100%;margin-top:20px;}
     .helpSection .helpContentArea .storePage{padding:0px;}
     .shopSection .shopStoreNav{font-family: 'freight-text-pro', serif;}
-    img[src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"]{display: block;}
+    img[src="//maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"]{display: block;}
     .address{margin-bottom: 30px;}
     .storeSub{margin-top: 30px;}
+    .swl_2 .tileTitle h2{font-size: 28px;}
 }
 @media only screen and (max-width: 767px) 
 {
 	.category-product-items .product, .category-product-items .rangeproduct  {height: 530px; margin-bottom: 0}
     /* New help section */
-    .helpSection .helpContentArea {min-height: 600px; margin-top: 0}
+    .helpSection .helpContentArea {min-height: 600px; margin-top: 50px}
+    .helpSection .shopSection .helpContentArea{margin-top: 0px;}
     .helpSection li.parent.delivery {background-position: right 4px; float:left}
   	.helpSection .navItems li, .helpContentArea {float:left}
     /* In the detail */
@@ -488,7 +578,11 @@ li.main-link.sale a {color:#db2424}
     .itdPane1Img{margin-bottom: 50px;}
     /*Lookbook*/
     .lookbookDivider{margin-top:50px;}
-    /*Sale landing*/
+     /* Sale landing pages */
+    .shhl_1 .tileTitle .mainTitle{font-size: 28px; margin-bottom: 15px;}
+    .shhl_1 .shopTxt{font-size: 16px}
+    .swl_2 .tileTitle{top: 36%}
+    .bannerTile{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1200/TOAST_SummerSeasonSale_Homepage_Tablet.jpg');padding-top: 109.5%;}
 	.saleLandingPage {padding-top: 128.29787%;background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1600/TOAST_Offer_Landing.jpg); margin-bottom: 20px; background-size: 100% 100%; }
 	.saleLandingPage .tileTitleMid {font-size: 22px}
 	.saleLandingPageSub a {text-transform: uppercase; font-size: 14px; text-decoration: underline; color: white}
@@ -497,14 +591,20 @@ li.main-link.sale a {color:#db2424}
     .size-fit-container .cross-size-guide .sizes .size-row span:nth-child(even){background-color: transparent};
     .size-fit-container .cross-size-guide .sizes .size-row span:nth-child(odd){background-color: #e9e9e9};
     /*Store Page*/
-    .shopSection .navItems .shopMenuOpener{display:block;}
+    .shopSection .navItems .shopMenuOpener{display:block;font-weight: 500}
     .shopSection .subnav{display:none}
     .shopSection .navItems li li {font-weight:100}
+    .shopSection .navItems li ul{margin: 10px;}
     #map_canvas{height:500px;}
     .mapHolder{margin-bottom: 20px;}
-    .storeAbout{clear:both};
-    .helpContentArea .storeAbout h2{margin: 0px;}
+    .storeAbout{clear:both}
+    .helpSection .shopSection .helpContentArea .shopEventsSect h2{border-bottom: 0;}
     .helpSection .shopSection .navItems li.delivery{margin-bottom: 30px;}
+    /*Misc*/
+    .lwsStile1.saleTileMain .tileTitleMid{top: 27%;}
+    /*Lookbook*/
+    .relcol{padding-top: 0;left: 0}
+    .customImgPlc{position: relative;bottom: auto;}
 }
 @media only screen and (max-width: 700px) 
 {
@@ -514,13 +614,14 @@ li.main-link.sale a {color:#db2424}
     /*House and Home*/
     .hhlTile1 .tileTitle {top: 57%}
     /*Misc*/
-    .tileTitle .mainTitle {font-size: 24px}
+    .tileTitle .mainTitle {font-size: 22px}
     .tileTitle .subTitle {font-size: 14px;padding-top: 6px}
     .delivery_disclaimer{margin-bottom:20px;}
     /*Making Of*/
     .molp_1 .mainTitle,.molp_2 .mainTitle,.molp_3 .mainTitle,.molp_4 .mainTitle,.molp_5 .mainTitle,.molp_6 .mainTitle{font-size: 24px}
 	/*No JS*/
     .jsError {width: 80%;text-align: center;margin-left: 10%}
+    .shhl_2 .tileTitle .mainTitle{font-size: 28px;}
 }
 @media only screen and (max-width: 530px) 
 {
@@ -528,7 +629,6 @@ li.main-link.sale a {color:#db2424}
     /*homepage */
     .hlTopTile .tileTitle .hlOasTxt {margin-bottom: 15px;font-size: 28px}
     .hlTopTile .tileTitle {top: 10%}
-    .hlTile1 .tileTitleMid{top: 48%;}
     /*Making of */
     .aboutUsBanner .tileTitleMid {font-size: 24px}
     .aboutUsBannerText p {display: none}
@@ -539,24 +639,33 @@ li.main-link.sale a {color:#db2424}
 	.saleLandingPageSub a {text-transform: uppercase; font-size: 13px; text-decoration: underline; color: white }
     .saleHoldingBanner .tileTitle{top: 25%}
     .saleHoldingBanner span{margin-top: 25px;}
+    .bannerTile a{margin: 0px 10px 10px 10px;font-size: 16px;display:block;border-bottom: none;}
+    .bannerTile h1{margin-bottom: 34px;}
+    .bannerTile span{border-bottom: 1px solid #d14d18;}
+    .bannerTile p{font-size: 18px}
 }
 @media only screen and (max-width: 430px) 
-{
+{ 
 	.freeDelStrip {font-size: 12px}
 	.category-product-items .product, .category-product-items .rangeproduct {height: 370px; margin-bottom:0}
     /*homepage */
     .hlTopTile .tileTitle {top: 5%}
+    .hlTile1 .tileTitleMid .mainTitle{line-height: 35px;}
+    .hlTile1 p{margin: 9px 0;font-size: 24px;}
+    .hlTile1 a{line-height: 40px}
+    .hlTile1 .shopTxt{margin: 0}
     /*House and Home*/
     .hhlTile1 .tileTitle {top: 45%}
     /*Making of*/
     .wnlShopBTN{font-size: 18px}
-
     .hhsLandingS .tileTitleMid{top: 25%}
     /* New help section */
     .helpSection .helpContentArea td {height: 30px;  font-size: 12px; text-align: center}
   	.helpSection .navItems {font-size:16px}
   	.helpSection .navItems li {margin: 8px 0; width: 92%; }
   	.helpSection .helpContentArea p {font-size: 18px; margin: 20px 0 0 0}
+    .helpSection .shopSection .helpContentArea p{margin: 0;}
+    .openingHours{margin-bottom: 20px;}
     .shopFtextmob{padding:0px;}
     .helpSection .storePageContent .readMore{line-height: 60px;}
     .storePageContent .openingHours p{margin-top: 0px;}
@@ -565,6 +674,14 @@ li.main-link.sale a {color:#db2424}
     .storePageContent .storeAbout p{margin: 0 0 18px 0;}
     #map_canvas {height: 300px;}
     .storeMapBtnHolder{margin-top: 20px; margin-bottom: 20px;}
+    /* Sale landing pages */
+    .shhl_1{top: 45%;}
+    .bannerTile .tileTitleMid{top: 22%}
+    .bannerTile h1{margin-bottom: 5px;font-size: 30px;}
+    .bannerTile a{font-size: 16px;}
+
+    /*Misc*/
+    .lwsStile1.saleTileMain .tileTitleMid{top: 20%;}
 }
 @media only screen and (max-width: 395px)
 {
@@ -585,3 +702,4 @@ li.main-link.sale a {color:#db2424}
     #map_canvas{height: 360px;}
 }
 .disabled {background-color:#dedede !important}
+#basket-upsell, #mini-basket-upsell {display: none}
