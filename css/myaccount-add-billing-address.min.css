@@ -1,0 +1,196 @@
+#ctl00_globalMainContent_ddlCountries,
+#ctl00_globalMainContent_txtBuildingNameNumber {
+    width: 62% !important;
+    margin-bottom: 10px;
+    padding: 0
+}
+#ctl00_globalMainContent_ddlCountries {
+    padding: 0 38px 0 10px;
+    max-width: 600px
+}
+#ctl00_globalMainContent_txtPostalCode1,
+#ctl00_globalMainContent_txtPostalCode2 {
+    min-width: 30px;
+    margin-bottom: 10px;
+    width: 20% !important
+}
+#ctl00_globalMainContent_txtPostalCode1 {
+    margin-right: 2%
+}
+label {
+    width: 40% !important;
+    margin-left: 10px;
+    max-width: 40% !important
+}
+.mainSmallHeader {
+    float: left;
+    width: 100%;
+    margin: 10px 0
+}
+#inner .statusBar {
+    display: none
+}
+#addBillingAddressForm select {
+    height: 36px;
+    padding: 0
+}
+a.shopLinks,
+a.shopLinks:hover {
+    text-decoration: underline
+}
+#ctl00_globalMainContent_btnSearch {
+    background: white;
+    float: left;
+    line-height: 45px;
+    font-size: 14px;
+    height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    border: 1px solid !important;
+    border-color: black;
+    min-width: 150px;
+    width: 50% !important;
+    margin-top: 10px
+}
+@media screen and (max-width: 768px) {
+    #ctl00_globalMainContent_ddlCountries,
+    #ctl00_globalMainContent_txtBuildingNameNumber {
+        width: 66% !important;
+        margin-bottom: 10px;
+        padding: 0;
+        min-width: 150px !important
+    }
+    #ctl00_globalMainContent_ddlCountries {
+        padding: 0 38px 0 10px;
+        max-width: 600px
+    }
+    #ctl00_globalMainContent_txtPostalCode1,
+    #ctl00_globalMainContent_txtPostalCode2 {
+        min-width: 30px;
+        margin-bottom: 10px;
+        width: 25% !important
+    }
+    #ctl00_globalMainContent_txtPostalCode1 {
+        margin-right: 2%
+    }
+    label {
+        width: 45% !important
+    }
+    #ctl00_globalMainContent_btnSearch {
+        width: 100% !important
+    }
+}
+@media screen and (max-width: 500px) {
+    #ctl00_globalMainContent_ddlCountries,
+    #ctl00_globalMainContent_txtBuildingNameNumber {
+        width: 50% !important;
+        margin-bottom: 10px;
+        padding: 0;
+        min-width: 150px !important
+    }
+    #ctl00_globalMainContent_txtPostalCode1,
+    #ctl00_globalMainContent_txtPostalCode2 {
+        min-width: 30px;
+        margin-bottom: 10px;
+        width: 15% !important
+    }
+    #ctl00_globalMainContent_txtPostalCode1 {
+        margin-right: 2%
+    }
+    label {
+        width: 45% !important;
+        margin-left: 10px
+    }
+    #ctl00_globalMainContent_btnSearch {
+        width: 100% !important
+    }
+}
+@media screen and (min-width: 1024px) {
+    .accountStatusBarLeft {
+        width: 70%;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid black;
+        margin-bottom: 25px;
+        margin-top: 10px
+    }
+    .accountStatusBarLeft a {
+        margin-right: 35px;
+        letter-spacing: 1px
+    }
+    .accountStatusBarRight {
+        margin-top: 10px;
+        letter-spacing: 1px;
+        width: 30%;
+        float: right;
+        text-align: right;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid black;
+        margin-bottom: 25px
+    }
+}
+@media screen and (max-width: 1023px) {
+    #checkoutReviewRight {
+        margin: 5px 0 0 0
+    }
+    .accountStatusBarLeft {
+        width: 100%;
+        padding: 7px 0;
+        padding-left: 1%
+    }
+    .accountStatusBarLeft .statusBarCurrent {
+        display: block;
+        width: 100%
+    }
+    .accountStatusBarLeft .statusBarCurrent a {
+        text-align: center;
+        background: black;
+        color: white;
+        letter-spacing: 1px;
+        margin: 0 1% 0 0;
+        display: inline-block;
+        width: 32%;
+        height: 30px;
+        line-height: 30px;
+        border-right: 0 solid transparent;
+        overflow: hidden
+    }
+    .accountStatusBarLeft .statusBarCurrent a:last-child {
+        margin: 0
+    }
+    .accountStatusBarRight {
+        width: 100%;
+        margin: 0 0 10px 0
+    }
+    .accountStatusBarRight .statusLinks {
+        display: block
+    }
+    #ctl01_iButtonLogOff,
+    #ctl00_globalMainContent_ctl00_iButtonLogOff {
+        color: red;
+        line-height: 30px;
+        font-size: 14px;
+        height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 1px;
+        background: white;
+        border: 1px solid !important;
+        border-color: red;
+        min-width: 150px;
+        width: 97.5% !important;
+        margin-bottom: 45px;
+        margin-left: 1%
+    }
+}
+@media screen and (max-width: 480px) {
+    .accountStatusBarLeft .statusBarCurrent a {
+        font-size: 11px;
+        letter-spacing: 0
+    }
+}
