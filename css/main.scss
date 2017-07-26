@@ -10,6 +10,11 @@ $serifFont: "freight-text-pro", serif;
 .textBold {font-family:$serifFont; font-weight:700}
 /* Free delivery strip */
 .freeDelStrip {background-color:#e9e9e9;display:block; line-height:12px; text-transform:uppercase; font-size:14px; text-align:center; padding:10px; margin:10px 0 5px 0; letter-spacing:1px}
+/* Free returns AB test */
+.fontWeightUp {font-weight: 600}
+.freeReturnsProduct {font-size: 16px}
+.returnReturnsBasket {width: 100%;padding: 10px 22px 0 0;text-align: right;font-size: 13px !important}
+.ABVariant {display:none;}
 /* Swatches */
 .productHolder {width: 99.9%; background-color: #ffffff}
 .productImage {position: relative; width: 100%; float: left; padding-top: 124.933333333333%; overflow: hidden; cursor: pointer; border: none;background-color: #ffffff}
@@ -34,8 +39,10 @@ $serifFont: "freight-text-pro", serif;
 .textCenter {text-align: center}
 /*Framework*/
 .landscapeTile{display: block;width: 100%;padding-top: 58.46748%;margin-bottom: 10px;background-size: 100% 100%;position: relative}
-.portraitTile {width: 100%; display: block; width: 100%;padding-top: 128%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
-.tileTitle {position: absolute; top:77%; width: 100%; text-align: center; color: #ffffff}
+.portraitTile {width: 100%; display: block; width: 100%;padding-top: 128%;  margin-bottom: 10px; background-size: 100% 100%; position: relative}
+.tileTitle {position: absolute; top:85%; width: 100%; text-align: center; color: #ffffff}
+.tileTitleHigher {position: absolute; top:78%; width: 100%; text-align: center; color: #ffffff}
+.signup-message {color:#ffffff; font-size: 16px}
 /*Category Headers*/
 .landingBSIntro{text-align: center;margin: 30px 0}
 .landingBSIntro h1 {font-size: 26px;font-family: $serifFont; font-weight: 600}
@@ -52,62 +59,71 @@ $serifFont: "freight-text-pro", serif;
 .tileTitleMid {color: white;position: absolute;top: 31%;width: 100%;text-align: center;font-size: 28px;line-height: 45px; letter-spacing: 2px; left:0}
 .hlTopTile {width: 100%; display: block; width: 100%; padding-top: 62.947%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .hlTopTile .tileTitle {top: 45%}
-.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_Homepage_1.jpg');padding-top: 100%}
-.hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Sale70pc_1.jpg');padding-top: 38.828%}
-.hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PostSaleRefresh_Homepage_New.jpg');padding-top: 121%}
-.hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_SummerSeasonSale_Homepage_3a.jpg');padding-top: 121%}
-.hlTile6{background-color: #e9e9e9; color:black}
-.hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_HighSummer_Homepage_5.jpg');padding-top: 58.46748%; float:left;}
+.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1500/TOAST_EarlyAutumn_Homepage_1.jpg');padding-top: 74.951%}
+.hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1500/TOAST_EarlyAutumn_Homepage_2.jpg');padding-top: 128.911%}
+.hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1500/TOAST_EarlyAutumn_Homepage_3.jpg');padding-top: 128.911%}
+.hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1500/TOAST_EarlyAutumn_Homepage_4.jpg');padding-top: 128.911%}
+.hlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1500/TOAST_EarlyAutumn_Homepage_5.jpg');padding-top: 128.911%}
+.hlTile6{background-color: #e9e9e9; color:black; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/600/TOAST_EarlyAutumn_SignUp.jpg')}
+.hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/600/TOAST_EarlyAutumn_Magazine.jpg');padding-top: 58.46748%; float:left;}
+.preTitle {color: #ffffff;font-size: 18px;margin: 0 0 -5px 0;padding: 0;}
 .hlTile7 .tileTitle .mainTitle{letter-spacing: 2px}
 .hlTile7 .tileTitle{top: 70%;}
-.hlTile1 .tileTitleMid{top: 48%;color: #d14d18}
-.hlTile1 .tileTitleMid h1{margin-bottom: 75px;}
+.hlTile1 .tileTitleMid{top: 44%;color: #d14d18}
+.hlTile1 .tileTitleMid h1{margin-bottom: 55px;}
 .hlTile1 .tileTitleMid a{font-weight: 300;}
-.hlTile1 h1{margin-bottom: 0px; font-size: 32px; color: white;}
+.hlTile1 h1{margin-bottom: 0px; font-size: 34px; color: white;}
 .hlTile1 p{color: #d14d18; font-size: 24px;margin-top: 5px; letter-spacing: 1px}
 .hlTile1 .shopTxt {text-transform: uppercase; color: white; text-decoration: none; margin: 10px 20px;font-weight:300; line-height: 27px; display: inline-block; border-bottom: 1px solid white;text-align: center;font-size: 18px;letter-spacing: 1px;}
-.hlTile2 .tileTitle, .hlTile3 .tileTitle, .hlTile4 .tileTitle {top: 77%;}
+.hlTile2 .tileTitle, .hlTile3 .tileTitle, .hlTile4 .tileTitle {top: 85%;}
 .hlTile2 .tileTitleMid{top: 32%;}
 .hlTile2 .tileTitleMid h2{font-size: 32px;color: #d14d18;}
 .hlTile2 .tileTitleMid p{line-height: 10px;margin-bottom: 50px;font-size: 22px;color: black;font-weight: 500;letter-spacing: 1px;}
-.hlTile2 .tileTitleMid span{font-size: 18px; border-bottom: 1px solid black;padding-bottom: 2px;color:black;font-weight: 500;letter-spacing: 1px;}
+.hlTile2 .tileTitleMid span{font-size: 18px; border-bottom: 1px solid black;padding-bottom: 2px;color:black;font-weight: 500;letter-spacing: 1px; background-size: 100% 100%}
 .hlTile2 .tileTitleMid .saleTopP{margin-bottom: 5px;letter-spacing: 1px;}
 .lowerTileTitle{position: absolute;bottom: 15.5%;text-align: center;width: 100%;}
 .lowerTileTitle span{display: inline-block;}
-.signuptile {text-align: center}
-.signuptile p {color: black;width: 100%;top: 0px}
-.signuptile button {margin-top: 8%;border-width: 0px;font-size: 16px;color: black;letter-spacing:1px;font-family: 'freight-sans-pro', sans-serif;background: transparent}
+.signuptile {text-align: center; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/600/TOAST_EarlyAutumn_SignUp.jpg')}
+.signuptile p {color: white;width: 100%;top: 0px}
+.signuptile button {margin-top: 8%;border-width: 0px;font-size: 16px;color: white;letter-spacing:1px;font-family: 'freight-sans-pro', sans-serif;background: transparent}
+.signuptile input {min-width: 290px; height: 42px; text-transform: uppercase;}
 /*Women's Landing Page*/
 .wl_1 .tileTitle h2{padding-bottom: 25px;font-size: 22px;}
 .wl_1 .tileTitle span{font-size: 18px;font-weight: 300; letter-spacing: 1px;border-bottom: 1px solid white;padding-bottom:0px}
-.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_PreCollection_LandingWomen_New.jpg')}
+.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_1.jpg')}
 .wl_1 .sansBook{font-size:16px;padding-top: 12px;letter-spacing: 2px}
-.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PostSaleRefresh_Women_1.jpg');}
-.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingWomen_4.jpg');}
-.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingWomen_1.jpg')}
-.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingWomen_3.jpg')}
-.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingWomen_2.jpg')}
+.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_2.jpg');}
+.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_3.jpg');}
+.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_4.jpg')}
+.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_5.jpg')}
+.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_6.jpg')}
+.wl_7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_7.jpg')}
+.wl_8{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_8.jpg')}
 .wl_6 .shopTxt{text-transform: uppercase;font-size: 18px;line-height: 60px;letter-spacing: 2px}
-.wl_6 .tileTitle{top: 77%}
 .wl_5 .shopTxt .pcBtn{line-height: 70px}
+.twoLineTitle {font-size: 22px; letter-spacing: 2px; margin-bottom: 20px}
+.saleLink {border-bottom: 1px solid #ffffff; font-size: 18px}
 /*house and home landing page*/
-.hhlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_SummerPreSale_HH_refresh_1.jpg');padding-top: 100%; margin-bottom: 20px}
-.hhlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_PreCollection_LandingHouseHome_4.jpg'); margin-bottom: 20px;padding-top:121%}
+.houseandhome .col-sm-6, .womens .col-sm-6, .homepage .col-sm-6, .homepage .col-sm-12 {padding-left: 5px;padding-right: 5px;}
+
+.hhlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_HouseHome_1.jpg');padding-top: 74.9517%; margin-bottom: 10px}
+.hhlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_HouseHome_2.jpg'); margin-bottom: 10px;padding-top:128.911%}
 .hhlTile2 .shopLink {display: inline-block;border-bottom: 1px solid white;}
 .hhlTile2 .sansBook{font-size:16px;padding-top: 16px;letter-spacing: 2px}
 .hhlTile2 .tileTitle span{display: inline-block;border-bottom: 1px solid white;}
-.hhlTile3{background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_PreCollection_LandingHouseHome_New1.jpg); margin-bottom: 20px;padding-top:121%}
+.hhlTile3{background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_HouseHome_3.jpg); margin-bottom: 10px;padding-top:128.911%}
 .hhlTile3 .sansBook{font-size:16px;padding-top: 16px;letter-spacing: 2px}
-.hhlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1400/TOAST_HighSummer_HouseandHome_4d.jpg'); margin-bottom: 20px;padding-top:121%}
+.hhlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_HouseHome_4.jpg'); margin-bottom: 10px;padding-top:128.911%}
+.hhlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_HouseHome_5.jpg'); margin-bottom: 10px;padding-top:128.911%}
 .hhTopTile {width: 100%; display: block; width: 100%; padding-top: 62.966%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .hhlTile1 .tileTitle {top: 45%;line-height: 45px}
+.hhlTile1 .tileTitle a {color: #ffffff}
 .hhlTile1 .tileTitle .landingTileTxt{font-size: 28px; margin-bottom: 25px}
 .hhlTile1 .tileTitle .mainTitle{font-size: 34px; margin-bottom: 40px}
-.hhlTile1 .shopTxt {text-align: center;font-size: 18px;letter-spacing: 1px; border-bottom: 1px solid #d14d18}
-.hhlTile1 .shopTxt{text-transform: uppercase}
+.hhlTile1 .shopTxt {text-transform: uppercase; color: white; text-decoration: none; margin: 10px 20px;font-weight:300; line-height: 27px; display: inline-block; border-bottom: 1px solid white;text-align: center;font-size: 20px;letter-spacing: 1px;}
 .hhlTile2 .tileTitle{top: 77%;}
 .hhShop {margin-bottom: 5%}
-.hhlTile4 .tileTitle{top:77%}
+
 /* Lookbook landing tiles */
 .lb_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_PreCollection_LookbookLandingPageTile.jpg');padding-top: 74.050%}
 .lb_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/400/TOAST_EarlySpring_WomenLanding_1.jpg')}
@@ -493,6 +509,7 @@ div[title="Change map style"] {display: none;}
     .jdThreeLine h2{margin-top: 5%}
     /*Sitemap*/
     .smSectionTabClear{margin-bottom: 30px;}
+    .returnReturnsBasket {padding: 27px 60px 0 0; text-align: left; }
 }
 @media only screen and (max-width: 960px){
 	.hlTile2 .tileTitleMid{top: 30%;}
@@ -517,11 +534,11 @@ div[title="Change map style"] {display: none;}
     .hlTile1 h1{font-size: 28px;margin-bottom: 20px}
     .hlTile1 a{display: block}
     .hlTile1 .shopTxt{font-size: 16px;margin: 10px}
-    .hlTile2{background-image: url("http://d117fiyhpld8f9.cloudfront.net/content-images/aw17/701/TOAST_Sale70pc_2.jpg");padding-top:128%;}
     .hlTile2 .tileTitleMid h2{font-size: 28px;}
     .lowerTileTitle{bottom: 40%;top: 58%}
     .hhlTile3 .tileTitle .mainTitle{font-size: 22px;}
     .hlTile7 .tileTitle{top: 65%}
+    .centerTileTitle {top: 6%}
     /*House and Home*/
     .hhlTile1 .tileTitle .mainTitle {font-size: 28px;margin-bottom: 15px}
     .hhlTile1 .shopTxt{font-size: 16px}
@@ -589,7 +606,7 @@ div[title="Change map style"] {display: none;}
     .shhl_1 .shopTxt{font-size: 16px}
     .swl_2 .tileTitle{top: 36%}
     .bannerTile{background-image: url("http://d117fiyhpld8f9.cloudfront.net/content-images/aw17/701/TOAST_Sale70pc_2.jpg");padding-top: 109.5%;}
-	.saleLandingPage {padding-top: 128.29787%;background-image: url(//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1600/TOAST_Offer_Landing.jpg); margin-bottom: 20px; background-size: 100% 100%; }
+	.saleLandingPage {padding-top: 128.29787%;background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/ss17/1600/TOAST_Offer_Landing.jpg'); margin-bottom: 20px; background-size: 100% 100%; }
 	.saleLandingPage .tileTitleMid {font-size: 22px}
 	.saleLandingPageSub a {text-transform: uppercase; font-size: 14px; text-decoration: underline; color: white}
     .shopBP{margin-top: 30px;}
@@ -689,7 +706,6 @@ div[title="Change map style"] {display: none;}
 
     /*Misc*/
     .lwsStile1.saleTileMain .tileTitleMid{top: 25%;}
-    .marketingMessage {font-size: 10px}
 }
 @media only screen and (max-width: 395px)
 {
