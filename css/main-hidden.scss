@@ -216,7 +216,11 @@ $serifFont: "freight-text-pro", serif;
 .topNavSpacer {margin-bottom:20px; float:left;width:100%;}
 .us #Outdoor.nav-option, .eu #Outdoor.nav-option, .row #Outdoor.nav-option{display:none;}
 .basket-recommendation-price .sale, .basket-recommendation-price .saletext {font-size: 12px}
+<<<<<<< HEAD
+.desc-prod-code {display: inline}
+=======
 span.basket-recommendation-title, span.basket-recommendation-price {font-size: 12px;}
+>>>>>>> origin/master
 /*Third party catalogs checkbox and text*/		
 label[for="chkReceiveThirdPartyCatalogs"]{display:none}		
 input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
