@@ -561,7 +561,7 @@ var productModule = function() {
                     });
                     $(".left-draw-basket .mini-basket-sub-total").html("");
                     $(".sub-list-basket ul").html(subBasketItems);
-                    $(".left-draw-basket > a").html("Basket " + $(".basket-items .qty").html())
+                    $(".left-draw-basket > a").html("Bag " + $(".basket-items .qty").html())
                 }, 500);
                 $(".stock-message").hide();
                 mainModule.miniBasketCarousel();
@@ -629,6 +629,5 @@ var productModule = function() {
         getProductData: getProductData
     }
 }();
-0
 0
 0
