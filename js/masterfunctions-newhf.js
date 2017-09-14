@@ -2,7 +2,6 @@ function flagSwap() {
     str = $(".menu__title").text(), rg = /[a-zA-Z]+/g, el = $("#footer-country-select .has-flag-uk").first(), el.html(el.html().replace(/GBP/gi, str.match(rg)[0])), currentFlag = $(".has-flag").attr("class").split(" ").pop(), $("#footerCountryFlag").removeClass("has-flag-uk"), $("#footerCountryFlag").addClass(currentFlag)
 }
 
-
 function getParameterByName(a) {
     a = a.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var b = new RegExp("[\\?&]" + a + "=([^&#]*)"),
@@ -10627,7 +10626,7 @@ Tipped.Skins = {
                         filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + a[0].recs[c].img.replace("/product/", "/global/").replace(sizeRegex, "/450/") + "', sizingMethod='scale')"
                     });
                     var d = parseFloat(a[0].recs[c].prices.GBP.unitPrice).toFixed(2).replace(".00", "");
-                    a[0].recs[c].prices.GBP.unitPrice != a[0].recs[c].prices.GBP.salePrice && (d = parseFloat(a[0].recs[c].prices.GBP.salePrice).toFixed(2).replace(".00", "")), $(b[c]).find(".p-rec-price").text(" £" + d), a[0].recs[c].title.length > 12 ? ($(b[c]).find(".p-rec-title").text(a[0].recs[c].title.slice(0, 12) + "..."), $(b[c]).find(".p-rec-hover").text(a[0].recs[c].title)) : $(b[c]).find(".p-rec-title").text(a[0].recs[c].title)
+                    a[0].recs[c].prices.GBP.unitPrice != a[0].recs[c].prices.GBP.salePrice && (d = parseFloat(a[0].recs[c].prices.GBP.salePrice).toFixed(2).replace(".00", "")), $(b[c]).find(".p-rec-price").text(" Â£" + d), a[0].recs[c].title.length > 12 ? ($(b[c]).find(".p-rec-title").text(a[0].recs[c].title.slice(0, 12) + "..."), $(b[c]).find(".p-rec-hover").text(a[0].recs[c].title)) : $(b[c]).find(".p-rec-title").text(a[0].recs[c].title)
                 }
             $(".peerius-rec").on("click", function() {
                 Peerius.smartRecsClick($(this).attr("peerius-item-id"))
@@ -10643,7 +10642,7 @@ Tipped.Skins = {
                         filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + a[0].recs[c].img.replace("/product/", "/global/").replace(sizeRegex, "/450/") + "', sizingMethod='scale')"
                     });
                     var d = parseFloat(a[0].recs[c].prices.GBP.unitPrice).toFixed(2).replace(".00", "");
-                    a[0].recs[c].prices.GBP.unitPrice != a[0].recs[c].prices.GBP.salePrice && (d = parseFloat(a[0].recs[c].prices.GBP.salePrice).toFixed(2).replace(".00", "")), $(b[c]).find(".p-rec-price").text(" £" + d), a[0].recs[c].title.length > 12 ? ($(b[c]).find(".p-rec-title").text(a[0].recs[c].title.slice(0, 12) + "..."), $(b[c]).find(".p-rec-hover").text(a[0].recs[c].title)) : $(b[c]).find(".p-rec-title").text(a[0].recs[c].title)
+                    a[0].recs[c].prices.GBP.unitPrice != a[0].recs[c].prices.GBP.salePrice && (d = parseFloat(a[0].recs[c].prices.GBP.salePrice).toFixed(2).replace(".00", "")), $(b[c]).find(".p-rec-price").text(" Â£" + d), a[0].recs[c].title.length > 12 ? ($(b[c]).find(".p-rec-title").text(a[0].recs[c].title.slice(0, 12) + "..."), $(b[c]).find(".p-rec-hover").text(a[0].recs[c].title)) : $(b[c]).find(".p-rec-title").text(a[0].recs[c].title)
                 }
             $(".peerius-rec").on("click", function() {
                 Peerius.smartRecsClick($(this).attr("peerius-item-id"))
@@ -10654,7 +10653,7 @@ Tipped.Skins = {
             $(".category-product-items").after($('<div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent"><div class="grid-100 tablet-grid-100 mobile-grid-100 you-may-also-like five-column-recs"><h3 class="product-label">But you may be interested in</h3><ul class="ymal-slides grid-parent"></ul></div></div>'));
             for (var b = 0; b < a[0].recs.length && 5 > b; b++) {
                 var c = $('<div class="product grid-20 tablet-grid-33 mobile-grid-50"></div>');
-                $(".ymal-slides").append(c), c.append($('<a href="' + a[0].recs[b].url + '" peerius-item-id="' + a[0].recs[b].id + '" title="' + a[0].recs[b].title + '"><img src="' + a[0].recs[b].img.replace(sizeRegex, "/250/").replace("/product/", "/global/") + '" alt="' + a[0].recs[b].title + '" class="grid-image full-opacity"><h3>' + a[0].recs[b].title + "</h3><p></p></a>")), a[0].recs[b].prices.GBP.salePrice == a[0].recs[b].prices.GBP.unitPrice ? c.find("p").text(" £" + a[0].recs[b].prices.GBP.unitPrice) : c.find("p").html('<span class="recommendation-price price-strike-through"> £' + a[0].recs[b].prices.GBP.unitPrice + ' </span><span class="recommendation-sale"> £' + a[0].recs[b].prices.GBP.salePrice + "</span>")
+                $(".ymal-slides").append(c), c.append($('<a href="' + a[0].recs[b].url + '" peerius-item-id="' + a[0].recs[b].id + '" title="' + a[0].recs[b].title + '"><img src="' + a[0].recs[b].img.replace(sizeRegex, "/250/").replace("/product/", "/global/") + '" alt="' + a[0].recs[b].title + '" class="grid-image full-opacity"><h3>' + a[0].recs[b].title + "</h3><p></p></a>")), a[0].recs[b].prices.GBP.salePrice == a[0].recs[b].prices.GBP.unitPrice ? c.find("p").text(" Â£" + a[0].recs[b].prices.GBP.unitPrice) : c.find("p").html('<span class="recommendation-price price-strike-through"> Â£' + a[0].recs[b].prices.GBP.unitPrice + ' </span><span class="recommendation-sale"> Â£' + a[0].recs[b].prices.GBP.salePrice + "</span>")
             }
             $(".you-may-also-like a").on("click", function() {
                 Peerius.smartRecsClick($(this).attr("peerius-item-id"))
@@ -10689,8 +10688,8 @@ Tipped.Skins = {
             for (var b = 0; b < a[0].recs.length && 5 > b; b++) {
                 var c = $('<div class="grid-20 mobile-grid-50 tablet-grid-20 basket-recommendations range-product" id="' + a[0].recs[b].refCode + '" peerius-item-id="' + a[0].recs[b].id + '"></div>');
                 $(".basket-recommendations-container .group-images").append(c);
-                var d = $('<img class="grid-image"><span class="basket-recommendation-title">' + a[0].recs[b].title + '</span><span class="basket-recommendation-price"> £' + a[0].recs[b].prices.GBP.unitPrice + "</span>");
-                c.append(d), a[0].recs[b].prices.GBP.unitPrice != a[0].recs[b].prices.GBP.salePrice && (c.find(".basket-recommendation-price").addClass("price-strike-through"), c.append('<span class="basket-recommendation-sale-price"> £' + a[0].recs[b].prices.GBP.salePrice + "</span>"))
+                var d = $('<img class="grid-image"><span class="basket-recommendation-title">' + a[0].recs[b].title + '</span><span class="basket-recommendation-price"> Â£' + a[0].recs[b].prices.GBP.unitPrice + "</span>");
+                c.append(d), a[0].recs[b].prices.GBP.unitPrice != a[0].recs[b].prices.GBP.salePrice && (c.find(".basket-recommendation-price").addClass("price-strike-through"), c.append('<span class="basket-recommendation-sale-price"> Â£' + a[0].recs[b].prices.GBP.salePrice + "</span>"))
             }
             $($(".basket-recommendations-container .range-product")[0]).addClass("selected-range-product"), $(".range-product").on("click", function() {
                 Peerius.smartRecsSendClick($(this).attr("peerius-item-id"))
@@ -10708,7 +10707,7 @@ Tipped.Skins = {
             $(".page-404").append($('<div class="grid-parent grid-100 tablet-grid-100 mobile-grid-100 you-may-also-like five-column-recs"><h3 class="product-label you-may-be-label grid-parent">You may be interested in...</h3><ul class="ymal-slides grid-parent"></ul></div>'));
             for (var b = 0; b < a[0].recs.length && 5 > b; b++) {
                 var c = $('<div class="product grid-20 tablet-grid-33 mobile-grid-50"></div>');
-                $(".ymal-slides").append(c), c.append($('<a href="' + a[0].recs[b].url + '" peerius-item-id="' + a[0].recs[b].id + '" title="' + a[0].recs[b].title + '"><img src="' + a[0].recs[b].img.replace(sizeRegex, "/250/").replace("/product/", "/global/") + '" alt="' + a[0].recs[b].title + '" class="grid-image full-opacity"><h3>' + a[0].recs[b].title + "</h3><p></p></a>")), a[0].recs[b].prices.GBP.salePrice == a[0].recs[b].prices.GBP.unitPrice ? c.find("p").text(" £" + a[0].recs[b].prices.GBP.unitPrice) : c.find("p").html('<span class="recommendation-price price-strike-through"> £' + a[0].recs[b].prices.GBP.unitPrice + ' </span><span class="recommendation-sale"> £' + a[0].recs[b].prices.GBP.salePrice + "</span>")
+                $(".ymal-slides").append(c), c.append($('<a href="' + a[0].recs[b].url + '" peerius-item-id="' + a[0].recs[b].id + '" title="' + a[0].recs[b].title + '"><img src="' + a[0].recs[b].img.replace(sizeRegex, "/250/").replace("/product/", "/global/") + '" alt="' + a[0].recs[b].title + '" class="grid-image full-opacity"><h3>' + a[0].recs[b].title + "</h3><p></p></a>")), a[0].recs[b].prices.GBP.salePrice == a[0].recs[b].prices.GBP.unitPrice ? c.find("p").text(" Â£" + a[0].recs[b].prices.GBP.unitPrice) : c.find("p").html('<span class="recommendation-price price-strike-through"> Â£' + a[0].recs[b].prices.GBP.unitPrice + ' </span><span class="recommendation-sale"> Â£' + a[0].recs[b].prices.GBP.salePrice + "</span>")
             }
             $(".you-may-also-like a").on("click", function() {
                 Peerius.smartRecsClick($(this).attr("peerius-item-id"))
@@ -10726,7 +10725,7 @@ Tipped.Skins = {
             $(".wishlist-exterior-wrapper").append($('<div class="grid-parent grid-100 tablet-grid-100 mobile-grid-100 grid-parent you-may-also-like five-column-recs"><h3 class="product-label you-may-be-label grid-parent">You may be interested in...</h3><ul class="ymal-slides grid-parent"></ul></div>'));
             for (var b = 0; b < a[0].recs.length && 5 > b; b++) {
                 var c = $('<div class="product grid-20 tablet-grid-33 mobile-grid-50"></div>');
-                $(".ymal-slides").append(c), c.append($('<a href="' + a[0].recs[b].url + '" peerius-item-id="' + a[0].recs[b].id + '" title="' + a[0].recs[b].title + '"><img src="' + a[0].recs[b].img.replace(sizeRegex, "/250/").replace("/product/", "/global/") + '" alt="' + a[0].recs[b].title + '" class="grid-image full-opacity"><h3>' + a[0].recs[b].title + "</h3><p></p></a>")), a[0].recs[b].prices.GBP.salePrice == a[0].recs[b].prices.GBP.unitPrice ? c.find("p").text(" £" + a[0].recs[b].prices.GBP.unitPrice) : c.find("p").html('<span class="recommendation-price price-strike-through"> £' + a[0].recs[b].prices.GBP.unitPrice + ' </span><span class="recommendation-sale"> £' + a[0].recs[b].prices.GBP.salePrice + "</span>")
+                $(".ymal-slides").append(c), c.append($('<a href="' + a[0].recs[b].url + '" peerius-item-id="' + a[0].recs[b].id + '" title="' + a[0].recs[b].title + '"><img src="' + a[0].recs[b].img.replace(sizeRegex, "/250/").replace("/product/", "/global/") + '" alt="' + a[0].recs[b].title + '" class="grid-image full-opacity"><h3>' + a[0].recs[b].title + "</h3><p></p></a>")), a[0].recs[b].prices.GBP.salePrice == a[0].recs[b].prices.GBP.unitPrice ? c.find("p").text(" Â£" + a[0].recs[b].prices.GBP.unitPrice) : c.find("p").html('<span class="recommendation-price price-strike-through"> Â£' + a[0].recs[b].prices.GBP.unitPrice + ' </span><span class="recommendation-sale"> Â£' + a[0].recs[b].prices.GBP.salePrice + "</span>")
             }
             $(".you-may-also-like a").on("click", function() {
                 Peerius.smartRecsClick($(this).attr("peerius-item-id"))
@@ -10744,7 +10743,7 @@ Tipped.Skins = {
             $("#inner").append($('<div class="grid-parent grid-100 tablet-grid-100 mobile-grid-90 mobile-prefix-5 mobile-suffix-5 grid-parent you-may-also-like five-column-recs"><h3 class="product-label you-may-be-label grid-parent">OTHERS LIKE...</h3><ul class="ymal-slides grid-parent"></ul></div>'));
             for (var b = 0; b < a[0].recs.length && 5 > b; b++) {
                 var c = $('<div class="product grid-20 tablet-grid-33 mobile-grid-50"></div>');
-                $(".ymal-slides").append(c), c.append($('<a href="' + a[0].recs[b].url + '" peerius-item-id="' + a[0].recs[b].id + '" title="' + a[0].recs[b].title + '"><img src="' + a[0].recs[b].img.replace(sizeRegex, "/250/").replace("/product/", "/global/") + '" alt="' + a[0].recs[b].title + '" class="grid-image full-opacity"><h3>' + a[0].recs[b].title + "</h3><p></p></a>")), a[0].recs[b].prices.GBP.salePrice == a[0].recs[b].prices.GBP.unitPrice ? c.find("p").text(" £" + a[0].recs[b].prices.GBP.unitPrice) : c.find("p").html('<span class="recommendation-price price-strike-through"> £' + a[0].recs[b].prices.GBP.unitPrice + ' </span><span class="recommendation-sale"> £' + a[0].recs[b].prices.GBP.salePrice + "</span>")
+                $(".ymal-slides").append(c), c.append($('<a href="' + a[0].recs[b].url + '" peerius-item-id="' + a[0].recs[b].id + '" title="' + a[0].recs[b].title + '"><img src="' + a[0].recs[b].img.replace(sizeRegex, "/250/").replace("/product/", "/global/") + '" alt="' + a[0].recs[b].title + '" class="grid-image full-opacity"><h3>' + a[0].recs[b].title + "</h3><p></p></a>")), a[0].recs[b].prices.GBP.salePrice == a[0].recs[b].prices.GBP.unitPrice ? c.find("p").text(" Â£" + a[0].recs[b].prices.GBP.unitPrice) : c.find("p").html('<span class="recommendation-price price-strike-through"> Â£' + a[0].recs[b].prices.GBP.unitPrice + ' </span><span class="recommendation-sale"> Â£' + a[0].recs[b].prices.GBP.salePrice + "</span>")
             }
             $(".you-may-also-like a").on("click", function() {
                 Peerius.smartRecsClick($(this).attr("peerius-item-id"))
@@ -10856,7 +10855,7 @@ var teradata = function() {
             },
             f = function() {
                 $("ul.product-sizes li").each(function() {
-                    $(this).text().length > 5 && $(this).css("min-width", "95px")
+                    $(this).text().length > 5 && $(this).css("min-width", "65px")
                 })
             },
             g = function() {
@@ -11080,7 +11079,7 @@ var teradata = function() {
                     if ("uk" === tcp_env.country_code.toLowerCase()) {
                         var a = tcp_env.basket.subtotal,
                             b = parseInt(125 - a);
-                        "undefined" != typeof toast_config && !1 === toast_config.in_sale && (b > 0 && a > 84 && 0 === $("#mini-basket-upsell").length && 0 === $("#basket-upsell").length ? ($(".mini-basket-sub-total").before("<div id='mini-basket-upsell' style='margin-top:15px; color: #186aa2; text-align: center; text-transform: uppercase; letter-spacing: 1px' class='medFont'>Add  £" + b + " more to your basket for free UK delivery and returns</div>"), $("#submitBasket").prepend("<div id='basket-upsell' style='margin-bottom:15px; color: #186aa2; text-align: center; text-transform: uppercase; letter-spacing: 1px' class='medFont grid-100 tablet-grid-100 mobile-grid-100 grid-parent'>Add  £" + b + " more to your basket for free UK delivery and returns</div>"), $("#continueShopping").css({
+                        "undefined" != typeof toast_config && !1 === toast_config.in_sale && (b > 0 && a > 84 && 0 === $("#mini-basket-upsell").length && 0 === $("#basket-upsell").length ? ($(".mini-basket-sub-total").before("<div id='mini-basket-upsell' style='margin-top:15px; color: #186aa2; text-align: center; text-transform: uppercase; letter-spacing: 1px' class='medFont'>Add  Ã‚Â£" + b + " more to your basket for free UK delivery and returns</div>"), $("#submitBasket").prepend("<div id='basket-upsell' style='margin-bottom:15px; color: #186aa2; text-align: center; text-transform: uppercase; letter-spacing: 1px' class='medFont grid-100 tablet-grid-100 mobile-grid-100 grid-parent'>Add  Ã‚Â£" + b + " more to your basket for free UK delivery and returns</div>"), $("#continueShopping").css({
                             float: "right"
                         })) : 84 > a && $("#mini-basket-upsell").length > 0 && $("#mini-basket-upsell").remove())
                     }
@@ -11337,7 +11336,7 @@ var teradata = function() {
                     }), $(".main-content").on("click", ".go-to-basket", function() {
                         _gaq.push(["_trackEvent", "Mini-Basket View Bag", "Click", "Mini-Basket View Bag"])
                     }), $(".left-draw .searchBox-Nav").keydown(function(a) {
-                        console.log("entered")
+                        
                         $(".searchForm input[type=text]").attr("value", $(this).val()), 13 == a.which && (a.preventDefault(), $("#ctl00_ctl01_btnSearch").trigger("click"))
                     }), $(".product-size-charts").click(function(a) {
                         a.preventDefault(), a.stopPropagation(), $(".main-content").addClass("visuallyHidden"), $("body").append($('<div class="info-draw grid-parent grid-80 tablet-grid-80 mobile-grid-80"><a href="#" class="info-draw-close">Close</a><section class="size-fit-info"></section><section id="social-info"></section></div>'));
@@ -12426,7 +12425,6 @@ var helpModule = function() {
         };
         return $(document).ready(function() {
             $(".login-item").before($('<div class="wishListHolder"><a href="/content/wishlist/wishlist.htm">wishlist (<span class="wishlist-qty">0</span>)</a></div>')), $(".view-wishlist-wrapper").length > 0 && (b = !0);
-            //$(".login-item").before($('<li class="wishlist-btn"><a href="/content/wishlist/wishlist.htm">wishlist (<span class="wishlist-qty">0</span>)</a></li>')), $(".view-wishlist-wrapper").length > 0 && (b = !0);
             var c = [];
             b ? (c = getParameterByName("sharedWish"), $(".view-wishlist-wrapper").prepend($('<div class="view-wishlist-title"><h2>' + getParameterByName("wishTitle") + "</h2></div>")), $.ajax({
                 type: "POST",
@@ -12640,10 +12638,6 @@ $(document).ready(function() {
     $("#country-selector").click(function() { 
     $("#country-selector .menu--dropdown").toggleClass("active") 
 })
-
-     if ($('.utilityLoginReg:contains("My")').length > 0){
-        $(".utilityLoginReg").css("width", "119")
-    }
     $(".buy-off-container #ctl00_globalMainContent_btnCheckout").attr("href", "/basket.htm"), flagSwap(), "undefined" != typeof toast_config && !0 === toast_config.in_sale ? $(".standard-pp").show() : $(".free-pp-and-returns").show(), showMeTheMoney(), "" === $.cookie("preset_filters") && $.removeCookie("preset_filters");
     var a = getParameterByName("presetFilters").split("~");
     a.length > 0 && "" != a[0] && ($.removeCookie("preset_filters"), $.cookie("preset_filters", "size~" + a[0].slice(1, 3), {

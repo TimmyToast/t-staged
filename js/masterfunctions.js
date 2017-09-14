@@ -12637,6 +12637,11 @@ var helpModule = function() {
         }
     }();
 $(document).ready(function() {
+    $('#ctl00_ctl01_btnSearch').bind('blur', function(){ $("#ctl00_ctl01_btnSearch").css("font-weight", "normal") });
+    $('#ctl00_ctl01_btnSearch').bind('focus', function(){ $("#ctl00_ctl01_btnSearch").css("font-weight", "bold") });
+    $('#ctl00_ctl01_txtSearch').bind('blur', function(){ $("#ctl00_ctl01_btnSearch").css("font-weight", "normal") });
+    $('#ctl00_ctl01_txtSearch').bind('focus', function(){ $("#ctl00_ctl01_btnSearch").css("font-weight", "bold") });
+
     $("#country-selector").click(function() { 
     $("#country-selector .menu--dropdown").toggleClass("active") 
 })
