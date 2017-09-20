@@ -736,6 +736,7 @@ div[title="Change map style"] {display: none}
 }
 @media only screen and (max-width: 395px)
 {
+	.signup-tile .centerTileTitle {top:0}
 	.category-product-items .product, .category-product-items .rangeproduct {height: 390px; margin-bottom: 0}
 	.rangeproduct p { margin-top: 25px; }
     .longDescTop {top: 36%}
