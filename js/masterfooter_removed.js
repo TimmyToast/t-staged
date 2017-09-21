@@ -103,5 +103,9 @@ var _prum = [['id', '58a5aa15f4bab53b1f7b23c6'],
     })
 
 
-$('#ctl00_ctl01_txtSearch').bind('blur', function(){ $("#ctl00_ctl01_btnSearch").css("font-weight", "normal") });
-$('#ctl00_ctl01_txtSearch').bind('focus', function(){ $("#ctl00_ctl01_btnSearch").css("font-weight", "bold") });
+$('#ctl00_ctl01_txtSearch').bind('blur', function(){ $("#ctl00_ctl01_btnSearch").css("font-weight", "normal") })
+$('#ctl00_ctl01_txtSearch').bind('focus', function(){ $("#ctl00_ctl01_btnSearch").css("font-weight", "bold") })
+
+if ($(".basket-items .qty").html()) {
+   $(".basket-items").addClass("sansBold")
+} 
