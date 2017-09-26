@@ -11080,7 +11080,7 @@ var teradata = function() {
                     if ("uk" === tcp_env.country_code.toLowerCase()) {
                         var a = tcp_env.basket.subtotal,
                             b = parseInt(125 - a);
-                        "undefined" != typeof toast_config && !1 === toast_config.in_sale && (b > 0 && a > 84 && 0 === $("#mini-basket-upsell").length && 0 === $("#basket-upsell").length ? ($(".mini-basket-sub-total").before("<div id='mini-basket-upsell' style='margin-top:15px; color: #186aa2; text-align: center; text-transform: uppercase; letter-spacing: 1px' class='medFont'>Add  £" + b + " more to your basket for free UK delivery and returns</div>"), $("#submitBasket").prepend("<div id='basket-upsell' style='margin-bottom:15px; color: #186aa2; text-align: center; text-transform: uppercase; letter-spacing: 1px' class='medFont grid-100 tablet-grid-100 mobile-grid-100 grid-parent'>Add  £" + b + " more to your basket for free UK delivery and returns</div>"), $("#continueShopping").css({
+                        "undefined" != typeof toast_config && !1 === toast_config.in_sale && (b > 0 && a > 84 && 0 === $("#mini-basket-upsell").length && 0 === $("#basket-upsell").length ? ($(".mini-basket-sub-total").before("<div id='mini-basket-upsell' style='margin-top:15px; color: #186aa2; text-align: center; text-transform: uppercase; letter-spacing: 1px' class='medFont'>Add  £" + b + " more to your bag <br>for free uk delivery</div>"), $("#submitBasket").prepend("<div id='basket-upsell' style='margin-bottom:15px; color: #186aa2; text-align: center; text-transform: uppercase; letter-spacing: 1px' class='medFont grid-100 tablet-grid-100 mobile-grid-100 grid-parent'>Add  £" + b + " more to your bag <br>for free uk delivery</div>"), $("#continueShopping").css({
                             float: "right"
                         })) : 84 > a && $("#mini-basket-upsell").length > 0 && $("#mini-basket-upsell").remove())
                     }
@@ -11552,6 +11552,7 @@ var helpModule = function() {
                                 }), $(".left-draw-basket .mini-basket-sub-total").html(""), $(".sub-list-basket ul").html(a), $(".left-draw-basket > a").html("Basket " + $(".basket-items .qty").html())
                             }, 500), void 0 !== b.productDisplayName && _gaq.push(["_trackEvent", "Add to Basket", "Click", b.productDisplayName])
                         }
+                       
                     },
                     addToBasketFailedHandler: function() {},
                     trackingElementId: "trackers",
@@ -11564,6 +11565,7 @@ var helpModule = function() {
                     selectedProductCategoryFinder: function() {
                         if (0 == $(".product-details .disabled").length) return "undefined" == typeof currentIndividualObj ? $("h1").text() : currentIndividualObj.parentCategory
                     }
+
                 })
             },
             q = function(a) {

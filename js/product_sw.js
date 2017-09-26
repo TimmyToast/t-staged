@@ -518,6 +518,7 @@ var productModule = function() {
             }
         });
         $("body").append("<div id='basket-notification'><a href='/basket.htm'>1 item added to basket</a></div>");
+
         $("#addToBasket").addtobasket({
             debug: tcp_env.is_live === "false",
             selectedSkuFinder: function() {
@@ -553,6 +554,7 @@ var productModule = function() {
                     product.showMessage("<span>" + uppercaseProductName + " has been added to your bag.</span>")
                 }
                 $(".checkout a").removeAttr("disabled");
+
                 setTimeout(function() {
                     $(".checkout a").removeAttr("disabled");
                     var subBasketItems = "<li><a href='/basket.htm'><span><b>Go to basket</b></span><span class='mini-basket-sub-total'>" + $(".mini-basket .mini-basket-sub-total").text() + "</span></a></li>";
@@ -562,6 +564,7 @@ var productModule = function() {
                     $(".left-draw-basket .mini-basket-sub-total").html("");
                     $(".sub-list-basket ul").html(subBasketItems);
                     $(".left-draw-basket > a").html("Bag " + $(".basket-items .qty").html())
+                    $("#topBasketContainer").addClass("sansBold")
                 }, 500);
                 $(".stock-message").hide();
                 mainModule.miniBasketCarousel();
@@ -629,5 +632,3 @@ var productModule = function() {
         getProductData: getProductData
     }
 }();
-0
-0

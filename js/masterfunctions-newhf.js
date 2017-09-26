@@ -1,4 +1,4 @@
-function flagSwap() {
+gawfunction flagSwap() {
     str = $(".menu__title").text(), rg = /[a-zA-Z]+/g, el = $("#footer-country-select .has-flag-uk").first(), el.html(el.html().replace(/GBP/gi, str.match(rg)[0])), currentFlag = $(".has-flag").attr("class").split(" ").pop(), $("#footerCountryFlag").removeClass("has-flag-uk"), $("#footerCountryFlag").addClass(currentFlag)
 }
 
@@ -11545,10 +11545,10 @@ var helpModule = function() {
                         if (0 == $(".product-details .disabled").length) {
                             var c = a.parent().find(".size-selected").text();
                             a.parent().find(".stock-message").hide(), a.parent().find("#added-to-basket").show().html("<span class='message-text'>" + b.productDisplayName + ", size " + c + " has been added to your basket.</span>"), miniBasket && miniBasket.data("tcplMinibasket").refreshBasket(), document.body.style.cursor = "default", $(".basket-recommendations-container").length > 0 && (window.location = "/basket.htm"), setTimeout(function() {
-                                var a = "<li><a href='/basket.htm'><span><b>Go to basket</b></span><span class='mini-basket-sub-total'>" + $(".mini-basket .mini-basket-sub-total").text() + "</span></a></li>";
+                                var a = "<li><a href='/basket.htm'><span><b>Go to bag</b></span><span class='mini-basket-sub-total'>" + $(".mini-basket .mini-basket-sub-total").text() + "</span></a></li>";
                                 $(".basket-items li").each(function() {
                                     a += "<li><a href='" + $(this).find(".mini-details").attr("href") + "'><span>" + $(this).find(".prod-title").html() + "</span><span>" + $(this).find(".prod-cost").html() + "</span><span>" + $(this).find(".prod-size").html() + "</span><span>" + $(this).find(".prod-colour").html() + "</span><span>" + $(this).find(".prod-qty").html() + "</span></a></li>"
-                                }), $(".left-draw-basket .mini-basket-sub-total").html(""), $(".sub-list-basket ul").html(a), $(".left-draw-basket > a").html("Basket " + $(".basket-items .qty").html())
+                                }), $(".left-draw-basket .mini-basket-sub-total").html(""), $(".sub-list-basket ul").html(a), $(".left-draw-basket > a").html("Bag " + $(".basket-items .qty").html())
                             }, 500), void 0 !== b.productDisplayName && _gaq.push(["_trackEvent", "Add to Basket", "Click", b.productDisplayName])
                         }
                     },
@@ -11593,6 +11593,7 @@ var helpModule = function() {
                     success: function(b) {
                         productJson = $.parseJSON(b.d);
                         for (var c = 0; c < productJson.products.length; c++)
+                            
                             for (prop in productJson.products[c]) "title" == prop || "description" == prop || "details" == prop || "fitNotes" == prop || "provenance" == prop || "restricted" == prop || "0" !== productJson.products[c][prop][0].price && null !== productJson.products[c][prop][0].price && "0.00" !== productJson.products[c][prop][0].price && "undefined" !== productJson.products[c][prop][0].price || productJson.products.splice(c, 1);
                         setCurrentObj(!1), q(a)
                     }
