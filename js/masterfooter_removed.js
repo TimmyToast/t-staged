@@ -109,3 +109,9 @@ $('#ctl00_ctl01_txtSearch').bind('focus', function(){ $("#ctl00_ctl01_btnSearch"
 if ($(".basket-items .qty").html()) {
    $(".basket-items").addClass("sansBold")
 } 
+
+$(window).bind("pageshow", function(event) {
+    if (event.originalEvent.persisted) {
+        window.location.reload() 
+    }
+});

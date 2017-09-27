@@ -6,8 +6,8 @@ aw17winter = [{
   prodId: "C4IEC",
   skuColor: "indigo"
   }],
-  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_1.jpg",
-  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_1.jpg",
+  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_4.jpg",
+  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_4.jpg",
   orientation: "portrait",
   percentWidth: "50",
   lookbookID: "1",
@@ -26,8 +26,8 @@ aw17winter = [{
   prodId: "F0IAB",
   skuColor: "paprika"
   }],
-  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_5.jpg",
-  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_5.jpg",
+  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_5b.jpg",
+  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_5b.jpg",
   orientation: "portrait",
   percentWidth: "50",
   lookbookID: "2",
@@ -51,9 +51,6 @@ aw17winter = [{
   float: "left" 
   },{
   products: [{
-  prodId: "6QIAB",
-  skuColor: ""
-  },{
   prodId: "CAIAZ",
   skuColor: "tobacco"
   },{
@@ -66,8 +63,8 @@ aw17winter = [{
   prodId: "F0IAD",
   skuColor: "brown"
   }],
-  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Autumn_Lookbook_4.jpg",
-  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Autumn_Lookbook_4.jpg",
+  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_8.jpg",
+  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_8.jpg",
   orientation: "portrait",
   percentWidth: "50",
   lookbookID: "4",
@@ -75,7 +72,7 @@ aw17winter = [{
   },{
   products: [{
   prodId: "6QIAB",
-  skuColor: ""
+  skuColor: "blue"
   },{
   prodId: "CAIAZ",
   skuColor: "tobacco"
@@ -89,11 +86,11 @@ aw17winter = [{
   prodId: "F0IAD",
   skuColor: "brown"
   }],
-  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Autumn_Lookbook_4.jpg",
-  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Autumn_Lookbook_4.jpg",
+  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_9.jpg",
+  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_9.jpg",
   orientation: "portrait",
   percentWidth: "50",
-  lookbookID: "4",
+  lookbookID: "5",
   float: "left" 
   },{
   products: [{
@@ -115,11 +112,11 @@ aw17winter = [{
   prodId: "F0IAD",
   skuColor: "indigo"
   }],
-  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Autumn_Lookbook_5.jpg",
-  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Autumn_Lookbook_5.jpg",
+  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_10.jpg",
+  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_10.jpg",
   orientation: "portrait",
   percentWidth: "50",
-  lookbookID: "5",
+  lookbookID: "6",
   float: "left" 
   },{
   products: [{
@@ -135,21 +132,21 @@ aw17winter = [{
   prodId: "FHIAC",
   skuColor: "sapphire"
   }],
-  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Autumn_Lookbook_6.jpg",
-  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Autumn_Lookbook_6.jpg",
+  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_11.jpg",
+  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_11.jpg",
   orientation: "portrait",
   percentWidth: "50",
-  lookbookID: "6",
+  lookbookID: "7",
   float: "left" 
   },{
   products: [{
   prodId: "C1IDL",
   skuColor: "green"
   }],
-  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Autumn_Lookbook_7.jpg",
-  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Autumn_Lookbook_7.jpg",
+  imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_Winter_Lookbook_13.jpg",
+  imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_Winter_Lookbook_13.jpg",
   orientation: "portrait",
   percentWidth: "50",
-  lookbookID: "7",
+  lookbookID: "8",
   float: "left" 
   }];
