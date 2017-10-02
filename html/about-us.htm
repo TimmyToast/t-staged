@@ -1,0 +1,216 @@
+ <head>
+  <meta name="description" content="Established in West Wales in 1997 by Jessica and Jamie Seaton, TOAST offers beautiful, functional clothes and homeware. Shop online and in store." />
+  <title>About Us | TOAST</title>
+</head>
+
+<div class="landingPage grid-container grid-100 tablet-grid-100 mobile-grid-100">
+<div class="aboutUsBanner">
+      <div class="tileTitleMid textSemibold">
+        About Us
+        <div class="aboutUsBannerText textBook"><p>To promote a more thoughtful way of life TOAST creates and curates simple, functional, beautiful product and content.</p></div>
+      </div>
+
+    </div>
+
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2  aboutUsText textBook">
+      <p>Established in West Wales in 1997 by Jessica and Jamie Seaton, TOAST has grown from loungewear and nightwear to become a unique lifestyle brand renowned for its thoughtful contemporary design and ability to re-energise traditional textiles.</p>
+
+      <p>In 2015 CEO Suzie de Rohan Willner joined the company and is leading the brand’s recent turnaround in partnership with founders Jessica and Jamie Seaton. Over the past 24 months, TOAST has relocated the design team from Wales to London and appointed a talented team, including a new Head of Design.</p>
+
+      <p>Today, TOAST is a highly creative, forward looking company that strives to encourage a more mindful way of life.</p><p>TOAST has a large online following, 12 shops throughout the UK, offices in both London and Swansea, concessions in 14 John Lewis stores and also plans to open further retail locations.</p>
+
+      <div class="row aboutUsLinks sansMedium">
+
+        <div class="col-sm-4 aboutUsLink">
+          <a href="/uk/shops/shops.htm" title="Found our shops">Find our shops</a>
+        </div>
+
+        <div class="col-sm-4  aboutUsLink">
+          <a href="/uk/press.htm" title="Toast press">Toast Press</a>
+        </div>
+
+        <div class="col-sm-4  aboutUsLink">
+          <a href="/uk/contact+us.htm" titl="Contact us" >Contact Us</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-8 col-md-offset-2">
+      <div class="aboutUsImageCol">
+        <img src="http://d117fiyhpld8f9.cloudfront.net/content-images/AW16/700/TOAST_WEB_AboutUs_2.jpg" alt="OAS Women's Wear" class="img-responsive"/>
+      </div>
+      <div class="aboutUsImageCol">
+        <img src="http://d117fiyhpld8f9.cloudfront.net/content-images/AW16/700/TOAST_WEB_AboutUs_3.jpg" alt="House & Home" class="img-responsive"/>
+      </div>
+
+      <div class="aboutUsImageColFull">
+        <img src="http://d117fiyhpld8f9.cloudfront.net/content-images/AW16/1200/TOAST_WEB_AboutUs_4.jpg" alt="Women's Clothing"  class="img-responsive"/>
+      </div>
+
+
+    </div>
+
+
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 textBook">
+    <div class="aboutUsDeliveryText">
+      <p> UK delivery is £4.95.</p>
+<p> Free delivery and returns is offered on all orders over £125.</p> <p> We also deliver to many international destinations.</p>
+
+      <div class="aboutUsLinks sansMedium">
+  <a href="/uk/content/help/help.htm" title="Delivery information">READ MORE</a>
+  </div>
+</div>
+      </div>
+
+
+
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 aboutUsText textBook">
+      <p>TOAST Magazine is our online magazine. Each week we publish insightful and inspiring articles on a variety of subjects – from traditional textile techniques through to seasonal recipes and the routines of artists and authors. We value serious thought in many broad fields – art, literature, design, travel, philosophy – as much as we do in fashion and clothing.</p>
+      <div class="aboutUsLinks sansMedium">
+  <a href="http://travels.toa.st/" target="blank" title="Toast Magazine" >EXPLORE</a>
+  </div>
+
+      </div>
+
+      <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 aboutUsFooterText textBook">
+      TOAST has a loyal following on Instagram, Facebook, Pinterest and Twitter. We post inspirational photography daily and actively engage with our followers.
+      </div>
+
+      
+
+
+
+<section id="instagramSlider" class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent padding-top-30">
+    <header class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent">
+      <div class="grid-50 tablet-grid-50 mobile-grid-100 center-on-mobile grid-parent" style="text-align: left;">
+        <span class="instagram sprite instaSprite"></span> Follow Us <a href="http://instagram.com/toast">@TOAST</a>
+      </div>
+      <nav class="grid-50 tablet-grid-50 mobile-grid-50 grid-parent hide-on-mobile">
+        <ul>
+          <li class="instagram-filter selected-filter" data-filter="recent">Recent</li>
+          <li class="instagram-filter" data-filter="likes">Most Likes</li>
+          <li class="instagram-filter" data-filter="comments">Most Comments</li>
+        </ul>
+      </nav>
+    </header>
+    <div id="instagramBody" class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent">
+      <div id="instagramInner" class="grid-parent grid-100 tablet-grid-100 mobile-grid-100 fadeIn">
+      
+
+      </div>
+      <div class="slide-left">
+        <div class="sprite chevron-left leftSprite">
+        </div>
+      </div>
+      <div class="slide-right">
+        <div class="sprite chevron-right rightSprite">
+        </div>
+      </div>
+     </div>
+
+    </section>
+</div>
+          <input type="hidden" id="mediaChecker" />
+ <script type="text/javascript">
+$(document).ready(function(){
+        var instagramSlider = function() {
+
+            $.ajax({
+      type: "GET",
+      url: "https://api.instagram.com/v1/users/3351257/media/recent/?access_token=3351257.1677ed0.b27b02c841ca4128b3fcb97232c5f000",
+      dataType: "jsonp",
+      success: function (result) {
+
+        
+        var d = result.data;
+        jQuery.each( d, function(i, val) {
+        var s = "<a href='" + val.link + "' target='_blank'><div class='instagram-img-holder'><img src='" + val.images.standard_resolution.url + "' class='instagram-img' data-comments='" + val.comments.count +"' data-likes='" + val.likes.count +"' data-recent='" + val.created_time + "'/><div class='instagram-rollover'>" + val.caption.text +"</div></div></a>";
+          $('#instagramInner').append($.parseHTML( s ));
+        }); 
+        
+      },
+      async: false
+  }) 
+
+        var slideIndex = 0;
+        var totalSlides = $(".instagram-img").length;
+        var totalPages = Math.ceil(totalSlides/5);
+        var sliding = false;
+        
+        $("#instagramSlider .slide-right, #instagramSlider .slide-left").click(function() {
+          if ($("#mediaChecker").css("content").match(/mobile/g)) {
+            totalPages = totalSlides;
+          } else {
+            totalPages = Math.ceil(totalSlides/5);
+          }
+          
+          if (sliding === false) {
+                sliding = true;
+            
+                var slideDirection = "left";
+            
+                if ($(this).hasClass("slide-right")) {
+                  slideDirection = "right";     
+                   slideIndex++;
+                 if (slideIndex > 3) {                  
+                      slideIndex = 0;
+                                $("#instagramInner").animate({
+                  marginLeft: "-" + parseInt((slideIndex)/100) + "%"
+                                    
+                }, function() { 
+                                    
+                  sliding = false;
+                });
+                }
+                } else { 
+      
+                  slideIndex--;
+                  if (slideIndex === -1) {
+                      slideIndex = 3;
+                                 $("#instagramInner").animate({
+                  marginLeft: "-" + parseInt((slideIndex)*100) + "%"
+                                    
+                }, function() { 
+                                    
+                  sliding = false;
+                });
+                  }        
+                }
+            
+                $("#instagramInner").animate({
+                  marginLeft: "-" + parseInt((slideIndex)*100) + "%"
+                }, function() { 
+                  sliding = false;
+                });
+            }    
+          });
+
+        $(".instagram-filter").click(function() {
+          var filter = $(this).data("filter");
+          $(".instagram-filter.selected-filter").removeClass("selected-filter");
+          $(this).addClass("selected-filter");
+
+          var instagramArray = [];
+          $(".instagram-img").each(function(index) {
+              instagramArray[index] = {"element": $(this), "comments": $(this).data("comments"), "likes": $(this).data("likes"), "recent": $(this).data("recent")};
+          });0
+
+          instagramArray.sort(function(a,b) { return parseFloat(b[filter]) - parseFloat(a[filter]) } );
+
+          for(var i=0;i<instagramArray.length;i++) {
+              $("#instagramInner").append($(instagramArray[i].element).parent().parent());
+          }
+
+          $("#instagramInner").removeClass("fadeIn");
+          setTimeout(function() {
+            $("#instagramInner").addClass("fadeIn");
+          }, 1);
+        });
+ 
+}
+   instagramSlider();
+});
+    </script>
+      ​

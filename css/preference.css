@@ -42,7 +42,7 @@
 .password-error{letter-spacing: 0px;font-size: 14px;font-family: "freight-text-pro", serif;color: red;}
 #errordata{margin-top: 20px;text-align: center}
 #successdata{margin-top: 20px;text-align: center}
-#successdata p{letter-spacing: 0px;font-size: 14px;font-family: "freight-text-pro", serif;color: green;}
+#successdata p, .passwordChangeSuccess{letter-spacing: 0px;font-size: 14px;font-family: "freight-text-pro", serif;color: green;}
 #password-changed p{letter-spacing: 0px;font-size: 14px;font-family: "freight-text-pro", serif;}
 #password-changed a{text-decoration: underline;color: green;}
 .die-table-die {display: none}
