@@ -108,7 +108,10 @@ $('#ctl00_ctl01_txtSearch').bind('focus', function(){ $("#ctl00_ctl01_btnSearch"
 
 if ($(".basket-items .qty").html()) {
    $(".basket-items").addClass("sansBold")
-} 
+   $(".basketBtn").addClass("sansBold")
+} else {
+    $(".basketBtn").addClass("sansMedium")
+}
 
 $(window).bind("pageshow", function(event) {
     if (event.originalEvent.persisted) {
