@@ -1,0 +1,159 @@
+  <div class="col-xs-12 col-sm-6 col-sm-push-3 landingBSIntro">
+            <h1>Your thoughts</h1>
+            <p class="newProductDescription" >Let us know your thoughts on recent purchases.</p>
+      </div>
+<div class="productReviewHolder col-sm-8 col-sm-offset-2">
+
+  <div class="reviewProducts"></div>
+</div>
+<style>
+    /*.productHolder {width: 33%; float: left}*/
+    .reviewTitle {font-size: 14px}
+    .reviewProducts {text-align: center;}
+    .reviewTitle {margin: 10px 0 0 0 }
+    .reviewLink {margin: 20px 0 0 0 }
+    .reviewLinkText {border-bottom: 1px solid #000000; text-transform: uppercase; font-size: 13px}
+    .centralAligner {margin: 0 auto;}
+    .reviewProduct {margin-bottom: 40px}
+</style>
+
+<script>
+// init
+var trimmedSkus = []
+var safeSkuList = []
+var killSkuList = []
+var sanitusedSkuList = []
+
+// create SKU arrays from query string
+var urlParam = location.search.split('skus=')[1]
+var skuArray = urlParam.split(',')
+
+var skuArrayLength = skuArray.length
+for (var i = 0; i < skuArrayLength; i++) {
+    trimmedSkus.push(skuArray[i].substring(0,5))
+}
+
+for (var i = 0; i < skuArray.length; i++) {
+    if (skuArray[i].indexOf("&login=true") > -1){
+        sanitusedSkuList.push(skuArray[i].slice(0, -11))
+    } else {
+        sanitusedSkuList.push(skuArray[i])  
+    }
+    
+}
+
+var skuListVar = { skuList: trimmedSkus }
+
+// check login
+if (tcp_env.user.email != "") {
+    reviewLink = "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId"
+} else {
+    reviewLink = "/login.htm?returnUrl="+location.href
+}
+
+
+// sku checker
+$.ajax({
+    url: "/services/stockservices.asmx/GetProductVariantStock",
+    type: "POST",
+    contentType: "application/json; charset=utf-8",
+    data: JSON.stringify(skuListVar),
+    dataType: "json",
+    success: function(data) {
+        var jsonData = $.parseJSON(data.d)
+
+        availableSkus = []
+
+        $.each(jsonData.stocklist, function( index, value ) {
+            availableSkus.push(value.prodId.substring(0,5))
+        })
+
+        loadSanitisedSkus()
+    }
+})
+
+function isOdd(value){
+    if (value%2 == 0)
+        return false;
+    else
+        return true;
+}
+
+function layoutFormat() {
+    if (isOdd($(".reviewProducts .reviewLink").length) && $(".reviewProducts .reviewLink").length > 1) {
+        $(".productReviewHolder").removeClass("col-sm-8").removeClass("col-sm-offset-2")
+        $(".productReviewHolder").addClass("col-sm-10").addClass("col-sm-offset-1")
+        $(".reviewProduct").removeClass("col-sm-6").addClass("col-sm-4")
+    } else {
+
+     if ($(".reviewProducts .reviewLink").length == 1) {
+        $(".productReviewHolder").removeClass("col-sm-8").removeClass("col-sm-offset-2")
+        $(".productReviewHolder").addClass("col-sm-4").addClass("col-sm-offset-4")
+        $(".reviewProduct").removeClass("col-sm-6").addClass("col-sm-12")
+    }
+}
+    
+}
+
+// Get the pictures using the sanitised SKU list
+function loadSanitisedSkus() {
+
+// filter out all dead SKUs from trimmed array
+    for (var i = trimmedSkus.length - 1; i >= 0; i--) {
+        if ($.inArray(trimmedSkus[i], availableSkus) > -1) {
+            safeSkuList.push(trimmedSkus[i])
+        }  else {
+            killSkuList.push(trimmedSkus[i])
+        }
+    }
+
+// filter our all dead SKU's from un-trimmed array
+    for (var i = killSkuList.length - 1; i >= 0; i--) {
+        sanitusedSkuList.splice($.inArray(killSkuList[i], trimmedSkus),1);
+    }
+
+    safeSkuList.reverse()
+
+    safeSkuListData = { skuList: safeSkuList }
+
+    $.ajax({
+        url: "/services/stockservices.asmx/GetProductData",
+        type: "POST",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(safeSkuListData),
+        dataType: "json",
+        success: function(data) {
+           
+            var jsonData = $.parseJSON(data.d);
+
+            $.each(jsonData.products, function( index, value ) {
+
+                arrayProduct = safeSkuList[index]
+
+                $.each(value[arrayProduct], function( indexInt, values ) {
+
+                    searchArray = values.skuSetArr
+                    
+                    if ($.inArray(sanitusedSkuList[index], searchArray) > -1){
+
+                        //if (tcp_env.user.email != "") {
+                            reviewLink = "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId"
+                            $(".reviewProducts").prepend("<div class='col-sm-6 reviewProduct'><a href='"+reviewLink+"="+trimmedSkus[index]+"'><img class='img-responsive' src="+value[arrayProduct][indexInt].upImg+ "/><div class='reviewTitle textBold'> Review the " + value.title + "</div><div class='reviewLink sansMedium'><span class='reviewLinkText'>Leave a review</span></a></div>")
+                            
+                        // } else {
+                        //     reviewLink = "/login.htm?returnUrl="+location.href
+                        //     $(".reviewProducts").prepend("<div class='col-sm-6 reviewProduct'><a href='"+reviewLink+"'><img class='img-responsive' src="+value[arrayProduct][indexInt].upImg+ "/><div class='reviewTitle textBold'> Review the " + value.title + "</div><div class='reviewLink sansMedium'><span class='reviewLinkText'>Leave a review</span></a></div>")
+                        // }
+                       
+                    }
+                })
+            })
+
+            layoutFormat()
+        }
+    })
+}
+
+
+
+</script>​
