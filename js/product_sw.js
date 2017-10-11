@@ -67,7 +67,7 @@ var productModule = function() {
         } else if ($target.hasClass("pre-order")) {
             $(".stock-message").show().html('<span class="stock-message-text">Your selected item is expected in our warehouse on ' + $target.attr("data-pre-order") + ". You can still order &amp; we will send your item out to you as soon as it arrives.</span>")
         }
-        $(".desc-prod-code").text("Style Code: " + $(".size-selected").attr("data-sku").slice(0, 5))
+        if ($(".desc-prod-code").text()) {$(".desc-prod-code").text("Style Code: " + $(".size-selected").attr("data-sku").slice(0, 5))}
     };
     var scrollOverlayToIndex = function(indexClicked) {
         var addUpHeightUntilIndex = 0;
@@ -264,7 +264,7 @@ var productModule = function() {
 
     $(document).ready(function() {
 
-        // Ring specific //
+    // Ring specific //
 
       if (typeof tcp_product_env != "undefined") {
         if (tcp_product_env[Object.keys(tcp_product_env)[1]] == "fjgkc") {
@@ -277,6 +277,8 @@ var productModule = function() {
             $('div.add-wishlist-item-wrapper').hide()
         }
     }
+
+    
 
   
         $(".browse-controls").removeClass("hide-on-tablet");
@@ -365,6 +367,9 @@ var productModule = function() {
                 manageSizeStockMessages($target)
             })
         }
+
+
+
         $("body").on("click", ".overlay-close", function(e) {
             e.preventDefault();
             $(".main-content").removeClass("visuallyHidden");
@@ -425,6 +430,10 @@ var productModule = function() {
             outOfStockSizeClickHandler: null
         });
         product = product.data("tcplProduct");
+
+
+
+
         $("div.product-mobile-carousel ul.slides").productimages({
             debug: tcp_env.is_live === "false",
             productId: tcp_product_env.shortProductId,
@@ -516,7 +525,11 @@ var productModule = function() {
                     }
                 }
             }
+
         });
+
+        
+
         $("body").append("<div id='basket-notification'><a href='/basket.htm'>1 item added to basket</a></div>");
 
         $("#addToBasket").addtobasket({
@@ -612,6 +625,8 @@ var productModule = function() {
                 return tcp_product_env.productCategory
             }
         });
+
+    
         setSwatchText();
         checkToDisableAddToBag();
         getProductStockInfo();
@@ -627,10 +642,14 @@ var productModule = function() {
             var browseDirection = $(this).hasClass("browse-left") ? "Left" : "Right";
             _gaq.push(["_trackEvent", "Browse Product", "Click", browseDirection])
         })
+
+       
     });
     var lazyLayout = _.debounce(setImages, 300);
     $(window).resize(lazyLayout);
     return moduleVar = {
         getProductData: getProductData
     }
+
+
 }();
