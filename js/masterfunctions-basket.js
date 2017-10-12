@@ -12375,7 +12375,28 @@ var helpModule = function() {
             },
             t = function() {
                 var b = "";
-                f && (b = "visuallyHidden"), $(".product-button.checkout").before($('<div class="grid-100 tablet-grid-100 mobile-grid-100 product-button add-wishlist-item-wrapper ' + b + '"><a href="#" id="addToWishlist" class="add-to-wishlist">Add To Wishlist</a></div>')), $("#addToWishlist").click(function(b) {
+                f && (b = "visuallyHidden")
+               
+                pathArray = location.pathname.split("/")
+                if (($.inArray("us", pathArray) > 0 || $.inArray("eu", pathArray) > 0) && $.inArray("toast+store+gift+card.htm", pathArray) > 0) {
+                    $(".product-accordion").remove()
+                    $(".product-swatches").remove()
+                    $(".product-label").remove()
+                    $(".product-sizes").remove()
+                    $(".add-to-bag").remove()
+                    $(".add-to-wishlist").remove()
+                    $("#social").remove()
+                    $(".product-qty").remove()
+                    $(".you-may-also-like").remove()
+                    $(".recentlyViewed").remove()
+                    $("#nowPrice").remove()
+                    $(".add-wishlist-item-wrapper").remove()
+                    $(".freeReturnsProduct").html("<br>We're sorry but this product is only<br> available to <a href='/uk/product/gift+cards/gift/toast+store+gift+card.htm' class='underlineLink'>purchase in GBP</a>.")
+                } else {
+                     $(".product-button.checkout").before($('<div class="grid-100 tablet-grid-100 mobile-grid-100 product-button add-wishlist-item-wrapper ' + b + '"><a href="#" id="addToWishlist" class="add-to-wishlist">Add To Wishlist</a></div>')) 
+                }
+
+                $("#addToWishlist").click(function(b) {
                     b.preventDefault(), document.body.style.cursor = "wait";
                     var c = {
                         prodCode: "",
