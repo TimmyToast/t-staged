@@ -1,21 +1,19 @@
-  <div class="col-xs-12 col-sm-6 col-sm-push-3 landingBSIntro">
-            <h1>Your thoughts</h1>
-            <p class="newProductDescription" >Let us know your thoughts on recent purchases.</p>
+<head>
+  <title>Review Your Purchases | TOAST</title>
+  <meta name="description" content="See your recently purchased items and submit a product review. Help others choose by rating your TOAST purchase.">
+</head>
+  
+
+  <div class="col-xs-12 col-sm-6 col-sm-push-3 landingBSIntro reviewParagraph">
+            <h1>Here are your most recent purchases. </h1>
+            <p>Please let us know your thoughts by submitting a review. Each review will be entered into a prize draw to win £200 to spend at TOAST.
+    <br><a href="/content/static+pages/review-terms-and-conditions.htm" class="underlineLink sansBook reviewParagraphLink">Prize draw terms & conditions</a></p>
       </div>
-<div class="productReviewHolder col-sm-8 col-sm-offset-2">
+<div class="productReviewHolder col-sm-10 col-sm-offset-1">
 
   <div class="reviewProducts"></div>
 </div>
-<style>
-    /*.productHolder {width: 33%; float: left}*/
-    .reviewTitle {font-size: 14px; height: 25px}
-    .reviewProducts {text-align: center;}
-    .reviewTitle {margin: 10px 0 0 0 }
-    .reviewLink {margin: 20px 0 0 0 }
-    .reviewLinkText {border-bottom: 1px solid #000000; text-transform: uppercase; font-size: 13px}
-    .centralAligner {margin: 0 auto;}
-    .reviewProduct {margin-bottom: 40px}
-</style>
+
 
 <script>
 // init
@@ -45,11 +43,7 @@ for (var i = 0; i < skuArray.length; i++) {
 var skuListVar = { skuList: trimmedSkus }
 
 // check login
-if (tcp_env.user.email != "") {
-    reviewLink = "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId"
-} else {
-    reviewLink = "/login.htm?returnUrl="+location.href
-}
+// if (tcp_env.user.email != "") {}
 
 
 // sku checker
@@ -69,62 +63,76 @@ $.ajax({
         })
 
         loadSanitisedSkus()
+    },
+    error: function(data){
+         _gaq.push(["_trackEvent", "Review Listing Page - GetProductVariantStock API fail", "Click", JSON.stringify(skuArray)])
+         $(".reviewProducts").prepend("<p class='sansBook'>Error connecting to product service (GetProductVariantStock).</p>")
     }
 })
 
-function isOdd(value){
+function isEven(value){
     if (value%2 == 0)
-        return false;
-    else
         return true;
+    else
+        return false;
 }
 
 function layoutFormat() {
-    if (isOdd($(".reviewProducts .reviewLink").length) && $(".reviewProducts .reviewLink").length > 1) {
-        $(".productReviewHolder").removeClass("col-sm-8").removeClass("col-sm-offset-2")
-        $(".productReviewHolder").addClass("col-sm-10").addClass("col-sm-offset-1")
-        $(".reviewProduct").removeClass("col-sm-6").addClass("col-sm-4")
+    if (isEven($(".reviewProducts .reviewLink").length) && $(".reviewProducts .reviewLink").length < 5) {
+        if ($(".reviewProducts .reviewLink").length == 2) {
+            $(".productReviewHolder").removeClass("col-sm-10").removeClass("col-sm-offset-1")
+            $(".productReviewHolder").addClass("col-sm-8").addClass("col-sm-offset-2")
+            $(".reviewProduct").removeClass("col-sm-4").addClass("col-sm-6")
+        } else {
+            $(".productReviewHolder").removeClass("col-sm-10").removeClass("col-sm-offset-1")
+            $(".productReviewHolder").addClass("col-sm-8").addClass("col-sm-offset-2")
+            $(".reviewProduct").removeClass("col-sm-4").addClass("col-sm-5")
+        }
     } else {
 
-     if ($(".reviewProducts .reviewLink").length == 1) {
-        $(".productReviewHolder").removeClass("col-sm-8").removeClass("col-sm-offset-2")
+       if ($(".reviewProducts .reviewLink").length == 1) {
+        $(".productReviewHolder").removeClass("col-sm-10").removeClass("col-sm-offset-1")
         $(".productReviewHolder").addClass("col-sm-4").addClass("col-sm-offset-4")
-        $(".reviewProduct").removeClass("col-sm-6").addClass("col-sm-12")
+        $(".reviewProduct").removeClass("col-sm-4").addClass("col-sm-12")
     }
 }
-    
+
 }
 
 // Get the pictures using the sanitised SKU list
 function loadSanitisedSkus() {
 
 // filter out all dead SKUs from trimmed array
-    for (var i = trimmedSkus.length - 1; i >= 0; i--) {
-        if ($.inArray(trimmedSkus[i], availableSkus) > -1) {
-            safeSkuList.push(trimmedSkus[i])
-        }  else {
-            killSkuList.push(trimmedSkus[i])
-        }
+for (var i = trimmedSkus.length - 1; i >= 0; i--) {
+    if ($.inArray(trimmedSkus[i], availableSkus) > -1) {
+        safeSkuList.push(trimmedSkus[i])
+    }  else {
+        killSkuList.push(trimmedSkus[i])
     }
+}
 
 // filter our all dead SKU's from un-trimmed array
-    for (var i = killSkuList.length - 1; i >= 0; i--) {
-        sanitusedSkuList.splice($.inArray(killSkuList[i], trimmedSkus),1);
-    }
+for (var i = killSkuList.length - 1; i >= 0; i--) {
+    sanitusedSkuList.splice($.inArray(killSkuList[i], trimmedSkus),1);
+}
 
-    safeSkuList.reverse()
+safeSkuList.reverse()
 
-    safeSkuListData = { skuList: safeSkuList }
+safeSkuListData = { skuList: safeSkuList }
 
-    $.ajax({
-        url: "/services/stockservices.asmx/GetProductData",
-        type: "POST",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(safeSkuListData),
-        dataType: "json",
-        success: function(data) {
-           
-            var jsonData = $.parseJSON(data.d);
+$.ajax({
+    url: "/services/stockservices.asmx/GetProductData",
+    type: "POST",
+    contentType: "application/json; charset=utf-8",
+    data: JSON.stringify(safeSkuListData),
+    dataType: "json",
+    success: function(data) {
+
+        var jsonData = $.parseJSON(data.d);
+
+        // check for returned data
+
+        if (jsonData != null){
 
             $.each(jsonData.products, function( index, value ) {
 
@@ -133,25 +141,38 @@ function loadSanitisedSkus() {
                 $.each(value[arrayProduct], function( indexInt, values ) {
 
                     searchArray = values.skuSetArr
-                    
+
                     if ($.inArray(sanitusedSkuList[index], searchArray) > -1){
 
-                        //if (tcp_env.user.email != "") {
-                            reviewLink = "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId"
-                            $(".reviewProducts").prepend("<div class='col-sm-6 reviewProduct'><a href='"+reviewLink+"="+trimmedSkus[index]+"'><img class='img-responsive' src="+value[arrayProduct][indexInt].upImg+ "/><div class='reviewTitle textBold'> Review the " + value.title + "</div><div class='reviewLink sansMedium'><span class='reviewLinkText'>Leave a review</span></a></div>")
-                            
-                        // } else {
-                        //     reviewLink = "/login.htm?returnUrl="+location.href
-                        //     $(".reviewProducts").prepend("<div class='col-sm-6 reviewProduct'><a href='"+reviewLink+"'><img class='img-responsive' src="+value[arrayProduct][indexInt].upImg+ "/><div class='reviewTitle textBold'> Review the " + value.title + "</div><div class='reviewLink sansMedium'><span class='reviewLinkText'>Leave a review</span></a></div>")
-                        // }
-                       
+                        reviewLink = "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId"
+                        $(".reviewProducts").prepend("<div class='col-sm-4 reviewProduct' id="+arrayProduct+"><a href='"+reviewLink+"="+trimmedSkus[index]+"'><img class='img-responsive' src="+value[arrayProduct][indexInt].upImg+ "/><div class='reviewTitle textBold'>" + value.title + "</div><div class='reviewLink sansMedium'><span class='reviewLinkText'>Leave a review</span></a></div>")
+
                     }
                 })
             })
 
-            layoutFormat()
+             for (var i = 0; i < trimmedSkus.length; i++) {
+                var $div = $('#'+trimmedSkus[i])
+                if ($("div[id*='"+trimmedSkus[i]+"']").length > 1) {
+                    $("div[id*='"+trimmedSkus[i]+"']").not(':last').remove()
+                }
         }
-    })
+
+        _gaq.push(["_trackEvent", "Review Listing Page - Sku's shown", "Click", JSON.stringify(skuArray)])
+        layoutFormat()
+
+        } else {
+            _gaq.push(["_trackEvent", "Review Listing Page - GetProductData API no data", "Click", JSON.stringify(skuArray)])
+            $(".reviewProducts").prepend("<p class='sansBook'>Product is no longer active.</p>")
+        }
+
+       
+    },
+    error: function(data){
+         _gaq.push(["_trackEvent", "Review Listing Page - GetProductVariantStock API fail", "Click", JSON.stringify(skuArray)])
+         $(".reviewProducts").prepend("<p class='sansBook'>Error connecting to product service (GetProductData).</p>")
+    }
+})
 }
 
 
