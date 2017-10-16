@@ -5,7 +5,7 @@ function triggerEmailPopup() {
     time += 3600 * 1000;
     now.setTime(time);
 
-    showQualifyer = thisHref.indexOf("Master+Group") == -1 && !$.cookie("emailClickUserSummer") 
+    showQualifyer = thisHref.indexOf("Master") == -1 && thisHref.indexOf("master") == -1 && !$.cookie("emailClickUserSummer") 
 
     if (showQualifyer) {
       document.cookie = "emailClickUserSummer=true; expires=" + now.toUTCString() + "; path=/";
@@ -79,7 +79,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 })();
 
 $(document).ready(function() {
-    $("body").prepend('<div class="elb_Lightbox"></div>'), setTimeout(triggerEmailPopup, 5000) 
+    $("body").prepend('<div class="elb_Lightbox"></div>'), setTimeout(triggerEmailPopup, 15000) 
 });
 
 
