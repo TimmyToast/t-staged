@@ -37,8 +37,8 @@ $serifFont: "freight-text-pro", serif;
 .topNavSale, .saleItem a {color:#ca9637 !important} 
 .category-product-items .product, .category-product-items .rangeproduct {margin-bottom: 188px; height: 390px; padding: 0 10px}
 .textRight {text-align: right}
-.helvMedium {font-family: 'HelveticaNeueLT-MediumCond', 'pragmatica-web-condensed', arial, sans-serif}
-.helvLight {font-family: 'HelveticaNeueLT-LightCond', 'pragmatica-web-condensed', arial, sans-serif}
+.helvMedium {font-family: $sansFont}
+.helvLight {font-family: $sansFont}
 .textCenter {text-align: center}
 
 /*Framework*/
@@ -59,7 +59,7 @@ $serifFont: "freight-text-pro", serif;
 
 /* Range page */
 .products-in-range {text-align: center} 
-.products-in-range .range-product {float: none; display: inline-block}
+.products-in-range .range-product {float: none; display: inline-block} 
 .t_Tooltip {display: none}
 
 /*Homepage*/
@@ -285,7 +285,7 @@ input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
 .footerSocialIcons li {display: inline-block; padding-right: 5px}
 .footerSocialIcons ul {margin:0 0 20px -10px}*/
 
-.marketingMessage {background-color: #dfdfdf; color: #000; width: 100%; padding:8px; text-transform: uppercase; font-family: 'HelveticaNeueLT-LightCond','pragmatica-web-condensed',arial,sans-serif; letter-spacing: 1px; text-align: center}
+.marketingMessage {background-color: #dfdfdf; color: #000; width: 100%; padding:8px; text-transform: uppercase; letter-spacing: 1px; text-align: center}
 
 /*NEW FOOTER STYLES*/
 .aboutUsNavOpt{clear:both}
@@ -509,7 +509,7 @@ div[title="Change map style"] {display: none}
 
 /*Search results */
 .rangeproduct { text-align: center}
-.rangeproduct h3,  #searchpage_popularproducts h3 {font-size: 13px;font-weight: 400; height: 32px; letter-spacing: 1px; text-transform: uppercase; font-family: HelveticaNeueLT-LightCond,pragmatica-web-condensed,arial,sans-serif}
+.rangeproduct h3,  #searchpage_popularproducts h3 {font-size: 13px;font-weight: 400; height: 32px; letter-spacing: 1px; text-transform: uppercase; font-family: $sansFont}
 .category-product-items .rangeproduct  span.sale, .product-info span.sale,  .you-may-also-like  span.sale{    text-decoration: line-through; color: #ff0000; margin-right: 5px}
 .rangeproduct p {font-family: $sansFont; font-size: 14px; margin-top: 5px; }
 .rangeproduct img {margin-bottom: 25px}

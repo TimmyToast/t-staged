@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://d2xfispw8k8nwr.cloudfront.net/css/min/toast-framework-font.css" />
+    <link rel="stylesheet" href="https://d2xfispw8k8nwr.cloudfront.net/css/min/main.css" />
+    <script type="text/javascript" src="https://d2xfispw8k8nwr.cloudfront.net/js/min/jquery.min.js"></script>
+  </head>
+  <style> 
+    .carouselHolder {width: 100%; overflow: hidden; height:300px; position: relative;}
+    .carouselInner {display: block; position: absolute; top: 0; left: 0}
+    .carouselInner li {display: inline}
+    
+
+
+  </style>
+  <body>
+    <div class="container">
+
+    <div class="col-md-6 col-md-offset-3 carouselScope">
+        <div class="carouselHolder">
+          <div class="carouselInner">
+            <ul>
+              <li><img src="https://travels.toa.st/wp-content/uploads/2017/10/raystitch_11.jpg" ></li>
+              <li><img src="https://travels.toa.st/wp-content/uploads/2017/10/raystitch_8.jpg" ></li>
+              <li><img src="https://travels.toa.st/wp-content/uploads/2017/10/raystitch_7.jpg" ></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </body>
+
+
+  <script>
+$( document ).ready(function() {
+
+  showWidth = $(".carouselScope").width()
+
+  $(".carouselInner").width(showWidth * $(".carouselInner li").length)
+  $(".carouselInner img").width(showWidth)
+  $(".carouselInner, .carouselHolder").height(showWidth * 0.7065)
+
+})
+
+  </script>
+</html>
