@@ -6,13 +6,15 @@ var markers = [
   ['<b>Cambridge</b><br>Grand Arcade, Cambridge, CB2 3DS', 52.203785, 0.122585],
   ['<b>Cardiff</b><br>The Hayes, Cardiff, CF10 1EG', 51.477831, -3.174090], 
   ['<b>Cribbs Causeway</b><br>The Mall at Cribbs Causeway, Bristol, BS34 5QU', 51.525289, -2.595477],
+  ['<b>Edinburgh</b><br>Leith Street, Edinburgh, EH1 3SP', 55.955413, -3.187530], 
   ['<b>Exeter</b><br>1 Sidwell Street, Exeter, EX4 6NN', 50.725939, -3.526827], 
-  ['<b>Glasgow</b><br>Buchanan Galleries, Buchanan St, Glasgow G1 2GF', 55.862977, -4.252460],
   ['<b>High Wycombe</b><br>Cressex Centre, High Wycombe, HP12 4NW', 51.610873, -0.782570],
   ['<b>Kingston</b><br>Wood Street, Kingston upon Thames, Surrey, KT1 1TE', 51.411378, -0.306223],
   ['<b>Milton Keynes</b><br>the centre:mk, Milton Keynes, MK9 3EP', 52.044848, -0.752437],
+  ['<b>Oxford</b><br>3101 The Westgate, Queen Street, Oxford, Oxfordshire, OX1 1PB', 51.749328, -1.262915],
   ['<b>Oxford Street</b><br>300 Oxford Street, London, W1A 1EX', 51.515216, -0.145123],
   ['<b>Peter Jones</b><br>Sloane Square, London, SW1W 8EL', 51.492270, -0.158959],
+  ['<b>Southampton</b><br>West Quay North, Southampton, Hampshire, SO15 1QA', 50.904280, -1.407780],
   ['<b>Victoria Centre</b><br>Victoria Centre - Nottingham, NG1 3QA', 52.955954, -1.147591],
 ]
 
