@@ -9,8 +9,14 @@ function moveReviews(){
     $(".product-info  .topReviews").wrapInner("<a href='javascript:openReviews()'></a>")
     $("#reviewSummaryContainer .review-rating-ratio").remove()
     $("#reviewSummaryContainer .review-rating").remove()
+
+    swapBuyMobile()
 }
 
+function swapBuyMobile(){
+    $('#social').before("<div class='productHome'></div>")
+    $(".product-details .product-details").children().first().detach().appendTo('.productHome')
+}
 
 function openReviews() {
     $("#review-section header").trigger( "click" );
