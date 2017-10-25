@@ -14,7 +14,7 @@ $serifFont: "freight-text-pro", serif;
 
 /* Free returns AB test */
 .fontWeightUp {font-weight: 600}
-.freeReturnsProduct {font-size: 16px}
+.freeReturnsProduct {font-size: 16px; display:block; clear:both}
 .returnReturnsBasket {width: 100%;padding: 10px 22px 0 0;text-align: right;font-size: 13px !important}
 .ABVariant {display:none}
 

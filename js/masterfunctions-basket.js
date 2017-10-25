@@ -3,12 +3,16 @@ function flagSwap() {
 }
 
 function moveReviews(){
-    $("#nowPrice").append($(".review-rating-ratio").html())
-    $("#nowPrice").append("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +")</span>")
+    $("#nowPrice").after($(".review-rating-ratio").html())
+    $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +")</span>")
     $(".product-info  .review-rating-stars-on").wrapInner("<a href='javascript:openReviews()'></a>")
     $(".product-info  .topReviews").wrapInner("<a href='javascript:openReviews()'></a>")
     $("#reviewSummaryContainer .review-rating-ratio").remove()
     $("#reviewSummaryContainer .review-rating").remove()
+}
+
+function putReviewsBack() {
+    
 }
 
 function openReviews() {
@@ -11206,6 +11210,7 @@ var teradata = function() {
                     if (void 0 === b) {
                         var c = $(this).find("img").attr("alt");
                         _gaq.push(["_trackEvent", "Colour", "Click", c])
+                        putReviewsBack()
                     }
                 }), $("body").on("change", ".basketqtylist", function() {
                     var a = $(this).val(),

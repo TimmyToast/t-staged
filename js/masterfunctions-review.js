@@ -3,8 +3,8 @@ function flagSwap() {
 }
 
 function moveReviews(){
-    $("#nowPrice").append($(".review-rating-ratio").html())
-    $("#nowPrice").append("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +")</span>")
+    $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +")</span>")
+    $("#nowPrice").after($(".review-rating-ratio").html())
     $(".product-info  .review-rating-stars-on").wrapInner("<a href='javascript:openReviews()'></a>")
     $(".product-info  .topReviews").wrapInner("<a href='javascript:openReviews()'></a>")
     $("#reviewSummaryContainer .review-rating-ratio").remove()
