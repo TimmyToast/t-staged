@@ -58,6 +58,10 @@ h3.product-label span.product-label-colour{font-family: "freight-sans-pro",sans-
 .accountLeftInner > .creditTermsRight {display:none}
 .accountLeftInner > .creditTermsRight ~ .creditTermsRight {display: inline-block;}
 
+.product-info .review-rating-stars span{display:block;overflow:hidden}
+.product-info .review-rating-stars  {vertical-align: sub;display: inline-block; font-size: 13px; margin-left:10px;}
+.topReviews {font-size: 13px}
+
 @media screen and (max-width: 1024px) {
 	.main-header .nav-bar .hide-on-mobile {display: block !important}
 	.left-side-nav, .right-side-nav {display:none;}

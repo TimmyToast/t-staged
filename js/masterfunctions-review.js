@@ -13,6 +13,10 @@ function moveReviews(){
 
 function openReviews() {
     $("#review-section header").trigger( "click" );
+    if ($(document).width() < 768) {
+        var body = $("html, body");
+        body.stop().animate({scrollTop:$("#review-section").offset().top-$("#product-acc-desc").height() + 41}, 500, 'swing', function() { });
+    }
 }
 
 function getParameterByName(a) {
@@ -12599,7 +12603,7 @@ var helpModule = function() {
                                 }, 500)
                             }
                         $.each(c.Results, function(a, b) {
-                            b.ClientResponses.length > 0 && $("#reviewId-" + b.Id).html("<img src='//d2xfispw8k8nwr.cloudfront.net/images/review_pointer.gif' alt='Review response' style='vertical-align:bottom'/><div style='background-color:#e9e9e9; padding:16px; margin-bottom:16px'>" + b.ClientResponses[0].Response + "</div>")
+                            b.ClientResponses.length > 0 && $("#reviewId-" + b.Id).html("<img src='//d2xfispw8k8nwr.cloudfront.net/images/review_pointer.gif' alt='Review response' style='vertical-align:bottom' class='img-responsive'/><div style='background-color:#e9e9e9; padding:16px; margin-bottom:16px'>" + b.ClientResponses[0].Response + "</div>")
                         })
                     }
                 })
