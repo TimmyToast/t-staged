@@ -10,12 +10,21 @@ function moveReviews(){
     $("#reviewSummaryContainer .review-rating-ratio").remove()
     $("#reviewSummaryContainer .review-rating").remove()
 
-    swapBuyMobile()
+    swapBuyModule()
 }
 
-function swapBuyMobile(){
-    $('#social').before("<div class='productHome'></div>")
-    $(".product-details .product-details").children().first().detach().appendTo('.productHome')
+function swapBuyModule(){
+
+    if ($(document).width() < 768) {
+        $('#social').before("<div class='productHome'></div>") 
+        $(".product-page").detach().appendTo('.productHome') 
+        $(".product-details .product-details").children().first().detach().appendTo('.productHome')  
+    } else {
+        $('#social').before("<div class='productHome'></div>")   
+        $(".product-details .product-details").children().first().detach().appendTo('.productHome') 
+    }
+    
+   
 }
 
 function openReviews() {
@@ -12578,7 +12587,7 @@ var helpModule = function() {
                     dataType: "jsonp",
                     success: function(c) {
                         if (!c.HasErrors)
-                            if (0 === c.TotalResults) $(".noReviews").removeClass("visuallyHidden"), $("#review-section header h2").text("Reviews (0)"), $("#reviewContainer").addClass("visuallyHidden"), $(".noReviews").length < 1 && ($("#reviewContainer").before('<p class="noReviews">There are currently no reviews for this product.</p>'), tcp_env.user.email.length > 0 ? ($("#reviewContainer").before('<p class="noReviews"><a href="http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=' + h + '" target="_blank">Be the first to review this product.</a></p>'), $("#review-section header h2").after($('<a href="http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=' + h + '" target="_blank"><span class="first-to-review-summary noReviews">be first to review this</span></a>'))) : ($("#reviewContainer").before('<p class="noReviews"><a href="' + j + '">Be the first to review this product.</a></p>'), $("#review-section header h2").after($('<a href="' + j + '"><span class="first-to-review-summary noReviews">Be first to review this</span></a>')))), $("#reviewContainer").removeClass("visuallyHidden").addClass("no-reviews"), tcp_env.user.email.length > 0 ? ($(".noReviews a, #add-review").attr("href", "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=" + h), $(".first-to-review-summary").parent().attr("href", "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=" + h)) : $("#reviewContainer .review-dropdown").hide(), $("#reviewSummaryContainer").hide();
+                            if (0 === c.TotalResults)  swapBuyModule(), $(".noReviews").removeClass("visuallyHidden"), $("#review-section header h2").text("Reviews (0)"), $("#reviewContainer").addClass("visuallyHidden"), $(".noReviews").length < 1 && ($("#reviewContainer").before('<p class="noReviews">There are currently no reviews for this product.</p>'), tcp_env.user.email.length > 0 ? ($("#reviewContainer").before('<p class="noReviews"><a href="http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=' + h + '" target="_blank">Be the first to review this product.</a></p>'), $("#review-section header h2").after($('<a href="http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=' + h + '" target="_blank"><span class="first-to-review-summary noReviews">be first to review this</span></a>'))) : ($("#reviewContainer").before('<p class="noReviews"><a href="' + j + '">Be the first to review this product.</a></p>'), $("#review-section header h2").after($('<a href="' + j + '"><span class="first-to-review-summary noReviews">Be first to review this</span></a>')))), $("#reviewContainer").removeClass("visuallyHidden").addClass("no-reviews"), tcp_env.user.email.length > 0 ? ($(".noReviews a, #add-review").attr("href", "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=" + h), $(".first-to-review-summary").parent().attr("href", "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=" + h)) : $("#reviewContainer .review-dropdown").hide(), $("#reviewSummaryContainer").hide();
                             else {
                                 var f = "",
                                     i = "";
