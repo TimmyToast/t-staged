@@ -9,29 +9,15 @@ function moveReviews(){
     $(".product-info  .topReviews").wrapInner("<a href='javascript:openReviews()'></a>")
     $("#reviewSummaryContainer .review-rating-ratio").remove()
     $("#reviewSummaryContainer .review-rating").remove()
-
-    swapBuyModule()
-}
-
-function swapBuyModule(){
-
-    if ($(document).width() < 768) {
-        $('#social').before("<div class='productHome'></div>") 
-        $(".product-page").detach().appendTo('.productHome') 
-        $(".product-details .product-details").children().first().detach().appendTo('.productHome')  
-    } else {
-        $('#social').before("<div class='productHome'></div>")   
-        $(".product-details .product-details").children().first().detach().appendTo('.productHome') 
-    }
-    
-   
 }
 
 function openReviews() {
     $("#review-section header").trigger( "click" );
+    var body = $("html, body");
     if ($(document).width() < 768) {
-        var body = $("html, body");
         body.stop().animate({scrollTop:$("#review-section").offset().top-$("#product-acc-desc").height() + 41}, 500, 'swing', function() { });
+    } else {
+        body.stop().animate({scrollTop:$("#review-section").offset().top-$("#product-acc-desc").height() - 40}, 500, 'swing', function() { });
     }
 }
 

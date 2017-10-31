@@ -14,7 +14,7 @@ $serifFont: "freight-text-pro", serif;
 
 /* Free returns AB test */
 .fontWeightUp {font-weight: 600}
-.freeReturnsProduct {font-size: 16px}
+.freeReturnsProduct {font-size: 16px; display:block; clear:both}
 .returnReturnsBasket {width: 100%;padding: 10px 22px 0 0;text-align: right;font-size: 13px !important}
 .ABVariant {display:none}
 
@@ -37,8 +37,8 @@ $serifFont: "freight-text-pro", serif;
 .topNavSale, .saleItem a {color:#ca9637 !important} 
 .category-product-items .product, .category-product-items .rangeproduct {margin-bottom: 188px; height: 390px; padding: 0 10px}
 .textRight {text-align: right}
-.helvMedium {font-family: 'HelveticaNeueLT-MediumCond', 'pragmatica-web-condensed', arial, sans-serif}
-.helvLight {font-family: 'HelveticaNeueLT-LightCond', 'pragmatica-web-condensed', arial, sans-serif}
+.helvMedium {font-family: $sansFont}
+.helvLight {font-family: $sansFont}
 .textCenter {text-align: center}
 
 /*Framework*/
@@ -59,23 +59,25 @@ $serifFont: "freight-text-pro", serif;
 
 /* Range page */
 .products-in-range {text-align: center} 
-.products-in-range .range-product {float: none; display: inline-block}
+.products-in-range .range-product {float: none; display: inline-block} 
 .t_Tooltip {display: none}
 
 /*Homepage*/
 .tileTitleMid {color: white;position: absolute;top: 31%;width: 100%;text-align: center;font-size: 28px;line-height: 45px; letter-spacing: 2px; left:0}
 .hlTopTile {width: 100%; display: block; width: 100%; padding-top: 62.947%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .hlTopTile .tileTitle {top: 45%}
-.hlTile8 .tileTitle {top: 72%}
-.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1500/TOAST_Winter_Homepage_1o.jpg');padding-top: 74.951%}
-.hlTile2{background-image: url("//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_5o.jpg");padding-top: 128.911%}
-.hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/AW17056_WEB_WinterRefresh_1.jpg');padding-top: 128.911%}
-.hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_3o.jpg');padding-top: 128.911%}
-.hlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_4o.jpg');padding-top: 128.911%}
-.hlTile6{background-image: url("//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Landing_2o.jpg") ;padding-top: 128.911%}
-.hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_6o.jpg');padding-top: 128.911%; float:left}
-.hlTile8{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1390/TOAST_Winter_Homepage_7o_new.jpg');padding-top: 58.46748%; float:left}
-.hlTile9{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_8o.jpg');padding-top: 58.46748%; float:left}
+.hlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1500/TOAST_DeepWinter_Homepage_1.jpg');padding-top: 74.951%}
+.hlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_2.jpg');padding-top: 128.911%}
+.hlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_3.jpg');padding-top: 128.911%}
+.hlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_4.jpg');padding-top: 128.911%}
+.hlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_5.jpg');padding-top: 128.911%}
+.hlTile6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_6.jpg');padding-top: 128.911%}
+.hlTile7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_7.jpg');padding-top: 128.911%}
+.hlTile8{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1390/TOAST_DeepWinter_Homepage_8.jpg');padding-top: 128.911%}
+.hlTile9{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_9.jpg');padding-top: 128.911%}
+.hlTile10{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1390/TOAST_DeepWinter_Homepage_10.jpg');padding-top: 58.46748%}
+.hlTile10 .tileTitle {top: 72%}
+.hlTile11{padding-top: 58.46748%}
 .preTitle {color: #ffffff;font-size: 18px;margin: 0 0 -5px 0;padding: 0}
 
 .hlTile1 .tileTitleMid{top: 50%;color: #d14d18}
@@ -92,7 +94,7 @@ $serifFont: "freight-text-pro", serif;
 .hlTile2 .tileTitleMid .saleTopP{margin-bottom: 5px;letter-spacing: 1px}
 .lowerTileTitle{position: absolute;bottom: 15.5%;text-align: center;width: 100%}
 .lowerTileTitle span{display: inline-block}
-.signuptile {text-align: center; background-image: url("//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_8.jpg")}
+.signuptile {text-align: center; background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_11.jpg')}
 .signuptile p {color: white;width: 100%;top: 0px}
 .signuptile button {margin-top: 8%;border-width: 0px;font-size: 16px;color: white;letter-spacing:1px;font-family: 'freight-sans-pro', sans-serif;background: transparent}
 .signuptile input {min-width: 290px; height: 42px}
@@ -102,16 +104,16 @@ $serifFont: "freight-text-pro", serif;
 .minAutSaleTitle {font-weight: 600; letter-spacing: 2px}
 
 /*Women's Landing Page*/
-.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Landing_1.jpg')}
-.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/AW17056_WEB_WinterRefresh_1.jpg')}
-.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_6.jpg')}
-.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_4.jpg')}
-.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_5.jpg')}
-.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Landing_new.jpg')}
-.wl_7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Homepage_3.jpg')}
-.wl_8{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Landing_2.jpg')}
-.wl_9{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Landing_3.jpg')}
-.wl_10{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Landing_4.jpg')}
+.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Women_1.jpg')}
+.wl_2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_2.jpg')}
+.wl_3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_3.jpg')}
+.wl_4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_5.jpg')}
+.wl_5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_6.jpg')}
+.wl_6{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_4.jpg')}
+.wl_7{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_Homepage_7.jpg')}
+.wl_8{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1390/TOAST_DeepWinter_Homepage_8.jpg')}
+
+
 
 .twoLineTitle {font-size: 22px; letter-spacing: 2px; margin-bottom: 25px}
 .saleLink {border-bottom: 1px solid #ffffff; font-size: 18px; letter-spacing: 1px}
@@ -119,11 +121,11 @@ $serifFont: "freight-text-pro", serif;
 /*house and home landing page*/
 .houseandhome .col-sm-6, .houseandhome .col-sm-12, .womens .col-sm-6, .homepage .col-sm-6, .homepage .col-sm-12 {padding-left: 5px;padding-right: 5px}
 
-.hhlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_HHLanding_1.jpg');padding-top: 74.9517%; margin-bottom: 10px}
-.hhlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_HHLanding_2.jpg'); margin-bottom: 10px;padding-top:128.911%}
-.hhlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Landing_3.jpg'); margin-bottom: 10px;padding-top:128.911%}
-.hhlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_HHLanding_3.jpg'); margin-bottom: 10px;padding-top:128.911%}
-.hhlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_Winter_Landing_4.jpg'); margin-bottom: 10px;padding-top:128.911%}
+.hhlTile1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_HH_1.jpg');padding-top: 74.9517%; margin-bottom: 10px}
+.hhlTile2{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_HH_2.jpg'); margin-bottom: 10px;padding-top:128.911%}
+.hhlTile3{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_HH_3.jpg'); margin-bottom: 10px;padding-top:128.911%}
+.hhlTile4{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_HH_4.jpg'); margin-bottom: 10px;padding-top:128.911%}
+.hhlTile5{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1400/TOAST_DeepWinter_HH_5.jpg'); margin-bottom: 10px;padding-top:128.911%}
 .hhTopTile {width: 100%; display: block; width: 100%; padding-top: 62.966%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .hhlTile1 .tileTitle {top: 45%;line-height: 45px}
 .hhlTile1 .tileTitle a {color: #ffffff}
@@ -285,7 +287,7 @@ input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
 .footerSocialIcons li {display: inline-block; padding-right: 5px}
 .footerSocialIcons ul {margin:0 0 20px -10px}*/
 
-.marketingMessage {background-color: #dfdfdf; color: #000; width: 100%; padding:8px; text-transform: uppercase; font-family: 'HelveticaNeueLT-LightCond','pragmatica-web-condensed',arial,sans-serif; letter-spacing: 1px; text-align: center}
+.marketingMessage {background-color: #dfdfdf; color: #000; width: 100%; padding:8px; text-transform: uppercase; letter-spacing: 1px; text-align: center}
 
 /*NEW FOOTER STYLES*/
 .aboutUsNavOpt{clear:both}
@@ -509,7 +511,7 @@ div[title="Change map style"] {display: none}
 
 /*Search results */
 .rangeproduct { text-align: center}
-.rangeproduct h3,  #searchpage_popularproducts h3 {font-size: 13px;font-weight: 400; height: 32px; letter-spacing: 1px; text-transform: uppercase; font-family: HelveticaNeueLT-LightCond,pragmatica-web-condensed,arial,sans-serif}
+.rangeproduct h3,  #searchpage_popularproducts h3 {font-size: 13px;font-weight: 400; height: 32px; letter-spacing: 1px; text-transform: uppercase; font-family: $sansFont}
 .category-product-items .rangeproduct  span.sale, .product-info span.sale,  .you-may-also-like  span.sale{    text-decoration: line-through; color: #ff0000; margin-right: 5px}
 .rangeproduct p {font-family: $sansFont; font-size: 14px; margin-top: 5px; }
 .rangeproduct img {margin-bottom: 25px}
