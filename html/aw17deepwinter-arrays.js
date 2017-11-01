@@ -1,10 +1,10 @@
 aw17deepwinter = [{
   products: [{
-  prodId: "CAICI",
-  skuColor: "grey"
-  },{
   prodId: "C5IEB",
   skuColor: "black"
+  },{
+  prodId: "CAICI",
+  skuColor: "grey"
   },{
   prodId: "C4IEA",
   skuColor: "black"
@@ -31,11 +31,11 @@ aw17deepwinter = [{
   float: "left" 
   },{
   products: [{
-  prodId: "C1IKA",
-  skuColor: "charcoal"
-  },{
   prodId: "FHIAD",
-  skuColor: "charcoal"
+  skuColor: "charcoaloatmeal"
+  },{
+  prodId: "C1IKA",
+  skuColor: "navyrustmelange"
   },{
   prodId: "F0IAD",
   skuColor: "black"
@@ -113,8 +113,8 @@ aw17deepwinter = [{
   prodId: "C1IDN",
   skuColor: "slate"
   },{
-  prodId: "C6IAN",
-  skuColor: "washedblackecru"
+  prodId: "C6GAG",
+  skuColor: "navy"
   },{
   prodId: "F0IAD",
   skuColor: "black"
@@ -158,11 +158,8 @@ aw17deepwinter = [{
   float: "left" 
   },{
   products: [{
-  prodId: "CHIAK",
+  prodId: "CDIAI",
   skuColor: "indigecru"
-  },{
-  prodId: "CAIBN",
-  skuColor: "darknavy"
   }],
   imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_DeepWinter_Lookbook_11.jpg",
   imgSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/700/TOAST_DeepWinter_Lookbook_11.jpg",
@@ -172,6 +169,9 @@ aw17deepwinter = [{
   float: "left" 
   },{
   products: [{
+  prodId: "FHIAD",
+  skuColor: "navyrustmelange"
+  },{
   prodId: "C1IKA",
   skuColor: "charcoal"
   }],
@@ -190,6 +190,9 @@ aw17deepwinter = [{
   skuColor: "white"
   },{
   prodId: "6XBTD",
+  skuColor: "white"
+  },{
+  prodId: "6BIAV",
   skuColor: "white"
   }],
   imgThumbSrc: "https://d117fiyhpld8f9.cloudfront.net/content-images/aw17/950/TOAST_DeepWinter_Lookbook_13.jpg",
