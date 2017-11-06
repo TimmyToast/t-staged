@@ -579,7 +579,6 @@ div[title="Change map style"] {display: none}
 @media only screen and (max-width: 960px){
 	.hlTile2 .tileTitleMid{top: 30%}
     .hhlTile3 .tileTitle .mainTitle{font-size: 22px}
-    .hhlTile4 .tileTitle{top:73%}
     .lwsStile1 .saleTileMain .bannerTile .tileTitleMid{top: 30%}
     .midAutSaleLink {margin: 165px auto 0 auto}
 }
@@ -595,7 +594,7 @@ div[title="Change map style"] {display: none}
 	.productSwatch { margin: 3px 2px 0px 2px; }
 	.category-product-items .product, .category-product-items .rangeproduct  {height: 440px; margin-bottom: 0}
     /*Homepage*/
-    .hlTile1 .tileTitleMid{top: 40%}
+    .hlTile1 .tileTitleMid{top: 50%}
     .hlTile1 .tileTitleMid h1{margin-bottom: 20px}
     .hlTile1 h1{font-size: 28px;margin-bottom: 20px}
     .hlTile1 a{display: block}
@@ -657,6 +656,7 @@ div[title="Change map style"] {display: none}
 }
 @media only screen and (max-width: 767px) 
 {
+	.hhlTile1 .tileTitle .mainTitle {font-size: 28px;margin-bottom: 0px}
 	.category-product-items .product, .category-product-items .rangeproduct  {height: 530px; margin-bottom: 0}
     /* New help section */
     .helpSection .helpContentArea {min-height: 600px; margin-top: 50px}
@@ -739,16 +739,26 @@ div[title="Change map style"] {display: none}
 @media only screen and (max-width: 430px) 
 { 
 
+	.wl_1{background-image: url('//d117fiyhpld8f9.cloudfront.net/content-images/aw17/1500/TOAST_DeepWinter_Homepage_1.jpg');padding-top: 74.951%}
+	.wl_1 .tileTitleHigher {top:52%;}
+	.wl_1 .twoLineTitle  {font-size: 28px; margin-bottom: 7px}
+	.wl_1 .saleLink  {font-size: 16px}
+
 	.freeDelStrip {font-size: 12px}
 	.category-product-items .product, .category-product-items .rangeproduct {height: 370px; margin-bottom:0}
     /*homepage */
     .hlTopTile .tileTitle {top: 5%}
-    .hlTile1 .tileTitleMid .mainTitle{line-height: 35px}
+    .hlTile1 .tileTitleMid .mainTitle{line-height: 0px}
+
+
+    .hlTile1 .tileTitleMid {top:60%;}
+    .hlTile1 .tileTitleMid h1 {margin-bottom: 10px}
+
     .hlTile1 p{margin: 9px 0;font-size: 24px}
     .hlTile1 a{line-height: 40px}
     .hlTile1 .shopTxt{margin: 0}
     .midAutSaleLink {margin: 75px auto 0 auto}
-    /*House and Home*/a
+    /*House and Home*/
     /*Making of*/
     .wnlShopBTN{font-size: 18px}
     .hhsLandingS .tileTitleMid{top: 25%}
@@ -775,7 +785,6 @@ div[title="Change map style"] {display: none}
 
     /*Misc*/
     .lwsStile1.saleTileMain .tileTitleMid{top: 25%}
-    .hlTile8 .tileTitle {top: 62%}
 }
 @media only screen and (max-width: 395px)
 {

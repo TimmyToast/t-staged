@@ -37,6 +37,9 @@ aw17deepwinter = [{
   prodId: "C1IKA",
   skuColor: "navyrustmelange"
   },{
+  prodId: "FPIAI",
+  skuColor: "charcoaloatmeal"
+  },{
   prodId: "F0IAD",
   skuColor: "black"
   }],
@@ -66,7 +69,7 @@ aw17deepwinter = [{
   },{
   products: [{
   prodId: "CAIBT",
-  skuColor: "grey"
+  skuColor: "petrol"
   },{
   prodId: "C3IEB",
   skuColor: "green"
@@ -207,7 +210,7 @@ aw17deepwinter = [{
   skuColor: "redgold"
   },{
   prodId: "C7IED",
-  skuColor: "bluedusk"
+  skuColor: "greenblack"
   },{
   prodId: "FPIAI",
   skuColor: "charcoaloatmeal"
