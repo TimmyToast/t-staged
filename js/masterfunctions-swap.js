@@ -11360,7 +11360,7 @@ var teradata = function() {
                     }), $(".product-size-charts").click(function(a) {
                         a.preventDefault(), a.stopPropagation(), $(".main-content").addClass("visuallyHidden"), $("body").append($('<div class="info-draw grid-parent grid-80 tablet-grid-80 mobile-grid-80"><a href="#" class="info-draw-close">Close</a><section class="size-fit-info"></section><section id="social-info"></section></div>'));
                         var b = ["CAEAD", "CAEAE", "CAEAL", "CAEAN", "CAEBX", "CAEBY", "CAEBZ", "C6EAA", "C6EAB", "C6EAJ", "C6EAK", "C6EAL", "C6EAN", "C6EBG", "C6EBH"];
-                        $(".info-draw .size-fit-info").load(-1 !== $.inArray($(".desc-prod-code").text().replace("Style Code: ", ""), b) ? "/content/site/product/size-chart-t1-2015.htm #size-chart-overlay-content" : "/content/site/product/size-Chart.htm #size-chart-overlay-content")
+                        $(".info-draw .size-fit-info").load(-1 !== $.inArray($(".desc-prod-code").text().replace("Style Code: ", ""), b) ? "/content/site/product/size-chart-t1-2015.htm #size-chart-overlay-content" : "https://s3.eu-west-2.amazonaws.com/toast-help-files/size-fit.htm")
                     }), $("body").on("click", ".info-draw-close", function(a) {
                         a.preventDefault(), $(".main-content").removeClass("visuallyHidden"), $(".info-draw").remove()
                     }), $().UItoTop({
