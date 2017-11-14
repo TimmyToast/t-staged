@@ -1,0 +1,117 @@
+<script type="text/javascript" src="//toast-staging.thecommercepartnership.com/js/min/jquery.min.js"></script>
+
+<script>window.universal_variable = {  
+   "version":"1.2.0",
+   "page":{  
+      "type":"order confirmation",
+      "environment":"staging"
+   },
+   "user":{  
+      "name":"timothy plumb",
+      "username":"plumbt@toa.st",
+      "user_id":"{C8F11B93-C506-4322-B131-75A11B6E1354}",
+      "email":"plumbt@toa.st",
+      "language":"en-gb",
+      "returning":true
+   },
+   "transaction":{  
+      "order_id":"5786",
+      "currency":"GBP",
+      "payment_type":"Visa",
+      "subtotal":115.00,
+      "subtotal_include_tax":true,
+      "voucher":"",
+      "voucher_discount":0.00,
+      "shipping_cost":4.95,
+      "shipping_method":"UK_Standard0495",
+      "total":119.95,
+      "email_signup":true,
+      "delivery":{  
+         "name":"Timothy Plumb",
+         "address":"Flat 123, 45 Main Road, 45 Main Road",
+         "city":"Sometown",
+         "state":"Sir Benfro",
+         "postcode":"A98 7AA",
+         "country":"United Kingdom"
+      },
+      "billing":{  
+         "name":"Timothy Plumb",
+         "address":"Flat 123, 45 Main Road, 45 Main Road",
+         "city":"Sometown",
+         "state":"Sir Benfro",
+         "postcode":"A98 7AA",
+         "country":"United Kingdom"
+      },
+      "line_items":[  
+         {  
+            "product":{  
+               "id":"cdiaf",
+               "url":"https://toast-staging.thecommercepartnership.com/uk/product/cdiaf/guan+print+crosshatch+cotton+kimono+gown.htm",
+               "name":"Guan Print Crosshatch Cotton Kimono Gown",
+               "sku_code":"CDIAFSOGRLXL",
+               "category":"womens nightwear",
+               "subcategory":"women",
+               "currency":"GBP",
+               "unit_price":115.00,
+               "unit_sale_price":115.00,
+               "product_image":"http://origin-toast-media-staging.thecommercepartnership.com/global/cdiaf/softgrey/250/guan-print-crosshatch-cotton-kimono-gown.jpg"
+            },
+            "quantity":1,
+            "subtotal":115.00
+         },
+          {  
+            "product":{  
+               "id":"cdiab",
+               "url":"https://toast-staging.thecommercepartnership.com/uk/product/cdiaf/guan+print+crosshatch+cotton+kimono+gown.htm",
+               "name":"Guan Print Crosshatch Cotton Kimono Gown",
+               "sku_code":"CDIAFSOGRLXL",
+               "category":"womens nightwear",
+               "subcategory":"women",
+               "currency":"GBP",
+               "unit_price":125.00,
+               "unit_sale_price":125.00,
+               "product_image":"http://origin-toast-media-staging.thecommercepartnership.com/global/cdiaf/softgrey/250/guan-print-crosshatch-cotton-kimono-gown.jpg"
+            },
+            "quantity":1,
+            "subtotal":125.00
+         }
+      ]
+   }
+}
+</script>
+
+<script async src="https://apps.bazaarvoice.com/deployments/toast/main_site/staging/en_US/bv.js"></script>
+
+<script>
+
+	jsonItemsObj = [];
+	$.each(window.universal_variable.transaction.line_items, function( index, value ) {
+
+		var quantity = value.quantity
+		var price = value.subtotal
+		var sku = value.product.sku_code
+		var name = value.product.name
+		var category = value.product.category
+		var imageURL = value.product.product_image
+
+		items = {}
+		items ["price"] = price
+		items ["quantity"] = quantity
+		items ["sku"] = sku
+		items ["name"] = name
+		items ["category"] = category
+
+		jsonItemsObj.push(items);
+	});
+
+	window.bvCallback = function (BV) {
+		BV.pixel.trackTransaction({
+			"currency" : window.universal_variable.transaction.currency,
+			"orderId" : window.universal_variable.transaction.order_id,
+			"total" : window.universal_variable.transaction.total,
+			"items" : jsonItemsObj,
+			"email" : window.universal_variable.user.email,
+			"userId" : window.universal_variable.user.user_id
+		})
+	}
+</script>

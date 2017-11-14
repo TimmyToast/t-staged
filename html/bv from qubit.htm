@@ -1,0 +1,32 @@
+<script src="//${display_code}.ugc.bazaarvoice.com/static/${client_code}/bvapi.js"></script>
+<script>
+(function ()
+{
+  var imgURLs = [];
+  jQuery(".myminiBasket td img").each(function ()
+  {
+    imgURLs.push($(this).attr('src'));
+  });
+  
+  var items = [];
+  for (var i=0; i < ${skus}.length; i++)
+  { 
+    items.push({
+      "sku" : ${skus}[i],
+      "quantity" : ${quantities}[i],
+      "price" : ${prices}[i],
+      "name" : ${names}[i],
+      "imageURL" : imgURLs[i]
+    });
+  }
+  
+  window.$BV.SI.trackTransactionPageView({
+    "orderId" : "${order_id}",
+    "total" : ${subtotal},
+    "email" : "${email}",
+    "items"  : items,
+    "nickname" : "${name}",
+    "locale" : "en-GB"
+  });
+})();
+</script>

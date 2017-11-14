@@ -1,0 +1,174 @@
+<script type="text/javascript">
+  (function()
+   {
+     function doGroupSubscribe() {
+       var bvGroup = 750184202;
+     
+       
+       var subscribeParams = {
+         method: '/membership/subscribeByEmail',
+         queryNames: ['email', 'groupId', 'subscriptionMode'],
+         queryValues: [window.universal_variable.user.email, bvGroup, 'OPT_IN'],
+         attributeValues: null,
+         attributeNames: null,
+         httpVerb: 'POST'
+       };
+       $.ajax({
+         url: '/services/ecrelay.asmx/Relay',
+         type: 'POST',
+         contentType: "application/json; charset=utf-8",
+         data: JSON.stringify(subscribeParams),
+         dataType: 'json',
+         success: function (data, status) {
+           //console.log("group " + bvGroup + " - SUBSCRIBE",data.d);
+           $('.pane .thankyousection').removeClass('visuallyHidden');
+         }
+       }); 
+     }
+     var pollForUv = function()
+     {
+       if(window.jQuery &&
+          window.universal_variable &&
+          window.nurseryComplete &&
+          universal_variable.user &&
+          universal_variable.user.email &&
+          universal_variable.transaction && 
+          universal_variable.transaction.line_items )
+       {         
+         var uvUser = window.universal_variable.user;
+         var attributeValueArray = [uvUser.email];
+         var attributeArray = ["Email"];
+         var lineItems = universal_variable.transaction.line_items;
+         var prodCheckArr = [];
+         var lineItemsArr = [];
+         
+         for (var i=0; i < lineItems.length; i++){
+           if(prodCheckArr.indexOf(lineItems[i].product.id) == -1) {
+             prodCheckArr.push(lineItems[i].product.id);
+             lineItemsArr.push(lineItems[i]);
+           }
+         }
+         for (var i=0; i < 15; i++) {
+           if(lineItemsArr.length > 3 && lineItemsArr.length <= i && i >= 3) {
+             attributeArray.push('user.CustomAttribute.ZBV4' + (i+1));
+             attributeValueArray.push("");
+           }
+           else if(lineItemsArr.length > i) {
+             var lineItemProdPrice = lineItemsArr[i].product.unit_price != lineItemsArr[i].product.unit_sale_price ? lineItemsArr[i].product.unit_sale_price : lineItemsArr[i].product.unit_price;
+             var bvLink = "http://display.ugc.bazaarvoice.com/static/toast/en_GB/container.htm?bvaction=rr_submit_review&bvproductId=" + lineItemsArr[i].product.id;
+             if(lineItemsArr.length === 1) {
+               attributeArray.push('user.CustomAttribute.ZBV1GROUP');
+               attributeValueArray.push("true");
+               attributeArray.push('user.CustomAttribute.ZBV1');
+             }
+             else if(lineItemsArr.length === 2) {
+               attributeArray.push('user.CustomAttribute.ZBV2GROUP');
+               attributeValueArray.push("true");
+               attributeArray.push('user.CustomAttribute.ZBV2' + (i+1));
+             }
+             else if(lineItemsArr.length === 3) {
+               attributeArray.push('user.CustomAttribute.ZBV3GROUP');
+               attributeValueArray.push("true");
+               attributeArray.push('user.CustomAttribute.ZBV3' + (i+1));
+             }
+             else if(lineItemsArr.length >= 4) {
+               attributeArray.push('user.CustomAttribute.ZBV4GROUP');
+               attributeValueArray.push("true");
+               attributeArray.push('user.CustomAttribute.ZBV4' + (i+1));
+             }
+             if(i < 3) {
+               attributeValueArray.push(["<table width='230' border='0' cellpadding='0' cellspacing='0'>",
+                "<tr>",
+                  "<td>",
+                    "<a href='" + bvLink + "' style='border: 0;'>",
+                      "<img src='" + decodeURIComponent(lineItemsArr[i].product.product_image) + "' border='0' width='230' height='326' alt='" + lineItemsArr[i].product.name + "'>",
+                    "</a>",
+                  "</td>",
+                "</tr>",
+                "<tr>",
+                  "<td>",
+                    "<a href='" + bvLink + "' style='border: 0; color: black; text-decoration: none;'>",
+                      "<p style='font-family: Arial; font-size: 12px; margin-top: 8px; letter-spacing: 1px; text-align: center; text-transform: uppercase;'>" + lineItemsArr[i].product.name + "</p>",
+                    "</a>",
+                  "</td>",
+                "</tr>",
+                "<tr>",
+                  "<td>",
+                    "<a href='" + bvLink + "' style='border: 0;'>",
+                      "<img src='http://post.toast.co.uk/imgproxy/img/656181193/BVReviewButtonLink.jpg' width='230' height='50' alt=''>",
+                    "</a>",
+                  "</td>",
+                "</tr>",
+                "</table>"].join(""));
+              }
+              else {
+                attributeValueArray.push(["<table width='820' height='150' border='0' cellpadding='0' cellspacing='0'>",
+                  "<tr>",
+                    "<td rowspan='4'>",
+                      "<img src='http://toast-images.s3.amazonaws.com/bv/4_01.jpg' style='display:block;' border='0' width='257' height='150' alt=''>",
+                    "</td>",
+                    "<td rowspan='4'>",
+                      "<a href='" + bvLink + "' style='border: 0;'>",
+                        "<img src='" + decodeURIComponent(lineItemsArr[i].product.product_image) + "' style='display:block;' border='0' width='99' height='150' alt='" + lineItemsArr[i].product.name + "'>",
+                      "</a>",
+                    "</td>",
+                    "<td rowspan='4'>",
+                      "<img src='http://toast-images.s3.amazonaws.com/bv/4_03.jpg' style='display:block;' border='0' width='31' height='150' alt=''>",
+                    "</td>",
+                    "<td>",
+                      "<img src='http://toast-images.s3.amazonaws.com/bv/4_04.jpg' style='display:block;' border='0' width='433' height='51' alt=''>",
+                    "</td>",
+                  "</tr>",
+                  "<tr>",
+                    "<td>",
+                      "<a href='" + bvLink + "' style='border: 0; color: black; text-decoration: none;'>",
+                        "<p style='font-family: Arial; font-size: 12px; margin-top: 0px; letter-spacing: 1px; text-align: left; text-transform: uppercase;'>" + lineItemsArr[i].product.name + "</p>",
+                      "</a>",
+                    "</td>",
+                  "</tr>",
+                  "<tr>",
+                    "<td>",
+                      "<a href='" + bvLink + "' style='border: 0;'>",
+                        "<img src='http://toast-images.s3.amazonaws.com/bv/BVReviewButtonLink2.jpg' style='display:block;' border='0' width='433' height='49' alt=''>",
+                      "</a>",
+                    "</td>",
+                  "</tr>",
+                  "<tr>",
+                    "<td>",
+                      "<img src='http://toast-images.s3.amazonaws.com/bv/4_07.jpg' style='display:block;' border='0' width='433' height='20' alt=''>",
+                    "</td>",
+                  "</tr>",
+                "</table>"].join(""));
+              } 
+            }
+          }
+     
+         var params = {
+           method: '/user/updateProfileByEmail',
+           queryNames: ['email'],
+           queryValues: [uvUser.email],
+           attributeValues: attributeValueArray,
+           attributeNames: attributeArray,
+           httpVerb: 'post'
+         };
+         $.ajax({
+           url: '/services/ecrelay.asmx/Relay',
+           type: 'POST',
+           contentType: "application/json; charset=utf-8",
+           data: JSON.stringify(params),
+           dataType: 'json',
+           success: function (data, status) {
+             //console.log("Update with generated fields", data.d);
+             doGroupSubscribe();
+           }
+         });
+        }
+        else 
+        {
+          setTimeout(pollForUv, 200);
+        }
+      };     
+     pollForUv(); 
+     _gaq.push(["_trackEvent", "Review Email Sent", "View", "Review Email Sent"])
+   })();
+</script>

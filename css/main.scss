@@ -49,7 +49,7 @@ $serifFont: "freight-text-pro", serif;
 .signup-message {color:#ffffff; font-size: 16px}
 
 /*Category Headers*/
-.landingBSIntro{text-align: center;margin: 30px 0}
+.landingBSIntro{text-align: center}
 .landingBSIntro h1 {font-size: 26px;font-family: $serifFont; font-weight: 600}
 .landingBSIntro h2 { font-size: 18px; font-family: $serifFont;font-weight: 400; margin-top: 16px;letter-spacing: 1px}
 .landingBSIntro p {font-size: 18px;font-family: $serifFont;letter-spacing: 1px}
@@ -146,6 +146,9 @@ $serifFont: "freight-text-pro", serif;
 .LBtileTitle .subTitle {width: 100%;  text-transform: uppercase; padding-top: 12px; float: left; font-size: 16px; letter-spacing: 2px}
 .lookBookContentDividerTop {margin-bottom:50px}
 .lookBookLastItem {margin-bottom: 50px}
+.lookBookContentDividerTop h1 {font-size: 24px; letter-spacing: 1px}
+.lookBookContentDividerTop p {font-size: 16px; letter-spacing: 1px}
+
 
 /*New Lookbook Styles*/
 .lookbookDivider{margin-top:100px}
@@ -562,6 +565,17 @@ div[title="Change map style"] {display: none}
 .reviewParagraphLink {font-size:13px; text-transform: uppercase;top: 7px;position: relative}
 .reviewProducts p {font-size: 16px}
 
+
+/*Christmas/Gift landing */
+.christmasGiftsHolder {margin: 0 20px;}
+.christmasGiftsHolder .christmastGiftPadderRight {padding-right:20px; padding-bottom: 40px; float: left}
+.christmasGiftsHolder .christmastGiftPadderLeft {padding-left:20px; padding-bottom: 40px; float: left}
+.christmasGiftsHolder .twentyPercentCol {width: 20%; float: left; padding: 40px 10px}
+.christmasGiftsHolder p {font-size: 16px}
+.christmasGiftsHolder h2 {font-size: 20px; margin-top: 20px}
+.christmasGiftsHolder .christmastGiftIntro {margin:30px 0; float: left}
+.christmasGiftsHolder .christmastGiftSplitter {width: 20%; margin: 30px auto; border-bottom: 1px solid #000000}
+
 @media only screen and (max-width: 1116px){
     .itdPane1, .itdPane2{margin-top: 50px}
 }
@@ -659,6 +673,11 @@ div[title="Change map style"] {display: none}
     .swl_2 .tileTitle h2{font-size: 28px}
     /*NEW FOOTER STYLES*/
     .footerCol{width:100%;text-align:center;margin-bottom:20px}
+    /*Christmas/Gift landing */
+    .christmasGiftsHolder .christmastGiftPadderRight {padding-right:0px}
+	.christmasGiftsHolder .christmastGiftPadderLeft {padding-left:0px}
+	.christmasGiftsHolder {margin:0;}
+	.christmasGiftsHolder p {font-size: 14px}
 }
 @media only screen and (max-width: 767px) 
 {
@@ -706,6 +725,11 @@ div[title="Change map style"] {display: none}
     .relcol{padding-top: 0;left: 0}
     .customImgPlc{position: relative;bottom: auto}
     .socialCol ul li a img {padding:0 5px}
+     /*Christmas/Gift landing */
+    .christmasGiftsHolder .twentyPercentCol {width: 50%; height: 260px}
+	.christmasGiftsHolder .fullWidthCol {width: 100%; float: left; height: 500px}
+	.christmasGiftsHolder .christmastGiftPadderBottom {padding-bottom: 40px}
+	.christmasGiftsHolder .christmastGiftSplitter {width: 50%; }
 }
 @media only screen and (max-width: 700px) 
 {
@@ -743,6 +767,9 @@ div[title="Change map style"] {display: none}
     .bannerTile h1{margin-bottom: 34px}
     .bannerTile span{border-bottom: 1px solid #d14d18}
     .bannerTile p{font-size: 18px}
+
+  
+
 }
 @media only screen and (max-width: 430px) 
 { 
@@ -793,6 +820,10 @@ div[title="Change map style"] {display: none}
 
     /*Misc*/
     .lwsStile1.saleTileMain .tileTitleMid{top: 25%}
+
+    /*Christmas/Gift landing */
+    .christmasGiftsHolder .twentyPercentCol {width: 50%; height: 290px}
+	.christmasGiftsHolder .fullWidthCol {width: 100%; float: left; height: 530px}
 }
 @media only screen and (max-width: 395px)
 {
@@ -801,6 +832,8 @@ div[title="Change map style"] {display: none}
 	.rangeproduct p { margin-top: 25px; }
     .longDescTop {top: 36%}
     .hhsLandingS .tileTitleMid{top: 25%}
+    /*Christmas/Gift landing */
+
 }
 @media only screen and (max-width: 360px){
  
