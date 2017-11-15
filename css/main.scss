@@ -66,18 +66,27 @@ $serifFont: "freight-text-pro", serif;
 .tileTitleMid {color: white;position: absolute;top: 31%;width: 100%;text-align: center;font-size: 28px;line-height: 45px; letter-spacing: 2px; left:0}
 .hlTopTile {width: 100%; display: block; width: 100%; padding-top: 62.947%;  margin-bottom: 20px; background-size: 100% 100%; position: relative}
 .hlTopTile .tileTitle {top: 45%}
-.hlTile1{background-image: url('//media.toa.st/content-images/aw17/1500/TOAST_DeepWinter_Homepage_1.jpg');padding-top: 74.951%}
-.hlTile2{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_2.jpg');padding-top: 128.911%}
-.hlTile3{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_3.jpg');padding-top: 128.911%}
-.hlTile4{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_4.jpg');padding-top: 128.911%}
-.hlTile5{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_5.jpg');padding-top: 128.911%}
-.hlTile6{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_6.jpg');padding-top: 128.911%}
-.hlTile7{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_7.jpg');padding-top: 128.911%}
-.hlTile8{background-image: url('//media.toa.st/content-images/aw17/1390/TOAST_DeepWinter_Homepage_8.jpg');padding-top: 128.911%}
-.hlTile9{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_9.jpg');padding-top: 128.911%}
-.hlTile10{background-image: url('//media.toa.st/content-images/aw17/1390/TOAST_DeepWinter_Homepage_10.jpg');padding-top: 58.46748%}
-.hlTile10 .tileTitle {top: 72%}
-.hlTile11{padding-top: 58.46748%}
+.hlTile1{background-image: url('//media.toa.st/content-images/aw17/1500/TOAST_Christmas_Homepage_1.jpg');padding-top: 74.951%}
+.hlTile2{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_2.jpg');padding-top: 128.911%}
+.hlTile3{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_3.jpg');padding-top: 128.911%}
+.hlTile4{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_4.jpg');padding-top: 128.911%}
+.hlTile5{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_5.jpg');padding-top: 128.911%}
+.hlTile6{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_6.jpg');padding-top: 128.911%}
+.hlTile7{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_7.jpg');padding-top: 128.911%}
+.hlTile8{background-image: url('//media.toa.st/content-images/aw17/1390/TOAST_Christmas_Homepage_8.jpg');padding-top: 128.911%}
+.hlTile9{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_9.jpg');padding-top: 128.911%}
+.hlTile9{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_9.jpg');padding-top: 128.911%}
+.hlTile10{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_10.jpg');padding-top: 128.911%}
+.hlTile11{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_11.jpg');padding-top: 128.911%}
+
+.hlTileMagazine{background-image: url('//media.toa.st/content-images/aw17/1390/TOAST_DeepWinter_Homepage_10.jpg');padding-top: 58.46748%}
+.hlTileMagazine .tileTitle {top: 72%}
+.hlTileSignup {padding-top: 58.46748%}
+.signuptile {text-align: center; background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_11.jpg')}
+.signuptile p {color: white;width: 100%;top: 0px}
+.signuptile button {margin-top: 8%;border-width: 0px;font-size: 16px;color: white;letter-spacing:1px;font-family: 'freight-sans-pro', sans-serif;background: transparent}
+.signuptile input {min-width: 290px; height: 42px}
+
 .preTitle {color: #ffffff;font-size: 18px;margin: 0 0 -5px 0;padding: 0}
 
 .hlTile1 .tileTitleMid{top: 50%;color: #d14d18}
@@ -94,10 +103,6 @@ $serifFont: "freight-text-pro", serif;
 .hlTile2 .tileTitleMid .saleTopP{margin-bottom: 5px;letter-spacing: 1px}
 .lowerTileTitle{position: absolute;bottom: 15.5%;text-align: center;width: 100%}
 .lowerTileTitle span{display: inline-block}
-.signuptile {text-align: center; background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Homepage_11.jpg')}
-.signuptile p {color: white;width: 100%;top: 0px}
-.signuptile button {margin-top: 8%;border-width: 0px;font-size: 16px;color: white;letter-spacing:1px;font-family: 'freight-sans-pro', sans-serif;background: transparent}
-.signuptile input {min-width: 290px; height: 42px}
 .centralTitle {position: absolute; top: 45%; width: 100%; text-align: center; font-size: 34px}
 .midAutSaleStrap { font-size: 22px; margin: 10px auto 0 auto; letter-spacing: 1px}
 .midAutSaleLink {margin: 195px auto 0 auto; border-bottom: 1px solid #000000; display: inline-block;font-size: 18px; text-transform: uppercase; letter-spacing: 1px }
