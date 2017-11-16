@@ -576,12 +576,13 @@ div[title="Change map style"] {display: none}
 
 /*Christmas/Gift landing */
 .christmasGiftsHolder {margin: 0 20px;}
-.christmasGiftsHolder .christmastGiftPadderRight {padding-right:20px; padding-bottom: 40px}
-.christmasGiftsHolder .christmastGiftPadderLeft {padding-left:20px; padding-bottom: 40px}
-.christmasGiftsHolder .twentyPercentCol {width: 20%; float: left; padding: 40px 10px}
+.christmasGiftsHolder .christmastGiftPadderRight {padding-right:20px; padding-bottom: 20px; height: auto}
+.christmasGiftsHolder .christmastGiftPadderLeft {padding-left:20px; padding-bottom: 20px; height: auto}
+.christmasGiftsHolder .christmasFirstRowText {margin-bottom: 20px}
+.christmasGiftsHolder .twentyPercentCol {width: 25%; float: left; padding: 40px 10px}
 .christmasGiftsHolder p {font-size: 16px}
 .christmasGiftsHolder h2 {font-size: 20px; margin-top: 20px}
-.christmasGiftsHolder .christmastGiftIntro {margin:30px 0; float: left}
+.christmasGiftsHolder .christmastGiftIntro {margin:30px 0}
 .christmasGiftsHolder .christmastGiftSplitter {width: 20%; margin: 30px auto; border-bottom: 1px solid #000000;}
 
 @media only screen and (max-width: 1116px){
@@ -734,7 +735,7 @@ div[title="Change map style"] {display: none}
     .customImgPlc{position: relative;bottom: auto}
     .socialCol ul li a img {padding:0 5px}
      /*Christmas/Gift landing */
-    .christmasGiftsHolder .twentyPercentCol {width: 50%; height: 260px}
+    .christmasGiftsHolder .twentyPercentCol {width: 50%; height: auto}
 	.christmasGiftsHolder .fullWidthCol {width: 100%; float: left; height: 500px}
 	.christmasGiftsHolder .christmastGiftPadderBottom {padding-bottom: 40px}
 	.christmasGiftsHolder .christmastGiftSplitter {width: 50%; }
@@ -782,7 +783,7 @@ div[title="Change map style"] {display: none}
 @media only screen and (max-width: 430px) 
 { 
 
-	.wl_1{background-image: url('//media.toa.st/content-images/aw17/1500/TOAST_DeepWinter_Homepage_1.jpg');padding-top: 74.951%}
+	.wl_1{background-image: url('//media.toa.st/content-images/aw17/700/TOAST_Christmas_Landing_1_Mobile.jpg');padding-top: 74.951%}
 	.wl_1 .tileTitleHigher {top:52%;}
 	.wl_1 .twoLineTitle  {font-size: 28px; margin-bottom: 7px}
 	.wl_1 .saleLink  {font-size: 16px}
@@ -830,8 +831,7 @@ div[title="Change map style"] {display: none}
     .lwsStile1.saleTileMain .tileTitleMid{top: 25%}
 
     /*Christmas/Gift landing */
-    .christmasGiftsHolder .twentyPercentCol {width: 50%; height: 290px}
-	.christmasGiftsHolder .fullWidthCol {width: 100%; float: left; height: 530px}
+    .christmasGiftsHolder .twentyPercentCol {width: 50%}
 }
 @media only screen and (max-width: 395px)
 {
