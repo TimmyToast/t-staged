@@ -12230,7 +12230,8 @@ var helpModule = function() {
                     setTimeout(function() {
                         for (var a = $(".product-sizes .size").length - 1; a >= 0; a--)
                             if ($($(".product-sizes .size")[a]).attr("sku-id") == f) {
-                                $(".product-sizes .size").removeClass("size-selected"), $($(".product-sizes .size")[a]).trigger("click", [!0]);
+                                $(".product-sizes .size").removeClass("size-selected") 
+                                //$($(".product-sizes .size")[a]).trigger("click", [!0]);
                                 break
                             }
                         for (var a = $(".product-swatches .product-swatch").length - 1; a >= 0; a--)

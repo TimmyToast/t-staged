@@ -30,9 +30,9 @@ $serifFont: "freight-text-pro", serif;
 .productSwatch {width: 27px;height: 27px;display: inline-block; margin: 6px 3px 0px 3px; padding: 2px; border: 1px solid #ffffff; cursor: pointer}
 .product-swatches .swatch {float:left}
 .productSelected {border-color: #858585}
-.product-swatches img{cursor:pointer;padding-bottom:22px;max-width:30px; padding-right:2px}
+.product-swatches img{cursor:pointer;padding-bottom:9px;max-width:30px; padding-right:2px}
 .swatch{min-width:36px}
-.swatch-selected,.selected-swatch{background-image:url(//d1kh76s6bjh8ww.cloudfront.net/img/icon-arrow-accordion-up-retina.png);background-size:30px 30px;background-repeat:no-repeat;background-position:bottom center}
+.swatch-selected,.selected-swatch{background-image:url('//media.toa.st/content-images/website_build/1500/icon-arrow-accordion-up-retina.png');background-size:30px 30px;background-repeat:no-repeat;background-position: 0px 17px}
 .outOfStock {padding-top: 10px}
 .topNavSale, .saleItem a {color:#ca9637 !important} 
 .category-product-items .product, .category-product-items .rangeproduct {margin-bottom: 188px; height: 390px; padding: 0 10px}
@@ -575,7 +575,7 @@ div[title="Change map style"] {display: none}
 
 
 /*Christmas/Gift landing */
-.christmasGiftsHolder {margin: 0 20px;}
+.christmasGiftsHolder {margin: 0 20px; float:left;}
 .christmasGiftsHolder .christmastGiftPadderRight {padding-right:20px; padding-bottom: 20px; height: auto}
 .christmasGiftsHolder .christmastGiftPadderLeft {padding-left:20px; padding-bottom: 20px; height: auto}
 .christmasGiftsHolder .christmasFirstRowText {margin-bottom: 20px}
@@ -584,6 +584,30 @@ div[title="Change map style"] {display: none}
 .christmasGiftsHolder h2 {font-size: 20px; margin-top: 20px}
 .christmasGiftsHolder .christmastGiftIntro {margin:30px 0}
 .christmasGiftsHolder .christmastGiftSplitter {width: 20%; margin: 30px auto; border-bottom: 1px solid #000000;}
+
+/*Styling */
+.stylingHeader h1{margin-top:30px;margin-bottom:-20px;font-size:24px !important;letter-spacing:1px !important}
+.stylingPadding-30{margin-top:40px;margin-bottom:0px;clear:both}
+.stylingPadding-30 h1{font-size:20px}
+.stylingPadding-30 p{font-size:15px;line-height:19px}
+.stylingPadding-20{margin-top:10px;margin-bottom:10px}
+.stylingShopbox{font-size:14px;line-height:15px;letter-spacing:1px}
+.stylingImageoverlay{background:white;position:absolute;height:100%;width:100%;top:0;left:0;display:none;opacity:0.7;z-index:20}
+.stylingShopbox{position:absolute;display:block;height:100%;width:100%;top:0;left:0;z-index:500;text-align:center;padding-top:40%}
+.stylingShopbox a{color:white;background:black;text-decoration:none;padding:4px 4px;margin-top:15px;font-size:12px;display:inline-block;letter-spacing:1px}
+.stylingProdframe{position:relative}
+.stylingClosex{color:black;font-size:18px;border:0;background:0;position:absolute;top:8px;right:15px}
+.stylingRelative{position:relative;margin-top:10px}
+.stylingBigimage{position:relative;margin-bottom:5px}
+.stylingBigimage span{position:absolute;top:40%;left:50%;text-align:center;color:white;line-height:27px;border-bottom:1px solid white;font-weight:400;pointer-events:none;font-size:18px;margin-left:-60px}
+.stylingShopvelvet{font-size:16px;font-weight:600;letter-spacing:1px;border-bottom:1px solid black;line-height:27px}
+.stylingProductsquare .img-responsive{width:100%;max-width:100%}
+.stylingShopboxouter{padding-left:5px;padding-right:5px}
+
+.eventSpacer {margin: 0 auto 30px auto; padding-bottom: 30px;  clear: both; border-bottom: 1px solid #000000; text-align: center; width: 20%;}
+.eventItem {text-align: center}
+.eventItemLast {text-align: center;; margin-bottom: 40px}
+.eventImage {margin:10px auto; text-align: center; width: fit-content}
 
 @media only screen and (max-width: 1116px){
     .itdPane1, .itdPane2{margin-top: 50px}
@@ -603,6 +627,11 @@ div[title="Change map style"] {display: none}
     .smSectionTabClear{margin-bottom: 30px}
     .returnReturnsBasket {padding: 27px 60px 0 0; text-align: left; }
     .midAutSaleLink {margin: 179px auto 0 auto}
+
+    /*Styling */
+    .stylingShopbox {display:block;position:relative;visibility: visible;padding-top:0;height:auto;margin-top:15px;}
+    .stylingShopbox a {display:none;}
+    .stylingPadding-20 {margin-top:25px;margin-bottom:25px;}
 }
 @media only screen and (max-width: 960px){
 	.hlTile2 .tileTitleMid{top: 30%}
@@ -740,6 +769,17 @@ div[title="Change map style"] {display: none}
 	.christmasGiftsHolder .christmastGiftPadderBottom {padding-bottom: 40px}
 	.christmasGiftsHolder .christmastGiftSplitter {width: 50%; }
 }
+
+@media (max-width: 753px) {
+  .stylingPadding-20 {margin-top: 10px;margin-bottom: 10px;}
+  .stylingProductsquare {background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));position:absolute;top:0;z-index:400;padding:10%;}
+  .stylingBigimage {top:0;left:0;z-index:300}
+  .stylingProductsquare .img-responsive {width:80%;margin: 0 auto}
+  .stylingPadding-20 {margin-top:0;margin-bottom: 0}
+  .stylingShopbox {margin-top:5px;margin-bottom:15px}
+}
+
+
 @media only screen and (max-width: 700px) 
 {
 	.category-product-items .product, .category-product-items .rangeproduct {height: 490px; margin-bottom: 0}
