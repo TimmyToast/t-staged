@@ -11281,7 +11281,7 @@ var teradata = function() {
                         $(this).find(".new-sub-nav .main-link, .new-sub-nav .new-sub-nav-list-heading").each(function() {
                             var a = $(this).find("a");
                             if ($(this).hasClass("new-sub-nav-list-heading")) {
-                                str = $(this).text() 
+                                str = $(this).text()
                                 str = str.replace("&", "-");
                                 p++, b += "<li class='nav-option subNavItem" + p + "' id='" + str.replace(/\s/g,'') + "'><a href='#' class='mobile-sub-list-heading'>+ " + $(this).text() + "</a></li>";
                                 var c = "<li id='" + str.replace(/\s/g,'') + "-sub'><ul class='mobile-sub-list' >";
@@ -11309,7 +11309,7 @@ var teradata = function() {
                 $(".subNavItem5").remove()
                 $("#Clothing-Footwear-sub").remove()
                 $(".navCount2").prepend(homeNavSwap)
-            
+
                 $(".mobile-sub-list-heading").click(function(a) {
                     a.preventDefault();
                     var b = "Contract",
@@ -12230,7 +12230,7 @@ var helpModule = function() {
                     setTimeout(function() {
                         for (var a = $(".product-sizes .size").length - 1; a >= 0; a--)
                             if ($($(".product-sizes .size")[a]).attr("sku-id") == f) {
-                                $(".product-sizes .size").removeClass("size-selected") 
+                                $(".product-sizes .size").removeClass("size-selected")
                                 //$($(".product-sizes .size")[a]).trigger("click", [!0]);
                                 break
                             }
@@ -12395,7 +12395,7 @@ var helpModule = function() {
             t = function() {
                 var b = "";
                 f && (b = "visuallyHidden")
-               
+
                 pathArray = location.pathname.split("/")
                 if (($.inArray("us", pathArray) > 0 || $.inArray("eu", pathArray) > 0) && $.inArray("toast+store+gift+card.htm", pathArray) > 0) {
                     $(".product-accordion").remove()
@@ -12412,7 +12412,7 @@ var helpModule = function() {
                     $(".add-wishlist-item-wrapper").remove()
                     $(".freeReturnsProduct").html("<br>We're sorry but this product is only<br> available to <a href='/uk/product/gift+cards/gift/toast+store+gift+card.htm' class='underlineLink'>purchase in GBP</a>.")
                 } else {
-                     $(".product-button.checkout").before($('<div class="grid-100 tablet-grid-100 mobile-grid-100 product-button add-wishlist-item-wrapper ' + b + '"><a href="#" id="addToWishlist" class="add-to-wishlist">Add To Wishlist</a></div>')) 
+                     $("#addToBasket").after($('<span class="product-button add-wishlist-item-wrapper ' + b + '"><a href="#" id="addToWishlist" class="add-to-wishlist">Add To Wishlist</a></span>'))
                 }
 
                 $("#addToWishlist").click(function(b) {
@@ -12687,8 +12687,8 @@ var helpModule = function() {
         }
     }();
 $(document).ready(function() {
-    $("#country-selector").click(function() { 
-    $("#country-selector .menu--dropdown").toggleClass("active") 
+    $("#country-selector").click(function() {
+    $("#country-selector .menu--dropdown").toggleClass("active")
 })
 
      if ($('.utilityLoginReg:contains("My")').length > 0){
