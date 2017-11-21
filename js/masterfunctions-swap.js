@@ -12578,10 +12578,11 @@ var helpModule = function() {
                             else {
                                 var f = "",
                                     i = "";
+                                    counterS = "";
                                 $(".noReviews").addClass("visuallyHidden"), $("#reviewContainer").removeClass("visuallyHidden no-reviews"), $(".buy-off-container").length > 0 ? (f = $("#mainContent .buy-off-container"), i = "grid-60 suffix-5 tablet-grid-60") : (f = $("#mainContent > .product-details"), i = "prefix-10 grid-50 suffix-5 tablet-grid-50 tablet-prefix-5"), f.append('<div class="product-reviews-bottom visuallyHidden ' + i + ' mobile-grid-100 float-left grid-parent"></div>');
-                                for (var k = 0, l = 0; l < c.Results.length; l++) k += c.Results[l].Rating, c.Results[l].Rating > a && (a = c.Results[l].Rating);
+                                for (var k = 0, l = 0; l < c.Results.length; l++) k += c.Results[l].Rating, counterS++, c.Results[l].Rating > a && (a = c.Results[l].Rating);
                                 var m = 0 == c.TotalResults ? 1 : c.TotalResults,
-                                    n = (k / m).toFixed(1),
+                                    n = (k / counterS).toFixed(1),
                                     o = Math.ceil(n / 5 * 100);
                                 $("#review-section header h2").text(c.TotalResults > 1 ? "Reviews (" + c.TotalResults + ")" : "Review (" + c.TotalResults + ")"), $("#reviewSummaryContainer").show();
                                 var p = $(['<dl class="review-stars-container" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" role="presentation">', '<meta itemprop="itemReviewed" content="' + $(".product-info h1").text() + '">', '<dd class="review-rating-ratio-count visuallyHidden" role="presentation">', '<span itemprop="reviewCount">Reviews ' + c.TotalResults + "</span>", "</dd>", '<dd class="review-rating-ratio" role="presentation">', '<span class="review-rating-stars-on review-rating-stars" aria-hidden="true"><span style="width: ' + o + '%;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>', '<meta itemprop="bestRating" content="' + a + '">', '<span class="review-off-screen visuallyHidden">' + n + " out of 5 stars. Read reviews.</span>", "</dd>", '<dd class="review-rating-ratio-number" role="presentation" aria-hidden="true">', '<span class="review-rating">', '<span itemprop="ratingValue">' + n + " / 5.0</span>", "</span>", "</dd>", "</dl>"].join(""));
