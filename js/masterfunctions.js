@@ -3,11 +3,18 @@ function flagSwap() {
 }
 
 function moveReviews(){
-    $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +" reviews) </span>")
+    if ($("#review-section h2").html().match(/\d+/)[0] == "1"){
+        $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +" review) </span>")
+    } else 
+    {
+        $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +" reviews) </span>")
+    }
+    
     $("#nowPrice").after($(".review-rating-ratio").html())
     $(".product-info  .review-rating-stars-on").wrapInner("<a href='javascript:openReviews()'></a>")
     $(".product-info  .topReviews").wrapInner("<a href='javascript:openReviews()'></a>")
-    $(".topReviews").prepend($(".review-rating").html())
+    $(".topReviews").prepend($(".review-rating").html() + " ")
+    $('.topReviews  span[itemprop="ratingValue"]').html("<a href='javascript:openReviews()'>"+$('.topReviews  span[itemprop="ratingValue"]').html().substring(0, 3)+"</a>")
     $("#reviewSummaryContainer .review-rating-ratio").remove()
     $("#reviewSummaryContainer .review-rating").remove()
 }

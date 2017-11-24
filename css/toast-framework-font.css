@@ -60,7 +60,7 @@ h3.product-label span.product-label-colour{font-family: "freight-sans-pro",sans-
 
 .product-info .review-rating-stars span{display:block;overflow:hidden}
 .product-info .review-rating-stars  {vertical-align: sub;display: inline-block; font-size: 13px; margin-left:10px; position: relative; top:5px ;}
-.topReviews {font-size: 13px; position: relative; top:2px;}
+.topReviews {font-size: 13px; position: relative; top:2px; left: 5px;}
 
 @media screen and (max-width: 1024px) {
   .main-header .nav-bar .hide-on-mobile {display: block !important}
