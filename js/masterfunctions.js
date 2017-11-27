@@ -17,6 +17,11 @@ function moveReviews(){
     $('.topReviews  span[itemprop="ratingValue"]').html("<a href='javascript:openReviews()'>"+$('.topReviews  span[itemprop="ratingValue"]').html().substring(0, 3)+"</a>")
     $("#reviewSummaryContainer .review-rating-ratio").remove()
     $("#reviewSummaryContainer .review-rating").remove()
+    if ($(document).width() < 768) {
+        $("#nowPrice").after("<br clear='both'>")
+    }
+
+
 }
 
 function openReviews() {

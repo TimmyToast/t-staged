@@ -1,4 +1,3 @@
-/* DELME */
 $sansFont: "freight-sans-pro", sans-serif;
 $serifFont: "freight-text-pro", serif;
 
@@ -829,6 +828,9 @@ div[title="Change map style"] {display: none}
 	.christmasGiftsHolder .fullWidthCol {width: 100%; float: left; height: 500px}
 	.christmasGiftsHolder .christmastGiftPadderBottom {padding-bottom: 40px}
 	.christmasGiftsHolder .christmastGiftSplitter {width: 50%; }
+
+	/* Free returns AB test */
+	.freeReturnsProduct {margin-top: 8px}
 }
 
 @media (max-width: 753px) {
@@ -956,3 +958,4 @@ div[title="Change map style"] {display: none}
     #map_canvas{height: 360px}
 }
 .disabled {background-color:#dedede !important}
+#basket-upsell, #mini-basket-upsell {display: none}
