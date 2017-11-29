@@ -5,7 +5,7 @@ time += 3600 * 1000 * 10
 now.setTime(time)
 
 function triggerEmailPopup() {
-    if (!$.cookie("emailClickUserSummer")) {
+    if (window.location.href.indexOf("advent")<0&&window.location.href.indexOf("test")<0&&!$.cookie("emailClickUserSummer")) {
       document.cookie = "emailClickUserSummer=true; expires=" + now.toUTCString() + "; path=/"
       openSignupField()
     }
