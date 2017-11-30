@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
-  function findGetParameter(parameterName) {
-    var result = null,
-        tmp = [];
-    var items = location.search.substr(1).split("&");
-    for (var index = 0; index < items.length; index++) {
-        tmp = items[index].split("=");
-        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-    }
-    return result;
-}
+//  function findGetParameter(parameterName) {
+//    var result = null,
+//        tmp = [];
+//    var items = location.search.substr(1).split("&");
+//    for (var index = 0; index < items.length; index++) {
+//        tmp = items[index].split("=");
+//        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+//    }
+//    return result;
+//}
 //var menu = '<style>body {margin-top:20px;}</style><div style="text-align:center; border-bottom: 1px solid black; position:fixed; top:0; left:0; width:100%; background:white; z-index:1000;">TEST MENU - REMOVE BEFORE FLIGHT - <a href="?day=1">Day 1</a> | <a href="?day=2">Day 2</a> | <a href="?day=3">Day 3</a> | <a href="?day=4">Day 4</a> | <a href="?day=5">Day 5</a> | <a href="?day=6">Day 6</a> | <a href="?day=7">Day 7</a> | <a href="?day=8">Day 8</a> | <a href="?day=9">Day 9</a> | <a href="?day=10">Day 10</a> | <a href="?day=11">Day 11</a> | <a href="?day=12">Day 12</a> | <a href="?day=13">Day 13</a></div>';
 //$('body').prepend(menu);
 
@@ -26,9 +26,9 @@ $(".adventBoxplaceholder").on('click', function() {
     passThroughAdventDay = data['day'];
     var theDay = data['day'];
     var theMonth = data['month'];
-    var theDay2 = findGetParameter('day');
-    if(theDay2 > 0) {theMonth = 12;}
-    if(theDay2) {theDay = theDay2;}
+  //  var theDay2 = findGetParameter('day');
+ //   if(theDay2 > 0) {theMonth = 12;}
+  //  if(theDay2) {theDay = theDay2;}
     if(theDay < 1 || theDay > 12 || theMonth != 12) {
       $('#adventFormFrame').remove();
       if(theMonth == 11){
