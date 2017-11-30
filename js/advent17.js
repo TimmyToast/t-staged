@@ -72,10 +72,10 @@ $(".adventBoxplaceholder").on('click', function() {
     $('.adventDoor').closest('div').filter(function () {
       var thisDay = +$(this).find('span').text();
       if(thisDay == theDay) {
-        $(this).css('background-image','url("//media.toa.st/content-images/aw17-advent/1500/TOAST_AdventCompetition_'+ thisDay +'.jpg?1")');
+        $(this).css('background-image','url("//media.toa.st/content-images/aw17-advent/1500/TOAST_AdventCompetition_'+ thisDay +'.jpg?2")');
         if(thisDay == 10 || thisDay == 2 || thisDay == 8) {$(this).find('span').css("color","black");}
       } else if (thisDay < theDay && theDay < 13) {
-        $(this).css({'background':'url("//media.toa.st/content-images/aw17-advent/1500/TOAST_AdventCompetition_'+ thisDay +'.jpg?1")', 'background-size': 'cover', 'position' : 'relative'});
+        $(this).css({'background':'url("//media.toa.st/content-images/aw17-advent/1500/TOAST_AdventCompetition_'+ thisDay +'.jpg?2")', 'background-size': 'cover', 'position' : 'relative'});
     $(this).append('<div class="adventDimmer"></div>');
   }
       return thisDay <= theDay;
