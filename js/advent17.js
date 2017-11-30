@@ -42,7 +42,7 @@ $(".adventBoxplaceholder").on('click', function() {
       $('.adventDoor span').css('color', 'black');
       }
       } else {
-    $.getJSON("/js/json/advent17/day" + theDay + ".js?a=" + Math.floor((Math.random() * 1000) + 1), function(data){
+    $.getJSON("/js/json/advent17/day" + theDay + ".js?a=12days", function(data){
       var link1 = '';
       var link2 = '';
       var currentUrl = window.location.href;
@@ -64,7 +64,7 @@ $(".adventBoxplaceholder").on('click', function() {
       if(data['descriptioneu']) {theDescription = data['descriptioneu'];}
       if(data['urleu']) {linkIn = ''; linkOut = '';}
     }
-      $("#adventAdventbigimage").append(linkIn + '<img src="' + data['image2'] + '?e=' + Math.floor((Math.random() * 1000) + 1) + '" alt="'+ theTitle  +'" width="100%" />' + linkOut);
+      $("#adventAdventbigimage").append(linkIn + '<img src="' + data['image2'] + '?12" alt="'+ theTitle  +'" width="100%" />' + linkOut);
       $("#adventAdventbigtext").append('<h1 class="textSemiBold advent22">Day ' + theDay + ' - <br/>' + linkIn + theTitle + linkOut + '</h1><p class="textBook advent15">'
       + theDescription + thePrice + link1 + link2 + '</p>');
     });
