@@ -662,6 +662,11 @@ h2.advent22 {  margin-bottom:30px;}
 .pwSale button {background: none; color:white; border:0; font-size: 16px; letter-spacing: 1px;}
 .pwSale .pwTileFixPad { padding-right: 5px; padding-left: 5px;}
 
+/* Checkout Pages */
+.checkoutHolder p, .checkoutHolder label {
+  font-size:15px;
+}
+
 @media only screen and (max-width: 1116px){
     .itdPane1, .itdPane2{margin-top: 50px}
 }
