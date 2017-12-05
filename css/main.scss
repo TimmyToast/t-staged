@@ -663,9 +663,9 @@ h2.advent22 {  margin-bottom:30px;}
 .pwSale .pwTileFixPad { padding-right: 5px; padding-left: 5px;}
 
 /* Checkout Pages */
-.checkoutHolder p, .checkoutHolder label {
-  font-size:15px;
-}
+#checkoutHolder p, #checkoutHolder label, #checkoutHolder input, #checkoutHolder a, #checkoutHolder .standard-font, #checkoutHolder, #checkoutHolder div {font-size:12px; letter-spacing: 1px; line-height: 18px;}
+#checkoutHolder #progressNumbers{letter-spacing:0;}
+.postcode_lookup_container {overflow-y: auto !important;}
 
 @media only screen and (max-width: 1116px){
     .itdPane1, .itdPane2{margin-top: 50px}
