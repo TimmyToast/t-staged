@@ -668,7 +668,11 @@ h2.advent22 {  margin-bottom:30px;}
 .pwSale input[type=text] { font-size:12px; font-weight: 400; padding: 20px 0; min-width: 250px; margin: 5px 0 30px 0;}
 .pwSale button {background: none; color:white; border:0; font-size: 16px; letter-spacing: 1px;}
 .pwSale .pwTileFixPad { padding-right: 5px; padding-left: 5px;}
-/* End Winter Pre-sale 2017 */
+
+/* Checkout Pages */
+.checkoutHolder p, .checkoutHolder label {
+  font-size:15px;
+}
 
 @media only screen and (max-width: 1116px){
     .itdPane1, .itdPane2{margin-top: 50px}
