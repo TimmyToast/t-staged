@@ -22,7 +22,9 @@ $(".adventBoxplaceholder").on('click', function() {
 
 
 // Find the current day, open all previous doors and hilight today's
-  $.getJSON("https://travels.toa.st/siteForms/adventcomp/day/", function(data){
+var dayURL = 'https://travels.toa.st/siteForms/adventcomp/day/';
+if (findGetParameter('fail')) {dayURL = 'https://travels.toa.st/siteForms/adventcomp/asjkldhfahdkfalhdfh/';}
+  $.getJSON(dayURL, function(data){
     passThroughAdventDay = data['day'];
     var theDay = data['day'];
     var theMonth = data['month'];
@@ -50,7 +52,7 @@ $(".adventBoxplaceholder").on('click', function() {
       var theTitle = data['title'];
       var theDescription = data['description'];
       var theUrl = data['url'];
-      var linkIn = '<a href="' + data['url'] + '" target="_blank">';
+      var linkIn = '<a title="' + theTitle + '" href="' + data['url'] + '" target="_blank">';
       var linkOut = '</a>';
     if(currentUrl.indexOf("/us/") > 0) {
       if(data['priceusd']) {thePrice = '<br /><br />$' + data['priceusd'];}
@@ -91,11 +93,15 @@ $(".adventBoxplaceholder").on('click', function() {
     var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
     eventer(messageEvent,function(e) {
       _gaq.push(["_trackEvent","Advent Form Submission","Click","Day " + passThroughAdventDay])
-      $("iframe").after('<p id="adventAdventconfirmation" class="textBook advent15"><br /><br />You\'ve just entered the TOAST Advent prize draw.<br />Share with your friends and family on Facebook,<br />Pinterest or Twitter<br/><br/><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//toa.st/advent/"><img src="//media.toa.st/content-images/aw17-advent/65/social-fb.jpg" /></a><a target="_blank"  href="https://pinterest.com/pin/create/button/?url=https%3A//toa.st/advent&media=https%3A//media.toa.st/content-images/aw17-advent/1500/TOAST_AdventCompetition_' + theDay + 'b.jpg&description="><img src="//media.toa.st/content-images/aw17-advent/65/social-pin.jpg" /></a><a target="_blank" href="https://twitter.com/home?status=TOAST%20Christmas%20Advent%20Giveaway%3A%20https%3A//toa.st/advent"><img src="//media.toa.st/content-images/aw17-advent/65/social-tw.jpg" /></a><br /><br /><a class="adventUnderline" href="/christmas">SHOP CHRISTMAS GIFTS</a></p>');
+      $("iframe").after('<p id="adventAdventconfirmation" class="textBook advent15"><br /><br />You\'ve just entered the TOAST Advent prize draw.<br />Share with your friends and family on Facebook,<br />Pinterest or Twitter<br/><br/><a title="Facebook Share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//toa.st/advent/"><img alt="Share on Facebook" src="//media.toa.st/content-images/aw17-advent/65/social-fb.jpg" /></a><a title="Pinterest Share" target="_blank"  href="https://pinterest.com/pin/create/button/?url=https%3A//toa.st/advent&media=https%3A//media.toa.st/content-images/aw17-advent/1500/TOAST_AdventCompetition_' + theDay + 'b.jpg&description="><img alt="Share on Pinterest" src="//media.toa.st/content-images/aw17-advent/65/social-pin.jpg" /></a><a title="Twitter Share" target="_blank" href="https://twitter.com/home?status=TOAST%20Christmas%20Advent%20Giveaway%3A%20https%3A//toa.st/advent"><img alt="Share on Twitter" src="//media.toa.st/content-images/aw17-advent/65/social-tw.jpg" /></a><br /><br /><a title="Shop Christmas Gifts" class="adventUnderline" href="/christmas">SHOP CHRISTMAS GIFTS</a></p>');
       $('iframe').remove();
         $('html, body').animate({
             scrollTop: ($('#adventAdventconfirmation').offset().top)
         },500);
     },false);
-    });
+  }).fail(function(){
+$('iframe').remove();
+var connectionLost = '<div class="col-xs-12 adventNotready" style="font-size:18px;"><span class="textBook">Communication error, please try again later.</span></div>';
+$('.adventBoxplaceholder').append(connectionLost);
+  });
 });
