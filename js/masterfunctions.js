@@ -1,4 +1,58 @@
+/*
+Approx Line no (way out of date),
+search CONTENTS ..... up to the hyphen.
+i.e. looking for: 10839 - CONTENTS Teradata - Landing Page Newsletter Signup
+Search: CONTENTS Teradata
+
+1 - CONTENTS Flagswap
+10 - CONTENTS Product Reviews
+50 - CONTENTS Jquery-UI Extensions - Required but could be separated or stripped down?
+7375 - CONTENTS Flowplayer - No longer required
+7432 - CONTENTS Underscore - underscore.js v 1.5.1
+8021 - CONTENTS bxSlider - Might also be used for Lookbook
+8461 - CONTENTS Canvas - (Part of ex canvas below?)
+8572 - CONTENTS Excanvas
+8837 - CONTENTS Sets JSON as cookie - Unknown use
+8895 - CONTENTS Spinners - (Depends on excanvas for <= IE8)
+9224 - CONTENTS Tipped - Jquery tooltips - Large eval block
+9795 - CONTENTS Swipe - (probably part of Touchswipe below)
+9804 - CONTENTS Touchswipe - Plugin
+10268 - CONTENTS Liquid slider - Possibly used for Lookbook
+10685 - CONTENTS Peerius - Upselling module on prod pages - Relies on Tipped above
+10836 - CONTENTS showMeTheMoney - Shows web content
+10839 - CONTENTS Teradata - Landing Page Newsletter Signup
+10886 - CONTENTS Postcode Lookup - api
+10918 - CONTENTS Main Module - Most custom JS goes here - Renders basket, nav, product size boxes etc. Product accordian, social links.
+11084 - CONTENTS Tipped Calls
+  11070 - CONTENTS Newsletter Signup
+  11195 - CONTENTS Ajax Get Stock Levels
+  11222 - CONTENTS Cookie declaration
+  11287 - CONTENTS Basket Functions
+  11316 - CONTENTS Nav and Blackout
+  11362 - CONTENTS Layout changes
+  11393 - CONTENTS Basket/bag
+  11421 - CONTENTS Product Code Overrides - Specific product codes referenced, none of these codes exist in the catalogue
+  11439 - CONTENTS Call to Tipped
+  11461 - CONTENTS Range Functions - Run if page includes "/range/"
+  11537 - CONTENTS Help Menu - Function powering (old?) help menu
+  11552 - CONTENTS Help Page - functionality. All now obsolete?
+11594 - CONTENTS Range Module - Product pages
+  11611 - CONTENTS Add to basket
+  11664 - CONTENTS Checks stock levels JSON
+  11712 - CONTENTS Lookbook Product Data - Gets product data JSON for the Lookbook
+  11768 - CONTENTS Chooses Image - based on colour
+  11819 - CONTENTS Selects In Stock Product - AUTO SELECTS NON OOS PRODUCTS 
+  11910 - CONTENTS Range Image Functions
+  12068 - CONTENTS Range Listeners
+12138 - CONTENTS Wishlist Module
+12622 - CONTENTS Reviews Display Module
+12785 - CONTENTS Document.ready
+ */
+
+
+
 function flagSwap() {
+	// CONTENTS Flagswap
   // Sets Current Currency in the top nav
     str = $(".menu__title").text(), rg = /[a-zA-Z]+/g, el = $("#footer-country-select .has-flag-uk").first(), el.html(el.html().replace(/GBP/gi, str.match(rg)[0])), currentFlag = $(".has-flag").attr("class").split(" ").pop(), $("#footerCountryFlag").removeClass("has-flag-uk"), $("#footerCountryFlag").addClass(currentFlag)
 }
@@ -6,6 +60,7 @@ function flagSwap() {
 
 
 function moveReviews(){
+	// CONTENTS Product Reviews
   // Reorganises reviews on the product pages
     if ($("#review-section h2").html().match(/\d+/)[0] == "1"){ var sjplural = '';} else {var sjplural = 's';}
     $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +" review" + sjplural + ") </span>")
@@ -48,7 +103,7 @@ function getParameterByName(a) {
 swatched = !1,
 
     function(a, b) {
-      // Whole function JQuery UI Extensions
+      // CONTENTS Jquery-UI Extensions
 
         function c(b, c) {
             var e, f, g, h = b.nodeName.toLowerCase();
@@ -7373,7 +7428,7 @@ swatched = !1,
             })
         }
     }(jQuery), flowplayer(function(a, b) {
-      // Flowplayer
+      // CONTENTS Flowplayer
         function c(a) {
             var b = f("<a/>")[0];
             return b.href = a, b.hostname
@@ -7430,7 +7485,7 @@ swatched = !1,
         }
     }),
     function() {
-
+		// CONTENTS Underscore
       // Third party function v 1.5.1
         var a = this,
             b = a._,
@@ -8019,6 +8074,7 @@ swatched = !1,
         })
     }.call(this),
     function(a) {
+		// CONTENTS bxSlider
       // bxSlider third party
         var b = {},
             c = {
@@ -8458,7 +8514,7 @@ swatched = !1,
             }, j(), this
         }
     }(jQuery), document.createElement("canvas").getContext || function() {
-      // Unknown - part of Excanvas?
+      // CONTENTS Canvas
         function a() {}
 
         function b(a) {
@@ -8570,7 +8626,7 @@ swatched = !1,
             return this.context_ || (this.context_ = new f(this))
         }
 
-        // Excanvas
+        // CONTENTS Excanvas
         var p = Math,
             q = p.round,
             r = p.sin,
@@ -8835,7 +8891,7 @@ swatched = !1,
     function(a) {
         "function" == typeof define && define.amd ? define(["jquery"], a) : a(jQuery)
     }(function(a) {
-      // Unknown - Interacts with Cookies and Json
+      // CONTENTS Sets JSON as cookie
         function b(a) {
             return h.raw ? a : encodeURIComponent(a)
         }
@@ -8893,6 +8949,7 @@ swatched = !1,
         }
     });
 var Spinners = {
+	// CONTENTS Spinners
     version: "3.0.0"
 };
 ! function(a) {
@@ -9222,6 +9279,7 @@ var Spinners = {
     })
 }(jQuery);
 var Tipped = {
+	// CONTENTS Tipped
   // Jquery Tooltips
     version: "3.1.8"
 };
@@ -9793,6 +9851,7 @@ Tipped.Skins = {
     function(a) {
         "function" == typeof define && define.amd && define.amd.jQuery ? define(["jquery"], a) : a(jQuery)
     }(function(a) {
+		// CONTENTS Swipe
         function b(b) {
             return !b || void 0 !== b.allowPageScroll || void 0 === b.swipe && void 0 === b.swipeStatus || (b.allowPageScroll = j), void 0 !== b.click && void 0 === b.tap && (b.tap = b.click), b || (b = {}), b = a.extend({}, a.fn.swipe.defaults, b), this.each(function() {
                 var d = a(this),
@@ -9802,6 +9861,7 @@ Tipped.Skins = {
         }
 
         function c(b, c) {
+			// CONTENTS Touchswipe
             function A(b) {
                 if (!(ha() || a(b.target).closest(c.excludedElements, Qa).length > 0)) {
                     var d, e = b.originalEvent ? b.originalEvent : b,
@@ -10270,6 +10330,7 @@ Tipped.Skins = {
         return b.prototype = a, new b
     }),
     function(a, b, c, d) {
+		// CONTENTS Liquid slider
         var e = {
             makeResponsive: function() {
                 var c = this;
@@ -10685,6 +10746,8 @@ Tipped.Skins = {
     }(jQuery, window, document), sizeRegex = /(\/[0-9]{3,4}\/)/i, imageSizeBreakdownArray = [250, 350, 450, 550, 700, 950, 1200, 1553], productYmalRendered = !1, String.prototype.splice = function(a, b, c) {
         return this.slice(0, a) + c + this.slice(a + Math.abs(b))
     }, getUniqueStringArray = function(a) {
+		
+		// CONTENTS Peerius
         var b = [];
         if (a.length > 0) {
             a = a.sort(), b = [a[0]];
@@ -10834,10 +10897,12 @@ Tipped.Skins = {
             })
         }
     }, showMeTheMoney = function() {
+		// CONTENTS showMeTheMoney
         $("#mainContent, #aspnetForm > header").css("visibility", "visible").hide().fadeIn(400)
     };
 var teradata = function() {
   // Landing Page Newsletter Signup
+  // CONTENTS Teradata
         return {
             subscribeByEmail: function(a, b, c, d, e) {
                 if (e = void 0 !== e ? e : "750049776", "function" != typeof c || !1 !== c()) {
@@ -10884,6 +10949,7 @@ var teradata = function() {
         }
     }(),
     postcodeAnywhere = function() {
+		// CONTENTS Postcode Lookup
         var a = {
                 key: "FU43-NY28-TA13-EH87",
                 preferredLanguage: "English",
@@ -10916,6 +10982,7 @@ var teradata = function() {
         }
     }(),
     mainModule = function() {
+		// CONTENTS Main module
         miniBasket = null;
         var a = [],
             b = $(""),
@@ -10932,6 +10999,7 @@ var teradata = function() {
                 }, b + 100)
             },
             f = function() {
+              // checkProductSizeBoxWidth
                 $("ul.product-sizes li").each(function() {
                     $(this).text().length > 5 && $(this).css("min-width", "95px")
                 })
@@ -10946,6 +11014,7 @@ var teradata = function() {
                 }
             },
             h = function() {
+              // miniBasketCarousel
                 if ($(".basket-items li").length > 3) {
                     var a = 0;
                     $(".basket-items li").each(function(b) {
@@ -10954,6 +11023,7 @@ var teradata = function() {
                 }
             },
             i = function() {
+              //checkForLegLengths
                 var a = /( )(l)(?:$| )/i,
                     b = /( )(r)(?:$| )/i;
                 $("div.product-sizes").each(function() {
@@ -10970,6 +11040,7 @@ var teradata = function() {
                 })
             },
             j = function(a, b) {
+              // buildSizedImageSources
                 var c = tcp_env.dynamic_image_settings.BaseUrl;
                 b && (c += "content-images/", c = c + a.attr("season") + "/250"), a.attr("img-src", c + a.attr("img-src"))
             },
@@ -11008,6 +11079,7 @@ var teradata = function() {
                 }
             },
             n = function() {
+              // setRangeImages
                 if (rangeWindowWidth = $(window).width(), !(rangeCurrentWindowWidth > rangeWindowWidth)) {
                     var a = "700";
                     600 > rangeWindowWidth ? a = "350" : rangeWindowWidth >= 860 && 980 > rangeWindowWidth ? a = "450" : rangeWindowWidth > 979 && 2e3 > rangeWindowWidth ? a = "550" : rangeWindowWidth > 1999 && (a = "700");
@@ -11031,6 +11103,7 @@ var teradata = function() {
                 }
             },
             p = function() {
+              // setSocialVariables
                 var a = {},
                     b = "";
                 return b = $(".product-info h3").length > 0 ? $(".product-info h3").text() : $(".product-info h2").length > 0 ? $(".product-info h2").text() : $(".product-info h1").text(), a.socialProductDescription = $.trim(b), a.socialProductDetails = $.trim($($(".product-accordion section")[0]).find("p").text()), a.socialUrlhostname = tcp_env.site_base, a.socialUrlProdcode = 0 != $(".buy-off-container").length && "undefined" != typeof currentObjId ? currentObjId : $("#productId").attr("value"), a.socialUrlProdName = a.socialProductDescription.replace(/\s/g, ""), a.socialUrlShare = tcp_env.site_base + "product/" + a.socialUrlProdcode + "/" + a.socialUrlProdName + ".htm", 0 != $(".buy-off-container").length && "undefined" != typeof currentObjId && $(".twitter-social").attr("href", "//twitter.com/share?url=" + a.socialUrlShare + "&text=" + a.socialProductDescription + "%20by%20TOAST:%20"), a
@@ -11061,6 +11134,8 @@ var teradata = function() {
                 }
             },
             r = function() {
+              // populateTippedElements
+			  // CONTENTS Tipped Calls
                 Tipped.create(".recentlyViewed ul li a, .ymal img, .browse-left, .browse-right, .product-swatch, .mapTooltip, .fourth-row .cutout-image, .fourth-row .homepage-image, .group-images .range-product img", {
                     skin: "toast",
                     target: "mouse",
@@ -11069,9 +11144,12 @@ var teradata = function() {
                 })
             },
             s = function() {
+              // destroyTippedElements
                 Tipped.remove(".recentlyViewed ul li a, .ymal img, .browse-left, .browse-right, .product-swatch, .fourth-row .cutout-image, .fourth-row .homepage-image, .group-images .range-product img")
             },
             t = function(a, b, c) {
+              // subscribeToGroup
+			  // CONTENTS Newsletter Signup
                 var d = {
                     method: "/membership/subscribeByEmail",
                     queryNames: ["email", "groupId", "subscriptionMode"],
@@ -11092,6 +11170,7 @@ var teradata = function() {
                 })
             },
             u = function(a, b, c, d) {
+              // signUpEmail
                 var e = {
                     method: "/user/create",
                     queryNames: ["email"],
@@ -11167,6 +11246,7 @@ var teradata = function() {
                 }
 
                 function f() {
+					// CONTENTS Ajax Get Stock Levels
                     for (var a = {
                             skuList: []
                         }, b = tcp_env.basket.line_items, c = 0; c < b.length; c++) {
@@ -11211,6 +11291,7 @@ var teradata = function() {
                         }), $(this).trigger("hover"), $(this).unbind("click")
                     }),
                     function() {
+						// CONTENTS Cookie declaration
                         var a = 0,
                             b = function() {
                                 200 > a && (miniBasket ? miniBasket.data("tcplMinibasket").refreshBasket() : (a++, setTimeout(b, 25)))
@@ -11256,6 +11337,7 @@ var teradata = function() {
                         height: "0px",
                         opacity: 0
                     }), e(b, 450))
+					// CONTENTS Basket Functions
                 }), $("body").on("click", ".product-sizes li", function(a, b) {
                     if (void 0 === b) {
                         var c = $(this).text();
@@ -11293,7 +11375,9 @@ var teradata = function() {
                     _gaq.push(["_trackEvent", "Secure Checkout", "Click", "Secure Checkout"])
                 });
                 var l = $('<div class="left-draw hide-on-desktop"><div class="nav-wrapper"><nav><ul class="search-nav nav-draw-ul"></ul><ul class="menu-nav nav-draw-ul"></ul><ul class="help-nav nav-draw-ul"></ul></nav></div></div>');
-
+				
+				// CONTENTS Nav and Blackout
+				
                $("body").prepend(l), $(".search-nav").append($('<li><form action="#"><input name="ctl01$txtSearch" type="search" id="ctl01_txtSearch" class="searchBox-Nav" /></form></li>')), $(".basketBtn").html("BAG "+($(".basket-items .qty").length > 0 ? $(".basket-items .qty").html() : "(0)")), $(".help-nav").append("<li class='left-draw-basket'><a href='/basket.htm' associate='sub-list-basket'>Bag " + ($(".basket-items .qty").length > 0 ? $(".basket-items .qty").html() : "(0)") + "</a></li><li class='nav-checkout-option'><a href='/checkout/login.htm'>Checkout</a></li>"),$(".help-nav").append('<li class="hide-on-desktop"><a href="/content/wishlist/wishlist.htm">Wishlist (<span class="wishlist-qty">0</span>)</a></li><li class="hide-on-desktop"><a href="/account.htm?mode=myaccount">Log In/Register</a></li>'), $(".help-nav #topBasketContainer").remove(), $("<li>" + $(".shop-section a") + "</li>"), $(".left-draw .searchBox-Nav").val("search"), $(".left-draw .searchBox-Nav").on("focus", function() {
                     "search" == $(this).val() && $(this).val("")
                 }).on("focusout", function() {
@@ -11358,7 +11442,7 @@ var teradata = function() {
                     var b = "Click";
                     $(this).parent().hasClass("mobile-nav-expanded") ? window.location.href = $(this).attr("href") : ($(".mobile-nav-expanded").removeClass("mobile-nav-expanded"), $(this).parent().addClass("mobile-nav-expanded"), b = "Expand"), _gaq.push(["_trackEvent", "Mobile Top Nav", b, $(this).text()])
                 })
-
+				// CONTENTS Layout changes
                 // order swap
 
                 homeNavSwap =  $(".subNavItem5").get(0).outerHTML + $("#Clothing-Footwear-sub").get(0).outerHTML + $(".subNavItem4").get(0).outerHTML + $("#Homeware-sub").get(0).outerHTML
@@ -11390,6 +11474,8 @@ var teradata = function() {
                     }, 0), d(!1)
                 });
                 var s = $("#mini-basket");
+				
+				// CONTENTS Basket/bag
                 if ($(".nav-bar .basket-items").hover(function() {
                         if ($(this).addClass("hover-mini-bag"), $(".basket-items li").length > 0) {
                             s.css("top", $("#topBasketContainer").offset().top - $(window).scrollTop() + 40);
@@ -11418,6 +11504,7 @@ var teradata = function() {
                         $(".searchForm input[type=text]").attr("value", $(this).val()), 13 == a.which && (a.preventDefault(), $("#ctl00_ctl01_btnSearch").trigger("click"))
                     }), $(".product-size-charts").click(function(a) {
                         a.preventDefault(), a.stopPropagation(), $(".main-content").addClass("visuallyHidden"), $("body").append($('<div class="info-draw grid-parent grid-80 tablet-grid-80 mobile-grid-80"><a href="#" class="info-draw-close">Close</a><section class="size-fit-info"></section><section id="social-info"></section></div>'));
+						// CONTENTS Product Code Overrides
                         var b = ["CAEAD", "CAEAE", "CAEAL", "CAEAN", "CAEBX", "CAEBY", "CAEBZ", "C6EAA", "C6EAB", "C6EAJ", "C6EAK", "C6EAL", "C6EAN", "C6EBG", "C6EBH"];
                         $(".info-draw .size-fit-info").load(-1 !== $.inArray($(".desc-prod-code").text().replace("Style Code: ", ""), b) ? "/content/site/product/size-chart-t1-2015.htm #size-chart-overlay-content" : "https://s3.eu-west-2.amazonaws.com/toast-help-files/size-fit.htm")
                     }), $("body").on("click", ".info-draw-close", function(a) {
@@ -11449,6 +11536,7 @@ var teradata = function() {
                             shadow: !1,
                             closeButtonSkin: "light"
                         }
+						// CONTENTS Call to Tipped
                     }), jQuery(window).load(function() {
                         $(window).width() > 1023 && r()
                     }), _.defer(h), $(".category-full-width-banner .range-image").length > 0) {
@@ -11458,6 +11546,7 @@ var teradata = function() {
                         _.defer(n)
                     }), $(window).resize(lazyRangeLayout)
                 }
+				// CONTENTS Range Functions
                 window.location.href.indexOf("/range/") < 0 && q();
                 var w = function() {
                     var a = ($(".main-header").outerHeight() > 80 || $(".main-header").outerHeight(), "none" == $(".marketing-message").css("display") ? 0 : $(".marketing-message").outerHeight());
@@ -11524,6 +11613,7 @@ var teradata = function() {
         }
     }();
 ! function(a) {
+	// CONTENTS Help Menu
     a.fn.showHide = function(b) {
         var c = {
                 speed: 1e3,
@@ -11539,6 +11629,7 @@ var teradata = function() {
     }
 }(jQuery);
 var helpModule = function() {
+	// CONTENTS Help Page
         var a = {},
             b = function(a, b) {
                 $(".helpHeader").removeClass("activeHelp"), $(".toggleDiv").hide(), $(".toggleDiv:eq(" + b + ")").show().prev().addClass("activeHelp"), 0 == b ? $(".shopping-accordion").accordionA("toggle", "#" + a, !0) : 1 == b ? $(".legal-accordion").accordionA("toggle", "#" + a, !0) : 2 == b && $(".company-accordion").accordionA("toggle", "#" + a, !0), setTimeout(function() {
@@ -11580,6 +11671,7 @@ var helpModule = function() {
         }), a
     }(),
     rangeModule = function() {
+		// CONTENTS Range Module
         var a = !1,
             b = {},
             c = {},
@@ -11596,7 +11688,9 @@ var helpModule = function() {
             n = window.innerWidth,
             o = window.innerWidth,
             p = function() {
+				//initAddToBasket
                 $(".add-to-bag").addtobasket({
+					// CONTENTS Add to basket
                     debug: "false" === tcp_env.is_live,
                     selectedSkuFinder: function(a) {
                         if (0 == $(".product-details .disabled").length) return a ? a.parent().find(".size-selected").attr("sku-id") : null
@@ -11649,6 +11743,7 @@ var helpModule = function() {
                 })
             },
             q = function(a) {
+				// CONTENTS Checks stock levels JSON
                 a.skuList = a.skuList.sort(function(a, b) {
                     return a - b
                 });
@@ -11667,6 +11762,7 @@ var helpModule = function() {
                 })
             },
             r = function(a) {
+				// CONTENTS Lookbook Product Data
                 $.ajax({
                     url: "/services/stockservices.asmx/GetProductData",
                     type: "POST",
@@ -11691,6 +11787,7 @@ var helpModule = function() {
             }
         };
         var s = function() {
+			// populateRangeImages
                 for (var a = 0, b = 0; b < productJson.products.length; b++)
                     for (prop in productJson.products[b])
                         if ("title" != prop && "description" != prop && "details" != prop && "fitNotes" != prop && "provenance" != prop && "restricted" !== prop) {
@@ -11722,6 +11819,7 @@ var helpModule = function() {
                                             if (k) break
                                         }
                                     var m = "";
+									// CONTENTS Chooses Image
                                     m = j.upImg.replace(sizeRegex, "/250/"), i ? $($("#" + j.prodId + " img")[0]).attr({
                                         src: m.replace("gift_clear", "gift/clear"),
                                         alt: productJson.products[b].title,
@@ -11741,6 +11839,8 @@ var helpModule = function() {
                             } else if (c.length > 0)
                                 for (var n = $(".selected-colour-tile").attr("base-colour").toLowerCase(), o = c.length - 1; o >= 0; o--)
                                     if (c[o].baseColour.toLowerCase() === n) {
+										// CONTENTS Selects In Stock Product
+
                                         var j = c[o],
                                             m = "";
                                         m = j.upImg.replace(sizeRegex, "/250/"), i ? $($("#" + j.prodId + " img")[0]).attr({
@@ -11762,6 +11862,8 @@ var helpModule = function() {
                         }
             },
             t = function() {
+				// setFadedOutRangeImagesBasedOnStock
+				
                 for (var a = 0; a < $(".range-product img").length; a++)
                     for (var b = 0; b < stockJson.stocklist.length; b++)
                         if (void 0 !== $($(".range-product img")[a]).attr("prod-code") && stockJson.stocklist[b].prodId.toLowerCase() == $($(".range-product img")[a]).attr("prod-code").toLowerCase()) {
@@ -11775,6 +11877,7 @@ var helpModule = function() {
                         }
             },
             u = function() {
+				// Generates available sizes
                 if ("undefined" == typeof rangeJson) {
                     $("#added-to-basket").hide(), $(".stock-message").hide();
                     var a = $(".product-sizes ul .size-selected");
@@ -11798,6 +11901,7 @@ var helpModule = function() {
                 }
             },
             v = function() {
+				// populateRangeSizesBasedOnStock
                 var a = $(".product-sizes ul");
                 a.html("");
                 var b = "";
@@ -11862,6 +11966,7 @@ var helpModule = function() {
                 }
             },
             x = function() {
+				// CONTENTS Range Image Functions
                 $(".group-buy-off .hiddenSwatches").length || $(".group-buy-off").prepend("<div class='hiddenSwatches'></div>"), currentIndividualObj = void 0;
                 var a = void 0;
                 a = $($(".selected-range-product img").length > 1 ? $(".selected-range-product img")[1] : ".selected-range-product img"), $(".group-buy-off .product-swatches").html("");
@@ -11928,6 +12033,7 @@ var helpModule = function() {
             },
             A = function() {
                 setTimeout(function() {
+					// toggleOpenDescription
                     $(".product-accordion").accordionA("toggle", $($(".product-accordion section")[0]), !0)
                 }, 500)
             },
@@ -11986,12 +12092,15 @@ var helpModule = function() {
                 }
             },
             E = function() {
+				// getLightboxTemplate
                 return $(['<div class="buy-off-container group-buy-off grid-90 prefix-5 suffix-5 mobile-grid-100 tablet-grid-90 tablet-prefix-5 tablet-suffix-5 grid-parent">', '<div class="group-product-image grid-45 mobile-grid-100 tablet-grid-50 suffix-5">', '<img src="//d1kh76s6bjh8ww.cloudfront.net/img/ajaxLoader.gif" class="spinner visuallyHidden">', '<a href="#" class="zoom-anchor MagicZoomPlus" title="Click to zoom">', '<img class="main-product-image" />', "</a>", "</div>", '<div class="product-details grid-50 tablet-grid-50 mobile-grid-100">', '<div class="product-info grid-100 suffix-15 tablet-grid-95 tablet-suffix-5 mobile-grid-100 grid-parent">', "<h3></h3>", '<p class="nowPrice"></p>', "</div>", '<div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent">', '<article class="group-product-description product-accordion accordion-a" role="tablist">', "<section>", "<header>", "<h2>Description</h2>", "</header>", '<div class="content product-description-content">', "<p></p>", '<ul class="details"></ul>', '<span class="desc-prod-code">Style Code: <span class="prodID"></span></span>', "</div>", "</section>", "</article>", "</div>", '<h3 class="product-label">Colour: <span class="colour-showing"></span></h3>', '<div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent">', '<ul class="product-swatches">', "</ul>", "</div>", '<h3 class="product-label ">Size: <a class="product-size-charts" target="_blank" href="/content/help/help.htm#size-fit">(Size Chart)</a></h3>', '<div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent product-sizes">', '<ul class="product-sizes"></ul>', "</div>", '<div class="grid-100 tablet-grid-100 mobile-grid-100 stock-message hidden-message"></div>', '<h3 class="product-label">Quantity: </h3>', '<div class="product-qty">', '<select class="qtyList" name="qty">', '<option value="1">1</option>', '<option value="2">2</option>', '<option value="3">3</option>', '<option value="4">4</option>', '<option value="5">5</option>', '<option value="6">6</option>', "</select>", "</div>", '<div id="added-to-basket" class="grid-100 tablet-grid-100 mobile-grid-100 stock-message-added hidden-message">Added to basket</div> ', '<div id="#addToBasket" class="grid-100 tablet-grid-100 mobile-grid-100 product-button add-to-bag">Add to bag</div>', "</div>", "</div>"].join(""))
             },
             F = function() {
+				// getRangeBuyOffTemplate
                 return $(['<div class="buy-off-container group-buy-off grid-90 prefix-5 suffix-5 mobile-grid-100 tablet-grid-90 tablet-prefix-5 tablet-suffix-5 grid-parent">', '<a href="#" class="buy-off-close">close</a>', '<div class="group-product-image grid-45 mobile-grid-100 tablet-grid-50 suffix-5">', '<img src="//d1kh76s6bjh8ww.cloudfront.net/img/ajaxLoader.gif" class="spinner visuallyHidden">', '<a href="#" class="zoom-anchor MagicZoomPlus" title="Click to zoom">', '<img class="main-product-image" />', "</a>", $("#range-lifestyle-holder").length > 0 ? '<a href="#" class="zoom-anchor MagicZoomPlus" title="Click to zoom"><img class="range-lifestyle visuallyHidden" /></a>' : "", "</div>", '<div class="product-details grid-50 tablet-grid-50 mobile-grid-100">', '<div class="product-info grid-100 suffix-15 tablet-grid-95 tablet-suffix-5 mobile-grid-100 grid-parent">', "<h3></h3>", '<p class="nowPrice"></p>', "</div>", '<div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent">', '<article class="group-product-description product-accordion accordion-a" role="tablist">', "<section>", "<header>", "<h2>Description</h2>", "</header>", '<div class="content product-description-content">', "<p></p>", '<ul class="details"></ul>', '<span class="desc-prod-code">Style Code: <span class="prodID"></span></span>', "</div>", "</section>", '<section id="the-final-section">', "<header>", "<h2>Shipping & Returns</h2>", "</header>", '<div class="content">', "</div>", "</section>", "</article>", "</div>", '<h3 class="product-label">Colour: <span class="colour-showing"></span></h3>', '<div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent">', '<ul class="product-swatches">', "</ul>", "</div>", '<h3 class="product-label ">Size: <a class="product-size-charts" target="_blank" href="/content/help/help.htm#size-fit">(Size Chart)</a></h3>', '<div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent product-sizes">', '<ul class="product-sizes"></ul>', "</div>", '<div class="grid-100 tablet-grid-100 mobile-grid-100 stock-message hidden-message"></div>', '<h3 class="product-label">Quantity: </h3>', '<div class="product-qty">', '<select class="qtyList" name="qty">', '<option value="1">1</option>', '<option value="2">2</option>', '<option value="3">3</option>', '<option value="4">4</option>', '<option value="5">5</option>', '<option value="6">6</option>', "</select>", "</div>", '<div id="added-to-basket" class="grid-100 tablet-grid-100 mobile-grid-100 stock-message-added hidden-message">Added to basket</div> ', '<div id="#addToBasket" class="grid-100 tablet-grid-100 mobile-grid-100 product-button add-to-bag">Add to bag</div>', '<div class="grid-100 tablet-grid-100  mobile-grid-100 product-button checkout">', '<a id="ctl00_globalMainContent_btnCheckout" class="darkButton" href="/basket.htm">Checkout</a>', "</div>", "</div>", "</div>"].join(""))
             },
             G = function() {
+				// initialiseBuyOff
                 if ($("#the-final-section .content").load("/content/site/product/shipping-Returns.htm .shipping-content"), $('h3.product-label:contains("Share")').hide(), $(".buy-off-container").append($('<div class="fit-notes visuallyHidden"></div>')), $(".bedlinen-buy-off").length > 0 && (j = !0, l = ""), $(".colour-mode").length > 0 && (i = !0), $(".group-images").length > 0 && 0 == $(".lookbook-buy-off, .jersey-buy-off").length) {
                     for (var a = {
                             skuList: []
@@ -12009,6 +12118,7 @@ var helpModule = function() {
                 }))
             },
             H = function() {
+				// setBaseBuyOffVars
                 n = window.innerWidth, o = window.innerWidth;
                 var a = _.debounce(C, 300);
                 $(window).resize(a)
@@ -12030,6 +12140,7 @@ var helpModule = function() {
                 a.find("span").text(e.replace(/\+/g, " ")), -1 !== b.toLowerCase().indexOf("category/women") ? ($("#section-link").attr("href", "/women.htm"), $("#section-link").find("span").text("women")) : -1 !== b.toLowerCase().indexOf("category/men") ? ($("#section-link").attr("href", "/men.htm"), $("#section-link").find("span").text("men")) : ($("#section-link").attr("href", "/houseandhome.htm"), $("#section-link").find("span").text("house&home"))
             };
         return addRangeListeners = function() {
+			// CONTENTS Range Listeners
             $(".group-images").on("click", ".range-product", function() {
                 var a = $(this).parent().parent().attr("related-buy-off");
                 void 0 != a && "" != a && $(".buy-off-container").insertAfter($(this).parent().parent()), $(".buy-off-container").css({
@@ -12100,6 +12211,7 @@ var helpModule = function() {
         }
     }(),
     wishlistModule = function() {
+		// CONTENTS Wishlist Module
         var a = {
                 wishlistProductJson: void 0,
                 wishlistStockJson: void 0,
@@ -12584,6 +12696,7 @@ var helpModule = function() {
         }), a
     }(),
     reviewDisplayModule = function() {
+		// CONTENTS Reviews Display Module
         var a = 0,
             b = 6,
             c = !1,
@@ -12747,6 +12860,7 @@ var helpModule = function() {
         }
     }();
 $(document).ready(function() {
+	// CONTENTS Document.ready
     $("#country-selector").click(function() {
     $("#country-selector .menu--dropdown").toggleClass("active")
 })
