@@ -1,15 +1,14 @@
 function flagSwap() {
+  // Sets Current Currency in the top nav
     str = $(".menu__title").text(), rg = /[a-zA-Z]+/g, el = $("#footer-country-select .has-flag-uk").first(), el.html(el.html().replace(/GBP/gi, str.match(rg)[0])), currentFlag = $(".has-flag").attr("class").split(" ").pop(), $("#footerCountryFlag").removeClass("has-flag-uk"), $("#footerCountryFlag").addClass(currentFlag)
 }
 
+
+
 function moveReviews(){
-    if ($("#review-section h2").html().match(/\d+/)[0] == "1"){
-        $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +" review) </span>")
-    } else 
-    {
-        $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +" reviews) </span>")
-    }
-    
+  // Reorganises reviews on the product pages
+    if ($("#review-section h2").html().match(/\d+/)[0] == "1"){ var sjplural = '';} else {var sjplural = 's';}
+    $("#nowPrice").after("<span class='topReviews sansMedium'>(" + $("#review-section h2").html().match(/\d+/)[0] +" review" + sjplural + ") </span>")
     $("#nowPrice").after($(".review-rating-ratio").html())
     $(".product-info  .review-rating-stars-on").wrapInner("<a href='javascript:openReviews()'></a>")
     $(".product-info  .topReviews").wrapInner("<a href='javascript:openReviews()'></a>")
@@ -20,11 +19,12 @@ function moveReviews(){
     if ($(document).width() < 768) {
         $("#nowPrice").after("<br clear='both'>")
     }
-
-
 }
 
+
+
 function openReviews() {
+  // UNKNOWN
     $("#review-section header").trigger( "click" );
     var body = $("html, body");
     if ($(document).width() < 768) {
@@ -34,27 +34,37 @@ function openReviews() {
     }
 }
 
+
+
 function getParameterByName(a) {
+  // Gets URL Parameter
     a = a.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var b = new RegExp("[\\?&]" + a + "=([^&#]*)"),
         c = b.exec(location.search);
     return null == c ? "" : decodeURIComponent(c[1].replace(/\+/g, " "))
 }
+
+// Boolean variable only exists twice in this file
 swatched = !1,
+
     function(a, b) {
+      // Whole function JQuery UI Extensions
+
         function c(b, c) {
             var e, f, g, h = b.nodeName.toLowerCase();
             return "area" === h ? (e = b.parentNode, f = e.name, !(!b.href || !f || "map" !== e.nodeName.toLowerCase()) && !!(g = a("img[usemap=#" + f + "]")[0]) && d(g)) : (/input|select|textarea|button|object/.test(h) ? !b.disabled : "a" === h ? b.href || c : c) && d(b)
         }
-
         function d(b) {
             return a.expr.filters.visible(b) && !a(b).parents().addBack().filter(function() {
                 return "hidden" === a.css(this, "visibility")
             }).length
         }
+
         var e = 0,
             f = /^ui-id-\d+$/;
         a.ui = a.ui || {}, a.extend(a.ui, {
+
+
             version: "1.10.3",
             keyCode: {
                 BACKSPACE: 8,
@@ -193,6 +203,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a, b) {
+      // More Jquery-UI elements
         var c = 0,
             d = Array.prototype.slice,
             e = a.cleanData;
@@ -376,6 +387,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a) {
+      // Jquery-UI
         var b = !1;
         a(document).mouseup(function() {
             b = !1
@@ -433,6 +445,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.widget("ui.draggable", a.ui.mouse, {
             version: "1.10.3",
             widgetEventPrefix: "drag",
@@ -763,6 +776,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         function b(a, b, c) {
             return a > b && b + c > a
         }
@@ -908,10 +922,11 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // More Jquery-UI
+
         function b(a) {
             return parseInt(a, 10) || 0
         }
-
         function c(a) {
             return !isNaN(parseInt(a, 10))
         }
@@ -1386,6 +1401,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.widget("ui.selectable", a.ui.mouse, {
             version: "1.10.3",
             options: {
@@ -1490,6 +1506,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         function b(a, b, c) {
             return a > b && b + c > a
         }
@@ -1914,6 +1931,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a, b) {
+      // More Jquery-UI
         var c = "ui-effects-";
         a.effects = {
                 effect: {}
@@ -2502,6 +2520,7 @@ swatched = !1,
             }()
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         var b = 0,
             c = {},
             d = {};
@@ -2971,6 +2990,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         var b, c, d, e, f = "ui-button ui-widget ui-state-default ui-corner-all",
             g = "ui-button-icons-only ui-button-icon-only ui-button-text-icons ui-button-text-icon-primary ui-button-text-icon-secondary ui-button-text-only",
             h = function() {
@@ -3101,6 +3121,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a, b) {
+      // Jquery-UI Datepicker
         function c() {
             this._curInst = null, this._keyEvent = !1, this._disabledInputs = [], this._datepickerShowing = !1, this._inDialog = !1, this._mainDivId = "ui-datepicker-div", this._inlineClass = "ui-datepicker-inline", this._appendClass = "ui-datepicker-append", this._triggerClass = "ui-datepicker-trigger", this._dialogClass = "ui-datepicker-dialog", this._disableClass = "ui-datepicker-disabled", this._unselectableClass = "ui-datepicker-unselectable", this._currentClass = "ui-datepicker-current-day", this._dayOverClass = "ui-datepicker-days-cell-over", this.regional = [], this.regional[""] = {
                 closeText: "Done",
@@ -3876,6 +3897,7 @@ swatched = !1,
         }, a.datepicker = new c, a.datepicker.initialized = !1, a.datepicker.uuid = (new Date).getTime(), a.datepicker.version = "1.10.3"
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         var b = {
                 buttons: !0,
                 height: !0,
@@ -4202,6 +4224,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         var b = /up|down|vertical/,
             c = /up|left|vertical|horizontal/;
         a.effects.effect.blind = function(d, e) {
@@ -4230,6 +4253,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.effects.effect.bounce = function(b, c) {
             var d, e, f, g = a(this),
                 h = ["position", "top", "bottom", "left", "right", "height", "width"],
@@ -4257,6 +4281,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.effects.effect.clip = function(b, c) {
             var d, e, f, g = a(this),
                 h = ["position", "top", "bottom", "left", "right", "height", "width"],
@@ -4280,6 +4305,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.effects.effect.drop = function(b, c) {
             var d, e = a(this),
                 f = ["position", "top", "bottom", "left", "right", "opacity", "height", "width"],
@@ -4302,6 +4328,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.effects.effect.explode = function(b, c) {
             function d() {
                 t.push(this), t.length === l * m && e()
@@ -4343,6 +4370,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.effects.effect.fade = function(b, c) {
             var d = a(this),
                 e = a.effects.setMode(d, b.mode || "toggle");
@@ -4357,6 +4385,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.effects.effect.fold = function(b, c) {
             var d, e, f = a(this),
                 g = ["position", "top", "bottom", "left", "right", "height", "width"],
@@ -4385,6 +4414,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // More Jquery-UI
         a.effects.effect.highlight = function(b, c) {
             var d = a(this),
                 e = ["backgroundImage", "backgroundColor", "opacity"],
@@ -4406,6 +4436,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // JQuery-UI
         a.effects.effect.pulsate = function(b, c) {
             var d, e = a(this),
                 f = a.effects.setMode(e, b.mode || "show"),
@@ -4428,6 +4459,7 @@ swatched = !1,
         }
     }(jQuery),
     function(a) {
+      // JQuery-UI
         a.effects.effect.puff = function(b, c) {
             var d = a(this),
                 e = a.effects.setMode(d, b.mode || "hide"),
@@ -6088,6 +6120,7 @@ swatched = !1,
         for (var a, b = function() {}, c = ["assert", "clear", "count", "debug", "dir", "dirxml", "error", "exception", "group", "groupCollapsed", "groupEnd", "info", "log", "markTimeline", "profile", "profileEnd", "table", "time", "timeEnd", "timeStamp", "trace", "warn"], d = c.length, e = window.console = window.console || {}; d--;) a = c[d], e[a] || (e[a] = b)
     }(),
     function(a) {
+      // Product Page Accordian
         a.widget("accordiona.accordionA", {
             options: {
                 section: "> section",
@@ -6179,6 +6212,7 @@ swatched = !1,
         })
     }(jQuery),
     function(a) {
+      // Jquery-UI
         function b(b, c) {
             var d = "obj" + ("" + Math.random()).slice(2, 15),
                 e = '<object class="fp-engine" id="' + d + '" name="' + d + '" ';
@@ -7339,6 +7373,7 @@ swatched = !1,
             })
         }
     }(jQuery), flowplayer(function(a, b) {
+      // Flowplayer
         function c(a) {
             var b = f("<a/>")[0];
             return b.href = a, b.hostname
@@ -7395,6 +7430,8 @@ swatched = !1,
         }
     }),
     function() {
+
+      // Third party function v 1.5.1
         var a = this,
             b = a._,
             c = {},
@@ -7982,6 +8019,7 @@ swatched = !1,
         })
     }.call(this),
     function(a) {
+      // bxSlider third party
         var b = {},
             c = {
                 mode: "horizontal",
@@ -8420,6 +8458,7 @@ swatched = !1,
             }, j(), this
         }
     }(jQuery), document.createElement("canvas").getContext || function() {
+      // Unknown - part of Excanvas?
         function a() {}
 
         function b(a) {
@@ -8530,6 +8569,8 @@ swatched = !1,
         function o() {
             return this.context_ || (this.context_ = new f(this))
         }
+
+        // Excanvas
         var p = Math,
             q = p.round,
             r = p.sin,
@@ -8794,6 +8835,7 @@ swatched = !1,
     function(a) {
         "function" == typeof define && define.amd ? define(["jquery"], a) : a(jQuery)
     }(function(a) {
+      // Unknown - Interacts with Cookies and Json
         function b(a) {
             return h.raw ? a : encodeURIComponent(a)
         }
@@ -8854,6 +8896,8 @@ var Spinners = {
     version: "3.0.0"
 };
 ! function(a) {
+
+  // Spinners functions - Depends on excanvas - Uses canvas to draw icons - creates pixel-perfect loading sprites
     function b(a) {
         return a * Math.PI / 180
     }
@@ -9178,6 +9222,7 @@ var Spinners = {
     })
 }(jQuery);
 var Tipped = {
+  // Jquery Tooltips
     version: "3.1.8"
 };
 Tipped.Skins = {
@@ -10792,6 +10837,7 @@ Tipped.Skins = {
         $("#mainContent, #aspnetForm > header").css("visibility", "visible").hide().fadeIn(400)
     };
 var teradata = function() {
+  // Landing Page Newsletter Signup
         return {
             subscribeByEmail: function(a, b, c, d, e) {
                 if (e = void 0 !== e ? e : "750049776", "function" != typeof c || !1 !== c()) {
