@@ -1,12 +1,13 @@
 /*
-Approx Line no (way out of date),
+Approx Line no (way out of date) - CONTENTS Name - Further Info
+
 search CONTENTS ..... up to the hyphen.
 i.e. looking for: 10839 - CONTENTS Teradata - Landing Page Newsletter Signup
 Search: CONTENTS Teradata
 
 1 - CONTENTS Flagswap
 10 - CONTENTS Product Reviews
-50 - CONTENTS Jquery-UI Extensions - Required but could be separated or stripped down?
+50 - CONTENTS Jquery-UI Extensions - Required but could be separated or stripped down? Already seems to be about half the file size to the same version original.
 7375 - CONTENTS Flowplayer - No longer required
 7432 - CONTENTS Underscore - underscore.js v 1.5.1
 8021 - CONTENTS bxSlider - Might also be used for Lookbook
@@ -23,7 +24,7 @@ Search: CONTENTS Teradata
 10839 - CONTENTS Teradata - Landing Page Newsletter Signup
 10886 - CONTENTS Postcode Lookup - api
 10918 - CONTENTS Main Module - Most custom JS goes here - Renders basket, nav, product size boxes etc. Product accordian, social links.
-11084 - CONTENTS Tipped Calls
+  11084 - CONTENTS Tipped Calls
   11070 - CONTENTS Newsletter Signup
   11195 - CONTENTS Ajax Get Stock Levels
   11222 - CONTENTS Cookie declaration
@@ -258,7 +259,6 @@ swatched = !1,
         })
     }(jQuery),
     function(a, b) {
-      // More Jquery-UI elements
         var c = 0,
             d = Array.prototype.slice,
             e = a.cleanData;
@@ -11376,7 +11376,7 @@ var teradata = function() {
                 });
                 var l = $('<div class="left-draw hide-on-desktop"><div class="nav-wrapper"><nav><ul class="search-nav nav-draw-ul"></ul><ul class="menu-nav nav-draw-ul"></ul><ul class="help-nav nav-draw-ul"></ul></nav></div></div>');
 				
-				// CONTENTS Nav and Blackout
+				
 				
                $("body").prepend(l), $(".search-nav").append($('<li><form action="#"><input name="ctl01$txtSearch" type="search" id="ctl01_txtSearch" class="searchBox-Nav" /></form></li>')), $(".basketBtn").html("BAG "+($(".basket-items .qty").length > 0 ? $(".basket-items .qty").html() : "(0)")), $(".help-nav").append("<li class='left-draw-basket'><a href='/basket.htm' associate='sub-list-basket'>Bag " + ($(".basket-items .qty").length > 0 ? $(".basket-items .qty").html() : "(0)") + "</a></li><li class='nav-checkout-option'><a href='/checkout/login.htm'>Checkout</a></li>"),$(".help-nav").append('<li class="hide-on-desktop"><a href="/content/wishlist/wishlist.htm">Wishlist (<span class="wishlist-qty">0</span>)</a></li><li class="hide-on-desktop"><a href="/account.htm?mode=myaccount">Log In/Register</a></li>'), $(".help-nav #topBasketContainer").remove(), $("<li>" + $(".shop-section a") + "</li>"), $(".left-draw .searchBox-Nav").val("search"), $(".left-draw .searchBox-Nav").on("focus", function() {
                     "search" == $(this).val() && $(this).val("")
@@ -11397,6 +11397,7 @@ var teradata = function() {
  // var m = !1;
 
  /////////
+				// CONTENTS Nav and Blackout
                 $("body").append("<div id='newHeaderBlackout' class='visuallyHidden'></div>"), $(".new-cat-nav > li:not(.separator):not(.new-cat-nav-new)").hover(function() {
                     $(this).find(".new-sub-nav").length > 0 && (m = !0, $(this).hasClass("selected") || $(".new-cat-nav > li").removeClass("selected"), $(".fixedRight").removeClass("fixedRight"), $(this).addClass("selected"), $("#newHeaderBlackout").removeClass("visuallyHidden"), $("#newHeaderBlackout").addClass("show"), i())
                 }, function() {
