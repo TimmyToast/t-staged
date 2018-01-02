@@ -1,5 +1,6 @@
 $sansFont: "freight-sans-pro", sans-serif;
 $serifFont: "freight-text-pro", serif;
+$saleFontColor: #ff675d;
 
 .sansBook {font-family: $sansFont; font-weight:300}
 .sansMedium {font-family: $sansFont; font-weight: 500}
@@ -34,7 +35,7 @@ $serifFont: "freight-text-pro", serif;
 .swatch{min-width:36px}
 .swatch-selected,.selected-swatch{background-image:url('//media.toa.st/content-images/website_build/1500/icon-arrow-accordion-up-retina.png');background-size:30px 30px;background-repeat:no-repeat;background-position: 0px 17px}
 .outOfStock {padding-top: 10px}
-.topNavSale, .saleItem a {color:#ff675d !important}
+.topNavSale, .saleItem a {color:$saleFontColor !important}
 .category-product-items .product, .category-product-items .rangeproduct {margin-bottom: 188px; height: 390px; padding: 0 10px}
 .textRight {text-align: right}
 .helvMedium {font-family: $sansFont}
@@ -43,7 +44,7 @@ $serifFont: "freight-text-pro", serif;
 
 /*Framework*/
 .landscapeTile{display: block;width: 100%;padding-top: 58.46748%;margin-bottom: 10px;background-size: 100% 100%;position: relative}
-.portraitTile {width: 100%; display: block; width: 100%;padding-top: 128%;  margin-bottom: 10px; background-size: 100% 100%; position: relative}
+.portraitTile {width: 100%; display: block; width: 100%;padding-top: 128%; margin-bottom:20px; background-size: cover; position: relative}
 .tileTitle {position: absolute; top:85%; width: 100%; text-align: center; color: #ffffff}
 .tileTitleHigher {position: absolute; top:78%; width: 100%; text-align: center; color: #ffffff}
 .signup-message {color:#ffffff; font-size: 16px}
@@ -63,53 +64,60 @@ $serifFont: "freight-text-pro", serif;
 .t_Tooltip {display: none}
 
 /*Homepage*/
-.tileTitleMid {color: white; width: 100%; text-align: center; font-size: 28px;line-height: 45px; letter-spacing: 2px; left:0;}
+.tileTitleMid {color: white; width: 100%; text-align: center; font-size: 26px;line-height: 45px; letter-spacing: 2px; left:0;}
 .hlTile1 .tileTitleMid  {margin:50% 0 10% 0;}
-.hlTile1 {background-size:cover; background-image: url('//media.toa.st/content-images/ss18-placeholder/1500/placeholder_home_top.png'); background-position: center center;}
-.hlTile1 .shopTxt {color: white;border-bottom:1px solid white; display:inline-block; padding-bottom:0px; font-size:18px; letter-spacing:1px;}
-.hlTile2 {background-image:url('https://media.toa.st/content-images/aw17/1500/TOAST_WEB_WinterSale_Homepage_1.jpg');}
-.hlTile2.womensSaleLandingTop h1.mainTitle {color:#ff675d}
+.hlTile1 {background-size:cover; background-image: url('//media.toa.st/content-images/ss18-precollection/1500/TOAST_PreCollection_Homepage_1.jpg?1'); background-position: center center;}
+.homepage .hlTile1 .shopTxt {color: white;border-bottom:1px solid white; display:inline-block; padding-bottom:0px; font-size:18px; letter-spacing:1px;}
+.hlTile2 {background-image:url('https://media.toa.st/content-images/aw17/1500/TOAST_WEB_WinterSale_Homepage_1.jpg'); background-size:cover;}
+.homepage .womensSaleLandingTop h1.mainTitle {color:$saleFontColor; margin-top:10%;}
+.womens .shopTxt, .houseandhome .shopTxt, .bannerTile .shopTxt, .bannerTile .shopTxt {font-size:20px !important;}
+.homepage .portraitTile, .womens .portraitTile, .houseandhome .portraitTile {margin-bottom:0}
 
-.hlTileMagazine{background-image: url('https://media.toa.st/content-images/ss18-placeholder/1500/placeholder-magazine.png');padding-top: 58.46748%}
-.hlTileSignup {padding-top: 58.46748%}
-.signuptile {text-align: center; background-image:url('https://media.toa.st/content-images/ss18-placeholder/1500/placeholder-newsletter.png');}
+.hlTileMagazine{background-image: url('https://media.toa.st/content-images/ss18-precollection/1500/TOAST_PreCollection_Homepage_3.jpg?1');padding-top: 60%}
+.hlTileMagazine .tileTitle {top: 30%;}
+.hlTileMagazine .subText {display:block; font-size:20px; margin:40px 0 50px 0; letter-spacing: 1px}
+.hlTileMagazine .mainTitle {font-size:24px;}
+.hlTileSignup {padding-top: 60%}
+.signuptile {text-align: center; background-image:url('https://media.toa.st/content-images/ss18-precollection/1500/TOAST_PreCollection_Homepage_4-Mobile.jpg?1');}
 .signuptile p {color: white;width: 100%;top: 0px}
 .signuptile button {margin-top: 8%;border-width: 0px;font-size: 16px;color: white;letter-spacing:1px;font-family: $sansFont ;background: transparent}
-.signuptile input {min-width: 290px; height: 42px; background: transparent; color:white; border-top:0; border-left:0; border-right: 0; border-bottom: 1px solid white; text-transform:uppercase;}
+.signuptile input {min-width: 270px; height: 42px; background: transparent; color:white; border-top:0; border-left:0; border-right: 0; border-bottom: 1px solid white; text-transform:uppercase;}
 
-.homepage .col-xs-12, .homepage .col-xs-12, .homepage .hlTile1, .homepage .hlTileMagazine .homepage .hlTileSignup {padding: 20px;}
+.homepage .col-xs-12, .womens .col-sm-6, .homepage .hlTile1, .hlTileMagazine .hlTileSignup {padding: 15px;}
+
+
 .preTitle {color: #ffffff;font-size: 18px;margin: 0 0 -5px 0;padding: 0}
 .hlTile1 .tileTitleMid h1{margin-bottom: 10px; font-weight:600;}
 .hlTile1 .tileTitleMid a{font-weight: 400}
-.hlTile1 h1, .wl_broadTile  h1, .womensSaleLandingTop h1, .hl_broadTile h1{margin-bottom: 0px; font-size: 34px; color: #ffffff; letter-spacing: 2px}
-.wl_broadTile  h2, .womensSaleLandingTop h2, .hl_broadTile h2{margin-bottom: 0px; font-size: 22px; color: #ff675d; letter-spacing: 2px}
-.wl_broadTile .shopTxt, .hl_broadTile .shopTxt, .womensSaleLandingTop .shopTxt {text-transform: uppercase; color: #ff675d; text-decoration: none; margin: 15px;font-weight:400; line-height: 25px; display: inline-block; border-bottom: 1px solid #ff675d;text-align: center;font-size: 20px;letter-spacing: 1px}
+.hlTile1 h1, .wl_broadTile  h1, .womensSaleLandingTop h1, .hl_broadTile h1{margin-bottom: 0px; font-size: 34px; letter-spacing: 2px; color:$saleFontColor}
+.wl_broadTile  h2, .womensSaleLandingTop h2, .hl_broadTile h2{margin-bottom: 0px; font-size: 22px; color: $saleFontColor; letter-spacing: 2px}
+.wl_broadTile .shopTxt, .hl_broadTile .shopTxt, .womensSaleLandingTop .shopTxt {text-transform: uppercase; color: $saleFontColor; text-decoration: none; margin: 15px 20px;font-weight:400; line-height: 25px; display: inline-block; border-bottom: 1px solid $saleFontColor;text-align: center;font-size: 20px;letter-spacing: 1px}
 .hlTile2 .tileTitle {top: 55%}
 .homeShopLinks {margin-top: 20px}
 .lowerTileTitle{position: absolute;bottom: 15.5%;text-align: center;width: 100%}
 .lowerTileTitle span{display: inline-block}
 .centralTitle {position: absolute; top: 45%; width: 100%; text-align: center; font-size: 34px}
 
-.midAutSaleStrap { font-size: 22px; margin: 10px auto 0 auto; letter-spacing: 1px}
-.midAutSaleLink {margin: 195px auto 0 auto; border-bottom: 1px solid #000000; display: inline-block;font-size: 18px; text-transform: uppercase; letter-spacing: 1px }
-.minAutSaleTitle {font-weight: 600; letter-spacing: 2px}
-
 /*Women's Landing Page*/
-.wl_broadTile {background-image: url('//media.toa.st/content-images/aw17/1500/TOAST_WEB_WinterSale_Landing_1.jpg');padding-top: 63.876%}
-.wl_broadTile h1.textSemibold {font-weight: 600; margin-bottom: 10px;}
-.womenShopLinks {margin-top: 90px}
-.wl_2 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_6.jpg')}
-.wl_3 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_5.jpg')}
-.wl_4 {background-image:url('//media.toa.st/content-images/aw17/1400/TOAST_WEB_WinterSale_Landing_6.jpg');}
-.wl_5 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_WEB_WinterSale_Landing_2.jpg')}
-.wl_6 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_WEB_WinterSale_Landing_5.jpg')}
-.wl_7 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_WEB_WinterSale_Landing_3.jpg')}
-.wl_8 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Christmas_Homepage_7.jpg')}
-.wl_9 { padding-top:128%; background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_PreWinterSale_Sale.jpg');}
-.wl_9 .tileTitle {top:45%; letter-spacing: 1px;}
-.wl_9 .tileTitle h2 {font-size: 28px; margin-bottom: 25px;}
-.wl_9 .tileTitle p {font-size:17px;}
-.wl_10 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_WEB_WinterSale_Landing_4.jpg')}
+.womens .tileTitleMid {top:0; position:absolute;}
+.womenShopLinks {margin-top: 20px}
+.womens .landingBSIntro {float:none;}
+.wl_1 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_1.jpg');background-size:cover;}
+.wl_1 .tileTitleMid {top:76%;}
+.wl_2 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_2.jpg'); position:relative;}
+.wl_2 .tileTitleMid{top:46%; color:$saleFontColor}
+.wl_2 h1 {font-size:34px;}
+.wl_2 h2 {font-size:26px; margin-bottom:100px;}
+.wl_3 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_3.jpg')}
+.wl_4 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_4.jpg')}
+.wl_4 .tileTitle {text-align:right; padding-left:39%;padding-right:12%; bottom:7%; top: auto;}
+.wl_5 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_5.jpg')}
+.wl_6 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_6.jpg')}
+.wl_7 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_7.jpg')}
+.wl_8 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_8.jpg')}
+.wl_9 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_9.jpg')}
+.wl_10 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_Women_10.jpg')}
+.womens .portraitTile {padding-top:150%; background-size:cover;}
 .twoLineTitle {font-size: 22px; letter-spacing: 2px; margin-bottom: 25px}
 .saleLink {border-bottom: 1px solid #ffffff; font-size: 18px; letter-spacing: 1px}
 
@@ -117,7 +125,7 @@ $serifFont: "freight-text-pro", serif;
 .hl_broadTile {background-image: url('//media.toa.st/content-images/aw17/1500/TOAST_WEB_WinterSale_Landing_1.jpg');padding-top: 63.876%}
 .hl_broadTile h1.textSemibold {font-weight: 600; margin-bottom: 10px;}
 .hhShopLinks {margin-top: 90px}
-.houseandhome .col-sm-6, .houseandhome .col-sm-12, .womens .col-sm-12, .womens .col-sm-6, .lookbook .col-sm-4 {padding-left: 5px;padding-right: 5px}
+.lookbook .col-sm-4 {padding-left: 5px;padding-right: 5px}
 .hhlTile2 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_WEB_WinterSale_Landing_HH_1.jpg'); margin-bottom: 10px;padding-top:128.911%}
 .hhlTile3 {background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_WEB_WinterSale_Landing_HH_2.jpg'); margin-bottom: 10px;padding-top:128.911%}
 .hlTile3 .tileTitle {top:45%; letter-spacing: 1px;}
@@ -136,11 +144,13 @@ $serifFont: "freight-text-pro", serif;
 .hhShop {margin-bottom: 5%}
 
 /* Sale landing pages */
-.womensSaleLandingTop {background-image: url('//media.toa.st/content-images/aw17/1500/TOAST_WEB_WinterSale_SaleLanding_1.jpg'); padding: 7% 0;}
-.womensSaleLandingTop h1.textSemibold {font-weight: 600; margin-bottom:10px;}
+.womensSaleLandingTop {background-image: url('//media.toa.st/content-images/aw17/1500/TOAST_WEB_WinterSale_SaleLanding_1.jpg'); padding: 20% 0;}
+.womensSaleLandingTop .textSemibold {font-weight: 600; margin-bottom:10px;}
 .saleShopLinks {margin-top: 40px}
 .saleTile {text-align:center}
-.saleTile p {color: #ff675d; text-decoration: underline; margin:30px 0 40px 0; font-size: 18px; text-transform: uppercase; letter-spacing: 1px}
+.saleTile p {color: $saleFontColor; text-decoration: underline; margin:30px 0 40px 0; font-size: 18px; text-transform: uppercase; letter-spacing: 1px}
+.womensSaleLandingTop p {margin:0;}
+.womensSaleLandingTop .tileTitleMid {color: $saleFontColor; top:28%; position:absolute;}
 
 /* Lookbook landing tiles */
 .lb_1{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_PreCollection_LandingWomen_New.jpg')}
@@ -276,6 +286,10 @@ $serifFont: "freight-text-pro", serif;
 .tileTitle .landingTileTxt {font-size:22px; letter-spacing: 2px}
 #review-section.expanded{padding-bottom: 10px}
 .underlineLink {border-bottom: 1px solid #000000}
+.underlinePadWhite {border-bottom:1px solid #fff}
+.underlinePadBlack {border-bottom:1px solid #000}
+.underlinePadSale {border-bottom:1px solid $saleFontColor}
+.underlinePadWhite, .underlinePadBlack, .underlinePadSale {padding-bottom:4px;}
 .topNavSpacer {margin-bottom:20px; float:left;width:100%}
 .us #Outdoor.nav-option, .eu #Outdoor.nav-option, .row #Outdoor.nav-option{display:none}
 .basket-recommendation-price .sale, .basket-recommendation-price .saletext {font-size: 12px}
@@ -669,6 +683,7 @@ h2.advent22 {  margin-bottom:20px;}
     .stylingPadding-20 {margin-top:25px;margin-bottom:25px;}
 }
 @media screen and (max-width: 992px) {
+	.hlTileSignup, .hlTileMagazine {padding-top: 70%;}
 	/* Advent 2017 */
 .adventBoxplaceholder {  background:url('//media.toa.st/content-images/aw17-advent/1500/TOAST_AdventCompetition_TabletPortrait.jpg');  background-size:cover;  position:relative;}
 }
@@ -682,7 +697,7 @@ h2.advent22 {  margin-bottom:20px;}
  	.midAutSaleLink {margin: 148px auto 0 auto}
   	.lwsStile1.saleTileMain .tileTitleMid{top: 15%}
   	.bannerTile a{margin-top: 10px}
-	    .womensSaleLandingTop .tileTitleMid {top: 30%}
+	.womensSaleLandingTop .tileTitleMid {top: 30%}
   }
 
 @media only screen and (max-width: 768px)
@@ -691,11 +706,7 @@ h2.advent22 {  margin-bottom:20px;}
 	.category-product-items .product, .category-product-items .rangeproduct  {height: 440px; margin-bottom: 0}
     /*Homepage*/
     .hlTile1 .tileTitleMid h1{margin-bottom: 20px}
-    .lowerTileTitle{bottom: 40%;top: 58%}
-    .hhlTile3 .tileTitle .mainTitle{font-size: 22px}
-	.womens .shopTxt, .houseandhome .shopTxt, .bannerTile .shopTxt, .bannerTile .shopTxt {font-size:16px !important;}
-    .centerTileTitle {top: 6%}
-    .midAutSaleLink {margin: 125px auto 0 auto}
+    .centerTileTitle {top: 14%}
     /*House and Home*/
     .hhlTile1 .shopTxt{font-size: 16px}
     /*Womens landing*/
@@ -754,11 +765,13 @@ h2.advent22 {  margin-bottom:20px;}
 }
 @media only screen and (max-width: 767px)
 {
+	.hlTile2.womensSaleLandingTop h1.mainTitle {margin-top:140px;}
 	.hhlTile1 .tileTitle .mainTitle {font-size: 28px;margin-bottom: 15px}
 	.hl_broadTile .tileTitleMid h1,.wl_broadTile .tileTitleMid h1 {font-size: 28px;}
 	.hlTile1 h1{margin-bottom: 20px;margin-top: 30px;}
 	.wlTile1 h1{font-size: 28px;margin-bottom: 20px}
-	.hlTile2 .tileTitleMid h2{font-size: 28px}
+	.hlTile2 .tileTitleMid h2{font-size: 26px}
+	.homepage .hlTileMagazine, .homepage .hlTileSignup {padding: 15px 10px}
 	.swl_2 .tileTitle h2{font-size: 28px}
 	
 	.hhlTile1 .tileTitle .mainTitle {font-size: 28px;margin-bottom: 0px}
@@ -849,7 +862,6 @@ h2.advent22 {  margin-bottom:20px;}
     /*homepage */
     .hltile1 h1 {margin-top:20%;}
 	.hlTile1 .tileTitleMid {top:30%;}
-    .hlTile1 {background-image: url('//media.toa.st/content-images/ss18-placeholder/1500/placeholder_home_top_mob.png')}
     /*Making of */
     .aboutUsBanner .tileTitleMid {font-size: 24px}
     /*Email pop-up*/
@@ -866,14 +878,11 @@ h2.advent22 {  margin-bottom:20px;}
 }
 @media only screen and (max-width:510px) {
     .adventDoor {min-height: 400px;}
+	.hlTileSignup, .hlTileMagazine {padding-top: 85%;}
 }
 
 @media only screen and (max-width: 430px)
 {
-	.wl_1{background-image:url('//media.toa.st/content-images/aw17-prewinter-sale/1400/TOAST_PreWinterSale_Sale_DeepWinter_Mobile.jpg');padding-top: 74.951%}
-	.wl_1 .tileTitleHigher {top:52%;}
-	.wl_1 .twoLineTitle  {font-size: 28px; margin-bottom: 7px}
-	.wl_1 .saleLink  {font-size: 16px}
 	.freeDelStrip {font-size: 12px}
 	.category-product-items .product, .category-product-items .rangeproduct {height: 370px; margin-bottom:0}
     /*homepage */
@@ -885,6 +894,8 @@ h2.advent22 {  margin-bottom:20px;}
     .hlTile1 a{line-height: 40px}
     .hlTile1 .shopTxt{margin: 0}
     .midAutSaleLink {margin: 75px auto 0 auto}
+	/* WOMEN */
+	.wl_4 .tileTitle {padding-left:12%}
     /*House and Home*/
     /*Making of*/
     .wnlShopBTN{font-size: 18px}
@@ -907,7 +918,7 @@ h2.advent22 {  margin-bottom:20px;}
     /* Sale landing pages */
     .shhl_1{top: 45%}
     .bannerTile .tileTitleMid{top: 12%}
-    .bannerTile h1{margin-bottom: 0px;font-size: 28px}
+    .bannerTile h1{margin-bottom: 0px;font-size: 32px}
     .bannerTile a{font-size: 16px}
 
     /*Misc*/
@@ -920,7 +931,6 @@ h2.advent22 {  margin-bottom:20px;}
 }
 @media only screen and (max-width: 395px)
 {
-	.signup-tile .centerTileTitle {top:0}
 	.category-product-items .product, .category-product-items .rangeproduct {height: 390px; margin-bottom: 0}
 	.rangeproduct p { margin-top: 25px; }
     .longDescTop {top: 36%}
@@ -930,6 +940,11 @@ h2.advent22 {  margin-bottom:20px;}
 }
 @media only screen and (max-width: 387px) {
 	.wl_broadTile .tileTitleMid, .hl_broadTile .tileTitleMid {top: 10%}
+	.wl_1 .tileTitleMid {top: 69%}
+	.wl_2 .tileTitleMid {top:42%}
+	.wl_2 .tileTitleMid h1 {font-size:32px}
+	.wl_2 .tileTitleMid h2 {margin-bottom:45px}
+		
 	/* Media Queries - Winter Pre-sale 2017 */
 	.pwSale .bannerTile a.pwSaleToptileLink { padding-top: 0%; padding-bottom: 0%; margin: 0 !important;}
     .pwSale .tileTitleMid {line-height:30px;}
