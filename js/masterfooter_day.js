@@ -4,58 +4,79 @@ time = now.getTime()
 time += 3600 * 1000 * 10
 now.setTime(time)
 
-function triggerEmailPopup() {
-    if (window.location.href.indexOf("advent")<0&&window.location.href.indexOf("test")<0&&!$.cookie("emailClickUserSummer")) {
-      document.cookie = "emailClickUserSummer=true; expires=" + now.toUTCString() + "; path=/"
-      openSignupField()
-    }
-}
+// function triggerEmailPopup() {
+//     if (window.location.href.indexOf("advent")<0&&window.location.href.indexOf("test")<0&&!$.cookie("emailClickUserSummer")) {
+//       document.cookie = "emailClickUserSummer=true; expires=" + now.toUTCString() + "; path=/"
+//       openSignupField()
+//     }
+// }
 
-function openSignupField() {
-    var scrollPos = $(window).scrollTop() + 120
-    $('.elb_Lightbox').height($(document).height())
-    $('.elb_Lightbox').html('<div class="elb_passwordBox" style="margin-top:' + scrollPos + 'px">' + $(".emailBox").html() + '</div>')
-    $('.elb_Lightbox').fadeIn()
+// function openSignupField() {
+//     var scrollPos = $(window).scrollTop() + 120
+//     $('.elb_Lightbox').height($(document).height())
+//     $('.elb_Lightbox').html('<div class="elb_passwordBox" style="margin-top:' + scrollPos + 'px">' + $(".emailBox").html() + '</div>')
+//     $('.elb_Lightbox').fadeIn()
 
-    $('.elb_Lightbox').on('click', function(e) {
-      if (e.target == this) {
-        closeemailBox()
-      }
-    })
+//     $('.elb_Lightbox').on('click', function(e) {
+//       if (e.target == this) {
+//         closeemailBox()
+//       }
+//     })
 
-}
+// }
 
-function closeemailBox() {
-    $('.elb_Lightbox').fadeOut()
-    $('.elb_Lightbox').html('')
-}
+// function closeemailBox() {
+//     $('.elb_Lightbox').fadeOut()
+//     $('.elb_Lightbox').html('')
+// }
 
-function isEmail(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    return regex.test(email);
-}
+// function isEmail(email) {
+//     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//     return regex.test(email);
+// }
 
-function sendGAevent(){
- _gaq.push(["_trackEvent","AW17 Collection Email pop-up submit","Click","AW17 Collection Email pop-up submit"])
-}
+// function sendGAevent(){
+//  _gaq.push(["_trackEvent","AW17 Collection Email pop-up submit","Click","AW17 Collection Email pop-up submit"])
+// }
 
-function submitEmail() {
-    submitedEmailAddress = $("#signupEmail").val()
-    if (isEmail(submitedEmailAddress)) {
-        $.ajax({
-            type: "GET",
-            url: "https://post.toast.co.uk/automated/action.jsp?action=updateRecipientNoMsg&errorPage=/automated/action.jsp&gid=750148124&uemail=apitoast@api.com&psw=Api321$123&pemail=" + submitedEmailAddress + "&self=true&namedattr_NewsletterOptin=TRUE&namedattr_SignupSource=AW17_Overlay",
-            dataType: "jsonp",
-            error: function(xhr, ajaxOptions, thrownError) {
-                $(".emailSender").html("<p>Thanks, we have received your email address.</p>")
-                closeemailBox()
-                sendGAevent()
-            }
-        })
-    } else {   
-        $(".overlayText").html("<br>Please enter a valid email.")
-   }
-}
+// function submitEmail() {
+//     submitedEmailAddress = $("#signupEmail").val()
+//     if (isEmail(submitedEmailAddress)) {
+//         $.ajax({
+//             type: "GET",
+//             url: "https://post.toast.co.uk/automated/action.jsp?action=updateRecipientNoMsg&errorPage=/automated/action.jsp&gid=750148124&uemail=apitoast@api.com&psw=Api321$123&pemail=" + submitedEmailAddress + "&self=true&namedattr_NewsletterOptin=TRUE&namedattr_SignupSource=AW17_Overlay",
+//             dataType: "jsonp",
+//             error: function(xhr, ajaxOptions, thrownError) {
+//                 $(".emailSender").html("<p>Thanks, we have received your email address.</p>")
+//                 closeemailBox()
+//                 sendGAevent()
+//             }
+//         })
+//     } else {   
+//         $(".overlayText").html("<br>Please enter a valid email.")
+//    }
+// }
+
+// HTML for footer for email overlay
+
+// <div class="hiddenContent">
+//       <div class="emailBox">
+//         <div class="elb_emailWhiteBox">
+//           <div class="elb_submitClose"><a href="javascript:closeemailBox()"><img src="https://toast-images.s3.amazonaws.com/content-images/development/jersey/OurJersey_Close.png" class="img-responsive" alt="Close" width="32px" /></a></div>
+//           <div class="elb_emailBoxText">
+//            <h2 class="sansBook">Welcome to our</h2>
+//            <h3 class="sansMedium">AW17 COLLECTION</h3>
+//            <p class="textBook overlayText">Join our newsletter to hear about our Winter Sale <span class="hidden-xs"><br></span>
+//     and to keep abreast of other TOAST news.</p>
+//          </div>
+//          <div class="emailSender">
+//           <input type="text" id="signupEmail" name="signupEmail" onfocus="if(this.value == 'Email Address') { this.value = ''; }" value="Email Address">
+//           <a href="javascript:submitEmail()"><input type="submit" value="Submit"></a>
+//           <div class="submitErrors"></div>
+//         </div>
+//       </div>
+//     </div>
+//     </div>
 
 $('.product-sizes li').each(function() {
 if ($(this).attr('style')){
@@ -81,8 +102,8 @@ $(document).ready(function() {
     if (thisHref.indexOf("Master") > -1 || thisHref.indexOf("master") > -1) {
       document.cookie = "emailClickUserSummer=true; expires=" + now.toUTCString() + "; path=/"
     }
-    $("body").prepend('<div class="elb_Lightbox"></div>')
-    setTimeout(triggerEmailPopup, 15000) 
+    //$("body").prepend('<div class="elb_Lightbox"></div>')
+    //setTimeout(triggerEmailPopup, 15000) 
 });
 
 
