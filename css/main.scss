@@ -181,20 +181,8 @@ $saleFontColor: #ff675d;
 
 
 /* Lookbook landing tiles */
-.lb_1{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_PreCollection_LandingWomen_New.jpg')}
-.lb_2{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_EarlyAutumn_Landing_Women_1.jpg')}
-.lb_3{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Autumn_Landing_1.jpg')}
-.lb_4{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_Winter_Lookbook_5b.jpg')}
-.lb_5{background-image: url('//media.toa.st/content-images/aw17/1400/TOAST_DeepWinter_Lookbook_1.jpg')}
-.lb_1 .mainTitle, .lb_2 .mainTitle, .lb_3 .mainTitle, .lb_4 .mainTitle ,.lb_5 .mainTitle,.lb_6 .mainTitle,.lb_7 .mainTitle,.lb_8 .mainTitle,.lb_9 .mainTitle {font-size: 22px}
-.lookbook .col-sm-4 {padding-left: 5px;padding-right: 5px}
-.LBtileTitle {position: absolute; top:72%; width: 100%; text-align: center; color: #ffffff }
-.LBtileTitle .mainTitle {width: 100%;  font-size: 22px; float: left; letter-spacing: 3px}
-.LBtileTitle .subTitle {width: 100%;  text-transform: uppercase; padding-top: 12px; float: left; font-size: 16px; letter-spacing: 2px}
-.lookBookContentDividerTop {margin-bottom:0px; margin-top:20px;}
-.lookBookLastItem {margin-bottom: 50px}
-.lookBookContentDividerTop h1 {font-size: 24px; letter-spacing: 1px}
-.lookBookContentDividerTop p {font-size: 16px; letter-spacing: 1px}
+.LBss18 {background-size: cover; background-image: url(//media.toa.st/content-images/ss18-precollection/1500/TOAST_PreCollection_Homepage_1.jpg?1);background-position: center center; padding-top: 65%; min-height: 375px; margin-bottom:25px}
+.LBss18 .shopTxt {color:#ffffff; border-color:#ffffff}
 
 
 /*New Lookbook Styles*/
