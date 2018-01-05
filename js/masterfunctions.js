@@ -12,8 +12,10 @@ function moveReviews(){
     $("#nowPrice").after($(".review-rating-ratio").html())
     $(".product-info  .review-rating-stars-on").wrapInner("<a href='javascript:openReviews()'></a>")
     $(".product-info  .topReviews").wrapInner("<a href='javascript:openReviews()'></a>")
+	if ( $( ".topReviews" ).length ) {
     $(".topReviews").prepend($(".review-rating").html() + " ")
     $('.topReviews  span[itemprop="ratingValue"]').html("<a href='javascript:openReviews()'>"+$('.topReviews  span[itemprop="ratingValue"]').html().substring(0, 3)+"</a>")
+	}
     $("#reviewSummaryContainer .review-rating-ratio").remove()
     $("#reviewSummaryContainer .review-rating").remove()
     if ($(document).width() < 768) {
@@ -11936,7 +11938,7 @@ var helpModule = function() {
             },
             C = function(b) {
                 if ($(".product-swatches img").each(function() {
-                        $(this).attr("src").indexOf("_sw") > 0 && (thisURL = $(this).attr("src").split("/"), newURL = "https://d117fiyhpld8f9.cloudfront.net/global/" + thisURL[4] + "/" + thisURL[5].slice(0, -3) + "/700/" + thisURL[7], $(this).attr("src", newURL))
+                        $(this).attr("src").indexOf("_sw") > 0 && (thisURL = $(this).attr("src").split("/"), newURL = "//media.toa.st/global/" + thisURL[4] + "/" + thisURL[5].slice(0, -3) + "/700/" + thisURL[7], $(this).attr("src", newURL))
                     }), "undefined" != typeof currentIndividualObj && (o = window.innerWidth, void 0 === n && (n = window.innerWidth), !(n > o && !1 === a))) {
                     newSize = B();
                     var c = $(".product-swatches .selected-swatch"),
@@ -11964,7 +11966,7 @@ var helpModule = function() {
                         }), $("#lightbox-buy-off").modal("show")
                     }
                     $(".product-swatches img").each(function() {
-                        thisURL = $(this).attr("src").split("/"), newURL = "https://d117fiyhpld8f9.cloudfront.net/global/" + thisURL[4] + "/" + thisURL[5] + "_sw/250/" + thisURL[7] + ".jpg", $(this).attr("src", newURL), swatched = !0
+                        thisURL = $(this).attr("src").split("/"), newURL = "//media.toa.st/global/" + thisURL[4] + "/" + thisURL[5] + "_sw/250/" + thisURL[7] + "", $(this).attr("src", newURL), swatched = !0
                     })
                 }
             },
