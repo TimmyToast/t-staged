@@ -191,7 +191,7 @@ $saleFontColor: #ff675d;
 .LBtileTitle {position: absolute; top:72%; width: 100%; text-align: center; color: #ffffff }
 .LBtileTitle .mainTitle {width: 100%;  font-size: 22px; float: left; letter-spacing: 3px}
 .LBtileTitle .subTitle {width: 100%;  text-transform: uppercase; padding-top: 12px; float: left; font-size: 16px; letter-spacing: 2px}
-.lookBookContentDividerTop {margin-bottom:50px}
+.lookBookContentDividerTop {margin-bottom:0px; margin-top:20px;}
 .lookBookLastItem {margin-bottom: 50px}
 .lookBookContentDividerTop h1 {font-size: 24px; letter-spacing: 1px}
 .lookBookContentDividerTop p {font-size: 16px; letter-spacing: 1px}
@@ -199,7 +199,7 @@ $saleFontColor: #ff675d;
 
 /*New Lookbook Styles*/
 .lookbookDivider{margin-top:100px}
-.lookBookHead{margin-top: 50px}
+.lookBookHead{margin-top: 15px}
 .lookbookDividerSml{margin-top:20px}
 .lookbookContentDividerTop{margin-top: 25px}
 .lookbookContentDividerBottom{margin-bottom: 100px}
@@ -369,6 +369,7 @@ input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
 .twitterOpt{background-position:-36px 377px;height:31px;display:table-cell;width:32px;background-size:294px;line-height:1em;vertical-align:middle}
 .instagramOpt{background-position:-105px 176px;height:31px;display:table-cell;width:32px;background-size:152px;line-height:1em;vertical-align:middle}
 .pinterestOpt{background-position:-70px 176px;height:31px;display:table-cell;width:32px;background-size:152px;line-height:1em;vertical-align:middle}
+.footerMarketing {background-color: #dfdfdf ; max-width: 1080px; margin: 0 auto 0; color: #000; width: 100%; padding:8px; text-transform: uppercase; letter-spacing: 1px; text-align: center}
 
 
 /*Sitemap*/
@@ -453,7 +454,7 @@ li.main-link.sale a {color:#db2424}
 .helpSection .active {color: #aaaaaa}
 .helpSection .errorText {font-size:15px}
 .helpSection .helpTitleItem {margin:20px 0 10px 0; font-size: 16px}
-.helpSection .parent {background: url(//d2xfispw8k8nwr.cloudfront.net/images/arrow.gif) no-repeat 216px 5px; background-size: 8px 8px}
+.helpSection .parent {background: url(/stormsites/toast/img/arrow.gif) no-repeat 216px 5px; background-size: 8px 8px}
 .helpSection .sizeTable {font-size: 14px; text-align: center; border: 1px solid black;}
 .helpSection .sizeTable  td {border: 1px solid black; padding:5px;}
 .helpSection .sizeTableTitle {background-color:#f2f2f2; text-transform: uppercase; font-weight:500;}
@@ -538,7 +539,7 @@ li.main-link.sale a {color:#db2424}
 .shopSection .navItems ul ul {margin-bottom: 25px}
 .shopSection .subnav{display: block}
 .shopSection .parent{background-image: none}
-.shopSection .shopMenuOpener{background: url("//d2xfispw8k8nwr.cloudfront.net/images/arrow.gif") no-repeat right; background-size: 8px 8px}
+.shopSection .shopMenuOpener{background: url("/stormsites/toast/img/arrow.gif") no-repeat right; background-size: 8px 8px}
 #map_canvas {height: 400px; width: 100%;margin-bottom: 30px}
 #map_canvas_shop  {height: 600px; width: 100%}
 #map_canvas_jl{height: 500px;margin-bottom: 50px}
@@ -547,7 +548,7 @@ img[src="//maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"]{display: none}
 div[title="Change map style"] {display: none}
 .shopSection .navItems .shopMenuOpener{font-weight:600;display:none}
 .shopSection .shopStoreNav{font-family: $sansFont}
-.shopSection .shopMenuOpener.activated{background-image: url('//d2xfispw8k8nwr.cloudfront.net/images/down_arrow.gif')}
+.shopSection .shopMenuOpener.activated{background-image: url('/stormsites/toast/img/down_arrow.gif')}
 .shopEventLinkA{padding-top: 20px;text-decoration: none}
 .shopTitle{margin-top:20px; margin-bottom: 0}
 .storeSub{margin-top: 16px}
@@ -716,9 +717,6 @@ h2.advent22 {  margin-bottom:20px;}
 #checkoutHolder p, #checkoutHolder label, #checkoutHolder input, #checkoutHolder a, #checkoutHolder .standard-font, #checkoutHolder, #checkoutHolder div {font-size:12px; letter-spacing: 1px; line-height: 18px;}
 #checkoutHolder #progressNumbers{letter-spacing:0;}
 .postcode_lookup_container {overflow-y: auto !important;}
-
-/* Footer */
-.footerMarketing {background-color: #dfdfdf ; max-width: 1080px; margin: 0 auto 0; color: #000; width: 100%; padding:8px; text-transform: uppercase; letter-spacing: 1px; text-align: center}
 
 
 @media only screen and (max-width: 1116px){
