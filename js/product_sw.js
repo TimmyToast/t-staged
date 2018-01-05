@@ -55,19 +55,25 @@ var productModule = function() {
     };
     var manageSizeStockMessages = function($target) {
         hideAllStockMessages();
-        if ($target.length == 0) {
-            $target = $("ul.product-sizes .size").eq(0)
+        if ($("#ctabs-1 .product-sizes li").length == $("#ctabs-1 .product-sizes .out-of-stock").length) {
+          $(".stock-message").html('<span class="stock-message-text">All sizes are currently out of stock.</span>').show()
         }
-        if ($target.hasClass("out-of-stock")) {
-            $(".stock-message").html('<span class="stock-message-text">Your selected item is currently out of stock</span>').show()
-        } else if ($target.hasClass("low-stock")) {
+
+       // if ($target.length == 0) {
+       //     $target = $("ul.product-sizes .size").eq(0)
+        //}
+       // if ($target.hasClass("out-of-stock")) {
+        //    $(".stock-message").html('<span class="stock-message-text">Your selected item is currently out of stock</span>').show()
+        //} else 
+          if ($target.hasClass("low-stock")) {
             var stlev = $target.attr("stlev");
             $(".stock-message").show().html('<span class="stock-message-text">We have a limited number of this item left in your selected size.</span>');
             $('<div class="stock-message-low">Only ' + stlev + " left in stock in selected size</div>").appendTo(".product-swatches")
         } else if ($target.hasClass("pre-order")) {
-            $(".stock-message").show().html('<span class="stock-message-text">Your selected item is expected in our warehouse on ' + $target.attr("data-pre-order") + ". You can still order &amp; we will send your item out to you as soon as it arrives.</span>")
+            $(".stock-message").show().html('<span class="stock-message-text">Your selected item is expected in our warehouse on ' + $target.attr("data-pre-order") + ". You can still order & we will send your item out to you as soon as it arrives.</span>")
         }
-        $(".desc-prod-code").text("Style Code: " + $(".size-selected").attr("data-sku").slice(0, 5))
+            
+        //$(".desc-prod-code").text("Style Code: " + $(".size-selected").attr("data-sku").slice(0, 5))
     };
     var scrollOverlayToIndex = function(indexClicked) {
         var addUpHeightUntilIndex = 0;
@@ -260,25 +266,20 @@ var productModule = function() {
             fpFirstPlay = false
         })
     });
-
-
     $(document).ready(function() {
-
-        // Ring specific //
-
-      if (typeof tcp_product_env != "undefined") {
-        if (tcp_product_env[Object.keys(tcp_product_env)[1]] == "fjgkc") {
-            $(".add-to-bag").css("display", "none")
-            $(".ctab").css("display", "none")
-            $(".add-wishlist-item-wrapper").css("display", "none")
-            $(".product-label").css("display", "none")
-            $(".add-to-wishlist").css("display", "none")
-            $('.add-wishlist-item-wrapper').css("display", "none")
-            $('div.add-wishlist-item-wrapper').hide()
+         
+      
+        if (typeof tcp_product_env != "undefined") {
+            if (tcp_product_env[Object.keys(tcp_product_env)[1]] == "fjgkc") {
+                $(".add-to-bag").css("display", "none")
+                $(".ctab").css("display", "none")
+                $(".add-wishlist-item-wrapper").css("display", "none")
+                $(".product-label").css("display", "none")
+                $(".add-to-wishlist").css("display", "none")
+                $('.add-wishlist-item-wrapper').css("display", "none")
+                $('div.add-wishlist-item-wrapper').hide()
+            }
         }
-    }
-
-  
         $(".browse-controls").removeClass("hide-on-tablet");
         $(".breadcrumb-browse-controls").removeClass("grid-90 tablet-grid-90 suffix-5 prefix-5 tablet-suffix-5 tablet-prefix-5 grid-80 tablet-grid-80 tablet-prefix-10 tablet-suffix-10 suffix-10 prefix-10").addClass("grid-100 tablet-grid-100 grid-parent");
         $(".product-page").removeClass("grid-50 prefix-10 tablet-prefix-5").addClass("grid-60 grid-parent");
@@ -412,13 +413,12 @@ var productModule = function() {
                 var pushSelectedColourText = swatchImageClicked.attr("alt");
                 $(".product-label-colour").text(pushSelectedColourText);
                 var swatchNewUrl = swatchImageClicked.attr("src").replace("/250/", "/" + workOutImageSize($(".cut-out")) + "/").replace("/global/", "/product/");
-                swatchNewUrl = swatchNewUrl.replace('_sw/','/');
+                swatchNewUrl = swatchNewUrl.replace('_sw/', '/');
                 $(".cut-out").attr("src", swatchNewUrl);
                 $(".mobile-prod-image .cut-out").attr("src", swatchNewUrl.replace("/product/", "/global/"));
                 $(".mobile-main-image").attr("href", swatchNewUrl.replace("/" + workOutImageSize($(".mobile-main-image")) + "/", "/1200/"));
                 manageSizeStockMessages($(".size-selected"));
-                 $($(".product-mobile-carousel .slides li a")[0]).attr("href", swatchImageClicked.attr("src").replace("/250/", "/1553/").replace("/global/", "/product/").replace('_sw/','/'));
-             
+                $($(".product-mobile-carousel .slides li a")[0]).attr("href", swatchImageClicked.attr("src").replace("/250/", "/1553/").replace("/global/", "/product/").replace('_sw/', '/'));
                 MagicZoomPlus.refresh();
                 checkToDisableAddToBag()
             },
@@ -436,7 +436,7 @@ var productModule = function() {
                 if (image.url.toLowerCase() == tcp_product_env.baseImage.toLowerCase()) {
                     isCutOut = true
                 }
-                var newSizeURL = image.url.replace("/250/", "/" + workOutImageSize(false) + "/").replace('_sw/','/');
+                var newSizeURL = image.url.replace("/250/", "/" + workOutImageSize(false) + "/").replace('_sw/', '/');
                 if (image.ext === "mp4" && !checkURLForString("product/archive")) {
                     var setSplash = image.url.replace("/250/", "/750/").replace("mp4", "s1");
 
@@ -473,12 +473,11 @@ var productModule = function() {
                         buildVideo()
                     })
                 } else if (isCutOut) {
-
-                    var $newCutOut = $('<a class="openZoomLink MagicZoomPlus" style="display: block" href="' + image.url.replace("/250/", "/1553/").replace('_sw/','/') + '"><img src="' + newSizeURL + '" class="grid-image cut-out" title="Click to zoom" alt="' + tcp_product_env.displayName + '" /></a>');
+                    var $newCutOut = $('<a class="openZoomLink MagicZoomPlus" style="display: block" href="' + image.url.replace("/250/", "/1553/").replace('_sw/', '/') + '"><img src="' + newSizeURL + '" class="grid-image cut-out" title="Click to zoom" alt="' + tcp_product_env.displayName + '" /></a>');
                     li.append($newCutOut)
                 } else {
                     if (!checkURLForString("product/archive")) {
-                        li.append('<a class="openZoomLink MagicZoomPlus" style="display: block" href="' + image.url.replace("/250/", "/1553/").replace('_sw/','/') + '"><img src="' + newSizeURL + '" class="grid-image" title="Click to zoom" alt="' + tcp_product_env.displayName + '" /></a>')
+                        li.append('<a class="openZoomLink MagicZoomPlus" style="display: block" href="' + image.url.replace("/250/", "/1553/").replace('_sw/', '/') + '"><img src="' + newSizeURL + '" class="grid-image" title="Click to zoom" alt="' + tcp_product_env.displayName + '" /></a>')
                     }
                 }
                 container.append(li);
@@ -518,7 +517,6 @@ var productModule = function() {
             }
         });
         $("body").append("<div id='basket-notification'><a href='/basket.htm'>1 item added to basket</a></div>");
-
         $("#addToBasket").addtobasket({
             debug: tcp_env.is_live === "false",
             selectedSkuFinder: function() {
@@ -554,7 +552,6 @@ var productModule = function() {
                     product.showMessage("<span>" + uppercaseProductName + " has been added to your bag.</span>")
                 }
                 $(".checkout a").removeAttr("disabled");
-
                 setTimeout(function() {
                     $(".checkout a").removeAttr("disabled");
                     var subBasketItems = "<li><a href='/basket.htm'><span><b>Go to basket</b></span><span class='mini-basket-sub-total'>" + $(".mini-basket .mini-basket-sub-total").text() + "</span></a></li>";
@@ -633,4 +630,4 @@ var productModule = function() {
     return moduleVar = {
         getProductData: getProductData
     }
-}();
+}();​
