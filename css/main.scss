@@ -152,7 +152,7 @@ $saleFontColor: #ff675d;
 .hhl_1 .shopTxt {text-transform: uppercase; color: white; text-decoration: none; margin: 10px 20px;font-weight:300; line-height: 27px; display: inline-block; border-bottom: 1px solid white;text-align: center;font-size: 16px;letter-spacing: 1px}
 .hhShopLinks {margin-top: 20px}
 .hhl_2 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_HouseandHome_2.jpg');}
-.hhl_2 .tileTitle {top: auto; bottom:10%; text-align:center; padding: 0 8%;color:#000}
+.hhl_2 .tileTitle {top: auto; bottom:10%; text-align:center; padding: 0 19%;color:#000}
 .hhl_2 h2 {font-size: 20px; margin-top:4%; margin-bottom:10px; font-weight: 600;} /* downgraded */
 .hhl_2 .tileTitle .mainTitle {font-size: 15px; letter-spacing: 1px; line-height:21px; font-weight: 400;}
 .hhl_3 {background-image: url('//media.toa.st/content-images/ss18-precollection/1400/TOAST_PreCollection_HouseandHome_3.jpg');}
@@ -720,7 +720,7 @@ h2.advent22 {  margin-bottom:20px;}
 {
 	/* Women's landing */
 	.wl_4 .tileTitle h2 {line-height: 26px;}
-	
+	.hhl_2 .tileTitle {padding: 0 15%;}
 	.category-product-items .product, .category-product-items .rangeproduct {height: 520px; margin: 0}
     /*Making of*/
     .davdaTop30 {margin-top: 0px}
