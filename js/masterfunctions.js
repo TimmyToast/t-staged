@@ -12,8 +12,10 @@ function moveReviews(){
     $("#nowPrice").after($(".review-rating-ratio").html())
     $(".product-info  .review-rating-stars-on").wrapInner("<a href='javascript:openReviews()'></a>")
     $(".product-info  .topReviews").wrapInner("<a href='javascript:openReviews()'></a>")
+	if ( $( ".topReviews" ).length ) {
     $(".topReviews").prepend($(".review-rating").html() + " ")
     $('.topReviews  span[itemprop="ratingValue"]').html("<a href='javascript:openReviews()'>"+$('.topReviews  span[itemprop="ratingValue"]').html().substring(0, 3)+"</a>")
+	}
     $("#reviewSummaryContainer .review-rating-ratio").remove()
     $("#reviewSummaryContainer .review-rating").remove()
     if ($(document).width() < 768) {
