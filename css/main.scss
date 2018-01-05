@@ -173,7 +173,7 @@ $saleFontColor: #ff675d;
 .saleTile p {color: $saleFontColor; text-decoration: underline; margin:30px 0 40px 0; font-size: 18px; text-transform: uppercase; letter-spacing: 1px}
 .womensSaleLandingTop p, .hl_2 p {margin:0;}
 .womensSaleLandingTop .tileTitleMid {color: $saleFontColor; top:28%; position:absolute;}
-.sale .womensSaleLandingTop {margin-bottom:20px;}
+.sale .womensSaleLandingTop {margin-bottom:20px; padding-top:25%;}
 
 
 /* Lookbook landing tiles */
@@ -884,6 +884,7 @@ h2.advent22 {  margin-bottom:20px;}
     /*Lookbook*/
     .lookbookDivider{margin-top:50px}
      /* Sale landing pages */
+	 .sale .womensSaleLandingTop {padding-top:90% !important; background:url('//media.toa.st/content-images/aw17/1500/TOAST_WEB_WinterSale_Landing_1.jpg');}
     .shhl_1 .tileTitle .mainTitle{font-size: 28px; margin-bottom: 15px}
     .shhl_1 .shopTxt{font-size: 16px}
     .swl_2 .tileTitle{top: 36%}
