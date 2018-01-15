@@ -21,7 +21,9 @@ var lookbookModule = function() {
             };
             if (lookbookCodeObj != null) {
                 for (var i = 0; i < lookbookCodeObj.products.length; i++) {
-                    dataObj.skuList.push(lookbookCodeObj.products[i].prodId)
+					if(lookbookCodeObj.products[i].prodId) {
+						dataObj.skuList.push(lookbookCodeObj.products[i].prodId)
+					}
                 }
             }
             if (dataObj.skuList.length == 0) {
