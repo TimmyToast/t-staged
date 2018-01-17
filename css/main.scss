@@ -283,7 +283,8 @@ $saleFontColor: #ff675d;
 .wothLinks{text-align: center; margin-top: 20px}
 .wothLinks a{border-bottom: 1px solid black;padding-bottom: 3px}
 .wothContent p.wothTerm{font-size: 12px; font-weight: 400}
-
+.storeEvents {padding: 40px 0 60px 0 }
+.storeEventsLink {text-transform:uppercase; font-size:15px; letter-spacing:1px;position: relative;top: 20px;}
 
 /*Further Markdowns*/
 /*.hl_1 .fmMsgTop{font-size:22px; margin-bottom:0;  margin-top:30px; line-height: 0.5}
@@ -362,7 +363,9 @@ input#ctl00_globalMainContent_chkReceiveThirdPartyCatalogs{display:none}
 .twitterOpt{background-position:-36px 377px;height:31px;display:table-cell;width:32px;background-size:294px;line-height:1em;vertical-align:middle}
 .instagramOpt{background-position:-105px 176px;height:31px;display:table-cell;width:32px;background-size:152px;line-height:1em;vertical-align:middle}
 .pinterestOpt{background-position:-70px 176px;height:31px;display:table-cell;width:32px;background-size:152px;line-height:1em;vertical-align:middle}
+
 .footerMarketing {background-color: #dfdfdf ; max-width: 1080px; margin: 0 auto 0; color: #000; width: 100%; padding:8px; text-transform: uppercase; letter-spacing: 1px; text-align: center;clear:both;}
+
 
 
 /*Sitemap*/
@@ -685,7 +688,7 @@ h2.advent22 {  margin-bottom:20px;}
 
 .eventSpacer {margin: 0 auto 30px auto; padding-bottom: 30px;  clear: both; border-bottom: 1px solid #000000; text-align: center; width: 20%;}
 .eventItem {text-align: center}
-.eventItemLast {text-align: center;; margin-bottom: 40px}
+.eventItemLast {text-align: center;margin-top:40px; margin-bottom:110px}
 .eventImage {margin:10px auto; text-align: center; width: fit-content; width:-moz-max-content}
 
 
